@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fi" ng-app="app">
+<head>
+	<meta charset="UTF-16">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Kirjaudu </title>
+	<link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
+	
+	<link href="{{ url_for('static', filename='css/glyphicons/glyphicons/web/bootstrap_example/css/glyphicons.css')}}" rel="stylesheet">
+	<link href="{{ url_for('static', filename='css/glyphicons/glyphicons/web/bootstrap_example/css/glyphicons-bootstrap.css')}}" rel="stylesheet">
+	<link href="{{ url_for('static', filename='css/bootstrap.min.css')}}" rel="stylesheet">
+	<link href="{{ url_for('static', filename='css/style.css')}}?VBkeVEj2WJYyRUHy" rel="stylesheet">
+
+	<piilo>
+		<link href="{{ url_for('static', filename='js/jquery-ui-1.11.2/jquery-ui.min.css')}}" rel="stylesheet">
+		<link href="{{ url_for('static', filename='js/jquery-ui-1.11.2/jquery-ui.theme.css')}}" rel="stylesheet">
+
+		<script type="text/javascript" src="{{ url_for('static', filename='js/jquery-2.1.1.min.js')}}" ></script>
+		<script type="text/javascript" src="{{ url_for('static', filename='js/jquery-ui-1.11.2/jquery-ui.min.js')}}" ></script>
+
+		<script type="text/javascript" src="{{ url_for('static', filename='js/noty/packaged/jquery.noty.packaged.min.js')}}"></script>
+		<script type="text/javascript" src="{{ url_for('static', filename='js/noty/layouts/center.js')}}"></script>
+
+		<script type="text/javascript" src="{{ url_for('static', filename='js/angular.min.js')}}"></script>
+		<script type="text/javascript" src="{{ url_for('static', filename='js/angular-sanitize.js')}}"></script>
+
+		<!--<script src="https://www.youtube.com/iframe_api"></script>
+		<script src="{{ url_for('static', filename='js/angular-youtube.js')}}"></script>-->
+		
+	    <script>app = angular.module('app', ['ngSanitize']);
+	    		
+	    </script>
+    </piilo>
+
+</head>
+<body ng-cloak>
+<div id="laatikko" ng-controller="UberCtrl">
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	    	{% if user.is_authenticated() %}
+	    	<ul class="nav navbar-nav" style="padding-left:20px">
+		        <li {% if page=="index"%} class="active" {% endif %}>
+		        	<a href="/"><span class="glyphicons glyphicons-turtle"></span> Tänään </a></li>
+		        <li {% if page=="list"%} class="active" {% endif %}>
+		        	<a href="/list/"><span class="glyphicons glyphicons-list"></span> Lista</a></li>
+		        
+	      	</ul>
+	      	{% endif %}
+	      	<ul class="nav navbar-nav navbar-right">
+		        	{% if user.is_authenticated() %}
+		        	{% if user.id != 2 %}
+		        	<li {% if page=="list"%} class="options" {% endif %}>
+		        		<a href="/options/">
+		        			<span class="glyphicons glyphicons-settings"></span>
+		        			{{ user.account }}</a></li> {% endif %}
+		        	<li><a href="/logout/">
+		        		<span class="glyphicons glyphicons-log-out"></span> <span class="smallscreen twopx">Logout</span></a>
+		        	</li>
+		        	{% else %}
+		        	<li><a>not logged</a></li>
+		        	{% endif %}
+		        </ul>
+	    </div>    
+	  </div><!-- /.container-fluid -->
+	</nav>
+	<div id="runko">
+	
+
+	{% for message in get_flashed_messages() %}
+		<span style="padding-left:20px">{{ message }}</span><br/>
+	{% endfor %}
+	{% if user.is_authenticated() %}
+	{% block body %}
+	{% endblock %}
+
+	{% else %}
+
+	<form id="login" ng-submit="Login()">
+		<input type="text" 		ng-model="login.account" 	placeholder="Account" />
+		<input type="password" 	ng-model="login.password" 	placeholder="Password" />
+
+		<button type="submit" class="btn"><span class="glyphicons glyphicons-log-in"></span></button>
+	</form>
+	
+	{% endif %}
+		<div style="clear:both;">
+		</div>
+	</div>
+	<div id="footer">
+
+	</div>
+</div><!-- end of laatikko -->
+</body>
+
+
+
+<!-- JAVASCRIPT -->
+
+
+<script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js')}}" ></script>
+<script>
+
+
+(function($) {
+    $.fn.goTo = function() {
+        $('html, body').animate({
+            scrollTop: $(this).offset().top + 'px'
+        }, 'slow');
+        return this; // for chaining...
+    }
+})(jQuery);
+
+
+app.controller('UberCtrl', function($scope, $http, $sce) {
+	{% if user.is_authenticated %}
+	$scope.login = { account: null, password: null }
+
+	$scope.Login = function()
+	{
+		if($scope.login.account == null || $scope.login.password == null)
+			return
+		var json = JSON.stringify($scope.login)
+
+		$http.post("/login/", json)
+		.success(function(data){
+			location.reload()
+		})
+		.error(function(fail){
+			noty({text:fail, type:"warning", timeout:3000});
+		});
+	};
+
+
+	
+
+	{% endif %}
+
+})
+{% if user.is_authenticated %}
+app.controller('StripCtrl', function($scope, $http, $sce) {
+	$scope.vote = null;
+	$scope.strippi = null;
+
+	$scope.Thumbs = function(vote)
+	{
+		var json = { id: $scope.strippi }
+		if(vote != null)
+			json["vote"] = vote
+
+		$http.post("/vote_strip/", JSON.stringify(json) )
+		.success(function(data){
+			$scope.vote = data.vote;
+		
+		}).error(function(err){
+			console.log(err)
+		});
+	}
+});
+{% endif %}
+</script>
+
+</html>

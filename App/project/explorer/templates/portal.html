@@ -1,0 +1,68 @@
+{% extends "pohja.html" %}
+
+{% block body %}
+<div id="navigaattori" class="sarjakuva">
+	<a class="prev btn btn-success" href="/d/{{dates['yesterday']}}">
+		<span class="glyphicons glyphicons-collapse r180"></span>
+		<span class="fivepx">{{dates.yesterday}}</span>
+	</a>
+	<a class="btn today">
+		<span class="glyphicons glyphicons-turtle"></span>
+		<span class="fivepx">{{dates.day}}</span>
+	</a>
+	{% if dates.next_day %}
+	<a class="next btn btn-success" href="/d/{{dates['tomorrow']}}">
+		<span class="fivepx">{{ dates.tomorrow }}</span>
+		<span class="glyphicons glyphicons-collapse"></span>
+	</a>
+	{% endif %}
+</div>
+
+{% for st in stripit %}
+<div class="sarjakuva" ng-controller="StripCtrl">
+	<h3 ng-init="strippi={{ st.id }};Thumbs();"> 
+		{{ st.sarjakuva.nimi }} {{ st.Pvm() }}
+		<span ng-class="{ 'good': vote===true }"
+			ng-click="Thumbs(true)"
+			class="pointer glyphicons glyphicons-thumbs-up"></span>
+		<span ng-class="{ 'bad': vote===false }"
+			ng-click="Thumbs(false)"
+			class="pointer glyphicons glyphicons-thumbs-down"></span>
+	</h3>
+	<a href="/{{ st.sarjakuva.lyhenne }}/{{ st.order }}/">
+	<img src="{{ url_for('static', 
+			filename='sarjakuvat/'+st.sarjakuva.lyhenne+'/'+st.filename )}}" />
+	</a><br/>
+</div>
+{% endfor %}
+
+{% if stripit|length == 0%}
+<div class="sarjakuva">
+	<h3> Ei sarjakuvia tälle päivälle </h3>
+</div>
+{% endif %}
+
+<script>
+document.title = "Sarjakuvat {{ dates.day }}";
+
+$(document).keydown(function(e) {
+	switch(e.which) {
+	    case 37: // left
+	    e.preventDefault(); // prevent the default action (scroll / move caret)
+	    window.open("/d/{{ dates.yesterday }}/", "_self")
+	    break;
+	    
+
+	    {% if dates.next_day %}
+	    case 39: // right
+	    e.preventDefault(); // prevent the default action (scroll / move caret)
+			window.open("/d/{{ dates.tomorrow }}/", "_self")
+	    break;
+	    {% endif %}
+	    default: return; // exit this handler for other keys
+	}
+});
+</script>
+
+
+{% endblock %}

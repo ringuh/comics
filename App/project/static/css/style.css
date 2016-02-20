@@ -1,0 +1,212 @@
+style.css
+
+#navi > .glyphicons
+{
+	margin-right:20px;
+}
+
+.glyphicons
+{
+	font-size:24px;
+}
+
+.navbar-header
+{
+	font-size:24px;
+	width:100%;
+}
+
+.navbar-header .glyphicons
+{
+	top:-2px;
+	margin-right:5px;
+}
+.navbar-header li
+{
+	margin-right:15px;
+}
+
+.left
+{
+	float:left;
+}
+
+#login
+{
+	min-height:400px;
+	max-width:500px;
+	margin:10px auto;
+}
+
+#login input
+{
+	max-width:90%;
+}
+
+input[type=text], input[type=email], input[type=password], input[type=number]
+{
+	padding-left:10px;
+}
+
+.right
+{
+	float:right;
+}
+
+.sarjakuva
+{
+	clear:both;
+	margin:0px 5% 80px 5%;
+	width:90%;
+}
+
+.sarjakuva > .navi
+{
+	clear:both;
+}
+
+.sarjakuva> h3
+{
+	max-width:100%;
+	overflow:hidden;
+}
+
+.sarjakuva img
+{
+	clear:both;
+	max-width:100%;
+}
+
+.good
+{
+	color:#5CB85C;
+}
+
+.bad
+{
+	color:#D14719;
+}
+
+
+
+#footer
+{
+	height:100px;
+	background-color:#f8f8f8;
+	border-radius:4px;
+	border:1px solid #e7e7e7;
+	width:100%;
+}
+
+#runko
+{
+	clear:both;
+	padding:10px 1px;
+	max-width:1100px;
+	margin:0px auto;
+}
+.pointer
+{
+	cursor:pointer;
+}
+.twopx
+{
+	position:relative;
+	top:2px;
+}
+
+.ntwopx
+{
+	position:relative;
+	top:-2px;
+}
+
+.nfivepx
+{
+	position:relative;
+	top:-5px;
+}
+
+.fivepx
+{
+	position:relative;
+	top:5px;
+}
+.r180
+{
+	 -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+}
+
+
+
+#navigaattori
+{
+
+}
+
+#navigaattori a
+{
+	
+}
+#navigaattori a:nth-child(2)
+{
+	margin:0px 15px;
+	background-color:black;
+	color:white;
+	padding:6px 12px;
+}
+.smallscreen
+{
+	display:none;
+}
+
+#options .comiclist
+{
+	padding:10px;
+}
+
+#options .comiclist th:first-child, #options .comiclist td:first-child
+{
+	width:50px;
+	
+}
+#options .comiclist td:first-child
+{
+	padding:3px 8px;
+}
+
+#options .comiclist input[type="checkbox"]
+{
+	width:20px;
+	height:20px;
+}
+.gg > .glyphicons
+{
+	margin-right:10px;
+}
+
+
+@media screen and (max-width: 575px) {
+    body {
+    }
+    #navigaattori a .fivepx
+	{
+		display:none;
+	}	
+}
+
+@media screen and (max-width: 779px) {
+    body {
+    }
+    .navbar-right
+    {
+    	padding-left:20px;
+    }
+    
+    .smallscreen
+    {
+    	
+    }
+}

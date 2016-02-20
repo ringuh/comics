@@ -1,0 +1,69 @@
+{% extends "pohja.html" %}
+
+{% block body %}
+
+
+<div class="sarjakuva left" ng-controller="StripCtrl">
+	<h3 ng-init="strippi={{ strip.id }};Thumbs();"> {{ comic.nimi }} #{{ strip.order }} 
+		<span ng-class="{ 'good': vote===true }"
+			ng-click="Thumbs(true)"
+			class="pointer glyphicons glyphicons-thumbs-up"></span>
+		<span ng-class="{ 'bad': vote===false }"
+			ng-click="Thumbs(false)"
+			class="pointer glyphicons glyphicons-thumbs-down"></span>
+	</h3>
+	
+	<div class="navi">
+	{% set prev = strip.order-1 %}
+	{% set next = strip.order+1 %}
+	{% set max = comic.Max() %}
+	{% if prev > 0 %}
+	<a href="/{{ comic.lyhenne }}/1/">
+		<span class="glyphicons x2 left glyphicons-step-backward"></span>
+	</a>
+	<a href="/{{ comic.lyhenne }}/{{ prev }}/">
+		<span class="glyphicons x2  left glyphicons-rewind"></span>
+	</a>
+	{% endif %}
+
+	{% if next <= max %}
+	<a href="/{{ comic.lyhenne }}/{{ max }}/">
+		<span class="glyphicons x2 right glyphicons-step-forward"></span>
+	</a>
+	<a href="/{{ comic.lyhenne }}/{{ next }}/">
+		<span class="glyphicons x2 right glyphicons-forward"></span>
+	</a>
+
+	{% endif %}
+
+	</div>
+	<a href="{{ strip.url }}">
+	<img src="{{ url_for('static', 
+			filename='sarjakuvat/'+comic.lyhenne+'/'+strip.filename )}}" />
+	</a>
+</div>
+
+<script>
+	document.title="{{ comic.nimi }} #{{strip.order}}"
+
+	$(document).keydown(function(e) {
+    switch(e.which) {
+    	{% if prev > 0 %}
+        case 37: // left
+        e.preventDefault(); // prevent the default action (scroll / move caret)
+        window.open("/{{ comic.lyhenne }}/{{ prev }}/", "_self")
+        break;
+        {% endif %}
+
+        {% if next <= max %}
+        case 39: // right
+        e.preventDefault(); // prevent the default action (scroll / move caret)
+ 		window.open("/{{ comic.lyhenne }}/{{ next }}/", "_self")
+        break;
+        {% endif %}
+        default: return; // exit this handler for other keys
+    }
+    
+});
+</script>
+{% endblock %}

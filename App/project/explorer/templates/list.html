@@ -1,0 +1,31 @@
+{% extends "pohja.html" %}
+
+{% block body %}
+
+
+{% for c in comics %}
+<div class="sarjakuva" ng-controller="StripCtrl">
+	{% set st = c.Last() %}
+	{% if st != None %}
+	<h3 ng-init="strippi={{ st.id }};Thumbs();"> 
+		{{ st.sarjakuva.nimi }} {{ st.Pvm() }}
+		<span ng-class="{ 'good': vote===true }"
+			ng-click="Thumbs(true)"
+			class="pointer glyphicons glyphicons-thumbs-up"></span>
+		<span ng-class="{ 'bad': vote===false }"
+			ng-click="Thumbs(false)"
+			class="pointer glyphicons glyphicons-thumbs-down"></span>
+	</h3>
+	<a href="/{{ c.lyhenne }}/{{ st.order }}/">
+	<img src="{{ url_for('static', 
+			filename='sarjakuvat/'+st.sarjakuva.lyhenne+'/'+st.filename )}}" />
+	</a><br/>
+	{% endif %}
+</div>
+{% endfor %}
+
+<script>
+	document.title = "Sarjakuvalista"
+</script>
+
+{% endblock %}
