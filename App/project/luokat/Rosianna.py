@@ -23,6 +23,8 @@ class Rosianna(Sarjis):
 				images = figure.find_all("img")
 				for image in images:
 					kuva = dict(nimi=None, src=None)
+					if image["src"].index("//") == 0:
+						image["src"] = u"http:{}".format(image["src"])
 					image["src"] = u"{}".format(image["src"].replace(u"_250.", u"_1280."))
 					kuva["nimi"] = u"{}".format(image["src"].split("/")[-1]) # kuvan nimi = tiedoston nimi
 					kuva["src"] = url_fix(

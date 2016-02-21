@@ -29,14 +29,14 @@ class Sarjis(object):
 			if len(kuvat) == 0:
 				return self.Next()
 		except Exception, e:
-			print self.sarjakuva.nimi, e
+			Log(self.sarjakuva.id, self.urli, u"Kuvan haku epäonnistui", e)
 			return self.Next()
 		
 		for kuva in kuvat:
 			try:
 				self.Save(kuva["nimi"], kuva["src"], kuva["filetype"])
 			except Exception, e:
-				Log(self.sarjakuva.id, self.urli, u"Kuvan tallennus epäonnistui", e.message)
+				Log(self.sarjakuva.id, self.urli, u"Kuvan tallennus epäonnistui", e)
 	
 		return self.Next() # jos None looppi loppuu
 	
@@ -57,7 +57,7 @@ class Sarjis(object):
 		# katsotaan oliko kyseisestä sarjasta jo kyseinen kuva
 		#url = url"
 		tmp_file = u""
-		headers = { 'User-Agent' : app.config["REQUEST_HEADER"] }
+		headers = app.config["REQUEST_HEADER"]
 		req = urllib2.Request(url, None, headers)
 		try:
 			tmp_file = urllib2.urlopen(req).read()
@@ -67,7 +67,7 @@ class Sarjis(object):
 				tmp_file = urllib2.urlopen(url).read()
 				
 			except Exception, e:
-				Log(self.sarjakuva.id, self.urli, u"Kuvan lataus epäonnistui", e.message)
+				Log(self.sarjakuva.id, self.urli, u"Kuvan lataus epäonnistui", e)
 				return False
 		
 		if len(tmp_file) < 10:

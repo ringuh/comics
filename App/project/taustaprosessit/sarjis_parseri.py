@@ -63,6 +63,24 @@ def Looper(id):
 			olio = Dorkly(comic)
 		elif comic.parseri == u"oots":
 			olio = OrderOfTheStick(comic)
+		elif comic.parseri == u"toonhole":
+			olio = Toonhole(comic)
+		elif comic.parseri == u"satw":
+			olio = SatW(comic)
+		elif comic.parseri == u"cad":
+			olio = CtrlAltDel(comic)
+		elif comic.parseri == u"explosm":
+			olio = Explosm(comic)
+		elif comic.parseri == u"dragonarte":
+			olio = Dragonarte(comic)
+		elif comic.parseri == u"paintrain":
+			olio = Paintrain(comic)
+		elif comic.parseri == u"gunshow":
+			olio = Gunshow(comic)
+		elif comic.parseri == u"happletea":
+			olio = HappleTea(comic)
+		elif comic.parseri == "vgcats":
+			olio = VGCats(comic)
 
 		else:
 			olio = Sarjis(comic)

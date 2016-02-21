@@ -59,6 +59,8 @@ def Print(a, b=None, c=None, d=None, e=None, f=None, g=None, h=None, i=None, j=N
 
 def Log(sarjakuva_id, url, viesti, error=None, sessio=db.session):
 	from project.models import Loki
+	if error:
+		error = unicode(error)
 	sessio.add(Loki(sarjakuva_id, url, viesti, error))
 	Print(sarjakuva_id, url, viesti, error)
 
