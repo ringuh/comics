@@ -2,10 +2,10 @@
 from project import db, Print, Log
 from bs4 import BeautifulSoup
 import datetime, urllib, os, requests, hashlib
-from project.luokat import Sarjis
+from project.luokat import Sarjis, Rosianna
 from werkzeug.urls import url_fix
 
-class Rosianna(Sarjis):
+class Rational(Sarjis):
 
 	def __init__(self, sarjakuva ):
 		Sarjis.__init__(self, sarjakuva )
@@ -28,7 +28,7 @@ class Rosianna(Sarjis):
 						if image["src"].index("./") == 0:
 							image["src"] = image["src"].replace("./", "/")
 					except: pass
-					image["src"] = u"{}".format(image["src"].replace(u"_250.", u"_1280."))
+					#image["src"] = u"{}".format(image["src"].replace(u"_250.", u"_1280."))
 					kuva["nimi"] = u"{}".format(image["src"].split("/")[-1]) # kuvan nimi = tiedoston nimi
 					kuva["src"] = url_fix(
 									u"{}".format(image["src"])
@@ -44,10 +44,9 @@ class Rosianna(Sarjis):
 
 	def Next(self):
 		ret = self.urli
-		nav = self.soup.find("nav", { "class": "comic-pagination" })
-		link = nav.find("a", { "class": "next-button"})
+		nav = self.soup.find(id="wpspn-nextpost-reverse")
+		link = nav.find("a")
 
-		
 		if link and link["href"] != "#":
 			ret = u"{}".format(link["href"])
 

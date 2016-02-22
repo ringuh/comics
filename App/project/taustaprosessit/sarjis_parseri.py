@@ -71,8 +71,10 @@ def Looper(id):
 			olio = CtrlAltDel(comic)
 		elif comic.parseri == u"explosm":
 			olio = Explosm(comic)
-		#elif comic.parseri == u"dragonarte":
-		#	olio = Dragonarte(comic)
+		elif comic.parseri == u"dragonarte":
+			olio = Dragonarte(comic)
+		elif comic.parseri == u"avasdemon":
+			olio = AvasDemon(comic)
 		elif comic.parseri == u"paintrain":
 			olio = Paintrain(comic)
 		elif comic.parseri == u"gunshow":
@@ -89,6 +91,45 @@ def Looper(id):
 			olio = Camp(comic)
 		elif comic.parseri == "pennyarcade":
 			olio = PennyArcade(comic)
+		elif comic.parseri == "pidjin":
+			olio = Pidjin(comic)
+		elif comic.parseri == "garfield":
+			olio = Garfield(comic)
+		elif comic.parseri == "leasticoulddo":
+			olio = LeastICouldDo(comic)
+		elif comic.parseri == "questionablecontent":
+			olio = QuestionableContent(comic)
+		elif comic.parseri == "wumo":
+			olio = Wumo(comic)
+		elif comic.parseri == "gocomics":
+			olio = GoComics(comic)
+		elif comic.parseri == "hiveworks":
+			olio = HiveWorks(comic)
+		elif comic.parseri == "floabc":
+			olio = Floabc(comic)
+		elif comic.parseri == "hamlet":
+			olio = HamletsDanish(comic)
+		elif comic.parseri == "interrobang":
+			olio = InterroBang(comic)
+		elif comic.parseri == "dilbert":
+			olio = Dilbert(comic)
+		elif comic.parseri == "perrybible":
+			olio = PerryBible(comic)
+		elif comic.parseri == "rational":
+			olio = Rational(comic)
+		elif comic.parseri == "loadingartist":
+			olio = LoadingArtist(comic)
+		elif comic.parseri == "smbc":
+			olio = SMBC(comic)
+		elif comic.parseri == "itsthetie":
+			olio = ItsTheTie(comic)
+		elif comic.parseri == "perrybible":
+			olio = PerryBible(comic)
+		elif comic.parseri == "perrybible":
+			olio = PerryBible(comic)
+		elif comic.parseri == "perrybible":
+			olio = PerryBible(comic)
+
 
 		else:
 			olio = Sarjis(comic)
@@ -103,7 +144,7 @@ def Looper(id):
 			if last_url is None:
 				Log(comic.id, None, u"Haku päättyi", count)
 			
-			if("short" in sys.argv and count > 2) or count > 5: # ei ikilooppeja
+			if("short" in sys.argv and count > 2) or count > 2: # ei ikilooppeja
 				return False
 
 		return True

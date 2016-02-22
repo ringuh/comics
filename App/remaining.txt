@@ -1,465 +1,5 @@
 
-	Sarjakuva( #16,
-		u"Fredo & Pidjin", 
-		u"fredo_pidjin",
-		u"fredo_pidjin",
 
-		u"http://www.pidjin.net/", 
-		u"http://www.pidjin.net/2005/05/30/tricks-to-getting-delayed/",
-		u"Dani", 
-		12,
-		None,
-		False,
-		
-	),
-	Sarjakuva( #17,
-		u"U.S. Acres", 
-		u"usacres",
-		u"usacres",
-
-		u"http://garfield.com/us-acres", 
-		u"http://garfield.com/us-acres/2012-06-01",
-
-		u"Jim Davis", 
-		12,
-		None,
-		False,
-		
-		True
-	),
-	Sarjakuva( #17,
-		u"Garfield", 
-		u"garfield",
-		u"garfield",
-
-		u"http://garfield.com/comic", 
-		u"http://garfield.com/comic/2012-06-01",
-
-		u"Jim Davis", 
-		12,
-		None,
-		False,
-		
-		True
-	),
-
-	Sarjakuva( #18,
-		u"Least I could do", 
-		u"licd",
-		u"licd",
-
-		u"http://www.leasticoulddo.com/comic/", 
-		u"http://www.leasticoulddo.com/comic/20030210/",
-		u"Ryan Sohmer & Trevor Adams", 
-		12,
-		None,
-		False,
-		
-	),
-	Sarjakuva( #19,
-		u"Questionable Content", 
-		u"qc",
-		u"qc",
-
-		u"http://questionablecontent.net/", 
-		u"http://questionablecontent.net/view.php?comic=1",
-		u"Jeph Jacques", 
-		12,
-		None,
-		False,
-		
-	),
-
-	Sarjakuva( #64,##
-		u"Wulffmorgenthaler", 
-		u"wumo",
-		u"wumo",
-
-		u"http://wumo.com/", 
-		u"http://wumo.com/wumo/2015/09/08",
-		u"Wumo", 
-		12,
-		None,
-		False,vaihda in future
-		
-	),
-	#GO COMICS
-	Sarjakuva( #20,##
-		u"Lassi ja Leevi", 
-		u"lassi",
-		u"lassi",
-
-		u"http://www.gocomics.com/calvinandhobbes/", 
-		u"http://www.gocomics.com/calvinandhobbes/2014/06/13",
-
-		u"Bill Watterson", 
-		12,
-		None,
-		False,vaihda in future
-		
-		True
-	),
-	Sarjakuva( #20,##
-		u"The Flying MCCoys", 
-		u"mccoys",
-		u"mccoys",
-
-		u"http://www.gocomics.com/theflyingmccoys/", 
-		u"http://www.gocomics.com/theflyingmccoys/2012/06/01",
-
-		u"Glenn and Gary McCoy", 
-		12,
-		None,
-		False,vaihda in future
-		
-		True
-	),
-	Sarjakuva( #20,##
-		u"Pearls Before Swine", 
-		u"pearls",
-		u"pearls",
-
-		u"http://www.gocomics.com/pearlsbeforeswine/", 
-		u"http://www.gocomics.com/pearlsbeforeswine/2012/06/01",
-
-		u"Stephan Pastis", 
-		12,
-		None,
-		False,vaihda in future
-		
-		True
-	),
-	Sarjakuva( #20,##
-		u"9 Chickweed Lane", 
-		u"9chickweedlane",
-		u"9chickweedlane",
-
-		u"http://www.gocomics.com/9chickweedlane", 
-		u"http://www.gocomics.com/9chickweedlane/2012/06/01",
-
-		u"Brooke McEldowney", 
-		12,
-		None,
-		False,vaihda in future
-		
-		True
-	),
-
-	#END OF GO COMICS
-
-	
-	Sarjakuva( #22,
-		u"Johnny Wander Fiction", 
-		u"jwfiction",
-		u"jwfiction",
-
-		u"http://www.johnnywander.com/fiction", 
-		u"http://www.johnnywander.com/fiction/girl-with-the-skeleton-hand-1",
-		u"Ananth Panagariya & Yoko Ota", 
-		12,
-		None,
-		False,
-		
-	),
-	Sarjakuva( #22,
-		u"Lucky Penny", 
-		u"luckypenny",
-		u"luckypenny",
-
-		u"http://www.johnnywander.com/luckypenny", 
-		u"http://www.johnnywander.com/luckypenny/lucky-penny-001",
-		u"Ananth Hirsh & Yoko Ota", 
-		12,
-		None,
-		False,
-		
-	),
-	Sarjakuva( #22,
-		u"Autobio", 
-		u"autobio",
-		u"autobio",
-
-		u"http://www.johnnywander.com/autobio", 
-		u"http://www.johnnywander.com/autobio/i",
-		u"Ananth Hirsh & Yoko Ota", 
-		12,
-		None,
-		False,
-		
-	),
-	Sarjakuva( #23,
-		u"For lack of a better comic", 
-		u"floabc",
-		u"floabc",
-
-		u"http://www.forlackofabettercomic.com/", 
-		u"http://forlackofabettercomic.com/?id=1",
-		u"Jacob Andrews", 
-		12,
-		None,
-		False,
-		
-	),
-	Sarjakuva( #24,
-		u"Cheer Up, Emo Kid", 
-		u"cheerup",
-		u"cheerup",
-
-		u"http://www.cheerupemokid.com/", 
-		u"http://www.cheerupemokid.com/comic/truth",
-		u"Enzo", 
-		12,
-		None,
-		False,
-		
-	),
-	Sarjakuva( #25,
-		u"Love Me Nice", 
-		u"lovemenice",
-		u"lovemenice",
-
-		u"http://lovemenicecomic.com/comic/", 
-		u"http://lovemenicecomic.com/comic/001.php",
-		u"Amanda Lafrenais", 
-		12,
-		None,
-		False,
-		
-	),
-	Sarjakuva( #26,
-		u"Hamlet's Danish", 
-		u"hamlet",
-		u"hamlet",
-
-		u"http://clayyount.com/hamlets-danish", 
-		u"http://clayyount.com/hamlets-danish-comic/2014/4/7/one-question",
-		u"Clay Yount", 
-		12,
-		None,
-		False,
-		
-	),
-	Sarjakuva( #27,
-		u"Avas Demon", 
-		u"avasdemon",
-		u"avasdemon",
-
-		u"http://www.avasdemon.com/", 
-		u"http://www.avasdemon.com/chapters.php",
-		u"Michelle Czajkowski", 
-		12,
-		None,
-		False,
-		
-	),
-	Sarjakuva( #28,
-		u"Manly Guys Doing Manly Things", 
-		u"machismo",
-		u"machismo",
-
-		u"http://thepunchlineismachismo.com/", 
-		u"http://thepunchlineismachismo.com/archives/comic/02222010",
-		u"", 
-		12,
-		None,
-		False,
-		
-	),
-	Sarjakuva( #29,
-		u"Im my own Mascot", 
-		u"imomascot",
-		u"imomascot",
-
-		u"http://www.interrobangstudios.com/comics-display.php?comic_id=9", 
-		u"http://interrobangstudios.com/comics-display.php?strip_id=141",
-		u"", 
-		12,
-		None,
-		False,
-		
-	),
-	Sarjakuva( #29,
-		u"Wookie-ookies", 
-		u"wookie",
-		u"wookie",
-
-		u"http://www.interrobangstudios.com/comics-display.php?comic_id=18", 
-		u"http://interrobangstudios.com/comics-display.php?strip_id=929",
-		u"", 
-		12,
-		None,
-		False,
-		
-	),
-	Sarjakuva( #29,
-		u"Things Which Defy Categorization", 
-		u"twdc",
-		u"twdc",
-
-		u"http://www.interrobangstudios.com/comics-display.php?comic_id=17", 
-		u"http://interrobangstudios.com/comics-display.php?strip_id=49",
-		u"", 
-		12,
-		None,
-		False,
-		
-	),
-	Sarjakuva( #29,
-		u"Fair-Haired Adventure Seekers", 
-		u"adventureseekers",
-		u"adventureseekers",
-
-		u"http://www.interrobangstudios.com/comics-display.php?comic_id=6", 
-		u"http://interrobangstudios.com/comics-display.php?strip_id=930",
-		u"", 
-		12,
-		None,
-		False,
-		
-	),
-	Sarjakuva( #29,
-		u"It sucks to be Weegie", 
-		u"weegie",
-		u"weegie",
-
-		u"http://www.interrobangstudios.com/comics-display.php?comic_id=11", 
-		u"http://interrobangstudios.com/comics-display.php?strip_id=941",
-		u"", 
-		12,
-		None,
-		False,
-		
-	),
-	Sarjakuva( #29,
-		u"WatchBabies", 
-		u"watchbabies",
-		u"watchbabies",
-
-		u"http://www.interrobangstudios.com/comics-display.php?comic_id=7", 
-		u"http://interrobangstudios.com/comics-display.php?strip_id=959",
-		u"", 
-		12,
-		None,
-		False,
-		
-	),
-	Sarjakuva( #29,
-		u"Ensign3 Crisis of Infinite Sues", 
-		u"ensign3",
-		u"ensign3",
-
-		u"http://www.interrobangstudios.com/comics-display.php?comic_id=10", 
-		u"http://interrobangstudios.com/comics-display.php?strip_id=989",
-		u"", 
-		12,
-		None,
-		False,
-		
-	),
-	Sarjakuva( #29,
-		u"Spinks", 
-		u"spinks",
-		u"spinks",
-
-		u"http://www.spinkspink.com/", 
-		u"http://www.spinkspink.com/index.php?strip_id=78",
-		u"", 
-		12,
-		None,
-		False,
-		
-	),
-	Sarjakuva( #29,
-		u"Trigger Star", 
-		u"triggerstar",
-		u"triggerstar",
-
-		u"http://www.triggerstar.com/", 
-		u"http://www.triggerstar.com/index.php?strip_id=60",
-		u"", 
-		12,
-		None,
-		False,
-		
-	),
-	Sarjakuva( #29,
-		u"The Dark Intruder", 
-		u"darkintruder",
-		u"darkintruder",
-
-		u"http://www.interrobangstudios.com/comics-display.php?comic_id=1", 
-		u"http://interrobangstudios.com/comics-display.php?strip_id=1",
-		u"", 
-		12,
-		None,
-		False,
-		
-	),
-	Sarjakuva( #29,
-		u"A Girl Named Bob", 
-		u"girlbob",
-		u"girlbob",
-
-		u"http://www.interrobangstudios.com/comics-display.php?comic_id=3", 
-		u"http://interrobangstudios.com/comics-display.php?strip_id=31",
-		u"", 
-		12,
-		None,
-		False,
-		
-	),
-	Sarjakuva( #29,
-		u"This is Visas", 
-		u"visas",
-		u"visas",
-
-		u"http://www.interrobangstudios.com/comics-display.php?comic_id=13", 
-		u"http://interrobangstudios.com/comics-display.php?strip_id=357",
-		u"", 
-		12,
-		None,
-		False,
-		
-	),
-	Sarjakuva( #29,
-		u"Heeere's Satan", 
-		u"heresatan",
-		u"heresatan",
-
-		u"http://www.interrobangstudios.com/comics-display.php?comic_id=15", 
-		u"http://interrobangstudios.com/comics-display.php?strip_id=146",
-		u"", 
-		12,
-		None,
-		False,
-		
-	),
-	Sarjakuva( #29,
-		u"Punker Darren", 
-		u"punkerdarren",
-		u"punkerdarren",
-
-		u"http://www.interrobangstudios.com/comics-display.php?comic_id=2", 
-		u"http://interrobangstudios.com/comics-display.php?strip_id=16",
-		u"", 
-		12,
-		None,
-		False,
-		
-	),
-	Sarjakuva( #29,
-		u"Space is really big!", 
-		u"bigspace",
-		u"bigspace",
-
-		u"http://www.interrobangstudios.com/comics-display.php?comic_id=12", 
-		u"http://interrobangstudios.com/comics-display.php?strip_id=55",
-		u"", 
-		12,
-		None,
-		False,
-		
-	),
 
 	Sarjakuva( #30,
 		u"Unsounded", 
@@ -494,33 +34,9 @@
 		
 	),
 
-	Sarjakuva( #32,
-		u"The Perry Bible Fellowship", 
-		u"pbf",
-		u"pbf",
+	
 
-		u"http://pbfcomics.com", 
-		u"http://pbfcomics.com/1/",
-		u"Daria", 
-		12,
-		None,
-		False,
-		
-	),
-
-	Sarjakuva( #33,
-		u"Dilbert", 
-		u"dilbert",
-		u"dilbert",
-
-		u"http://dilbert.com", 
-		u"http://dilbert.com/strip/2015-01-11",
-		u"Scott Adams", 
-		12,
-		None,
-		False,
-		
-	),
+	
 	Sarjakuva( #34,
 		u"Pepper and Carrot", 
 		u"peppercarrot",
@@ -537,63 +53,8 @@
 
 	
 
-	Sarjakuva( #35,
-		u"Rational Comics", 
-		u"rational",
-		u"rational",
-
-		u"http://www.rationalcomics.com/", 
-		u"http://www.rationalcomics.com/001-mountain-moving-man/",
-		u"Joshua Sim", 
-		12,
-		None,
-		False,
-		
-	),
-
-	Sarjakuva( #36,
-		u"Loading Artist", 
-		u"loadingartist",
-		u"loadingartist",
-
-		u"http://www.loadingartist.com/", 
-		u"http://www.loadingartist.com/comic/born/",
-		u"GREGOR CZAYKOWSK", 
-		12,
-		None,
-		False,
-		
-	),
 
 	
-
-	Sarjakuva( #37,
-		u"Saturday Morning Breakfast Cereal", 
-		u"smbc",
-		u"smbc",
-
-		u"http://www.smbc-comics.com/", 
-		u"http://www.smbc-comics.com/index.php?id=3768",
-		u"Zach Weiner", 
-		12,
-		None,
-		False,
-		
-	),
-
-	Sarjakuva( #38,
-		u"Its the Tie", 
-		u"itsthetie",
-		u"itsthetie",
-
-		u"http://itsthetie.com/", 
-		u"http://itsthetie.com/?comic=no-world-for-a-squirrel-4",
-		u"ItstheTie", 
-		12,
-		None,
-		False,
-		
-	),
 
 	Sarjakuva( #39,
 		u"Awkward Zombie", 
@@ -682,20 +143,6 @@
 	),
 
 
-	Sarjakuva( #22,
-			u"Lets Speak English", 
-u"Lets Speak English", 
-u"jotain",
-			u"letsspeakenglish",
-			u"http://www.marycagle.com/", 
-			u"http://www.marycagle.com/letsspeakenglish/1-shingeki-no-kodomo",
-			u"Mary Cagle", 
-			12,
-			None,
-			False,
-
-		),
-
 	
 
 	
@@ -730,19 +177,7 @@ u"jotain",
 
 	
 
-	Sarjakuva( #20,
-			u"Over the Hedge", 
-u"Over the Hedge", 
-u"jotain",
-			u"overthehedge",
-			u"http://www.gocomics.com/overthehedge/", 
-			u"http://www.gocomics.com/overthehedge/2015/07/30",
-			u"T Lewis and Michael Fry", 
-			12,
-			None,
-			False,
 
-		),
 
 	Sarjakuva( #46,
 			u"User Friendly", 
@@ -814,19 +249,7 @@ u"jotain",
 
 		),
 
-	Sarjakuva( #22,
-			u"The Rock Cocks", 
-u"The Rock Cocks", 
-u"jotain",
-			u"rockcocks",
-			u"http://www.therockcocks.com/", 
-			u"http://www.therockcocks.com/comic/page-1",
-			u"Unknown", 
-			12,
-			None,
-			False,
 
-		),
 
 	
 
@@ -935,19 +358,7 @@ u"jotain",
 
 		),
 
-	Sarjakuva( #20,
-			u"Sunny Street", 
-u"Sunny Street", 
-u"jotain",
-			u"sunnystreet",
-			u"http://www.gocomics.com/sunny-street/", 
-			u"http://www.gocomics.com/sunny-street/2013/06/03",
-			u"Max Garcia and Sandra Barthauer", 
-			12,
-			None,
-			False,
 
-		),
 
 	
 
@@ -1021,20 +432,7 @@ u"jotain",
 
 		),
 
-	Sarjakuva( #20, 
-		u"Jim Benton", 
-		u"jimbenton",
-		u"jimbenton",
-
-		u"http://www.gocomics.com/jim-benton-cartoons/", 
-		u"http://www.gocomics.com/jim-benton-cartoons/2014/10/27",
-
-		u"Jim Benton", 
-		12,
-		None,
-		False,vaihda in future
-		
-	),
+	
 
 	
 
@@ -1116,20 +514,7 @@ u"jotain",
 		
 	),
 
-	Sarjakuva( #22,
-		u"Whomp", 
-		u"whomp",
-		u"whomp",
-
-		u"http://www.whompcomic.com/", 
-		u"http://www.whompcomic.com/comic/06152010",
-
-		u"Unknown", 
-		12,
-		None,
-		False,
-		
-	),
+	
 
 
 	Sarjakuva( #38,

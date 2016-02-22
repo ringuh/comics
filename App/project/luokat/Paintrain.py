@@ -50,6 +50,8 @@ class Paintrain(Sarjis):
 		ret = self.urli
 		#nav = self.soup.find("nav", { "class": "comic-pagination" })
 		link = self.soup.find("a", { "class": "comic-nav-next"})
+		if not link:
+			link = self.soup.find("a", { "class": "next" })
 
 		
 		if link and link["href"] != "#":

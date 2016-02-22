@@ -31,7 +31,8 @@ class Sarjakuva(db.Model):
 	stripit = relationship("Strippi", lazy="dynamic", backref="sarjakuva")
 
 
-	def __init__(self, nimi, lyhenne, parseri, url, last_url, author=None, interval=12, weekday=None, more=False ):
+	def __init__(self, nimi, lyhenne, parseri, url, last_url, 
+					author=None, interval=12, weekday=None, more=False, download=True ):
 		self.nimi = nimi
 		self.lyhenne = lyhenne
 		self.parseri = parseri
@@ -41,6 +42,7 @@ class Sarjakuva(db.Model):
 		self.more = more
 		self.interval = interval
 		self.weekday = weekday
+		self.download = download
 
 
 	def __repr__(self):	
