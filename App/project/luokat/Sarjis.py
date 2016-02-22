@@ -40,7 +40,7 @@ class Sarjis(object):
 					self.Iframe(kuva["nimi"], kuva["src"], kuva["filetype"])
 
 			except Exception, e:
-				Log(self.sarjakuva.id, self.urli, u"Kuvan tallennus epäonnistui", e)
+				Log(self.sarjakuva.id, self.urli, u"Kuvan tallennus epäonnistui", e, kuva["src"])
 	
 		return self.Next() # jos None looppi loppuu
 	
@@ -72,11 +72,11 @@ class Sarjis(object):
 				tmp_file = urllib2.urlopen(url).read()
 				
 			except Exception, e:
-				Log(self.sarjakuva.id, self.urli, u"Kuvan lataus epäonnistui", e)
+				Log(self.sarjakuva.id, self.urli, u"Kuvan lataus epäonnistui", e, url)
 				return False
 		
 		if len(tmp_file) < 10:
-			Log(self.sarjakuva.id, self.urli, u"Liian pieni kuva", url)
+			Log(self.sarjakuva.id, self.urli, u"Liian pieni kuva", None, url)
 			return False
 
 		md5 = u"{}".format(hashlib.md5(tmp_file).hexdigest())
@@ -109,7 +109,7 @@ class Sarjis(object):
 		# lisätään kantaan tieto, että kuva on haettu
 		order = self.sessio.query(Strippi).filter(Strippi.sarjakuva_id==self.sarjakuva.id).count()+1
 		
-		tmp = Strippi(self.sarjakuva.id, self.urli, md5_name, nimi, md5, order)
+		tmp = Strippi(self.sarjakuva.id, self.urli, md5_name, nimi, url, md5, order)
 		self.sessio.add(tmp)
 
 		# löydettiin kuva, tallennetaan vikaksi urliksi
@@ -117,7 +117,7 @@ class Sarjis(object):
 		self.sarjakuva.last_parse = datetime.datetime.now()
 		self.sessio.commit()
 
-		Log(self.sarjakuva.id, self.urli, u"Tallennetaan kuva", url, self.sessio)
+		Log(self.sarjakuva.id, self.urli, u"Tallennetaan kuva", None, url, self.sessio)
 
 		return True
 	def Iframe(self, nimi, url, filetype): # ei oikeasti ladata kovolle, näytetään vain
@@ -136,7 +136,7 @@ class Sarjis(object):
 		order = self.sessio.query(Strippi).filter(
 					Strippi.sarjakuva_id==self.sarjakuva.id).count()+1
 		
-		tmp = Strippi(self.sarjakuva.id, self.urli, md5_name, url, md5, order)
+		tmp = Strippi(self.sarjakuva.id, self.urli, md5_name, nimi, url, md5, order)
 		self.sessio.add(tmp)
 
 		# löydettiin kuva, tallennetaan vikaksi urliksi
@@ -144,6 +144,6 @@ class Sarjis(object):
 		self.sarjakuva.last_parse = datetime.datetime.now()
 		self.sessio.commit()
 
-		Log(self.sarjakuva.id, self.urli, u"Tallennetaan linkki", url, self.sessio)
+		Log(self.sarjakuva.id, self.urli, u"Tallennetaan linkki", None, url, self.sessio)
 
 		return True

@@ -35,7 +35,7 @@ class Toonhole(Sarjis):
 			kuva["filetype"] = u"{}".format(image["src"].split(".")[-1])
 
 			kuvat.append(kuva)
-		
+			print kuva
 		return kuvat
 
 		
@@ -50,7 +50,7 @@ class Toonhole(Sarjis):
 			#print rel, link["href"]
 			if rel is not None and "next" in rel and link["href"] != "#":
 				if  link["href"][0] == "/":
-					link["href"] = u"{}{}".format(self.sarjakuva.url, link["href"][1:])
+					link["href"] = u"{}{}".format(self.sarjakuva.url, link["href"])
 				ret = link["href"]
 
 		if ret == self.urli:

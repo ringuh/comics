@@ -10,13 +10,16 @@ class Loki(db.Model):
 
 	id = db.Column(db.Integer, primary_key=True)
 	sarjakuva_id = db.Column(db.Integer, ForeignKey('sarjakuva.id'), nullable=True)
+	site = db.Column(db.UnicodeText)
 	url = db.Column(db.UnicodeText)
 	viesti = db.Column(db.UnicodeText)
 	error = db.Column(db.UnicodeText)
+
 	date_created = db.Column(db.DateTime, default=datetime.datetime.now)
 
-	def __init__(self, sarjakuva_id, url, viesti, error=None):
+	def __init__(self, sarjakuva_id, site, viesti, error=None, url=None):
 		self.sarjakuva_id = sarjakuva_id
+		self.site = site
 		self.url = url
 		self.viesti = viesti
 		self.error = error

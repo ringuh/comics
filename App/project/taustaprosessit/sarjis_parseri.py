@@ -123,12 +123,42 @@ def Looper(id):
 			olio = SMBC(comic)
 		elif comic.parseri == "itsthetie":
 			olio = ItsTheTie(comic)
-		elif comic.parseri == "perrybible":
-			olio = PerryBible(comic)
-		elif comic.parseri == "perrybible":
-			olio = PerryBible(comic)
-		elif comic.parseri == "perrybible":
-			olio = PerryBible(comic)
+		elif comic.parseri == "nerdrage":
+			olio = NerdRage(comic)
+		elif comic.parseri == "tubeytoons":
+			olio = TubeyToons(comic)
+		elif comic.parseri == "darklegacy":
+			olio = DarkLegacy(comic)
+		elif comic.parseri == "pvponline":
+			olio = PVPOnline(comic)
+		elif comic.parseri == "userfriendly":
+			olio = UserFriendly(comic)
+		elif comic.parseri == "grog":
+			olio = Grog(comic)
+		elif comic.parseri == "vattu":
+			olio = Vattu(comic)
+		elif comic.parseri == "powernap":
+			olio = PowerNap(comic)
+
+
+		elif comic.parseri == "extralife":
+			olio = ExtraLife(comic)
+		elif comic.parseri == "poorlydrawnlines":
+			olio = PoorlyDrawnLines(comic)
+		elif comic.parseri == "powernap":
+			olio = PowerNap(comic)
+		elif comic.parseri == "powernap":
+			olio = PowerNap(comic)
+		elif comic.parseri == "powernap":
+			olio = PowerNap(comic)
+		elif comic.parseri == "powernap":
+			olio = PowerNap(comic)
+		elif comic.parseri == "powernap":
+			olio = PowerNap(comic)
+		elif comic.parseri == "powernap":
+			olio = PowerNap(comic)
+		elif comic.parseri == "powernap":
+			olio = PowerNap(comic)
 
 
 		else:

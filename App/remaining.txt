@@ -56,64 +56,6 @@
 
 	
 
-	Sarjakuva( #39,
-		u"Awkward Zombie", 
-		u"awkwardzombie",
-		u"awkwardzombie",
-
-		u"http://www.awkwardzombie.com/", 
-		u"http://www.awkwardzombie.com/index.php?page=0&comic=092006",
-		u"Katie Tiedrich", 
-		12,
-		None,
-		False,
-		
-	),
-
-	Sarjakuva( #40,
-		u"Power Nap", 
-		u"powernap",
-		u"powernap",
-
-		u"http://www.powernapcomic.com/", 
-		u"http://www.powernapcomic.com/d/20110617.html",
-		u"Maritza Campos + Bachan", 
-		12,
-		None,
-		False,
-		
-	),
-
-	Sarjakuva( #41,
-		u"Extra Life", 
-		u"extralife",
-		u"extralife",
-
-		u"http://www.myextralife.com/", 
-		u"http://www.myextralife.com/comic/06172001/",
-		u"Scott Johnson", 
-		12,
-		None,
-		False,
-		
-	),
-
-	Sarjakuva( #42,
-		u"Player vs. Player", 
-		u"pvponline",
-		u"pvponline",
-
-		u"http://www.pvponline.com/", 
-		u"http://www.pvponline.com/comic/2015/06/01/birds-of-a-feather1",
-		u"Scott R. Kurtz", 
-		12,
-		None,
-		False,
-		
-	),
-
-	
-
 	Sarjakuva( #43,
 		u"The Abominable", 
 		u"abominable",
@@ -161,67 +103,6 @@ u"jotain",
 
 		),
 
-	Sarjakuva( #45,
-			u"Justice League 8", 
-u"Justice League 8", 
-u"jotain",
-			u"jl8",
-			u"http://jl8comic.tumblr.com/", 
-			u"http://jl8comic.tumblr.com/post/13372482444/jl8-1-by-yale-stewart-based-on-characters-in-dc",
-			u"Yale Stewart", 
-			12,
-			None,
-			False,
-
-		),
-
-	
-
-
-
-	Sarjakuva( #46,
-			u"User Friendly", 
-u"User Friendly", 
-u"jotain",
-			u"userfriendly",
-			u"http://ars.userfriendly.org/", 
-			u"http://ars.userfriendly.org/cartoons/?id=20150731",
-			u"J.D Frazer", 
-			12,
-			None,
-			False,
-
-		),
-
-
-	Sarjakuva( #48,
-			u"Poorly Drawn Lines", 
-u"Poorly Drawn Lines", 
-u"jotain",
-			u"poorlydrawnlines",
-			u"http://poorlydrawnlines.com/", 
-			u"http://poorlydrawnlines.com/comic/campus-characters/",
-			u"Reza Farazmand", 
-			12,
-			None,
-			False,
-
-		),
-
-	Sarjakuva(#4,
-			u"xkcd", 
-u"xkcd", 
-u"jotain",
-			u"xkcd",
-			u"http://xkcd.com/", 
-			u"http://xkcd.com/1500/",
-			u"Randall", 
-			12,
-			None,
-			False,
-
-		),
-
 	Sarjakuva( #49,
 			u"Menage a 3", 
 u"Menage a 3", 
@@ -257,19 +138,7 @@ u"jotain",
 
 	
 
-	Sarjakuva( #52,
-			u"Dark Legacy", 
-u"Dark Legacy", 
-u"jotain",
-			u"darklegacy",
-			u"http://www.darklegacycomics.com/", 
-			u"http://www.darklegacycomics.com/1",
-			u"Arad Kedar", 
-			12,
-			None,
-			False,
 
-		),
 
 	Sarjakuva( #51,
 			u"Stand Still Stay Silent", 
@@ -300,19 +169,7 @@ u"jotain",
 		),
 
 	
-	Sarjakuva(#4,
-			u"Nedroid", 
-u"Nedroid", 
-u"jotain",
-			u"nedroid",
-			u"http://nedroid.com/", 
-			u"http://nedroid.com/2015/04/gobs/",
-			u"Unknown", 
-			12,
-			None,
-			False,
 
-		),
 
 	Sarjakuva( #54,
 			u"Romantically Apocalyptic", 
@@ -390,143 +247,19 @@ u"jotain",
 
 		),
 
-	Sarjakuva( #38,
-			u"Strong Female Protagonist", 
-u"Strong Female Protagonist", 
-u"jotain",
-			u"strongfemaleprotagonist",
-			u"http://strongfemaleprotagonist.com/", 
-			u"http://strongfemaleprotagonist.com/issue-1/page-0/",
-			u"unknown", 
-			12,
-			None,
-			False,
+	
 
-		),
+	
 
-	Sarjakuva( #59,
-			u"Vattu", 
-u"Vattu", 
-u"jotain",
-			u"vattu",
-			u"http://www.rice-boy.com/vattu/", 
-			u"http://www.rice-boy.com/vattu/index.php?c=001",
-			u"unknown", 
-			12,
-			None,
-			False,
 
-		),
 
-	Sarjakuva( #45,
-			u"nellucnhoj", 
-u"nellucnhoj", 
-u"jotain",
-			u"nellucnhoj",
-			u"http://nellucnhoj.com/", 
-			u"http://nellucnhoj.com/post/72259187580/back-in-2010-i-decided-to-punish-myself-by-doing",
-			u"unknown", 
-			12,
-			None,
-			False,
 
-		),
+
+
 
 	
 
 	
 
-	Sarjakuva( #60,
-		u"Grog", 
-		u"grog",
-		u"grog",
-
-		u"http://www.grogcomics.com/", 
-		u"http://www.grogcomics.com/post/31903734556/my-first-posted-comic",
-
-		u"Joel Watson", 
-		12,
-		None,
-		False,
-		
-	),
-
-	
-
-	Sarjakuva( #45,
-		u"Dire Circumstances", 
-		u"dire",
-		u"dire",
-
-		u"http://fruitscs.tumblr.com/", 
-		u"http://fruitscs.tumblr.com/post/117225884584",
-		u"Jasper Huang", 
-		12,
-		None,
-		False,
-		
-	),
-
-	Sarjakuva( #61,
-		u"Dorkly", 
-		u"dorkly",
-		u"dorkly",
-
-		u"http://www.dorkly.com/", 
-		u"http://www.dorkly.com/post/1419/why-you-should-only-use-round-pokemon?ref=comics",
-
-		u"Unknown", 
-		12,
-		None,
-		False,
-		
-	),
-
-	Sarjakuva( #62,
-		u"Tubey toons", 
-		u"tubey",
-		u"tubey",
-
-		u"http://tubeytoons.com/", 
-		u"http://tubeytoons.com/comic/stay-put",
-
-		u"Tubey", 
-		12,
-		None,
-		False,
-		
-	),
 
 
-
-	Sarjakuva( #63,
-		u"Nerd Rage", 
-		u"nerdrage",
-		u"nerdrage",
-
-		u"http://nerdragecomic.com/", 
-		u"http://nerdragecomic.com/index.php?date=2010-09-28",
-
-		u"Unknown", 
-		12,
-		None,
-		False,
-		
-	),
-
-	
-
-
-	Sarjakuva( #38,
-		u"Commit Strip", 
-		u"commitstrip",
-		u"commitstrip",
-
-		u"http://www.commitstrip.com/", 
-		u"http://www.commitstrip.com/en/2012/02/22/interview/",
-		u"ItstheTie", 
-		12,
-		None,
-		False,
-		
-	),

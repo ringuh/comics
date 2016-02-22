@@ -35,3 +35,13 @@ from Rational import Rational
 from LoadingArtist import LoadingArtist
 from SMBC import SMBC
 from ItsTheTie import ItsTheTie
+from NerdRage import NerdRage
+from TubeyToons import TubeyToons
+from DarkLegacy import DarkLegacy
+from PVPOnline import PVPOnline
+from UserFriendly import UserFriendly
+from Grog import Grog
+from Vattu import Vattu
+from PowerNap import PowerNap
+from ExtraLife import ExtraLife
+from PoorlyDrawnLines import PoorlyDrawnLines
