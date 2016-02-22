@@ -12,9 +12,6 @@ class Rosianna(Sarjis):
 
 
 	def Kuvat(self):
-		kuvan_nimi = None
-		src = None
-		
 		kuvat = []
 		articles = self.soup.find_all("article")
 		for article in articles:

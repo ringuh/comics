@@ -14,3 +14,7 @@ from Paintrain import Paintrain
 from Gunshow import Gunshow
 from HappleTea import HappleTea
 from VGCats import VGCats
+from NerfNow import NerfNow
+from Sinfest import Sinfest
+from Camp import Camp
+from PennyArcade import PennyArcade

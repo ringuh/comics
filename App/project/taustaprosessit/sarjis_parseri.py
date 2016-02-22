@@ -81,6 +81,14 @@ def Looper(id):
 			olio = HappleTea(comic)
 		elif comic.parseri == "vgcats":
 			olio = VGCats(comic)
+		elif comic.parseri == "nerfnow":
+			olio = NerfNow(comic)
+		elif comic.parseri == "sinfest":
+			olio = Sinfest(comic)
+		elif comic.parseri == "camp":
+			olio = Camp(comic)
+		elif comic.parseri == "pennyarcade":
+			olio = PennyArcade(comic)
 
 		else:
 			olio = Sarjis(comic)

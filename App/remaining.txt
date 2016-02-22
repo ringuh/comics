@@ -1,58 +1,4 @@
-	
-	Sarjakuva( #12,
-		u"VGCats", 
-		u"vgcats",
-		u"vgcats",
 
-		u"http://www.vgcats.com/comics/", 
-		u"http://www.vgcats.com/comics/?strip_id=1",
-		u"Scott Ramsoomair", 
-		12,
-		None,
-		False,
-		
-	),
-	Sarjakuva( #13,
-		u"Nerf Now", 
-		u"nerfnow",
-		u"nerfnow",
-
-		u"http://www.nerfnow.com/", 
-		u"http://www.nerfnow.com/comic/4",
-		u"Josué Pereira", 
-		12,
-		None,
-		False,
-		
-	),
-	Sarjakuva( #14,
-		u"Sinfest", 
-		u"sinfest",
-		u"sinfest",
-
-		u"http://www.sinfest.net/", 
-		u"http://www.sinfest.net/view.php?date=2000-01-17",
-
-		u"Tatsuya Ishida", 
-		12,
-		None,
-		False,
-		
-		True
-	),
-	Sarjakuva( #15,
-		u"Camp", 
-		u"camp",
-		u"camp",
-
-		u"http://campcomic.com/", 
-		u"http://campcomic.com/comic/dear-mom",
-		u"Dani", 
-		12,
-		None,
-		False,
-		
-	),
 	Sarjakuva( #16,
 		u"Fredo & Pidjin", 
 		u"fredo_pidjin",
@@ -200,19 +146,7 @@
 	),
 
 	#END OF GO COMICS
-	Sarjakuva( #21,
-		u"Penny Arcade", 
-		u"pennyarcade",
-		u"pennyarcade",
 
-		u"http://www.penny-arcade.com/", 
-		u"http://www.penny-arcade.com/comic/1998/11/18",
-		u"Mike Krahulik & Jerry Holkins", 
-		12,
-		None,
-		False,
-		
-	),
 	
 	Sarjakuva( #22,
 		u"Johnny Wander Fiction", 
@@ -824,20 +758,6 @@ u"jotain",
 
 		),
 
-	Sarjakuva(#2,
-		u"Karlsson", 
-		u"karlsson",
-		u"karlsson",
-
-		u"http://www.hs.fi/karlsson", 
-		u"http://www.hs.fi/karlsson/s1305951536460" 
-
-		u"Karlsson", 
-		12,
-		None,
-		False,
-		
-	),
 
 	Sarjakuva( #48,
 			u"Poorly Drawn Lines", 
