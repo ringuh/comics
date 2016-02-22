@@ -91,6 +91,7 @@ class Sarjis(object):
 			return False
 		
 		md5_name = u"{}_{}.{}".format(self.sarjakuva.lyhenne, md5, filetype)
+		
 		polku = os.path.join(app.config["SARJAKUVA_FOLDER"], self.sarjakuva.lyhenne)
 		polku = os.path.join(polku, md5_name)
 

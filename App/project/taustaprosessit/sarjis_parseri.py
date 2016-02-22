@@ -71,8 +71,8 @@ def Looper(id):
 			olio = CtrlAltDel(comic)
 		elif comic.parseri == u"explosm":
 			olio = Explosm(comic)
-		elif comic.parseri == u"dragonarte":
-			olio = Dragonarte(comic)
+		#elif comic.parseri == u"dragonarte":
+		#	olio = Dragonarte(comic)
 		elif comic.parseri == u"paintrain":
 			olio = Paintrain(comic)
 		elif comic.parseri == u"gunshow":
