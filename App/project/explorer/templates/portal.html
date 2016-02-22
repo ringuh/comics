@@ -30,8 +30,13 @@
 			class="pointer glyphicons glyphicons-thumbs-down"></span>
 	</h3>
 	<a href="/{{ st.sarjakuva.lyhenne }}/{{ st.order }}/">
+	{% if st.sarjakuva.download %}
 	<img src="{{ url_for('static', 
 			filename='sarjakuvat/'+st.sarjakuva.lyhenne+'/'+st.filename )}}" />
+	
+	{% else %}
+	<img src="{{ st.rname }}" />
+	{% endif %}
 	</a><br/>
 </div>
 {% endfor %}

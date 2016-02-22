@@ -20,6 +20,7 @@ class Sarjakuva(db.Model):
 	weekday = db.Column(db.UnicodeText, default=u"0,1,2,3,4,5,6")
 	next_parse = db.Column(db.DateTime, default=datetime.datetime.now)
 	last_parse = db.Column(db.DateTime, default=None)
+	download = db.Column(db.Boolean, default=True)
 	date_created = db.Column(db.DateTime, default=datetime.datetime.now)
 	#joukkue_id = db.Column(db.Integer, ForeignKey('joukkue.id'), nullable=True)
 	

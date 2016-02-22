@@ -34,7 +34,11 @@ class Sarjis(object):
 		
 		for kuva in kuvat:
 			try:
-				self.Save(kuva["nimi"], kuva["src"], kuva["filetype"])
+				if self.sarjakuva.download:
+					self.Save(kuva["nimi"], kuva["src"], kuva["filetype"])
+				else:
+					self.Iframe(kuva["nimi"], kuva["src"], kuva["filetype"])
+
 			except Exception, e:
 				Log(self.sarjakuva.id, self.urli, u"Kuvan tallennus epäonnistui", e)
 	
@@ -56,6 +60,7 @@ class Sarjis(object):
 		
 		# katsotaan oliko kyseisestä sarjasta jo kyseinen kuva
 		#url = url"
+		
 		tmp_file = u""
 		headers = app.config["REQUEST_HEADER"]
 		req = urllib2.Request(url, None, headers)
@@ -112,5 +117,32 @@ class Sarjis(object):
 		self.sessio.commit()
 
 		Log(self.sarjakuva.id, self.urli, u"Tallennetaan kuva", url, self.sessio)
+
+		return True
+	def Iframe(self, nimi, url, filetype): # ei oikeasti ladata kovolle, näytetään vain
+		# lisätään kantaan tieto, että kuva on haettu
+		md5 = u"{}".format(hashlib.md5(url).hexdigest())
+
+		found = self.sessio.query(Strippi).filter(
+					Strippi.sarjakuva_id == self.sarjakuva.id,
+					Strippi.md5 == md5
+				).first()
+
+		if found:
+			return False
+
+		md5_name = u"{}_{}.{}".format(self.sarjakuva.lyhenne, md5, filetype)
+		order = self.sessio.query(Strippi).filter(
+					Strippi.sarjakuva_id==self.sarjakuva.id).count()+1
+		
+		tmp = Strippi(self.sarjakuva.id, self.urli, md5_name, url, md5, order)
+		self.sessio.add(tmp)
+
+		# löydettiin kuva, tallennetaan vikaksi urliksi
+		self.sarjakuva.last_url = self.urli
+		self.sarjakuva.last_parse = datetime.datetime.now()
+		self.sessio.commit()
+
+		Log(self.sarjakuva.id, self.urli, u"Tallennetaan linkki", url, self.sessio)
 
 		return True
