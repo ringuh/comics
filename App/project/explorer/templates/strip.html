@@ -38,8 +38,13 @@
 
 	</div>
 	<a href="{{ strip.url }}">
+	{% if comic.download %}
 	<img src="{{ url_for('static', 
 			filename='sarjakuvat/'+comic.lyhenne+'/'+strip.filename )}}" />
+	{% else %}
+	<img src="{{ strip.url }}" />
+	{% endif %}
+	
 	</a>
 </div>
 

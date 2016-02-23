@@ -5,7 +5,7 @@ import datetime, urllib, os, requests, hashlib
 from project.luokat.Sarjis import Sarjis
 from werkzeug.urls import url_fix
 
-class UserFriendly(Sarjis):
+class StandStill(Sarjis):
 
 	def __init__(self, sarjakuva ):
 		Sarjis.__init__(self, sarjakuva )
@@ -14,13 +14,10 @@ class UserFriendly(Sarjis):
 	def Kuvat(self):
 		kuvat = []
 	
-		
-		images = self.soup.find_all("img")
+		div = self.soup.find(id="wrapper2")
+		images = div.find_all("img")
 		for image in images:
-			x = image.get("alt")
-			if x is None or not "strip" in x.lower():
-				continue
-
+			
 			kuva = dict(nimi=None, src=None, filetype=None)
 			try:
 				if image["src"].index("//") == 0:
@@ -34,9 +31,9 @@ class UserFriendly(Sarjis):
 			
 			kuva["nimi"] = u"{}".format(image["src"].split("/")[-1]) # kuvan nimi = tiedoston nimi
 			if "://" in image["src"]:
-				kuva["src"] = url_fix(u"{}".format(image["src"]))
+				kuva["src"] = url_fix(u"{}".format(image["src"].strip()))
 			else:
-				kuva["src"] = url_fix(u"{}/{}".format(self.sarjakuva.url, image["src"]))
+				kuva["src"] = url_fix(u"{}/{}".format(self.sarjakuva.url, image["src"].strip()))
 			kuva["filetype"] = u"{}".format(image["src"].split(".")[-1])
 
 			kuvat.append(kuva)
@@ -49,13 +46,13 @@ class UserFriendly(Sarjis):
 	def Next(self):
 		ret = self.urli
 		
-		try:
-			areas = self.soup.find_all("area")
-			for area in areas:
-				x = area.get("alt")
-		
-				if x and "next" in x.lower():
-					ret = u"{}{}".format(self.sarjakuva.url, area["href"])
+		try:			
+			div = self.soup.find(id="navtop")
+			links = div.find_all("a")
+			for link in links:
+				btn = link.find(id="navnext")
+				if btn:
+					ret = u"{}/comic.php{}".format(self.sarjakuva.url, link["href"])
 					break
 		except: pass
 

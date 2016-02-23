@@ -5,7 +5,7 @@ import datetime, urllib, os, requests, hashlib
 from project.luokat.Sarjis import Sarjis
 from werkzeug.urls import url_fix
 
-class UserFriendly(Sarjis):
+class Blastwave(Sarjis):
 
 	def __init__(self, sarjakuva ):
 		Sarjis.__init__(self, sarjakuva )
@@ -14,13 +14,11 @@ class UserFriendly(Sarjis):
 	def Kuvat(self):
 		kuvat = []
 	
-		
-		images = self.soup.find_all("img")
+		div = self.soup.find(id="comic_ruutu")
+		images = div.find_all("img")
 		for image in images:
-			x = image.get("alt")
-			if x is None or not "strip" in x.lower():
+			if not "comics" in image["src"]:
 				continue
-
 			kuva = dict(nimi=None, src=None, filetype=None)
 			try:
 				if image["src"].index("//") == 0:
@@ -50,13 +48,11 @@ class UserFriendly(Sarjis):
 		ret = self.urli
 		
 		try:
-			areas = self.soup.find_all("area")
-			for area in areas:
-				x = area.get("alt")
-		
-				if x and "next" in x.lower():
-					ret = u"{}{}".format(self.sarjakuva.url, area["href"])
-					break
+			links = self.soup.find_all("a")
+			for link in links:
+				img = link.find("img")
+				if img and "next.jpg" in img["src"]:
+					ret = u"{}/{}".format(self.sarjakuva.url, link["href"])
 		except: pass
 
 		if ret == self.urli:

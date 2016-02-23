@@ -26,11 +26,13 @@
 				<tr>
 					<th>Näytä</th>
 					<th>Nimi</th>
+					<th>Updated</th>
 				</tr>
 			</thead>
 			<tr ng-repeat="i in comics" class="pointer">
 				<td><input ng-change="getComics(i)" type="checkbox" ng-model="i.visibility" /></td>
 				<td ng-click="getComics(i, true)">{{ i.nimi|angular }}</td>
+				<td>{{ i.last_parse|angular }}</td>
 			</tr>
 
 		</table>

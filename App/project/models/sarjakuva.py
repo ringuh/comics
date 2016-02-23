@@ -28,7 +28,8 @@ class Sarjakuva(db.Model):
 	#fh_players = relationship("Fh_pelaaja_seuranta", lazy="dynamic", backref="user")
 
 	# relationships
-	stripit = relationship("Strippi", lazy="dynamic", backref="sarjakuva")
+	stripit = relationship("Strippi", lazy="dynamic", cascade='all,delete-orphan', backref="sarjakuva")
+	lokit = relationship("Loki", lazy="dynamic", cascade='all,delete-orphan', backref="sarjakuva")
 
 
 	def __init__(self, nimi, lyhenne, parseri, url, last_url, 
@@ -50,8 +51,10 @@ class Sarjakuva(db.Model):
 
 	def toJson(self):
 		ret = {c.name: getattr(self, c.name) for c in self.__table__.columns}
-		ret["date_created"] = str(self.date_created)
-		ret["last_parse"] = str(self.last_parse)
+		try: ret["date_created"] = self.date_created.strftime("%Y-%m-%d %M:%H:%S")
+		except: ret["date_created"] = None
+		try: ret["last_parse"] = self.last_parse.strftime("%Y-%m-%d %M:%H:%S")
+		except: ret["last_parse"] = None
 		return ret
 
 	def Max(self):

@@ -29,6 +29,7 @@ class Loki(db.Model):
 
 	def toJson(self):
 		ret = {c.name: getattr(self, c.name) for c in self.__table__.columns}
+		ret["sarjakuva"] = self.sarjakuva.nimi
 		ret["date_created"] = self.date_created.strftime("%Y-%m-%d %H:%M:%S")
 		#ret["last_parse"] = str(self.last_parse)
 		return ret

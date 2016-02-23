@@ -6,6 +6,7 @@ import datetime, urllib, os, requests, hashlib
 from project.luokat import *
 import sys
 from multiprocessing.dummy import Pool as ThreadPool
+from sqlalchemy.pool import NullPool
 
 
 def run():
@@ -21,7 +22,7 @@ def Looper(id):
 		from sqlalchemy import create_engine
 		from sqlalchemy.orm import sessionmaker, scoped_session
 		
-		db_engine = create_engine(app.config["SQLALCHEMY_DATABASE_URI"], echo=False)
+		db_engine = create_engine(app.config["SQLALCHEMY_DATABASE_URI"], echo=False, poolclass=NullPool)
 		sessio = scoped_session(
 		    sessionmaker(
 		        autoflush=True,
@@ -139,27 +140,40 @@ def Looper(id):
 			olio = Vattu(comic)
 		elif comic.parseri == "powernap":
 			olio = PowerNap(comic)
-
-
 		elif comic.parseri == "extralife":
 			olio = ExtraLife(comic)
 		elif comic.parseri == "poorlydrawnlines":
 			olio = PoorlyDrawnLines(comic)
-		elif comic.parseri == "powernap":
-			olio = PowerNap(comic)
-		elif comic.parseri == "powernap":
-			olio = PowerNap(comic)
-		elif comic.parseri == "powernap":
-			olio = PowerNap(comic)
-		elif comic.parseri == "powernap":
-			olio = PowerNap(comic)
-		elif comic.parseri == "powernap":
-			olio = PowerNap(comic)
-		elif comic.parseri == "powernap":
-			olio = PowerNap(comic)
-		elif comic.parseri == "powernap":
-			olio = PowerNap(comic)
+		elif comic.parseri == "existential":
+			olio = Existential(comic)
+		elif comic.parseri == "abominable":
+			olio = Abominable(comic)
+		elif comic.parseri == "ma3":
+			olio = Ma3(comic)
+		elif comic.parseri == "blastwave":
+			olio = Blastwave(comic)
+		elif comic.parseri == "standstill":
+			olio = StandStill(comic)
+		elif comic.parseri == "romanticallyapocalyptic":
+			olio = RomanticallyApocalyptic(comic)
+		elif comic.parseri == "downtheupwardspiral":
+			olio = DownTheUpwardSpiral(comic)
 
+		elif comic.parseri == "thingsinsquares":
+			olio = ThingsInSquares(comic)
+		elif comic.parseri == "berdsandnerds":
+			olio = BerdsAndNerds(comic)
+		elif comic.parseri == "pepperandcarrot":
+			olio = PepperAndCarrot(comic)
+		elif comic.parseri == "catsu":
+			olio = Catsu(comic)
+		elif comic.parseri == "unsounded":
+			olio = Unsounded(comic)
+		elif comic.parseri == "grog":
+			olio = Grog(comic)
+		elif comic.parseri == "grog":
+			olio = Grog(comic)
+		
 
 		else:
 			olio = Sarjis(comic)
@@ -176,9 +190,11 @@ def Looper(id):
 			
 			if("short" in sys.argv and count > 2) or count > 2: # ei ikilooppeja
 				return False
-
+		
+		sessio.close()
 		return True
 	except Exception, e:
 		Log(id, None, u"Looppi epäonnistui", e.message)
+		sessio.close()
 		return False
 

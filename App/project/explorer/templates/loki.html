@@ -1,0 +1,106 @@
+{% extends "pohja.html" %}
+
+{% block body %}
+<div class="sarjakuva" ng-controller="Ctrl">
+	<form class="form-inline" ng-submit="Log(filter.value.id, filter.text)">
+		
+			<div class="dropdown form-group">
+				<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+					{{ filter.value.nimi|angular }}
+					<span class="caret"></span></button>
+				<ul class="dropdown-menu">
+				<li ng-click="filter.value=filter.default"><a>{{ filter.default.nimi|angular }}</a></li>
+				<li ng-repeat="i in comics" 
+					ng-click="filter.value=i"><a>{{ i.nimi|angular }}</a></li>
+				</ul>
+			</div>
+		<div class="form-group">
+			<input type="text" class="form-control" 
+				ng-model="filter.text" 
+				placeholder="Filtteri" />
+			<button class="btn btn-default">
+				<span class="glyphicons glyphicons-send good x075"></span>
+			</button>
+		</div>
+	</form>
+	
+	<div class="table-responsive">
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th ng-click="Sort('date_created')">Pvm</th>
+					<th ng-click="Sort('sarjakuva_id')">Sarjakuva</th>
+					<th ng-click="Sort('viesti')">Viesti</th>
+					<th ng-click="Sort('site')">Sivu</th>
+					
+					<th ng-click="Sort('url')">Osoite</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="i in filter.log| orderBy: filter.order: filter.desc| filter: filter.text track by i.id">
+					<td nowrap>{{ i.date_created|angular }}</td>
+					<td>{{ i.sarjakuva|angular }}</td>
+					<td>{{ i.viesti|angular }}</td>
+					<td><a href="{{ i.site|angular }}">{{ i.site|angular }}</a></td>
+					
+					<td><a href="{{ i.url|angular }}">{{ i.url|angular }}</a></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+
+
+<script>
+document.title = "Sarjakuvat loki";
+app.controller('Ctrl', function($scope, $http, $sce) {
+	$scope.filter = {
+		value: 	 { nimi: "Koko loki", id: -1 },
+		default: { nimi: "Koko loki", id: -1 },
+		text: null,
+		order: 'date_created',
+		desc: true
+	};
+
+	($scope.ListComics = function(){
+		var json = {}
+		$http.post("/options/my_comics/", JSON.stringify(json) )
+		.success(function(data){
+			console.log(data)
+			$scope.comics = data.all_comics;
+		}).error(function(err){
+			console.log(err)
+		});
+	})();
+	
+	($scope.Log = function(id, value){
+		var json = {
+			sarjakuva_id: id,
+			value: value
+		};
+
+		$http.post("/options/loki_filter/", JSON.stringify(json) )
+		.success(function(data){
+			console.log(data)
+			$scope.filter.log = data.loki
+		}).error(function(err){
+			console.log(err)
+		});
+	})(-1, null);
+
+	$scope.Sort = function(x){
+		if($scope.filter.order == x)
+			$scope.filter.desc = !$scope.filter.desc;
+		else{
+			$scope.filter.desc = true;
+			$scope.filter.order = x;
+		}
+	}
+
+});
+
+</script>
+
+
+{% endblock %}

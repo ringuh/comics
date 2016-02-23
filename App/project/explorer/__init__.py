@@ -3,7 +3,7 @@ from flask import flash, redirect, render_template, request, url_for, Blueprint,
 from project import db
 from flask.ext.login import current_user, login_required, login_user, logout_user
 from sqlalchemy import desc, func, and_, or_
-from project.models import Sarjakuva as SK, Strippi, Likes, Loki, User, Brute_force, Event_log,\
+from project.models import Sarjakuva as SK, Strippi, Likes, Loki, User, Brute_force,\
 Sarjakuva_user as SKU
 import datetime
 explorer_blueprint = Blueprint('explorer', __name__, 
@@ -61,7 +61,7 @@ def index(pvm=None):
 	except Exception, e:
 		now = datetime.datetime.now()
 	if current_user.is_anonymous():
-		return render_template("portal.html", page="index", 
+		return render_template("portal.html",
 			dates=None, stripit=None, user=current_user)
 	today = datetime.datetime(now.year, now.month, now.day)
 	
@@ -82,7 +82,7 @@ def index(pvm=None):
 				Strippi.date_created
 			).limit(200).all()
 
-	return render_template("portal.html", page="index", 
+	return render_template("portal.html",
 		dates=dates, stripit=stripit, user=current_user)
 
 @explorer_blueprint.route('/list/')
@@ -90,21 +90,25 @@ def index(pvm=None):
 def list():
 	n = db.session.query(SK).filter(
 			~SK.id.in_(current_user.getKarsitut())).order_by(SK.id).all()
-	return render_template("list.html", page="list", comics=n, user=current_user)
+	return render_template("list.html", comics=n, user=current_user)
 
 
 @explorer_blueprint.route('/<comic>/')
 @login_required
 @Comic
 def comic(comic):
-	return redirect(url_for("explorer.comic_strip", page="comic", comic=comic.nimi, strip=1))
+	return redirect(url_for("explorer.comic_strip", comic=comic.nimi, strip=1))
 
 @explorer_blueprint.route('/<comic>/<int:strip>/')
 @Comic
 @Strip
 def comic_strip(comic, strip):
-	return render_template("strip.html", page=None, comic=comic, strip=strip, user=current_user)
+	return render_template("strip.html", comic=comic, strip=strip, user=current_user)
 
+@explorer_blueprint.route('/log/')
+@login_required
+def comic_log():
+	return render_template("loki.html", user=current_user)
 
 
 
@@ -118,7 +122,7 @@ def options():
 	if current_user.admin:
 		users = db.session.query(User).all()
 
-	return render_template("options.html", page="options", comics=comics, users=users, user=current_user)
+	return render_template("options.html", comics=comics, users=users, user=current_user)
 
 @explorer_blueprint.route('/options/change_pass/', methods=["POST"])
 @login_required
@@ -169,11 +173,12 @@ def my_comics():
 		msg = u"Tallennettiin"
 
 	tmp = db.session.query(SK).order_by(SK.nimi).all()
+	all_comics = [i.toJson() for i in tmp]
 	comics = []
 	for i in tmp:
 		comics.append(i.StatusJson(current_user.id))
 
-	return jsonify(comics=comics, msg=msg)
+	return jsonify(comics=comics, msg=msg, all_comics=all_comics)
 
 @explorer_blueprint.route('/options/users/', methods=["POST"])
 @login_required
@@ -352,3 +357,26 @@ def vote_strip():
 		vote = like.vote
 
 	return jsonify(vote=vote)
+
+
+@explorer_blueprint.route('/options/loki_filter/', methods=["POST"])
+@login_required
+def loki_filter():
+	from project.models import Loki
+	json = request.get_json(True)
+	msg = None
+
+	sql = db.session.query(Loki)
+	try:
+		if json["sarjakuva_id"] > 0:
+			sql = sql.filter(Loki.sarjakuva_id == json["sarjakuva_id"])
+	except: pass
+	n = sql.order_by(Loki.id.desc()).limit(1000).all()
+
+
+
+	loki = [i.toJson() for i in n]
+
+
+
+	return jsonify(loki=loki)

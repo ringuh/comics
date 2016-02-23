@@ -18,6 +18,8 @@ class SMBC(Sarjis):
 		#images = div.find_all("img")
 		#for image in images:
 		div = self.soup.find(id="comicbody")
+		if not div:
+			div = self.soup.find(id="cc-comicbody")
 		image = div.find("img")
 		kuva = dict(nimi=None, src=None, filetype=None)
 		try:
@@ -32,11 +34,13 @@ class SMBC(Sarjis):
 		#image["src"] = u"{}".format(image["src"].replace(u"_250.", u"_1280."))
 		
 		kuva["nimi"] = u"{}".format(image["src"].split("/")[-1]) # kuvan nimi = tiedoston nimi
-		kuva["src"] = url_fix(
-						u"{}/{}".format(self.sarjakuva.url, image["src"])
-					)
+		
+		kuva["src"] = url_fix(u"{}/{}".format(self.sarjakuva.url, image["src"]))
+		if "://" in image["src"]:
+			kuva["src"] = url_fix(u"{}".format(image["src"]))
+		
 		kuva["filetype"] = u"{}".format(image["src"].split(".")[-1])
-
+		
 		kuvat.append(kuva)
 		
 		return kuvat
@@ -48,6 +52,8 @@ class SMBC(Sarjis):
 		ret = self.urli
 		
 		div = self.soup.find(id="comicbody")
+		if not div:
+			div = self.soup.find(id="cc-comicbody")
 		link = div.find("a")
 		
 		if link is not None:

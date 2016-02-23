@@ -18,6 +18,11 @@ class User(db.Model):
 	last_login_date = db.Column(db.DateTime)
 	last_login_ip= db.Column(db.UnicodeText)
 
+	sarjakuvat = relationship("Sarjakuva_user", lazy="dynamic", cascade='all,delete-orphan', backref="user")
+	likes = relationship("Likes", lazy="dynamic", cascade='all,delete-orphan', backref="user")
+
+
+
 
 	def is_authenticated(self):
 		return True

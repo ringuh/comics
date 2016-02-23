@@ -1,0 +1,12 @@
+*.log
+*.pyc
+Thumbs.db
+migrations/
+config.py
+cache/
+*.tmp
+orga_logo/
+user_avatar/
+apache.wsgi
+foo.log.*
+sarjakuvat/

@@ -13,7 +13,7 @@ class Sarjis(object):
 	def Init(self, url=None, ):
 		self.urli = url
 		if url is None:
-			self.urli = sarjakuva.last_url			
+			self.urli = self.sarjakuva.last_url			
 		
 		r = requests.get(self.urli, headers=app.config["REQUEST_HEADER"] )
 		self.soup = BeautifulSoup(r.text)
@@ -55,7 +55,8 @@ class Sarjis(object):
 
 
 
-	def Save(self, nimi, url, filetype):
+	def Save(self, nimi, url, filetype, urli=None):
+		if urli is None: urli = self.urli
 		
 		#print "save", nimi
 		# katsotaan oliko kyseisestä sarjasta jo kyseinen kuva
@@ -72,11 +73,11 @@ class Sarjis(object):
 				tmp_file = urllib2.urlopen(url).read()
 				
 			except Exception, e:
-				Log(self.sarjakuva.id, self.urli, u"Kuvan lataus epäonnistui", e, url)
+				Log(self.sarjakuva.id, urli, u"Kuvan lataus epäonnistui", e, url)
 				return False
 		
 		if len(tmp_file) < 10:
-			Log(self.sarjakuva.id, self.urli, u"Liian pieni kuva", None, url)
+			Log(self.sarjakuva.id, urli, u"Liian pieni kuva", None, url)
 			return False
 
 		md5 = u"{}".format(hashlib.md5(tmp_file).hexdigest())
@@ -109,18 +110,20 @@ class Sarjis(object):
 		# lisätään kantaan tieto, että kuva on haettu
 		order = self.sessio.query(Strippi).filter(Strippi.sarjakuva_id==self.sarjakuva.id).count()+1
 		
-		tmp = Strippi(self.sarjakuva.id, self.urli, md5_name, nimi, url, md5, order)
+		tmp = Strippi(self.sarjakuva.id, urli, md5_name, nimi, url, md5, order)
 		self.sessio.add(tmp)
 
 		# löydettiin kuva, tallennetaan vikaksi urliksi
-		self.sarjakuva.last_url = self.urli
+		self.sarjakuva.last_url = urli
 		self.sarjakuva.last_parse = datetime.datetime.now()
 		self.sessio.commit()
 
-		Log(self.sarjakuva.id, self.urli, u"Tallennetaan kuva", None, url, self.sessio)
+		Log(self.sarjakuva.id, urli, u"Tallennetaan kuva", None, url, self.sessio)
 
 		return True
-	def Iframe(self, nimi, url, filetype): # ei oikeasti ladata kovolle, näytetään vain
+	def Iframe(self, nimi, url, filetype, urli=None): 
+		if urli is None: urli = self.urli
+		# ei oikeasti ladata kovolle, näytetään vain
 		# lisätään kantaan tieto, että kuva on haettu
 		md5 = u"{}".format(hashlib.md5(url).hexdigest())
 
@@ -136,14 +139,14 @@ class Sarjis(object):
 		order = self.sessio.query(Strippi).filter(
 					Strippi.sarjakuva_id==self.sarjakuva.id).count()+1
 		
-		tmp = Strippi(self.sarjakuva.id, self.urli, md5_name, nimi, url, md5, order)
+		tmp = Strippi(self.sarjakuva.id, urli, md5_name, nimi, url, md5, order)
 		self.sessio.add(tmp)
 
 		# löydettiin kuva, tallennetaan vikaksi urliksi
-		self.sarjakuva.last_url = self.urli
+		self.sarjakuva.last_url = urli
 		self.sarjakuva.last_parse = datetime.datetime.now()
 		self.sessio.commit()
 
-		Log(self.sarjakuva.id, self.urli, u"Tallennetaan linkki", None, url, self.sessio)
+		Log(self.sarjakuva.id, urli, u"Tallennetaan linkki", None, url, self.sessio)
 
 		return True
