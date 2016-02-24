@@ -32,7 +32,7 @@
 					<th ng-click="Sort('sarjakuva_id')">Sarjakuva</th>
 					<th ng-click="Sort('viesti')">Viesti</th>
 					<th ng-click="Sort('site')">Sivu</th>
-					
+					<th ng-click="Sort('error')">Error</th>
 					<th ng-click="Sort('url')">Osoite</th>
 				</tr>
 			</thead>
@@ -42,7 +42,7 @@
 					<td>{{ i.sarjakuva|angular }}</td>
 					<td>{{ i.viesti|angular }}</td>
 					<td><a href="{{ i.site|angular }}">{{ i.site|angular }}</a></td>
-					
+					<td>{{ i.error|angular }}</td>
 					<td><a href="{{ i.url|angular }}">{{ i.url|angular }}</a></td>
 				</tr>
 			</tbody>

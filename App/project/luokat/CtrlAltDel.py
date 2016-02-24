@@ -24,8 +24,11 @@ class CtrlAltDel(Sarjis):
 		images = figure.find_all("img")
 		for image in images:
 			kuva = dict(nimi=None, src=None)
-			if image["src"].index("//") == 0:
-				image["src"] = u"http:{}".format(image["src"])
+
+			try:
+				if image["src"].index("//") == 0:
+					image["src"] = u"http:{}".format(image["src"])
+			except: pass
 			
 			if not "/comics/" in image["src"]: continue
 

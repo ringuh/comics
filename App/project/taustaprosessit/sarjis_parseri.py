@@ -6,7 +6,7 @@ import datetime, urllib, os, requests, hashlib
 from project.luokat import *
 import sys
 from multiprocessing.dummy import Pool as ThreadPool
-from sqlalchemy.pool import NullPool
+#from sqlalchemy.pool import NullPool
 
 
 def run():
@@ -22,7 +22,7 @@ def Looper(id):
 		from sqlalchemy import create_engine
 		from sqlalchemy.orm import sessionmaker, scoped_session
 		
-		db_engine = create_engine(app.config["SQLALCHEMY_DATABASE_URI"], echo=False, poolclass=NullPool)
+		db_engine = create_engine(app.config["SQLALCHEMY_DATABASE_URI"], echo=False)#, poolclass=NullPool)
 		sessio = scoped_session(
 		    sessionmaker(
 		        autoflush=True,
@@ -36,17 +36,21 @@ def Looper(id):
 		if "parseri" in sys.argv:
 			
 			if comic.parseri != sys.argv[3]:
+				sessio.close()
 				return
 		elif "id" in sys.argv:
 			if comic.id != int(sys.argv[3]):
+				sessio.close()
 				return
 		else:
 			if not "force" in sys.argv:
 				if comic.last_parse is not None:
 					if comic.last_parse + datetime.timedelta(hours=comic.interval) > datetime.datetime.now():
+						sessio.close()
 						return False
 				# interval 0 == loppunut
 				if comic.interval == 0:
+					sessio.close()
 					return False
 
 		
@@ -188,7 +192,7 @@ def Looper(id):
 			if last_url is None:
 				Log(comic.id, None, u"Haku päättyi", count)
 			
-			if("short" in sys.argv and count > 2) or count > 2: # ei ikilooppeja
+			if("short" in sys.argv and count > 2) or count > 500: # ei ikilooppeja
 				return False
 		
 		sessio.close()

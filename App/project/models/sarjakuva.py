@@ -51,9 +51,9 @@ class Sarjakuva(db.Model):
 
 	def toJson(self):
 		ret = {c.name: getattr(self, c.name) for c in self.__table__.columns}
-		try: ret["date_created"] = self.date_created.strftime("%Y-%m-%d %M:%H:%S")
+		try: ret["date_created"] = self.date_created.strftime("%Y-%m-%d %H:%M:%S")
 		except: ret["date_created"] = None
-		try: ret["last_parse"] = self.last_parse.strftime("%Y-%m-%d %M:%H:%S")
+		try: ret["last_parse"] = self.last_parse.strftime("%Y-%m-%d %H:%M:%S")
 		except: ret["last_parse"] = None
 		return ret
 

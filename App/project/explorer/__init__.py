@@ -79,8 +79,9 @@ def index(pvm=None):
 				Strippi.date_created < tomorrow,
 				~Strippi.sarjakuva_id.in_(karsitut) 
 			).order_by(
+				Strippi.sarjakuva_id,
 				Strippi.date_created
-			).limit(200).all()
+			).limit(300).all()
 
 	return render_template("portal.html",
 		dates=dates, stripit=stripit, user=current_user)
@@ -237,23 +238,20 @@ def register():
 @explorer_blueprint.route('/login/', methods=["POST"])
 def login():
 	from project.models import User
+	from project import Log
 	json = request.get_json(True)
 	try:
 		account = json["account"].strip().lower()
 		passwd = json["password"].strip()
 		ip = request.environ['REMOTE_ADDR']
-		db.session.add(Event_log(u"Kirjautumisyritys", 
-									u"{}//{}".format(account, len(passwd)), 
-									ip))
+		
 		
 		db.session.commit()
 		n = Brute_force(ip)
 		
 		if n.count() > 15:
 			flash(u"IP väliaikaisesti estetty. Koita myöhemmin uudestaan.")
-			db.session.add(Event_log(u"Kirjautuminen estetty", 
-									u"{}//{}".format(account, len(passwd)), 
-									ip))
+			Log(u"Kirjautuminen estetty", u"{}//{}".format(account, len(passwd)), ip)
 		
 		user = User.query.filter(func.lower(User.account)==func.lower(account)).first()
 		if user is not None and user.verify_pass(passwd):
@@ -266,9 +264,8 @@ def login():
 				user.last_login_date = datetime.datetime.now()
 				user.last_login_ip = ip
 				
-				db.session.add(Event_log(u"Kirjautumisyritys", 
-									u"{}//{}".format(account, len(passwd)), 
-									ip, user.id))
+				Log(None, None, u"Kirjautuminen success", u"{}//{}".format(account, len(passwd)), 
+					ip)
 				db.session.commit()
 				flash(u"Kirjauduit sisään")
 		else:

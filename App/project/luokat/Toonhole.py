@@ -35,7 +35,7 @@ class Toonhole(Sarjis):
 			kuva["filetype"] = u"{}".format(image["src"].split(".")[-1])
 
 			kuvat.append(kuva)
-			print kuva
+			
 		return kuvat
 
 		

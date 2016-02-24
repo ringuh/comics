@@ -37,7 +37,7 @@
 	{% endif %}
 
 	</div>
-	<a href="{{ strip.url }}">
+	<a id="strippi" href="{{ strip.page_url }}">
 	{% if comic.download %}
 	<img src="{{ url_for('static', 
 			filename='sarjakuvat/'+comic.lyhenne+'/'+strip.filename )}}" />
@@ -50,7 +50,7 @@
 
 <script>
 	document.title="{{ comic.nimi }} #{{strip.order}}"
-
+	
 	$(document).keydown(function(e) {
     switch(e.which) {
     	{% if prev > 0 %}
@@ -67,7 +67,11 @@
         break;
         {% endif %}
         default: return; // exit this handler for other keys
-    }
+    };
+    
+
+    
+    
     
 });
 </script>

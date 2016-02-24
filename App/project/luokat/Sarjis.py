@@ -26,11 +26,12 @@ class Sarjis(object):
 		
 		try: # haetaan kuvat, yhdellä sivulla voi olla useita strippejä
 			kuvat = self.Kuvat()
+			
 			if len(kuvat) == 0:
 				return self.Next()
 		except Exception, e:
 			Log(self.sarjakuva.id, self.urli, u"Kuvan haku epäonnistui", e)
-			return self.Next()
+			raise e
 		
 		for kuva in kuvat:
 			try:
