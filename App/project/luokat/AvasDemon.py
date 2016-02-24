@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
-from project import db, Print, Log
+from project import app, db, Print, Log
 from bs4 import BeautifulSoup
-import datetime, urllib, os, requests, hashlib
+import datetime, urllib, urllib2, os, requests, hashlib
 from project.luokat.Sarjis import Sarjis
 from project.models import Strippi
 from werkzeug.urls import url_fix
@@ -35,8 +35,10 @@ class AvasDemon(Sarjis):
 			).all()
 		for nr in arr:
 			src = u"{}pages/{}.png".format(self.sarjakuva.url, nr)
+			
+			
 			nimi = u"{}.png".format(nr)
-			filetype = ".png"
+			filetype = "png"
 
 			
 			filetype = u"{}".format(nimi.split(".")[-1])
@@ -47,8 +49,15 @@ class AvasDemon(Sarjis):
 			count += 1
 			if not filetype in kuvat: # ei oikeanlainen kuva
 				continue
-			
-			self.Save(nimi, src, filetype)
+
+			if not self.Save(nimi, src, filetype):
+				src = u"{}{}.png".format(self.sarjakuva.url, nr)
+				if not self.Save(nimi, src, filetype):
+					src = u"{}{}.gif".format(self.sarjakuva.url, nr)
+					filetype = "gif"
+					if not self.Save(nimi, src, filetype):
+						src = u"{}{}.gif".format(self.sarjakuva.url, int(nr))
+
 
 		return None
 			
