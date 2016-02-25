@@ -64,10 +64,10 @@ class Sarjis(object):
 			).all()
 		loaded = [i.url for i in loaded]
 
-		if not url in loaded:
+		if url in loaded:
 			return True
 		
-		print "save", nimi
+		print "save", url
 		# katsotaan oliko kyseisestä sarjasta jo kyseinen kuva
 		#url = url"
 		tmp_file = u""

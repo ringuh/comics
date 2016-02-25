@@ -46,14 +46,26 @@ def Looper(id):
 				return False
 		else:
 			if not "force" in sys.argv:
-				if comic.last_parse is not None:
-					if comic.last_parse + datetime.timedelta(hours=comic.interval) > datetime.datetime.now():
-						sessio.close()
-						return False
 				# interval 0 == loppunut
 				if comic.interval == 0:
 					sessio.close()
 					return False
+
+				if comic.weekday:
+					try: 
+						days = [int(i.strip()) for i in comic.weekday.split(",")]
+						today = datetime.datetime.now()
+						if not today.weekday() in days:
+							sessio.close()
+							return False
+
+					except: pass
+
+				if comic.last_parse is not None:
+					if comic.last_parse + datetime.timedelta(hours=comic.interval) > datetime.datetime.now():
+						sessio.close()
+						return False
+				
 
 		Print("----\n")
 		Print(comic.id, comic.nimi)
