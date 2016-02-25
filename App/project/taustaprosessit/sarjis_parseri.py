@@ -13,7 +13,7 @@ def run():
 	sarjakuvat = db.session.query(SK).order_by(SK.id).all()
 	pool = ThreadPool(3)
 	pool.map(Looper, list([i.id for i in sarjakuvat]))
-
+	
 	print "end"
 	return True
 
