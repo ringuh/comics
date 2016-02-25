@@ -59,7 +59,15 @@ class Sarjis(object):
 	def Save(self, nimi, url, filetype, urli=None):
 		if urli is None: urli = self.urli
 		
-		#print "save", nimi
+		loaded = sessio.query(Strippi.url).filter(
+				Strippi.sarjakuva_id==self.sarjakuva.id
+			).all()
+		loaded = [i.url for i in loaded]
+
+		if not url in loaded:
+			return True
+		
+		print "save", nimi
 		# katsotaan oliko kyseisestä sarjasta jo kyseinen kuva
 		#url = url"
 		tmp_file = u""

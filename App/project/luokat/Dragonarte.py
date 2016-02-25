@@ -23,6 +23,8 @@ class Dragonarte(Sarjis):
 		loaded = sessio.query(Strippi.url).filter(
 				Strippi.sarjakuva_id==self.sarjakuva.id
 			).all()
+		loaded = [i.url for i in loaded]
+		
 		for link in links:
 			
 			nimi = link["href"]
@@ -31,6 +33,7 @@ class Dragonarte(Sarjis):
 					u"{}{}".format(self.sarjakuva.last_url, nimi)
 				)
 			filetype = u"{}".format(nimi.split(".")[-1])
+			
 			if src in loaded:
 				continue
 

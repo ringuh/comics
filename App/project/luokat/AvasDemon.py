@@ -29,10 +29,6 @@ class AvasDemon(Sarjis):
 
 		arr.sort()
 		
-		
-		loaded = sessio.query(Strippi.rname).filter(
-				Strippi.sarjakuva_id==self.sarjakuva.id
-			).all()
 
 		for nr in arr:
 			src = u"{}pages/{}.png".format(self.sarjakuva.url, nr)
@@ -43,8 +39,6 @@ class AvasDemon(Sarjis):
 
 			
 			filetype = u"{}".format(nimi.split(".")[-1])
-			if nimi in loaded:
-				continue
 			
 			if not filetype in kuvat: # ei oikeanlainen kuva
 				continue
