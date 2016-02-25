@@ -785,11 +785,11 @@ content = [
 	),
 	Sarjakuva(
 		u"Sunny Street",
-		u"sunnystreet" 
+		u"sunnystreet",
 		u"gocomics",
 		
 		u"http://www.gocomics.com/sunny-street/", 
-		u"http://www.gocomics.com/sunny-street/2013/06/03",
+		u"http://www.gocomics.com/sunny-street/2016/02/18",
 		u"Max Garcia and Sandra Barthauer", 
 	),
 

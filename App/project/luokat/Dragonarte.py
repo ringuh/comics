@@ -37,7 +37,7 @@ class Dragonarte(Sarjis):
 			count += 1
 			if not filetype in kuvat: # ei oikeanlainen kuva
 				continue
-			print image
+			
 			self.Save(nimi, src, filetype)
 
 		return None

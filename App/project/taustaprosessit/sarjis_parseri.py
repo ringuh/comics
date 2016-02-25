@@ -33,18 +33,17 @@ def Looper(id):
 		)
 
 		comic = sessio.query(SK).get(id)
-		Print("----\n")
-		Print(comic.id, comic.nimi)
+		
 
 		if "parseri" in sys.argv:
 			
 			if comic.parseri != sys.argv[3]:
 				sessio.close()
-				return
+				return False
 		elif "id" in sys.argv:
 			if comic.id != int(sys.argv[3]):
 				sessio.close()
-				return
+				return False
 		else:
 			if not "force" in sys.argv:
 				if comic.last_parse is not None:
@@ -56,7 +55,8 @@ def Looper(id):
 					sessio.close()
 					return False
 
-		
+		Print("----\n")
+		Print(comic.id, comic.nimi)
 		
 		
 		olio = None
