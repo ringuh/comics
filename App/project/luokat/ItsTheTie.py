@@ -60,8 +60,7 @@ class ItsTheTie(Sarjis):
 			kuva["filetype"] = u"{}".format(image["src"].split(".")[-1])
 
 			kuvat.append(kuva)
-		if len(kuvat) == 0:
-			kuvat = None
+		
 		return kuvat
 
 		

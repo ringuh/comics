@@ -29,7 +29,10 @@ class AvasDemon(Sarjis):
 
 		arr.sort()
 		
-
+		loaded = self.sessio.query(Strippi.rname).filter(
+				Strippi.sarjakuva_id==self.sarjakuva.id
+			).all()
+		loaded = [i.rname for i in loaded]
 		for nr in arr:
 			src = u"{}pages/{}.png".format(self.sarjakuva.url, nr)
 			
@@ -37,6 +40,8 @@ class AvasDemon(Sarjis):
 			nimi = u"{}.png".format(nr)
 			filetype = "png"
 
+			if nimi in loaded:
+				continue
 			
 			filetype = u"{}".format(nimi.split(".")[-1])
 			
