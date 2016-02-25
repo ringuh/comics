@@ -14,6 +14,7 @@ def run():
 	pool = ThreadPool(3)
 	pool.map(Looper, list([i.id for i in sarjakuvat]))
 
+	print "end"
 	return True
 
 
@@ -210,4 +211,5 @@ def Looper(id):
 		Log(id, None, u"Looppi epäonnistui", e.message)
 		sessio.close()
 		return False
+	return True
 
