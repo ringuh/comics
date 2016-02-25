@@ -82,6 +82,7 @@ def Looper(id):
 			olio = AvasDemon(comic)
 		elif comic.parseri == u"paintrain":
 			olio = Paintrain(comic)
+		# cheerup saattaa puuttua kuva, odd1s out saattaa puuttua kuva
 		elif comic.parseri == u"gunshow":
 			olio = Gunshow(comic)
 		elif comic.parseri == u"happletea":
@@ -100,7 +101,7 @@ def Looper(id):
 			olio = Pidjin(comic)
 		elif comic.parseri == "garfield":
 			olio = Garfield(comic)
-			# issues
+			# issues with us acres, ok?
 		elif comic.parseri == "leasticoulddo":
 			olio = LeastICouldDo(comic)
 		elif comic.parseri == "questionablecontent":
@@ -109,6 +110,7 @@ def Looper(id):
 			olio = Wumo(comic)
 		elif comic.parseri == "gocomics":
 			olio = GoComics(comic)
+		# sunny street kusee
 		elif comic.parseri == "hiveworks":
 			olio = HiveWorks(comic)
 		elif comic.parseri == "floabc":
@@ -150,6 +152,7 @@ def Looper(id):
 			olio = Vattu(comic)
 		elif comic.parseri == "powernap":
 			olio = PowerNap(comic)
+		# parseri jumii
 		elif comic.parseri == "extralife":
 			olio = ExtraLife(comic)
 		elif comic.parseri == "poorlydrawnlines":

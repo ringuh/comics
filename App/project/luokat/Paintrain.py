@@ -25,21 +25,22 @@ class Paintrain(Sarjis):
 			div = self.soup.find(id="comic")
 		
 
-		image = div.find("img")
-		if "?" in image["src"]:
-			image["src"] = image["src"].split("?")[0]
+		images = div.find_all("img")
+		for image in images:
+			if "?" in image["src"]:
+				image["src"] = image["src"].split("?")[0]
 
-		
-		if image["src"].index("//") == 0:
-			image["src"] = u"http:{}".format(image["src"])
-		#image["src"] = u"{}".format(image["src"].replace(u"_250.", u"_1280."))
-		kuva["nimi"] = u"{}".format(image["src"].split("/")[-1]) # kuvan nimi = tiedoston nimi
-		kuva["src"] = url_fix(
-						u"{}".format(image["src"])
-					)
-		kuva["filetype"] = u"{}".format(image["src"].split(".")[-1])
+			
+			if image["src"].index("//") == 0:
+				image["src"] = u"http:{}".format(image["src"])
+			#image["src"] = u"{}".format(image["src"].replace(u"_250.", u"_1280."))
+			kuva["nimi"] = u"{}".format(image["src"].split("/")[-1]) # kuvan nimi = tiedoston nimi
+			kuva["src"] = url_fix(
+							u"{}".format(image["src"])
+						)
+			kuva["filetype"] = u"{}".format(image["src"].split(".")[-1])
 
-		kuvat.append(kuva)
+			kuvat.append(kuva)
 		
 		return kuvat
 

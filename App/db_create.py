@@ -368,7 +368,8 @@ content = [
 		u"paintrain",
 
 		u"http://www.cheerupemokid.com", 
-		u"http://www.cheerupemokid.com/comic/truth",		
+		u"http://www.cheerupemokid.com/comic/truth",
+		#u"http://www.cheerupemokid.com/comic/frank",	
 	),
 
 	# END OF PAINTRAIN

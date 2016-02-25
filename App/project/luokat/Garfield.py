@@ -15,8 +15,10 @@ class Garfield(Sarjis):
 		kuvat = []
 		
 		div = self.soup.find(id="comic_wrap")
+
 		images = div.find_all("img")
 		for image in images:
+			
 			kuva = dict(nimi=None, src=None)
 			if image["src"].index("//") == 0:
 				image["src"] = u"http:{}".format(image["src"])
