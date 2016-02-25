@@ -98,7 +98,7 @@ class Sarjis(object):
 
 			
 		if found:
-			return False
+			return True
 		
 		md5_name = u"{}_{}.{}".format(self.sarjakuva.lyhenne, md5, filetype)
 

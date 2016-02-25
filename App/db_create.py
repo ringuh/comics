@@ -681,7 +681,7 @@ content = [
 		u"garfield",
 
 		u"http://garfield.com/comic", 
-		u"http://garfield.com/comic/2012-06-01",
+		u"http://garfield.com/comic/2016-02-01",
 	),
 
 	Sarjakuva(
@@ -690,7 +690,7 @@ content = [
 		u"garfield",
 
 		u"http://garfield.com/us-acres", 
-		u"http://garfield.com/us-acres/2012-06-01",
+		u"http://garfield.com/us-acres/2016-02-01",
 	),
 	Sarjakuva(
 		u"Least I could do", 
