@@ -62,24 +62,32 @@ class Sarjis(object):
 		#print "save", nimi
 		# katsotaan oliko kyseisestä sarjasta jo kyseinen kuva
 		#url = url"
-		
 		tmp_file = u""
-		headers = app.config["REQUEST_HEADER"]
-		req = urllib2.Request(url, None, headers)
-		try:
-			tmp_file = urllib2.urlopen(req).read()
-			
-		except Exception, e:
+		if not "base64" in url:
+			headers = app.config["REQUEST_HEADER"]
+			req = urllib2.Request(url, None, headers)
 			try:
-				tmp_file = urllib2.urlopen(url).read()
+				tmp_file = urllib2.urlopen(req).read()
 				
 			except Exception, e:
-				Log(self.sarjakuva.id, urli, u"Kuvan lataus epäonnistui", e, url)
+				try:
+					tmp_file = urllib2.urlopen(url).read()
+					
+				except Exception, e:
+					Log(self.sarjakuva.id, urli, u"Kuvan lataus epäonnistui", e, url)
+					return False
+			
+			if len(tmp_file) < 10:
+				Log(self.sarjakuva.id, urli, u"Liian pieni kuva", None, url)
 				return False
-		
-		if len(tmp_file) < 10:
-			Log(self.sarjakuva.id, urli, u"Liian pieni kuva", None, url)
-			return False
+		else:
+			order = self.sessio.query(Strippi).filter(Strippi.sarjakuva_id==self.sarjakuva.id).count()+1
+			nimi = u"{}_{}".format(self.sarjakuva.nimi, order)
+			filetype = "jpeg"
+			url = url.split(",", 2)[-1]
+			tmp_file = url.decode('base64')
+
+
 
 		md5 = u"{}".format(hashlib.md5(tmp_file).hexdigest())
 

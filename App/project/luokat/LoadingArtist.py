@@ -13,7 +13,7 @@ class LoadingArtist(Sarjis):
 
 	def Kuvat(self):
 		kuvat = []
-		content = self.soup.find("div", { "class": "chapters-comic"})
+		content = self.soup.find("div", { "class": "comic"})
 		
 		#images = div.find_all("img")
 		#for image in images:
@@ -49,12 +49,13 @@ class LoadingArtist(Sarjis):
 	def Next(self):
 		ret = self.urli
 
-		content = self.soup.find("div", { "class": "chapters-comic"})
-		div = content.find("div", { "class": "comic"})
-
-		link = div.find("a")
-		if link:
-			ret = link["href"]
+		#content = self.soup.find("div", { "class": "comic"})
+		#div = content.find("div", { "class": "comic"})
+		try:
+			link = self.soup.find("a", { "class": "next" })
+			if link:
+				ret = link["href"]
+		except: pass
 
 		if ret == self.urli:
 			return None

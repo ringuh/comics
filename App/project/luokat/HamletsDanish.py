@@ -21,6 +21,10 @@ class HamletsDanish(Sarjis):
 
 		kuva = dict(nimi=None, src=None, filetype=None)
 		try:
+			image["src"] = image["src"].split("?")[0]
+			if image["src"][-1] == "/":
+				image["src"] = image["src"][:-1]
+				kuva["filetype"] = "jpg"
 			if image["src"].index("//") == 0:
 				image["src"] = u"http:{}".format(image["src"])
 		except: pass
@@ -33,7 +37,8 @@ class HamletsDanish(Sarjis):
 		kuva["src"] = url_fix(
 						u"{}".format(image["src"])
 					)
-		kuva["filetype"] = u"{}".format(image["src"].split(".")[-1])
+		if kuva["filetype"] is None:
+			kuva["filetype"] = u"{}".format(image["src"].split(".")[-1])
 		
 		kuvat.append(kuva)
 		
@@ -44,11 +49,12 @@ class HamletsDanish(Sarjis):
 
 	def Next(self):
 		ret = self.urli
-		
-		#nav = self.soup.find("ul", {"class":"feature-nav"})
-		link = self.soup.find("a", {"class": "next-btn"})
-		if link and link["href"] != "#":
-			ret = u"{}{}".format("http://clayyount.com", link["href"])
+		try:
+			#nav = self.soup.find("ul", {"class":"feature-nav"})
+			link = self.soup.find("a", {"class": "next-btn"})
+			if link and link["href"] != "#":
+				ret = u"{}{}".format("http://clayyount.com", link["href"])
+		except: pass
 		
 		if ret == self.urli:
 			return None

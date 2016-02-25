@@ -17,29 +17,51 @@ class ItsTheTie(Sarjis):
 		
 		#images = div.find_all("img")
 		#for image in images:
-		image = self.soup.find("img", { "class": "alignnone"})
-		if image is None:
-			image = self.soup.find("img", { "class": "aligncenter"})
-		kuva = dict(nimi=None, src=None, filetype=None)
-		try:
-			if image["src"].index("//") == 0:
-				image["src"] = u"http:{}".format(image["src"])
-		except: pass
-		try:
-			if image["src"].index("./") == 0:
-				image["src"] = image["src"].replace("./", "/")
-		except: pass
 		
-		#image["src"] = u"{}".format(image["src"].replace(u"_250.", u"_1280."))
+		# image = self.soup.find("img", { "class": "alignnone"})
+		# if image is None:
+		# 	image = self.soup.find("img", { "class": "aligncenter"})
 		
-		kuva["nimi"] = u"{}".format(image["src"].split("/")[-1]) # kuvan nimi = tiedoston nimi
-		kuva["src"] = url_fix(
-						u"{}".format(image["src"])
-					)
-		kuva["filetype"] = u"{}".format(image["src"].split(".")[-1])
+		images = self.soup.find_all("img")
+		for image in images:
+			
+			try:
+				width = image.get("width")
+				
+				if int(width) < 400:
+					continue
+			except Exception, e: 
+				#print e
+				continue
+			
 
-		kuvat.append(kuva)
-		
+			
+			kuva = dict(nimi=None, src=None, filetype=None)
+			try:
+				image["src"] = image["src"].split("?")[0]
+				if image["src"].index("//") == 0:
+					image["src"] = u"http:{}".format(image["src"])
+			except: pass
+			try:
+				if image["src"].index("./") == 0:
+					image["src"] = image["src"].replace("./", "/")
+			except: pass
+			
+			#image["src"] = u"{}".format(image["src"].replace(u"_250.", u"_1280."))
+			
+			kuva["nimi"] = u"{}".format(image["src"].split("/")[-1]) # kuvan nimi = tiedoston nimi
+			
+			if "data:image" in image["src"]:
+				kuva["src"] = image["src"]
+			elif "://" in image["src"]:
+				kuva["src"] = url_fix(u"{}".format(image["src"]))
+			else:
+				kuva["src"] = url_fix(u"{}{}".format(self.sarjakuva.url, image["src"]))
+			kuva["filetype"] = u"{}".format(image["src"].split(".")[-1])
+
+			kuvat.append(kuva)
+		if len(kuvat) == 0:
+			kuvat = None
 		return kuvat
 
 		
@@ -47,14 +69,21 @@ class ItsTheTie(Sarjis):
 
 	def Next(self):
 		ret = self.urli
-		
-		nav = self.soup.find("div", {"class":"nav-next"})
-		if nav is None:
-			nav = self.soup.find("span", {"class":"nav-next"})
+		try:
+			
 
-		link = nav.find("a")
-		if link:
-			ret = link["href"]
+			nav = self.soup.find("div", {"class":"nav-next"})
+			if nav is None:
+				nav = self.soup.find("span", {"class":"nav-next"})
+
+			link = nav.find("a")
+			if link:
+				ret = link["href"]
+
+			# rikkonainen nginx
+			if ret == u"http://www.commitstrip.com/en/2013/03/22/commitstrip-fete-ses-1-an-o/":
+				ret = u"http://www.commitstrip.com/en/2013/03/25/cest-ce-que-jallais-faire/"
+		except: pass
 
 		if ret == self.urli:
 			return None

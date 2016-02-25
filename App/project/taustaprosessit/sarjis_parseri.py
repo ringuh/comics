@@ -100,6 +100,7 @@ def Looper(id):
 			olio = Pidjin(comic)
 		elif comic.parseri == "garfield":
 			olio = Garfield(comic)
+			# issues
 		elif comic.parseri == "leasticoulddo":
 			olio = LeastICouldDo(comic)
 		elif comic.parseri == "questionablecontent":
@@ -112,9 +113,11 @@ def Looper(id):
 			olio = HiveWorks(comic)
 		elif comic.parseri == "floabc":
 			olio = Floabc(comic)
+			# fixed?
 		elif comic.parseri == "hamlet":
 			olio = HamletsDanish(comic)
 		elif comic.parseri == "interrobang":
+			# fixed?
 			olio = InterroBang(comic)
 		elif comic.parseri == "dilbert":
 			olio = Dilbert(comic)
@@ -123,11 +126,14 @@ def Looper(id):
 		elif comic.parseri == "rational":
 			olio = Rational(comic)
 		elif comic.parseri == "loadingartist":
-			olio = LoadingArtist(comic)
+			olio = LoadingArtist(comic) 
+			# fixed ?
 		elif comic.parseri == "smbc":
 			olio = SMBC(comic)
+			#fixed? http://www.smbc-comics.com/index.php?id=3846
 		elif comic.parseri == "itsthetie":
 			olio = ItsTheTie(comic)
+			# fixed?
 		elif comic.parseri == "nerdrage":
 			olio = NerdRage(comic)
 		elif comic.parseri == "tubeytoons":
@@ -192,7 +198,7 @@ def Looper(id):
 			if last_url is None:
 				Log(comic.id, None, u"Haku päättyi", count)
 			
-			if("short" in sys.argv and count > 2) or count > 500: # ei ikilooppeja
+			if("short" in sys.argv and count > 2) or count > 1000: # ei ikilooppeja
 				return False
 		
 		sessio.close()

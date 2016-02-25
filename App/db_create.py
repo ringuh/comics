@@ -796,26 +796,28 @@ content = [
 	#END OF GO COMICS
 	#
 	# HIWEWORKS
-	# Sarjakuva(
-	# 	u"Johnny Wander Fiction", 
-	# 	u"johnnywander",
-	# 	u"hiveworks",
+	Sarjakuva(
+		u"Johnny Wander Fiction", 
+		u"johnnywander",
+		u"hiveworks",
 
-	# 	u"http://www.johnnywander.com/fiction", 
-	# 	u"http://www.johnnywander.com/fiction/girl-with-the-skeleton-hand-1",
-	# 	u"Ananth Panagariya & Yoko Ota", 		
-	# ),
+		u"http://www.johnnywander.com/fiction", 
+		u"http://www.johnnywander.com/fiction/girl-with-the-skeleton-hand-1",
+		None,
+		0		
+	),
 
-	# Sarjakuva(
-	# 	u"Lucky Penny", 
-	# 	u"luckypenny",
-	# 	u"hiveworks",
+	Sarjakuva(
+		u"Lucky Penny", 
+		u"luckypenny",
+		u"hiveworks",
 
-	# 	u"http://www.johnnywander.com/luckypenny", 
-	# 	u"http://www.johnnywander.com/luckypenny/lucky-penny-001",
-	# 	u"Ananth Hirsh & Yoko Ota", 
+		u"http://www.johnnywander.com/luckypenny", 
+		u"http://www.johnnywander.com/luckypenny/lucky-penny-001", 
+		None,
+		0
 		
-	# ),
+	),
 	Sarjakuva( 
 		u"Autobio", 
 		u"autobio",
@@ -823,7 +825,8 @@ content = [
 
 		u"http://www.johnnywander.com/comic", 
 		u"http://www.johnnywander.com/comic/i",
-		u"Ananth Hirsh & Yoko Ota", 
+		None,
+		0
 		
 	),
 
@@ -1076,7 +1079,7 @@ content = [
 		u"smbc",
 
 		u"http://www.girlswithslingshots.com", 
-		u"http://www.girlswithslingshots.com/comic/gws1",
+		u"http://www.girlswithslingshots.com/comic/gws-chaser-1",
 	),
 
 
