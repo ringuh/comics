@@ -33,6 +33,8 @@ def Looper(id):
 		)
 
 		comic = sessio.query(SK).get(id)
+		Print("----\n")
+		Print(comic.id, comic.nimi)
 
 		if "parseri" in sys.argv:
 			
@@ -55,8 +57,7 @@ def Looper(id):
 					return False
 
 		
-		Print("----\n")
-		Print(comic.nimi)
+		
 		
 		olio = None
 		if comic.parseri == u"oglaf":
@@ -201,11 +202,13 @@ def Looper(id):
 			
 			if last_url is None:
 				Log(comic.id, None, u"Haku päättyi", count)
+				break
 			
 			if("short" in sys.argv and count > 2) or count > 1000: # ei ikilooppeja
 				return False
 		
 		sessio.close()
+
 		return True
 	except Exception, e:
 		Log(id, None, u"Looppi epäonnistui", e.message)
