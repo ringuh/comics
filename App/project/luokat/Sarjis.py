@@ -59,7 +59,7 @@ class Sarjis(object):
 	def Save(self, nimi, url, filetype, urli=None):
 		if urli is None: urli = self.urli
 		
-		loaded = sessio.query(Strippi.url).filter(
+		loaded = self.sessio.query(Strippi.url).filter(
 				Strippi.sarjakuva_id==self.sarjakuva.id
 			).all()
 		loaded = [i.url for i in loaded]
