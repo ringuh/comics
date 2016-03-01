@@ -196,6 +196,17 @@ def Looper(id):
 			olio = Catsu(comic)
 		elif comic.parseri == "unsounded":
 			olio = Unsounded(comic)
+		elif comic.parseri == "deathbulge":
+			olio = Deathbulge(comic)
+		elif comic.parseri == "webtoons":
+			olio = Webtoons(comic)
+
+		elif comic.parseri == "grog":
+			olio = Grog(comic)
+		elif comic.parseri == "grog":
+			olio = Grog(comic)
+		elif comic.parseri == "grog":
+			olio = Grog(comic)
 		elif comic.parseri == "grog":
 			olio = Grog(comic)
 		elif comic.parseri == "grog":
@@ -216,7 +227,7 @@ def Looper(id):
 				Log(comic.id, None, u"Haku päättyi", count)
 				break
 			
-			if("short" in sys.argv and count > 2) or count > 1000: # ei ikilooppeja
+			if("short" in sys.argv and count > 2) or count > 2: # ei ikilooppeja
 				return False
 		
 		sessio.close()

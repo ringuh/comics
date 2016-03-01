@@ -5,7 +5,7 @@ import datetime, urllib, os, requests, hashlib
 from project.luokat.Sarjis import Sarjis
 from werkzeug.urls import url_fix
 
-class Paintrain(Sarjis):
+class Webtoons(Sarjis):
 
 	def __init__(self, sarjakuva ):
 		Sarjis.__init__(self, sarjakuva )
@@ -21,15 +21,11 @@ class Paintrain(Sarjis):
 	# #for image in images:
 		
 		kuva = dict(nimi=None, src=None)
-		div = self.soup.find(id="comic-page")
-		if div is None:
-			div = self.soup.find(id="comic")
-			if div is None:
-				div = self.soup.find("div", { "class": "comic" })
-		
+		div = self.soup.find(id="_imageList")		
 
 		images = div.find_all("img")
 		for image in images:
+			image["src"] = image.get("data-url")
 			if "?" in image["src"]:
 				image["src"] = image["src"].split("?")[0]
 
@@ -37,11 +33,11 @@ class Paintrain(Sarjis):
 			if image["src"].index("//") == 0:
 				image["src"] = u"http:{}".format(image["src"])
 			#image["src"] = u"{}".format(image["src"].replace(u"_250.", u"_1280."))
-			kuva["nimi"] = u"{}".format(image["src"].split("/")[-1]) # kuvan nimi = tiedoston nimi
+			kuva["nimi"] = u"{}".format(image["src"].split("?")[0].split("/")[-1]) # kuvan nimi = tiedoston nimi
 			kuva["src"] = url_fix(
 							u"{}".format(image["src"])
 						)
-			kuva["filetype"] = u"{}".format(image["src"].split(".")[-1])
+			kuva["filetype"] = u"{}".format(image["src"].split("?")[0].split(".")[-1])
 
 			kuvat.append(kuva)
 		
@@ -54,12 +50,7 @@ class Paintrain(Sarjis):
 		ret = self.urli
 		#nav = self.soup.find("nav", { "class": "comic-pagination" })
 		try:
-			link = self.soup.find("a", { "class": "comic-nav-next"})
-			if not link:
-				link = self.soup.find("a", { "class": "next" })
-				if not link:
-					link = self.soup.find("a", { "class": "nav-next" })
-
+			link = self.soup.find("a", { "class": "pg_next"})
 			
 			if link and link["href"] != "#":
 				ret = u"{}".format(link["href"])

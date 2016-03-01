@@ -12,15 +12,18 @@ class Sarjakuva(db.Model):
 	nimi = db.Column(db.UnicodeText)
 	parseri = db.Column(db.UnicodeText)
 	lyhenne = db.Column(db.UnicodeText, nullable=False)
-	author = db.Column(db.UnicodeText)
 	url = db.Column(db.UnicodeText)
 	last_url = db.Column(db.UnicodeText)
-	more = db.Column(db.Boolean, default=False)
+	
+	tags = db.Column(db.UnicodeText)
+	next_tags = db.Column(db.UnicodeText)
+
 	interval = db.Column(db.Integer, default=12) # tunteja
 	weekday = db.Column(db.UnicodeText, default=u"0,1,2,3,4,5,6")
 	next_parse = db.Column(db.DateTime, default=datetime.datetime.now)
 	last_parse = db.Column(db.DateTime, default=None)
 	download = db.Column(db.Boolean, default=True)
+	filetype = db.Column(db.UnicodeText)
 	date_created = db.Column(db.DateTime, default=datetime.datetime.now)
 	#joukkue_id = db.Column(db.Integer, ForeignKey('joukkue.id'), nullable=True)
 	
@@ -33,14 +36,16 @@ class Sarjakuva(db.Model):
 
 
 	def __init__(self, nimi, lyhenne, parseri, url, last_url, 
-					author=None, interval=12, weekday=None, more=False, download=True ):
+					tags=None, next_tags=None, filetype=None, weekday=None, interval=12, download=True ):
 		self.nimi = nimi
 		self.lyhenne = lyhenne
 		self.parseri = parseri
 		self.url = url
 		self.last_url = last_url
-		self.author = author
-		self.more = more
+		self.tags = tags
+		self.next_tags = next_tags
+		self.filetype = filetype
+		#self.more = more
 		self.interval = interval
 		self.weekday = weekday
 		self.download = download

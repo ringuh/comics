@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from Sarjis import Sarjis
-from Rosianna import Rosianna
+from Webtoons import Webtoons
+#from Rosianna import Rosianna
 from Fingerpori import Fingerpori
 from Oglaf import Oglaf
 from Dorkly import Dorkly
@@ -57,3 +58,4 @@ from BerdsAndNerds import BerdsAndNerds
 from PepperAndCarrot import PepperAndCarrot
 from Catsu import Catsu
 from Unsounded import Unsounded
+from Deathbulge import Deathbulge

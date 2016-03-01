@@ -35,7 +35,7 @@ class OrderOfTheStick(Sarjis):
 
 	def Next(self):
 		ret = self.urli
-		nav = self.soup.find("nav", { "class": "comic-pagination" })
+		
 		links = self.soup.find_all("a")
 
 		for link in links:
