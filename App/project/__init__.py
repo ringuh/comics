@@ -2,13 +2,11 @@
 from flask import Flask, request, g, session
 from flask.ext.sqlalchemy import SQLAlchemy
 from flask.ext.login import LoginManager, current_user
-from flask.ext.triangle import Triangle
 
 app = Flask(__name__)
 app.config.from_object('config.BaseConfig')
 
 db = SQLAlchemy(app)
-Triangle(app)
 login_manager = LoginManager()
 login_manager.init_app(app)
 
