@@ -19,7 +19,7 @@ def Comic(f):
 				func.lower(SK.lyhenne) == func.lower(kwargs["comic"])
 			).first()
 		if n is None:
-			flash(u"Tuntematon sarjakuva")
+			flash("Tuntematon sarjakuva")
 			return redirect(url_for("explorer.index"))
 		kwargs["comic"] = n
 		return f(*args, **kwargs)
@@ -40,7 +40,7 @@ def Strip(f):
 					Strippi.sarjakuva_id == kwargs["comic"].id
 				).first()
 		if n is None:
-			flash(u"Strippi puuttuu")
+			flash("Strippi puuttuu")
 			return redirect(url_for("explorer.comic", comic=kwargs["comic"].nimi))
 		kwargs["strip"] = n
 		return f(*args, **kwargs)
@@ -58,9 +58,9 @@ def Strip(f):
 def index(pvm=None):
 	try:
 		now = datetime.datetime.strptime(pvm, "%Y-%m-%d")
-	except Exception, e:
+	except Exception as e:
 		now = datetime.datetime.now()
-	if current_user.is_anonymous():
+	if current_user.get_id() == None:
 		return render_template("portal.html",
 			dates=None, stripit=None, user=current_user)
 	today = datetime.datetime(now.year, now.month, now.day)
@@ -131,27 +131,27 @@ def change_pass():
 	json = request.get_json(True)
 	msg = None
 	#print json
-	msg = u"Ei tehty mitään"
+	msg = "Ei tehty mitään"
 	try:
 		u = db.session.query(User).get(json["id"])
 		if u.id == current_user.id and "old_pass" in json and u.verify_pass(json["old_pass"]):
 			u.set_password(json["new_pass"])
 			db.session.commit()
-			msg = u"Vaihdettiin salasana"
+			msg = "Vaihdettiin salasana"
 		else:
-			msg = u"Virheellinen salasana"
+			msg = "Virheellinen salasana"
 			if current_user.admin:
 				try:
 					u = db.session.query(User).get(json["id"])
 					u.set_password(json["new_pass"])
 					db.session.commit()
-					msg = u"Salasanaksi asetettiin "+json["new_pass"]
+					msg = "Salasanaksi asetettiin "+json["new_pass"]
 
-				except Exception, e:
-					msg = u"Salasanan asetus epäonnistui"
+				except Exception as e:
+					msg = "Salasanan asetus epäonnistui"
 
-	except Exception, e:
-		msg = u"Salasanan asetus epäonnistui"
+	except Exception as e:
+		msg = "Salasanan asetus epäonnistui"
 
 	return jsonify(msg=msg)
 
@@ -171,7 +171,7 @@ def my_comics():
 		else:
 			n.visibility = json["visibility"]
 		db.session.commit()
-		msg = u"Tallennettiin"
+		msg = "Tallennettiin"
 
 	tmp = db.session.query(SK).order_by(SK.nimi).all()
 	all_comics = [i.toJson() for i in tmp]
@@ -208,8 +208,8 @@ def take_over():
 		tmp = db.session.query(User).get(json["id"])
 		logout_user()
 		login_user(tmp)			
-	except Exception, e:
-		msg = u"Epäonnistui"
+	except Exception as e:
+		msg = "Epäonnistui"
 	
 	
 
@@ -227,8 +227,8 @@ def register():
 	try:
 		db.session.add(User(json["account"].strip().lower(), json["password"].strip()))
 		db.session.commit()
-	except Exception, e:
-		msg = u"Epäonnistui"
+	except Exception as e:
+		msg = "Epäonnistui"
 	
 	
 
@@ -250,31 +250,31 @@ def login():
 		n = Brute_force(ip)
 		
 		if n.count() > 15:
-			flash(u"IP väliaikaisesti estetty. Koita myöhemmin uudestaan.")
-			Log(u"Kirjautuminen estetty", u"{}//{}".format(account, len(passwd)), ip)
+			flash("IP väliaikaisesti estetty. Koita myöhemmin uudestaan.")
+			Log("Kirjautuminen estetty", "{}//{}".format(account, len(passwd)), ip)
 		
 		user = User.query.filter(func.lower(User.account)==func.lower(account)).first()
 		if user is not None and user.verify_pass(passwd):
-				print user.account
+				print((user.account))
 				login_user(user, True) # kirjataan käyttäjä current_useriksi
 				
 				if user.last_login_date is not None and user.account != "vieras":
-					flash(u"Last login {} from ip {}"\
+					flash("Last login {} from ip {}"\
 						.format(user.last_login_date, user.last_login_ip ))
 				user.last_login_date = datetime.datetime.now()
 				user.last_login_ip = ip
 				
-				Log(None, None, u"Kirjautuminen success", u"{}//{}".format(account, len(passwd)), 
+				Log(None, None, "Kirjautuminen success", "{}//{}".format(account, len(passwd)), 
 					ip)
 				db.session.commit()
-				flash(u"Kirjauduit sisään")
+				flash("Kirjauduit sisään")
 		else:
-			flash(u"Virheellinen kirjautuminen nro: {}".format(n.count()+1))
+			flash("Virheellinen kirjautuminen nro: {}".format(n.count()+1))
 			db.session.add(n)
 			db.session.commit()
 
-	except Exception, e:
-		flash(u"{}".format(e.message))
+	except Exception as e:
+		flash("{}".format(e.message))
 		return "0"
 	
 	return "1"
@@ -284,7 +284,7 @@ def login():
 @login_required
 def logout():
 	logout_user()
-	flash(u"Kirjauduit ulos")
+	flash("Kirjauduit ulos")
 
 	return redirect(url_for("explorer.index"))
 

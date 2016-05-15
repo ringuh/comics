@@ -12,7 +12,7 @@ class Strippi(db.Model):
 	sarjakuva_id = db.Column(db.Integer, ForeignKey('sarjakuva.id'), nullable=True)
 	url = db.Column(db.UnicodeText)
 	filename = db.Column(db.UnicodeText)
-	md5 = db.Column(db.UnicodeText, default=u"md5")
+	md5 = db.Column(db.UnicodeText, default="md5")
 	rname = db.Column(db.UnicodeText)
 	page_url = db.Column(db.UnicodeText)
 	order = db.Column(db.Integer, default=1)

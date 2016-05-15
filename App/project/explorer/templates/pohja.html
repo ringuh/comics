@@ -39,7 +39,7 @@
 		<div class="container-fluid">
 	    <!-- Brand and toggle get grouped for better mobile display -->
 	    <div class="navbar-header">
-	    	{% if user.is_authenticated() %}
+	    	{% if user.is_authenticated %}
 	    	<ul class="nav navbar-nav" style="padding-left:20px">
 		        <li class="{% if request.url_rule.endpoint == 'explorer.index' %}active{% endif %}">
 		        	<a href="/"><span class="glyphicons glyphicons-turtle"></span> Tänään </a></li>
@@ -54,7 +54,7 @@
 	      	</ul>
 	      	{% endif %}
 	      	<ul class="nav navbar-nav navbar-right">
-		        	{% if user.is_authenticated() %}
+		        	{% if user.is_authenticated %}
 		        	{% if user.id != 2 %}
 		        	<li class="{% if request.url_rule.endpoint == 'explorer.options' %}active{% endif %}">
 		        		<a href="/options/">
@@ -76,7 +76,7 @@
 	{% for message in get_flashed_messages() %}
 		<span style="padding-left:20px">{{ message }}</span><br/>
 	{% endfor %}
-	{% if user.is_authenticated() %}
+	{% if user.is_authenticated %}
 	{% block body %}
 	{% endblock %}
 
@@ -119,7 +119,7 @@
 
 
 app.controller('UberCtrl', function($scope, $http, $sce) {
-	{% if user.is_authenticated %}
+	{% if user.is_anonymous %}
 	$scope.login = { account: null, password: null }
 
 	$scope.Login = function()
@@ -127,7 +127,7 @@ app.controller('UberCtrl', function($scope, $http, $sce) {
 		if($scope.login.account == null || $scope.login.password == null)
 			return
 		var json = JSON.stringify($scope.login)
-
+		
 		$http.post("/login/", json)
 		.success(function(data){
 			location.reload()

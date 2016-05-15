@@ -47,20 +47,21 @@ def Print(a, b=None, c=None, d=None, e=None, f=None, g=None, h=None, i=None, j=N
 	ret = None
 	for i in [a,b,c,d,e,f,g,h,i,j,k]:
 		if i:
-			merkit = unicode(i) 
+			merkit = str(i) 
 			
 			normal = unicodedata.normalize('NFKD', merkit).encode('ASCII', 'ignore')
 			if ret is None:
 				ret = normal
 			else:
-				ret = u"{}, {}".format(ret, normal)
-	print ret
+				ret = "{}, {}".format(ret, normal)
+	#print(ret)
+	print((", ".join([str(i) for i in [a,b,c,d,e,f,g,h,i,j,k] if i])))
 
 
 def Log(sarjakuva_id, site, viesti, error=None, url=None, sessio=db.session):
 	from project.models import Loki
 	if error:
-		error = unicode(error)
+		error = str(error)
 	sessio.add(Loki(sarjakuva_id, site, viesti, error, url))
 	Print(sarjakuva_id, site, viesti, error, url)
 

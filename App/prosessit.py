@@ -10,5 +10,5 @@ if "sarjis" in sys.argv:
 if "sort" in sys.argv:
 	from project. taustaprosessit.sortter import run
 	run()
-print sys.argv
+print(sys.argv)
 

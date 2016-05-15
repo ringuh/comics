@@ -19,7 +19,7 @@ class Sarjakuva(db.Model):
 	next_tags = db.Column(db.UnicodeText)
 
 	interval = db.Column(db.Integer, default=12) # tunteja
-	weekday = db.Column(db.UnicodeText, default=u"0,1,2,3,4,5,6")
+	weekday = db.Column(db.UnicodeText, default="0,1,2,3,4,5,6")
 	next_parse = db.Column(db.DateTime, default=datetime.datetime.now)
 	last_parse = db.Column(db.DateTime, default=None)
 	download = db.Column(db.Boolean, default=True)
@@ -35,16 +35,16 @@ class Sarjakuva(db.Model):
 	lokit = relationship("Loki", lazy="dynamic", cascade='all,delete-orphan', backref="sarjakuva")
 
 
-	def __init__(self, nimi, lyhenne, parseri, url, last_url, 
-					tags=None, next_tags=None, filetype=None, weekday=None, interval=12, download=True ):
+	def __init__(self, nimi, lyhenne, url, last_url, parseri=None,
+					tags=None, next=None, ext=None, weekday=None, interval=12, download=True ):
 		self.nimi = nimi
 		self.lyhenne = lyhenne
 		self.parseri = parseri
 		self.url = url
 		self.last_url = last_url
 		self.tags = tags
-		self.next_tags = next_tags
-		self.filetype = filetype
+		self.next_tags = next
+		self.filetype = ext
 		#self.more = more
 		self.interval = interval
 		self.weekday = weekday

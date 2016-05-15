@@ -35,7 +35,7 @@ class User(db.Model):
 
 	def get_id(self):
 		try:
-			return unicode(self.id)  # python 2
+			return str(self.id)  # python 2
 		except NameError:
 			return str(self.id)  # python 3		
 
@@ -59,7 +59,7 @@ class User(db.Model):
 		from passlib.apps import custom_app_context as pwd_context
 		if password is None:
 			password = self.generate_password()
-		self.password = unicode(pwd_context.encrypt(password))
+		self.password = str(pwd_context.encrypt(password))
 		return password
 
 	def generate_password(self):
@@ -68,7 +68,7 @@ class User(db.Model):
 		rnd = SystemRandom() # use SystemRandom to get real random numbers
 		chars = string.letters + string.digits
 		length = 20
-		return "".join(rnd.choice(chars) for _ in xrange(length))
+		return "".join(rnd.choice(chars) for _ in range(length))
 
 	def verify_pass(self, password):
 		from passlib.apps import custom_app_context as pwd_context

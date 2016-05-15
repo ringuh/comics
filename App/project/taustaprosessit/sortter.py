@@ -2,7 +2,7 @@
 from project import db, app
 from bs4 import BeautifulSoup
 from project.models import Sarjakuva as SK, Strippi as ST
-import datetime, urllib, os, requests, hashlib
+import datetime, urllib.request, urllib.parse, urllib.error, os, requests, hashlib
 from project.luokat import *
 import sys
 
