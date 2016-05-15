@@ -90,7 +90,7 @@ def Looper(id):
 				Log(comic.id, None, "Haku päättyi", count)
 				break
 			
-			if("short" in sys.argv and count > 2) or count > 2: # ei ikilooppeja
+			if("short" in sys.argv and count > 2) or count > 1000: # ei ikilooppeja
 				return False
 		
 		sessio.close()

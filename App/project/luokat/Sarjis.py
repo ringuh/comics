@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
 from project import db, app, Print, Log
 from bs4 import BeautifulSoup
-import datetime, urllib.request, urllib.error, urllib.parse, os, requests, hashlib
+import datetime, urllib.request, urllib.error, urllib.parse, os, requests, hashlib, imagehash
 from project.models import Strippi
+from PIL import Image
 
 class Sarjis(object):
 	
@@ -165,7 +166,7 @@ class Sarjis(object):
 		#for filt in filters:
 		soup = self.ELEMENT(self.soup, self.sarjakuva.tags)
 		for image in soup:
-			print(image)
+			print("IMAGE", image)
 			kuva = dict(nimi=None, src=None, filetype=self.sarjakuva.filetype)
 			try:
 				try:
@@ -251,7 +252,7 @@ class Sarjis(object):
 
 	def Save(self, nimi, url, filetype, urli=None):
 		if urli is None: urli = self.urli
-		
+		print("SAVE", nimi)
 		loaded = self.sessio.query(Strippi.url).filter(
 				Strippi.sarjakuva_id==self.sarjakuva.id
 			).all()
@@ -289,16 +290,19 @@ class Sarjis(object):
 			tmp_file = url.decode('base64')
 
 
-
-		md5 = "{}".format(hashlib.md5(tmp_file).hexdigest())
+		print("TRY HASH")
+		import io
+		dhash = str(imagehash.dhash(Image.open(io.BytesIO(tmp_file))))
+		print(dhash)
 
 		found = self.sessio.query(Strippi).filter(
 				Strippi.sarjakuva_id == self.sarjakuva.id,
-				Strippi.md5 == md5
+				Strippi.dhash == dhash
 			).first()
 
 			
 		if found:
+			print("ALREADY HAD THIS PICTURE")
 			return True
 		
 		order = self.sessio.query(Strippi).filter(Strippi.sarjakuva_id==self.sarjakuva.id).count()+1
@@ -320,7 +324,7 @@ class Sarjis(object):
 
 		# lisätään kantaan tieto, että kuva on haettu
 		
-		tmp = Strippi(self.sarjakuva.id, urli, md5_name, nimi, url, md5, order)
+		tmp = Strippi(self.sarjakuva.id, urli, md5_name, nimi, url, dhash, order)
 		self.sessio.add(tmp)
 
 		# löydettiin kuva, tallennetaan vikaksi urliksi

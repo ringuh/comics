@@ -6,12 +6,12 @@
 		
 			<div class="dropdown form-group">
 				<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
-					{{ filter.value.nimi|angular }}
+					{{ filter.value.nimi }}
 					<span class="caret"></span></button>
 				<ul class="dropdown-menu">
-				<li ng-click="filter.value=filter.default"><a>{{ filter.default.nimi|angular }}</a></li>
+				<li ng-click="filter.value=filter.default"><a>{{ filter.default.nimi }}</a></li>
 				<li ng-repeat="i in comics" 
-					ng-click="filter.value=i"><a>{{ i.nimi|angular }}</a></li>
+					ng-click="filter.value=i"><a>{{ i.nimi }}</a></li>
 				</ul>
 			</div>
 		<div class="form-group">
@@ -38,12 +38,12 @@
 			</thead>
 			<tbody>
 				<tr ng-repeat="i in filter.log| orderBy: filter.order: filter.desc| filter: filter.text track by i.id">
-					<td nowrap>{{ i.date_created|angular }}</td>
-					<td>{{ i.sarjakuva|angular }}</td>
-					<td>{{ i.viesti|angular }}</td>
-					<td><a href="{{ i.site|angular }}">{{ i.site|angular }}</a></td>
-					<td>{{ i.error|angular }}</td>
-					<td><a href="{{ i.url|angular }}">{{ i.url|angular }}</a></td>
+					<td nowrap>{{ i.date_created }}</td>
+					<td>{{ i.sarjakuva }}</td>
+					<td>{{ i.viesti }}</td>
+					<td><a href="{{ i.site }}">{{ i.site }}</a></td>
+					<td>{{ i.error }}</td>
+					<td><a href="{{ i.url }}">{{ i.url }}</a></td>
 				</tr>
 			</tbody>
 		</table>
