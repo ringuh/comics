@@ -10,6 +10,21 @@ class Sarjis(object):
 	def __init__(self, sarjakuva ):
 		self.sarjakuva = sarjakuva
 		self.sessio = db.session
+
+	def Print(self, *args):
+		import unicodedata
+		f = open("logit/loki{}.tmp".format(self.sarjakuva.id), "a")
+		text = None;
+		for i in args:
+			i = unicodedata.normalize('NFKD', str(i)).encode('ASCII', 'ignore').decode("ascii")
+			if text:
+				text = "{}, {}".format(text, i)
+			else:
+				text = i;
+		text = "{}\n".format(text)
+		f.write(text)
+		f.close()
+
 	
 	def Init(self, url=None, ):
 		self.urli = url
@@ -21,8 +36,10 @@ class Sarjis(object):
 		
 
 		
-		print(("\nFinding url", self.urli)) 
+		self.Print("Finding url", self.urli)
+		print("\nFinding url", self.urli)
 		r = requests.get(self.urli, headers=app.config["REQUEST_HEADER"] )
+		
 		self.soup = BeautifulSoup(r.text, 'html.parser')
 
 		#fo.write(str(self.soup));
@@ -42,6 +59,7 @@ class Sarjis(object):
 				return self.Next()
 		except Exception as e:
 			Log(self.sarjakuva.id, self.urli, "Kuvan haku epäonnistui", e)
+			self.Print(self.sarjakuva.id, self.urli, "Kuvan haku epäonnistui", e)
 			raise e
 		
 		for kuva in kuvat:
@@ -53,26 +71,27 @@ class Sarjis(object):
 
 			except Exception as e:
 				Log(self.sarjakuva.id, self.urli, "Kuvan tallennus epäonnistui", e, kuva["src"])
+				self.Print(self.sarjakuva.id, self.urli, "Kuvan tallennus epäonnistui", e, kuva["src"])
 	
 		return self.Next() # jos None looppi loppuu
 	
 
 	def Ehdot(self, soup, lauseke):
 		
-		print(("ehdot", lauseke))
+		self.Print("EHDOT", lauseke)
 		ret = []
 		if lauseke[0] == "#":
 			tmp = soup.find(id=lauseke[1:])
 			if tmp:
 				ret = [tmp]
 		elif lauseke[0] == "!":
-			print(soup)
 			attr, type, value = lauseke[1:].split(":")
-			print(("!!", attr, type, value))
+			
 			get = soup.get(attr)
+			self.Print(get)
+			
 			if get:
 				get = str(get)
-				print(("vrt", get.lower().strip(), value))
 				if type == "=":
 					if get.lower().strip() == value:
 						ret = [soup]
@@ -95,33 +114,33 @@ class Sarjis(object):
 		# | ehto
 		# : indexi
 		# ! get-attribuutti 
-		print(("lause", lauseke, ehdot))
+		self.Print("FIND", lauseke, ehdot)
 		
 		#ehto = ehdot[0]
 		#ehdot.pop(0)
 		arr = self.Ehdot(soup, lauseke)
-		print(arr)
+		
 		ret = []
 		for i in arr:
 			ok = True
 			keitto = [i]
 			for ehto in ehdot:
-				print(ehto)
+				
 				for j in keitto:
 					
 					keitto = self.Ehdot(j, ehto)
-					print((ehto, len(keitto)))
+					
 					if len(keitto) == 0:
 						ok = False
 			if ok:
 				ret.append(i)
 
 		
-		print(("find palauttaa", ret))
+		self.Print("find palauttaa", ret)
 		return ret
 
 	def Level(self, soup, lvl):
-		print(("in level", lvl))
+		self.Print("LEVEL", lvl)
 		level = lvl[0]
 		tmp_lvl = [i for i in lvl]
 		tmp_lvl.pop(0)
@@ -132,7 +151,7 @@ class Sarjis(object):
 
 		soups = []
 		soups = self.Find(soup, lauseke, ehdot)
-		print("------")
+		self.Print("------")
 		
 		if len(tmp_lvl) > 0:
 			ret = []
@@ -145,17 +164,19 @@ class Sarjis(object):
 
 	# article > figure > img
 	def ELEMENT(self, soup, lauseke):
+		self.Print("ELEMENT")
 		ret = []
 
 		# pilkotaan lauseke tasoihin > perusteella
 		tasot = lauseke.split(">")
-		print(tasot)
+		self.Print(tasot)
 		# lähdetään ylimmästä tasosta liikenteeseen. esim "nav">img
 		ret = self.Level(soup, tasot)
 
 		return ret
 
 	def Kuvat(self):
+		self.Print("KUVAT")
 		kuvat = []
 		#return kuvat
 		if self.sarjakuva.tags is None:
@@ -166,7 +187,7 @@ class Sarjis(object):
 		#for filt in filters:
 		soup = self.ELEMENT(self.soup, self.sarjakuva.tags)
 		for image in soup:
-			print("IMAGE", image)
+			self.Print("IMAGE", image)
 			kuva = dict(nimi=None, src=None, filetype=self.sarjakuva.filetype)
 			try:
 				try:
@@ -187,10 +208,20 @@ class Sarjis(object):
 					if self.sarjakuva.url[-1] == "/" and image["src"][0] == "/":
 						kuva["src"] = "{}{}".format(self.sarjakuva.url[:-1], image["src"])
 					elif self.sarjakuva.url[-1] != "/" and image["src"][0] != "/":
-						kuva["src"] = "{}/{}".format(self.sarjakuva.url[:-1], image["src"])
+						kuva["src"] = "{}/{}".format(self.sarjakuva.url, image["src"])
 					else:
 						kuva["src"] = "{}{}".format(self.sarjakuva.url, image["src"])
 				
+				# poistetaan "/comics/../comics/"
+				ksplit = kuva["src"].split("/")
+				if ".." in ksplit:
+					print( kuva["src"],ksplit)
+					indx = ksplit.index("..")
+					if indx > 0:
+						del ksplit[indx-1]
+						del ksplit[indx-1]
+				kuva["src"] = "/".join(ksplit)
+
 				kuva["nimi"] = "{}".format(image["src"].split("?")[0].split("/")[-1]) # kuvan nimi = tiedoston nimi
 				
 				if "." in kuva["nimi"]:
@@ -199,6 +230,7 @@ class Sarjis(object):
 
 				kuvat.append(kuva)
 			except Exception as e:
+				self.Print("KUVAT ERROR", e)
 				print(e)
 
 				#id, element, luokka, tbc = (None,)*4
@@ -213,10 +245,11 @@ class Sarjis(object):
 		if self.sarjakuva.next_tags is None:
 			return None
 		try:
+			self.Print("NEXT")
 			soup = self.ELEMENT(self.soup, self.sarjakuva.next_tags)
-			print(("next", soup))
+			self.Print("next", soup)
 			for link in soup:
-				print(link)
+				self.Print(link)
 				try:
 					#link["href"] = link["href"].split("?")[0]
 					if link["href"].index("//") == 0:
@@ -238,9 +271,11 @@ class Sarjis(object):
 						ret = "{}{}".format(self.sarjakuva.url, link["href"])
 				break
 		except Exception as e: 
-			print(e)
+			self.Print("NEXT ERROR", str(e))
+			print(str(e))
 			pass
-		print(("return", ret))
+		
+		self.Print("NEXT RET", ret)
 		
 		
 		if ret == self.urli:
@@ -252,7 +287,8 @@ class Sarjis(object):
 
 	def Save(self, nimi, url, filetype, urli=None):
 		if urli is None: urli = self.urli
-		print("SAVE", nimi)
+		self.Print("SAVE", nimi, url, filetype)
+
 		loaded = self.sessio.query(Strippi.url).filter(
 				Strippi.sarjakuva_id==self.sarjakuva.id
 			).all()
@@ -261,7 +297,7 @@ class Sarjis(object):
 		if url in loaded:
 			return True
 		
-		print(("save", url))
+		print("save", url)
 		# katsotaan oliko kyseisestä sarjasta jo kyseinen kuva
 		#url = url"
 		tmp_file = ""
@@ -290,22 +326,24 @@ class Sarjis(object):
 			tmp_file = url.decode('base64')
 
 
-		print("TRY HASH")
 		import io
-		dhash = str(imagehash.dhash(Image.open(io.BytesIO(tmp_file))))
-		print(dhash)
+		img = Image.open(io.BytesIO(tmp_file))
+		width, height = img.size
+		dhash = str(imagehash.dhash(img))
 
 		found = self.sessio.query(Strippi).filter(
 				Strippi.sarjakuva_id == self.sarjakuva.id,
 				Strippi.dhash == dhash
 			).first()
-
 			
-		if found:
-			print("ALREADY HAD THIS PICTURE")
+		if found and found.width >= width:
+			self.Print("ALREADY HAD THIS PICTURE", dhash)
 			return True
 		
 		order = self.sessio.query(Strippi).filter(Strippi.sarjakuva_id==self.sarjakuva.id).count()+1
+		if found: 
+			order = found.order
+			print("Suurempi resoluutio. Korvataan kuva", found.width, "vs", width)
 		md5_name = "{}_{}.{}".format(self.sarjakuva.lyhenne, order, filetype)
 
 		polku = os.path.join(app.config["SARJAKUVA_FOLDER"], self.sarjakuva.lyhenne)
@@ -323,12 +361,28 @@ class Sarjis(object):
 		f.close()
 
 		# lisätään kantaan tieto, että kuva on haettu
-		
-		tmp = Strippi(self.sarjakuva.id, urli, md5_name, nimi, url, dhash, order)
-		self.sessio.add(tmp)
+		if found:
+			tmp = found
+		else:
+			tmp = Strippi(self.sarjakuva.id, urli, md5_name, nimi, url, dhash, order)
+			self.sessio.add(tmp)
+
+		tmp.width = width
+		tmp.height = height
 
 		# löydettiin kuva, tallennetaan vikaksi urliksi
-		self.sarjakuva.last_url = urli
+		save_urli = True
+		if self.sarjakuva.ending:
+			lopetukset = self.sarjakuva.ending.split(",")
+
+			turli = urli
+			while turli[-1] == "/":
+				turli = turli[:-1]
+			if turli.split("/")[-1] in lopetukset:
+				save_urli = False 
+
+		if save_urli:
+			self.sarjakuva.last_url = urli
 		self.sarjakuva.last_parse = datetime.datetime.now()
 		self.sessio.commit()
 

@@ -10,7 +10,7 @@ from .Sarjis import Sarjis
 # #from .SatW import SatW
 # from .CtrlAltDel import CtrlAltDel
 # #from .Explosm import Explosm
-# from .Dragonarte import Dragonarte
+from .Dragonarte import Dragonarte
 # from .Paintrain import Paintrain
 # from .Gunshow import Gunshow
 # from .HappleTea import HappleTea
@@ -28,7 +28,7 @@ from .Sarjis import Sarjis
 # from .HiveWorks import HiveWorks
 # from .Floabc import Floabc
 # from .HamletsDanish import HamletsDanish
-# from .AvasDemon import AvasDemon
+from .AvasDemon import AvasDemon
 # from .InterroBang import InterroBang
 # from .Dilbert import Dilbert
 # from .PerryBible import PerryBible

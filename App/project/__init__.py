@@ -38,22 +38,21 @@ def page_not_found(e):
     return "Sorry. No such page on our server. :(", 404
 
 
-def Print(a, b=None, c=None, d=None, e=None, f=None, g=None, h=None, i=None, j=None, k=None):
+def Print(*args):
 	import unicodedata
 	""" Normalise (normalize) unicode data in Python to remove umlauts, accents etc. """
 
 	ret = None
-	for i in [a,b,c,d,e,f,g,h,i,j,k]:
-		if i:
-			merkit = str(i) 
-			
-			normal = unicodedata.normalize('NFKD', merkit).encode('ASCII', 'ignore')
-			if ret is None:
-				ret = normal
-			else:
-				ret = "{}, {}".format(ret, normal)
+	for i in args:
+		merkit = str(i) 
+		
+		normal = unicodedata.normalize('NFKD', merkit).encode('ASCII', 'ignore').decode("ascii")
+		if ret is None:
+			ret = normal
+		else:
+			ret = "{}, {}".format(ret, normal)
 	#print(ret)
-	print((", ".join([str(i) for i in [a,b,c,d,e,f,g,h,i,j,k] if i])))
+	print(ret)
 
 
 def Log(sarjakuva_id, site, viesti, error=None, url=None, sessio=db.session):

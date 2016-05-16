@@ -27,8 +27,11 @@
 		<!--<script src="https://www.youtube.com/iframe_api"></script>
 		<script src="{{ url_for('static', filename='js/angular-youtube.js')}}"></script>-->
 		
-	    <script>app = angular.module('app', ['ngSanitize']);
-	    		
+	    <script>app = angular.module('app', ['ngSanitize']
+	    		).config(function($interpolateProvider){
+   					$interpolateProvider.startSymbol('{[{').endSymbol('}]}');
+				});
+
 	    </script>
     </piilo>
 
@@ -39,7 +42,7 @@
 		<div class="container-fluid">
 	    <!-- Brand and toggle get grouped for better mobile display -->
 	    <div class="navbar-header">
-	    	{% if user.is_authenticated %}
+	    	{% if user.get_id() %}
 	    	<ul class="nav navbar-nav" style="padding-left:20px">
 		        <li class="{% if request.url_rule.endpoint == 'explorer.index' %}active{% endif %}">
 		        	<a href="/"><span class="glyphicons glyphicons-turtle"></span> Tänään </a></li>
@@ -54,7 +57,7 @@
 	      	</ul>
 	      	{% endif %}
 	      	<ul class="nav navbar-nav navbar-right">
-		        	{% if user.is_authenticated %}
+		        	{% if user.get_id() %}
 		        	{% if user.id != 2 %}
 		        	<li class="{% if request.url_rule.endpoint == 'explorer.options' %}active{% endif %}">
 		        		<a href="/options/">
@@ -76,7 +79,7 @@
 	{% for message in get_flashed_messages() %}
 		<span style="padding-left:20px">{{ message }}</span><br/>
 	{% endfor %}
-	{% if user.is_authenticated %}
+	{% if user.get_id() %}
 	{% block body %}
 	{% endblock %}
 

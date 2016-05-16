@@ -31,8 +31,8 @@
 			</thead>
 			<tr ng-repeat="i in comics" class="pointer">
 				<td><input ng-change="getComics(i)" type="checkbox" ng-model="i.visibility" /></td>
-				<td ng-click="getComics(i, true)">{{ i.nimi|angular }}</td>
-				<td>{{ i.last_parse|angular }}</td>
+				<td ng-click="getComics(i, true)">{[{ i.nimi }]}</td>
+				<td>{[{ i.last_parse }]}</td>
 			</tr>
 
 		</table>
@@ -53,11 +53,11 @@
 				</tr>
 			</thead>
 			<tr ng-class="{ 'active': admin }" ng-repeat="i in users" class="pointer">
-				<td>{{ i.id|angular }}</td>
-				<td>{{ i.account|angular }}</td>
-				<td>{{ i.last_login_date|angular }}</td>
-				<td>{{ i.date_created|angular }}</td>
-				<td>{{ i.last_login_ip|angular }}</td>
+				<td>{[{ i.id }]}</td>
+				<td>{[{ i.account }]}</td>
+				<td>{[{ i.last_login_date }]}</td>
+				<td>{[{ i.date_created }]}</td>
+				<td>{[{ i.last_login_ip }]}</td>
 				<td class="gg">
 					<span ng-click="changePass(i)" class="glyphicons glyphicons-user-lock pointer"></span>
 					<span ng-click="takeOver(i)" class="glyphicons glyphicons-person pointer"></span>
@@ -83,7 +83,7 @@
 
 
 <script>
-document.title = "Sarjakuvat {{ dates.day }}";
+document.title = "Asetukset";
 
 app.controller('Ctrl', function($scope, $http, $sce) {
 	$scope.vrt = false;
@@ -111,8 +111,8 @@ app.controller('Ctrl', function($scope, $http, $sce) {
 			if( data.msg != null )
 				noty({text:data.msg, type:"success", timeout:3000});
 
-		}).error(function(fail){
-			noty({text:fail, type:"warning", timeout:3000});
+		}).error(function(err){
+			console.log(err)
 		});
 	};
 
@@ -137,8 +137,8 @@ app.controller('Ctrl', function($scope, $http, $sce) {
 			if( data.msg != null )
 				noty({text:data.msg, type:"success", timeout:1500});
 			$scope.comics = data.comics
-		}).error(function(fail){
-			noty({text:fail, type:"warning", timeout:3000});
+		}).error(function(err){
+			console.log(err)
 		});
 	}
 
@@ -156,8 +156,8 @@ app.controller('Ctrl', function($scope, $http, $sce) {
 			if( data.msg != null )
 				noty({text:data.msg, type:"success", timeout:1500});
 			$scope.users = data.users
-		}).error(function(fail){
-			noty({text:fail, type:"warning", timeout:3000});
+		}).error(function(err){
+			console.log(err)
 		});
 	}
 	$scope.getUsers();
@@ -231,8 +231,8 @@ app.controller('Ctrl', function($scope, $http, $sce) {
 				noty({text:data.msg, type:"success", timeout:1500});
 			else
 				$scope.getUsers()
-		}).error(function(fail){
-			noty({text:fail, type:"warning", timeout:3000});
+		}).error(function(err){
+			console.log(err)
 		});
 	};
 

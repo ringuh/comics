@@ -14,7 +14,6 @@ def run():
 	pool = ThreadPool(3)
 	pool.map(Looper, list([i.id for i in sarjakuvat]))
 	
-	print("end")
 	return True
 
 
@@ -33,7 +32,6 @@ def Looper(id):
 		)
 
 		comic = sessio.query(SK).get(id)
-		
 
 		if "parseri" in sys.argv:
 			
@@ -44,6 +42,9 @@ def Looper(id):
 			if comic.id != int(sys.argv[3]):
 				sessio.close()
 				return False
+			f = open("logit/loki{}.tmp".format(comic.id), "w+")
+			f.write("")
+			f.close()
 		else:
 			if not "force" in sys.argv:
 				# interval 0 == loppunut
@@ -72,9 +73,10 @@ def Looper(id):
 		
 		
 		olio = None
-		if comic.parseri == "jotain":
-			pass
-		
+		if comic.parseri == "dragonarte":
+			olio = Dragonarte(comic)
+		elif comic.parseri == "avasdemon":
+			olio = AvasDemon(comic)
 
 		else:
 			olio = Sarjis(comic)
@@ -90,7 +92,7 @@ def Looper(id):
 				Log(comic.id, None, "Haku päättyi", count)
 				break
 			
-			if("short" in sys.argv and count > 2) or count > 1000: # ei ikilooppeja
+			if("short" in sys.argv and count > 2) or count > 5: # ei ikilooppeja
 				return False
 		
 		sessio.close()

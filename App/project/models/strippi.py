@@ -16,6 +16,8 @@ class Strippi(db.Model):
 	rname = db.Column(db.UnicodeText)
 	page_url = db.Column(db.UnicodeText)
 	order = db.Column(db.Integer, default=1)
+	width = db.Column(db.Integer, default=0)
+	height = db.Column(db.Integer, default=0)
 	dhash = db.Column(db.UnicodeText)
 	date_created = db.Column(db.DateTime, default=datetime.datetime.now)
 	#joukkue_id = db.Column(db.Integer, ForeignKey('joukkue.id'), nullable=True)

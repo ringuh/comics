@@ -24,6 +24,7 @@ class Sarjakuva(db.Model):
 	last_parse = db.Column(db.DateTime, default=None)
 	download = db.Column(db.Boolean, default=True)
 	filetype = db.Column(db.UnicodeText)
+	ending = db.Column(db.UnicodeText)
 	date_created = db.Column(db.DateTime, default=datetime.datetime.now)
 	#joukkue_id = db.Column(db.Integer, ForeignKey('joukkue.id'), nullable=True)
 	
@@ -36,7 +37,11 @@ class Sarjakuva(db.Model):
 
 
 	def __init__(self, nimi, lyhenne, url, last_url, parseri=None,
-					tags=None, next=None, ext=None, weekday=None, interval=12, download=True ):
+					tags=None, next=None, ext=None, weekday=None, 
+					interval=12, 
+					download=True,
+					test=None,
+					ending=None ):
 		self.nimi = nimi
 		self.lyhenne = lyhenne
 		self.parseri = parseri
@@ -49,6 +54,13 @@ class Sarjakuva(db.Model):
 		self.interval = interval
 		self.weekday = weekday
 		self.download = download
+		self.ending = ending
+
+		import sys
+		if "test" in sys.argv and test:
+			self.last_url = test
+
+
 
 
 	def __repr__(self):	
