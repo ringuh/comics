@@ -4,17 +4,7 @@
 	
 # 	# end of tumblr
 
-	# Sarjakuva(
-	# 	"Dorkly", #nimi
-	# 	"dorkly", # lyhenne
-	# 	"dorkly", # parseri
-		
-	# 	"http://www.dorkly.com/comics", # baseurl
-	# 	"http://www.dorkly.com/comics/page:96", # 96
 
-	# 	None, 
-	# 	None,
-	# ),
 
 	
 
@@ -25,109 +15,21 @@
 # 	# PAINTRAIN
 	
 
-	# Sarjakuva(
-	# 	"Merkworks", 
-	# 	"merkworks",
-	# 	"webtoons",
-		
-	# 	#"http://mercworks.net/", 
-	# 	#"http://mercworks.net/comicland/a-comic/",
-	# 	"http://www.webtoons.com/en/comedy/mercworks/list?title_no=426",
-	# 	"http://www.webtoons.com/en/comedy/mercworks/ep-42-the-passion-of-the-koopa/viewer?title_no=426&episode_no=42",
-	# 	None, 
-	# 	None,
-	# 	None,
-	# 	None,
-	# 	None,
-	# 	False
-	# ),
+	
 
-# 	Sarjakuva(
-# 		"Evil Inc.", 
-# 		"evilinc",
-# 		"paintrain",
 
-# 		"http://evil-inc.com/", 
-# 		"http://evil-inc.com/comic/santa-villain-poem-1/",
 
-# 		"Brad J. Guigar", 		
-# 	),
 
-# 	Sarjakuva(
-# 			"Last Place", 
-# 			"lastplace",
-# 			"paintrain",
 
-# 			"http://lastplacecomics.com/", 
-# 			"http://lastplacecomics.com/comic/wide-range-of-super-powers/",
 
-# 		),
 
-# 	Sarjakuva(
-# 		"Fowl Language", 
-# 		"fowllanguage",
-# 		"paintrain",
-		
-# 		"http://www.fowllanguagecomics.com/", 
-# 		"http://www.fowllanguagecomics.com/comic/part-of-the-process/",
 
-# 		"Brian Gordon", 
-# 		),
 
-# 	Sarjakuva(
-# 			"Looking For Group", 
-# 			"lfg", 
-# 			"paintrain",
-			
-# 			"http://www.lfg.co/", 
-# 			"http://www.lfg.co/page/1/",
-# 		),
 
-# 	Sarjakuva(
-# 			"Non-Player Character", 
-# 			"npc", 
-# 			"paintrain",
-			
-# 			"http://www.lfg.co/", 
-# 			"http://www.lfg.co/npc/tale/1-1/",
-# 		),
 
-# 	Sarjakuva(
-# 			"Tiny Dick Adventures", 
-# 			"tinydickadventures", 
-# 			"paintrain",
-			
-# 			"http://www.lfg.co/", 
-# 			"http://www.lfg.co/tda/strip/1/",
-# 		),
 
-# 		Sarjakuva(
-# 			"The Fox Sisters", 
-# 			"foxsisters",
-# 			"paintrain",
-			
-# 			"http://www.thefoxsister.com/", 
-# 			"http://www.thefoxsister.com/index.php?id=1",
-# 		),
 
-# 	Sarjakuva(
-# 			"The Odd 1s Out", 
-# 			"theodd1sout",
-# 			"paintrain",
 
-# 			"http://theodd1sout.com/", 
-# 			"http://theodd1sout.com/comic/god-its-awful/",
-# 		),
-
-# 	Sarjakuva( 
-# 		"Cheer Up, Emo Kid", 
-# 		"cheerup",
-# 		"paintrain",
-
-# 		"http://www.cheerupemokid.com", 
-# 		"http://www.cheerupemokid.com/comic/truth",
-# 		#"http://www.cheerupemokid.com/comic/frank",	
-# 	),
 
 # 	# END OF PAINTRAIN
 
@@ -1913,14 +1815,7 @@
 
 
 	
-# 	Sarjakuva(
-# 		"Manly Guys Doing Manly Things", 
-# 		"machismo",
-# 		"paintrain",
 
-# 		"http://thepunchlineismachismo.com/", 
-# 		"http://thepunchlineismachismo.com/archives/comic/02222010",		
-# 	),
 # 	# INTERROBANG
 # 	Sarjakuva( #29,
 # 		"Im my own Mascot", 
@@ -2055,240 +1950,12 @@
 
 
 
-# 	Sarjakuva( 
-# 		"Saturday Morning Breakfast Cereal", 
-# 		"smbc",
-# 		"smbc",
-
-# 		"http://www.smbc-comics.com", 
-# 		"http://www.smbc-comics.com/index.php?id=3768",		
-# 	),
-
-# 	Sarjakuva(
-# 		"Girls with Slingshots", 
-# 		"girlswithslingshots",
-# 		"smbc",
-
-# 		"http://www.girlswithslingshots.com", 
-# 		"http://www.girlswithslingshots.com/comic/gws-chaser-1",
-# 	),
 
 
-# 	Sarjakuva(
-# 		"Its the Tie", 
-# 		"itsthetie",
-# 		"itsthetie",
-
-# 		"http://itsthetie.com/", 
-# 		"http://itsthetie.com/?comic=no-world-for-a-squirrel-4",		
-# 	),
-
-# 	Sarjakuva( 
-# 		"Commit Strip", 
-# 		"commitstrip",
-# 		"itsthetie",
-
-# 		"http://www.commitstrip.com/", 
-# 		"http://www.commitstrip.com/en/2012/02/22/interview/",		
-# 	),
-
-# 	Sarjakuva( 
-# 		"Strong Female Protagonist", 
-# 		"strongfemaleprotagonist", 
-# 		"itsthetie",
-		
-# 		"http://strongfemaleprotagonist.com/", 
-# 		"http://strongfemaleprotagonist.com/issue-1/page-0/",
-# 	),
-
-# 	Sarjakuva( 
-# 		"Nerd Rage", 
-# 		"nerdrage",
-# 		"nerdrage",
-
-# 		"http://nerdragecomic.com", 
-# 		"http://nerdragecomic.com/index.php?date=2010-09-28",
-		
-# 	),
 
 
-# 	Sarjakuva(
-# 		"Tubey Toons", 
-# 		"tubeytoons",
-# 		"tubeytoons",
-
-# 		"http://tubeytoons.com", 
-# 		"http://tubeytoons.com/comic/stay-put",		
-# 	),
-
-# 	Sarjakuva( 
-# 		"Dark Legacy", 
-# 		"darklegacy", 
-# 		"darklegacy",
-	
-# 		"http://www.darklegacycomics.com", 
-# 		"http://www.darklegacycomics.com/1",
-		
-# 	),
-
-# 	Sarjakuva(
-# 		"Awkward Zombie", 
-# 		"awkwardzombie",
-# 		"nerdrage",
-
-# 		"http://www.awkwardzombie.com", 
-# 		"http://www.awkwardzombie.com/index.php?page=0&comic=092006",	
-# 	),
-
-# 	Sarjakuva( 
-# 		"Player vs. Player", 
-# 		"pvponline",
-# 		"pvponline",
-
-# 		"http://www.pvponline.com", 
-# 		"http://www.pvponline.com/comic/2015/06/01/birds-of-a-feather1",
-		
-# 	),
-
-# 	Sarjakuva( 
-# 		"User Friendly", 
-# 		"userfriendly",
-# 		"userfriendly",
-# 		"http://ars.userfriendly.org", 
-# 		"http://ars.userfriendly.org/cartoons/?id=20150731",
-
-# 	),
-
-# 	Sarjakuva( #60,
-# 		"Grog", 
-# 		"grog",
-# 		"grog",
-
-# 		"http://www.grogcomics.com", 
-# 		"http://www.grogcomics.com/they-breed-like/",
-# 	),
 
 
-# 	Sarjakuva(
-# 		"Vatt", 
-# 		"vatt", 
-# 		"vatt",
-
-# 		"http://www.rice-boy.com/vatt", 
-# 		"http://www.rice-boy.com/vattu/index.php?c=001",
-# 	),
-
-# 	Sarjakuva(
-# 		"Power Nap", 
-# 		"powernap",
-# 		"powernap",
-
-# 		"http://www.powernapcomic.com/", 
-# 		"http://www.powernapcomic.com/d/20110617.html",		
-# 	),
-
-# 	Sarjakuva(
-# 		"Extra Life", 
-# 		"extralife",
-# 		"extralife",
-
-# 		"http://www.myextralife.com", 
-# 		"http://www.myextralife.com/comic/06172001/",		
-# 	),
-
-# 	Sarjakuva( 
-# 		"Poorly Drawn Lines", 
-# 		"poorlydrawnlines",
-# 		"poorlydrawnlines",
-
-# 		"http://poorlydrawnlines.com", 
-# 		"http://poorlydrawnlines.com/comic/campus-characters/",
-# 	),
-
-
-# 	Sarjakuva(
-# 		"Existential Comics", 
-# 		"Existential Comics", 
-# 		"existential",
-# 		"http://existentialcomics.com", 
-# 		"http://existentialcomics.com/comic/1",
-# 	),
-
-# 	Sarjakuva(
-# 		"The Abominable", 
-# 		"abominable",
-# 		"abominable",
-
-# 		"http://abominable.cc", 
-# 		"http://abominable.cc/post/44164796353/episode-one",
-# 	),
-
-# 	Sarjakuva(
-# 		"Menage a 3", 
-# 		"ma3", 
-# 		"ma3",
-# 		"http://www.ma3comic.com/", 
-# 		"http://www.ma3comic.com/strips-ma3/for_new_readers",
-# 	),
-
-# 	Sarjakuva(
-# 		"Gone With the Blastwave",  
-# 		"blastwave",
-# 		"blastwave",
-
-# 		"http://www.blastwave-comic.com", 
-# 		"http://www.blastwave-comic.com/index.php?p=comic&nro=1",
-# 	),
-
-# 	Sarjakuva(
-# 		"Stand Still Stay Silent", 
-# 		"standstill",
-# 		"standstill",
-
-# 		"http://www.sssscomic.com", 
-# 		"http://www.sssscomic.com/comic.php?page=1",
-# 		"Minna Sundberg", 
-# 	),
-
-# 	Sarjakuva(
-# 		"Romantically Apocalyptic", 
-# 		"romanticallyapocalyptic",
-# 		"romanticallyapocalyptic",
-# 		"http://romanticallyapocalyptic.com", 
-# 		"http://romanticallyapocalyptic.com/0",
-# 	),
-
-# 	Sarjakuva( 
-# 		"Down the Upward Spiral", 
-# 		"downtheupwardspiral",
-# 		"downtheupwardspiral",
-# 		"http://www.downtheupwardspiral.com", 
-# 		"http://www.downtheupwardspiral.com/gallery.html",
-# 		),
-# 	Sarjakuva(
-# 		"Things In Squares", 
-# 		"thingsinsquares",
-# 		"thingsinsquares",
-# 		"http://www.thingsinsquares.com", 
-# 		"http://www.thingsinsquares.com/comics/lame-joke/",
-# 	),
-
-# 	Sarjakuva( 
-# 		"FoxTrot", 
-# 		"foxtrot",
-# 		"thingsinsquares",
-# 		"http://www.foxtrot.com", 
-# 		"http://www.foxtrot.com/2015/08/16/no-worries/",
-# 	),
-
-# 	Sarjakuva( 
-# 		"Berds and Nerds", 
-# 		"berdsandnerds",
-# 		"berdsandnerds",
-
-# 		"http://berdsandnerds.com", 
-# 		"http://berdsandnerds.com/thearchive/",
-# 	),
 
 # 	Sarjakuva(
 # 		"Pepper and Carrot", 

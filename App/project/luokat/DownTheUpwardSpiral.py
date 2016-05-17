@@ -76,7 +76,7 @@ class DownTheUpwardSpiral(Sarjis):
 				continue
 			try:
 				r = requests.get(urli, headers=app.config["REQUEST_HEADER"] )
-				self.soup = BeautifulSoup(r.text)
+				self.soup = BeautifulSoup(r.text, "html.parser")
 				kuvat = self.Kuvat()
 			except Exception as e:
 				Log(self.sarjakuva.id, urli, "Kuvan haku epäonnistui", e)

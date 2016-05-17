@@ -332,6 +332,16 @@ content = [
 		parseri="dragonarte", # parseri
 	),
 
+	Sarjakuva( 
+		"Down the Upward Spiral", 
+		"downtheupwardspiral",
+		
+		"http://www.downtheupwardspiral.com", 
+		"http://www.downtheupwardspiral.com/gallery.html",
+		parseri="downtheupwardspiral",
+		test="http://pienirinkula.com"
+	),
+
 	Sarjakuva(
 		"Avas Demon", 
 		"avasdemon",
@@ -437,6 +447,425 @@ content = [
 		test="http://itsthetie.com/comic/global-warming/",
 		tags="div.comic-content>img.size-full",
 		next="a|!rel:in:next",	
+	),
+
+	Sarjakuva(
+		"Dorkly", #nimi
+		"dorkly", # lyhenne
+		
+		"http://www.dorkly.com/comics", # baseurl
+		"http://www.dorkly.com/comics/page:108", # 96
+		test="http://www.dorkly.com/comics/page:2",
+		parseri="dorkly",
+	),
+	# Sarjakuva( uusi content siirtynyt webtoons
+	# 	"Merkworks", 
+	# 	"merkworks",
+		
+	# 	"http://www.webtoons.com/en/comedy/mercworks/list?title_no=426",
+	# 	"http://www.webtoons.com/en/comedy/mercworks/ep-42-the-passion-of-the-koopa/viewer?title_no=426&episode_no=42",
+	# 	test="http://mercworks.net/comicland/sensible-minicomics-i/",
+	# 	tags="#comic>img",
+	# 	next="a.comic-nav-next",
+	# 	weekday="0",
+	# ),
+
+	Sarjakuva(
+		"Evil Inc.", 
+		"evilinc",
+		"paintrain",
+
+		"http://evil-inc.com/", 
+		"http://evil-inc.com/comic/santa-villain-poem-1/",
+		test="http://evil-inc.com/comic/goo-monster/",
+
+		tags="#comic>img",
+		next="a.comic-nav-next",
+	),
+
+	Sarjakuva(
+		"Last Place", 
+		"lastplace",
+
+		"http://lastplacecomics.com/", 
+		"http://lastplacecomics.com/comic/wide-range-of-super-powers/",
+		test="http://lastplacecomics.com/comic/final-fantasy-high-school/",
+
+		tags="#comic>img",
+		next="a.comic-nav-next",
+		interval=0,
+	),
+
+	Sarjakuva(
+		"Fowl Language", 
+		"fowllanguage",
+		"paintrain",
+		
+		"http://www.fowllanguagecomics.com/", 
+		"http://www.fowllanguagecomics.com/comic/part-of-the-process/",
+		test="http://www.fowllanguagecomics.com/comic/bread-crust/",
+
+		tags="#comic>img",
+		next="a.comic-nav-next",
+
+	),
+
+	Sarjakuva(
+		"Looking For Group", 
+		"lfg", 
+
+		"http://www.lfg.co/", 
+		"http://www.lfg.co/page/1/",
+		test="http://www.lfg.co/page/981/",
+
+		tags="#comic>img",
+		next="a.comic-nav-next",
+	),
+
+	Sarjakuva(
+		"Non-Player Character", 
+		"npc", 
+	
+		"http://www.lfg.co/", 
+		"http://www.lfg.co/npc/tale/1-1/",
+		test="http://www.lfg.co/npc/tale/21-9/",
+
+		tags="#comic>img",
+		next="a.comic-nav-next",
+	),
+
+	Sarjakuva(
+		"Tiny Dick Adventures", 
+		"tinydickadventures", 
+	
+		"http://www.lfg.co/", 
+		"http://www.lfg.co/tda/strip/1/",
+		test="http://www.lfg.co/tda/strip/114/",
+
+		tags="#comic>img",
+		next="a.comic-nav-next",
+	),
+
+	Sarjakuva(
+		"The Fox Sisters", 
+		"foxsisters",
+				
+		"http://www.thefoxsister.com/", 
+		"http://www.thefoxsister.com/index.php?id=1",
+		test="http://thefoxsister.com/index.php?id=126",
+
+		tags="#comicimg",
+		next="a.comic-nav-next",
+	),
+
+	Sarjakuva(
+		"The Odd 1s Out", 
+		"theodd1sout",
+		
+		"http://theodd1sout.com/", 
+		"http://theodd1sout.com/comic/god-its-awful/",
+		test="http://theodd1sout.com/comic/my-child/",
+
+		tags="#comic>img",
+		next="a.comic-nav-next",
+	),
+
+	Sarjakuva( 
+		"Cheer Up, Emo Kid", 
+		"cheerup",
+		
+		"http://www.cheerupemokid.com", 
+		"http://www.cheerupemokid.com/comic/truth",
+		test="http://www.cheerupemokid.com/comic/permit",
+
+		tags="#comic>img",
+		next="a.next",
+		#"http://www.cheerupemokid.com/comic/frank",	
+	),
+
+	Sarjakuva(
+		"Manly Guys Doing Manly Things", 
+		"machismo",
+
+
+		"http://thepunchlineismachismo.com/", 
+		"http://thepunchlineismachismo.com/archives/comic/02222010",
+		test="http://thepunchlineismachismo.com/archives/comic/2755",
+		tags="#comic>img",
+		next="a.comic-nav-next"
+	),
+
+	Sarjakuva( 
+		"Commit Strip", 
+		"commitstrip",
+
+		"http://www.commitstrip.com/", 
+		"http://www.commitstrip.com/en/2012/02/22/interview/",
+		test="http://www.commitstrip.com/en/2016/05/12/coder-superpower/",
+
+		tags="div.entry-content>img.size-full",
+		next="a|!rel:in:next",	
+	),
+
+	Sarjakuva(
+		"Girls with Slingshots", 
+		"girlswithslingshots",
+
+		"http://www.girlswithslingshots.com", 
+		"http://www.girlswithslingshots.com/comic/gws-chaser-1",
+		test="http://www.girlswithslingshots.com/comic/gws-chaser-307",
+
+		tags="#cc-comic",
+		next="a.next",
+	),
+
+	Sarjakuva( 
+		"Strong Female Protagonist", 
+		"strongfemaleprotagonist", 
+		
+		"http://strongfemaleprotagonist.com/", 
+		"http://strongfemaleprotagonist.com/issue-1/page-0/",
+		test="http://strongfemaleprotagonist.com/issue-6/page-44-5/",
+		tags="article.post>img.size-full",
+		next="a|!rel:in:next",
+	),
+	Sarjakuva( 
+		"Nerd Rage", 
+		"nerdrage",
+
+		"http://nerdragecomic.com/", 
+		"http://nerdragecomic.com/index.php?date=2010-09-28",
+		test="http://nerdragecomic.com/index.php?date=2016-04-22",
+
+		tags="img|!src:in:strips",
+		next="a|img|!alt:in:next comic",
+	),
+
+	Sarjakuva(
+		"Tubey Toons", 
+		"tubeytoons",
+		
+
+		"http://tubeytoons.com/", 
+		"http://tubeytoons.com/comic/stay-put",
+		test="http://tubeytoons.com/comic/last-wish",
+		parseri="tubeytoons",
+	),
+
+	Sarjakuva( 
+		"Dark Legacy", 
+		"darklegacy", 
+	
+		"http://www.darklegacycomics.com/", 
+		"http://www.darklegacycomics.com/1",
+		test="http://www.darklegacycomics.com/535",
+
+		tags="img.comic-image",
+		next="a.nextLink",
+		
+	),
+	Sarjakuva(
+		"Awkward Zombie", 
+		"awkwardzombie",
+
+		"http://www.awkwardzombie.com/", 
+		"http://www.awkwardzombie.com/index.php?page=0&comic=092006",
+		test="http://www.awkwardzombie.com/index.php?page=0&comic=041816",
+
+		tags="#comic>img",
+		next="a|img|!alt:in:next comic",
+	),
+
+	Sarjakuva( 
+		"Player vs. Player", 
+		"pvponline",
+
+		"http://www.pvponline.com/", 
+		"http://www.pvponline.com/comic/2015/06/01/birds-of-a-feather1",
+		test="http://pvponline.com/comic/2016/05/12/the-one-time",
+
+		tags="section.comic-art>img",
+		next="div.comic-nav>a.left|!text:in:next",
+	),
+	Sarjakuva( 
+		"Table Titans", 
+		"tabletitans",
+
+		"http://tabletitans.com/", 
+		"http://tabletitans.com/comic/mines-of-madness-page-1",
+		test="http://tabletitans.com/comic/whispers-of-dragons-page-142",
+
+		tags="section.comic>img",
+		next="a|!text:in:next",
+	),
+	Sarjakuva( 
+		"User Friendly", 
+		"userfriendly",
+
+		"http://ars.userfriendly.org", 
+		"http://ars.userfriendly.org/cartoons/?id=20160515",
+		test="http://ars.userfriendly.org/cartoons/?id=20160515",
+
+		tags="img|!alt:in:strip",
+		next="area|!alt:in:next",
+	),
+	Sarjakuva(
+		"Grog", 
+		"grog",
+
+		"http://www.grogcomics.com", 
+		"http://www.grogcomics.com/they-breed-like/",
+		test="http://grogcomics.com/did-you-jump/",
+
+		tags="div.content>div.entry>img",
+		next="span.next>a|!rel:in:next",
+	),
+	Sarjakuva(
+		"Vattu", 
+		"vattu", 
+
+		"http://www.rice-boy.com/vattu/", 
+		"http://www.rice-boy.com/vattu/index.php?c=001",
+		test="http://www.rice-boy.com/vattu/index.php?c=742",
+
+		tags="#page>img",
+		next="a|!text:in:forward|!href:in:c=",
+		ending="index.php"
+	),
+	Sarjakuva(
+		"Power Nap", 
+		"powernap",
+
+		"http://www.powernapcomic.com/", 
+		"http://www.powernapcomic.com/d/20110617.html",
+		test="http://www.powernapcomic.com/d/20160502.html",
+
+		tags="center>img|!src:in:/pnap",
+		next="a|img|!alt:in:next",	
+	),
+	Sarjakuva(
+		"Extra Life", 
+		"extralife",
+
+		"http://www.myextralife.com/", 
+		"http://www.myextralife.com/comic/06172001/",
+		test="http://www.myextralife.com/comic/whoville/",
+
+		tags="img.comic",
+		next="a.next_comic_link",
+	),
+	Sarjakuva( 
+		"Poorly Drawn Lines", 
+		"poorlydrawnlines",
+
+		"http://poorlydrawnlines.com", 
+		"http://poorlydrawnlines.com/comic/campus-characters/",
+		test="http://poorlydrawnlines.com/comic/kevins-ideas/",
+
+		tags="div.comic>img.size-full",
+		next="a|!rel:in:next",
+	),
+	Sarjakuva(
+		"Existential Comics", 
+		"Existential Comics", 
+		
+		"http://existentialcomics.com", 
+		"http://existentialcomics.com/comic/1",
+		test="http://existentialcomics.com/comic/131",
+
+		tags="img.comicImg",
+		next="a|img|!src:in:nav_next",
+	),
+	Sarjakuva(
+		"The Abominable", 
+		"abominable",
+
+		"http://abominable.cc", 
+		"http://abominable.cc/post/44164796353/episode-one",
+		test="http://abominable.cc/post/104845340635/guest-strip-magnus-jonason",
+
+		tags="div.photo>img",
+		next="span.next_post>a",
+	),
+	Sarjakuva(
+		"Menage a 3", 
+		"ma3", 
+
+		"http://www.ma3comic.com/", 
+		"http://www.ma3comic.com/strips-ma3/for_new_readers",
+		test="http://www.ma3comic.com/strips-ma3/synchronized_swimmers",
+
+		tags="#cc>img",
+		next="#cndnext",
+	),
+
+	Sarjakuva(
+		"Gone With the Blastwave",  
+		"blastwave",
+
+		"http://www.blastwave-comic.com/", 
+		"http://www.blastwave-comic.com/index.php?p=comic&nro=1",
+		test="http://www.blastwave-comic.com/index.php?p=comic&nro=72",
+
+		tags="#comic_ruutu>img|!src:in:/comics/",
+		next="a|img|!src:in:next",
+	),
+	Sarjakuva(
+		"Stand Still Stay Silent", 
+		"standstill",
+
+
+		"http://www.sssscomic.com/", 
+		"http://www.sssscomic.com/comic.php?page=1",
+		test="http://www.sssscomic.com/comic.php?page=520",
+
+		parseri="standstill",
+	),
+	Sarjakuva(
+		"Romantically Apocalyptic", 
+		"romanticallyapocalyptic",
+		"romanticallyapocalyptic",
+		"http://romanticallyapocalyptic.com", 
+		"http://romanticallyapocalyptic.com/0",
+		test="http://romanticallyapocalyptic.com/238",
+
+		tags="div.comicpanel>center>img",
+		next="a|!accesskey:in:n",
+	),
+	Sarjakuva(
+		"Things In Squares", 
+		"thingsinsquares",
+		
+		"http://www.thingsinsquares.com", 
+		"http://www.thingsinsquares.com/comics/lame-joke/",
+		test="http://www.thingsinsquares.com/comics/san-pedro-cactus/",
+		tags="div.entry-content>img.size-full",
+		next="a|!rel:in:next",
+	),
+	Sarjakuva( 
+		"FoxTrot", 
+		"foxtrot",
+		
+		"http://www.foxtrot.com", 
+		"http://www.foxtrot.com/2015/08/16/no-worries/",
+		test="http://www.foxtrot.com/2016/05/01/show-off-and-tell/",
+
+		tags="div.entry-content>img.size-full",
+		next="a|!rel:in:next",
+	),
+	
+
+	Sarjakuva( 
+		"Berds and Nerds", 
+		"berdsandnerds",
+		#"berdsandnerds",
+
+		"http://berdsandnerds.com", 
+		"http://berdsandnerds.com/thearchive/",
+		test="http://berdsandnerds.com/comic/2016/5/9/theothermother",
+
+		tags="div.sqs-block-content>noscript>img",
+		next="div.intrinsic>a|!href:in:/comic/",
 	),
 
 ]

@@ -4,7 +4,7 @@ from .Sarjis import Sarjis
 # #from Rosianna import Rosianna
 # from .Fingerpori import Fingerpori
 # from .Oglaf import Oglaf
-# from .Dorkly import Dorkly
+from .Dorkly import Dorkly
 # from .OrderOfTheStick import OrderOfTheStick
 # #from .Toonhole import Toonhole
 # #from .SatW import SatW
@@ -37,7 +37,7 @@ from .AvasDemon import AvasDemon
 # from .SMBC import SMBC
 # from .ItsTheTie import ItsTheTie
 # from .NerdRage import NerdRage
-# from .TubeyToons import TubeyToons
+from .TubeyToons import TubeyToons
 # from .DarkLegacy import DarkLegacy
 # from .PVPOnline import PVPOnline
 # from .UserFriendly import UserFriendly
@@ -50,9 +50,9 @@ from .AvasDemon import AvasDemon
 # from .Abominable import Abominable
 # from .Ma3 import Ma3
 # from .Blastwave import Blastwave
-# from .StandStill import StandStill
+from .StandStill import StandStill
 # from .RomanticallyApocalyptic import RomanticallyApocalyptic
-# from .DownTheUpwardSpiral import DownTheUpwardSpiral
+from .DownTheUpwardSpiral import DownTheUpwardSpiral
 # from .ThingsInSquares import ThingsInSquares
 # from .BerdsAndNerds import BerdsAndNerds
 # from .PepperAndCarrot import PepperAndCarrot

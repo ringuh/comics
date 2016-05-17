@@ -76,7 +76,7 @@ class Dorkly(Sarjis):
 			while next_page:
 				#print next_page
 				r = requests.get(next_page, headers=app.config["REQUEST_HEADER"] )
-				soup = BeautifulSoup(r.text)
+				soup = BeautifulSoup(r.text, 'html.parser')
 				soups.append(soup)
 					
 				nxt = soup.find("a", { "class": "next" })

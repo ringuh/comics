@@ -92,12 +92,16 @@ class Sarjis(object):
 			
 			if get:
 				get = str(get)
-				if type == "=":
-					if get.lower().strip() == value:
-						ret = [soup]
-				elif type == "in":
-					if value in get.lower().strip():
-						ret = [soup]
+				if type == "=" and get.lower().strip() == value:
+					ret = [soup]
+				elif type == "in" and value in get.lower().strip():
+					ret = [soup]
+
+			if attr == "text":
+				if type == "=" and value == soup.text.lower():
+					ret = [soup]
+				elif type == "in" and value in soup.text.lower():
+					ret = [soup]
 			
 		elif "." in lauseke:
 			a, b = lauseke.split(".")
@@ -193,6 +197,7 @@ class Sarjis(object):
 				try:
 					image["src"] = "{}".format(image["src"].replace("_250.", "_1280."))
 					image["src"] = "{}".format(image["src"].replace("_500.", "_1280."))
+					image["src"] = image["src"].replace("\n", "")
 					#image["src"] = image["src"].split("?")[0]
 					if image["src"].index("//") == 0:
 						image["src"] = "http:{}".format(image["src"])
