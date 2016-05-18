@@ -868,6 +868,410 @@ content = [
 		next="div.intrinsic>a|!href:in:/comic/",
 	),
 
+	Sarjakuva(
+		"Gunshow", 
+		"gunshow",
+
+		"http://www.gunshowcomic.com/",
+		"http://www.gunshowcomic.com/1",
+		test="http://gunshowcomic.com/897",
+
+		interval=0,
+		tags="#comic>img.strip",
+		next="a|img|!src:in:next.gif",
+	),
+
+	Sarjakuva(
+		"Back", 
+		"back",
+
+		"http://backcomic.com/",
+		"http://backcomic.com/1",
+		test="http://backcomic.com/93",
+
+		tags="#comic>img.comic-page",
+		next="#next_comic",
+	),
+
+	Sarjakuva(
+		"Back", 
+		"back",
+
+		"http://backcomic.com/",
+		"http://backcomic.com/1",
+		test="http://backcomic.com/93",
+
+		tags="#comic>img.comic-page",
+		next="#next_comic",
+	),
+
+
+	Sarjakuva(
+		"He is a Good Boy", 
+		"hiagb",
+
+		"http://hiagb.com/",
+		"http://hiagb.com/1",
+		test="http://hiagb.com/122",
+
+		tags="#comicImages>img.comic-page",
+		next="#next_comic",
+	),
+
+	Sarjakuva(
+		"HappleTea", #nimi
+		"happletea", # lyhenne
+		
+		"http://www.happletea.com",  # baseurl
+		"http://www.happletea.com/comic/fallacies/",
+		test="http://www.happletea.com/comic/asking-the-big-questions/",
+		tags="#comic>img",
+		next="a.navi-next",
+	),
+
+	Sarjakuva(
+		"Skadi", 
+		"skadi",
+		
+		"http://skadicomic.com", 
+		"http://skadicomic.com/2008/05/07/ballad-of-skadi-pt-1-2/",
+		test="http://skadicomic.com/comic/delay-or-the-end-is-near/",
+		tags="#comic>img",
+		next="a.comic-nav-next",
+		interval=0,
+		
+	),
+
+
+	Sarjakuva(
+		"C-Section", 
+		"csection",
+		
+		"http://www.csectioncomics.com/", 
+		"http://www.csectioncomics.com/comics/one-day-in-country",
+		test="http://www.csectioncomics.com/comics/back-in-my-day-dad-online-porn",
+		tags="#comic>img",
+		next="a.comic-nav-next",	
+	),
+
+# happletea
+	Sarjakuva(
+		"Berkeley Mews", 
+		"berkeleymews",
+		
+		"http://www.berkeleymews.com/", 
+		"http://www.berkeleymews.com/?p=19",
+		test="http://www.berkeleymews.com/?p=970",
+		tags="#comic>img",
+		next="a.navi-next",	
+	),
+
+	Sarjakuva(
+		"Completely Serious Comics", 
+		"completelyseriouscomics",
+		
+		"http://completelyseriouscomics.com/", 
+		"http://completelyseriouscomics.com/?p=6",
+		test="",
+		tags="#comic>img",
+		next="a.navi-next",
+	),
+
+	Sarjakuva(
+		"Pictures in Boxes", 
+		"picturesinboxes",
+		
+		"http://www.picturesinboxes.com/", 
+		"http://www.picturesinboxes.com/2013/10/26/tetris/",
+		test="http://www.picturesinboxes.com/2015/09/16/transformers/",
+		tags="#comic>img",
+		next="a.navi-next",
+	),
+
+	Sarjakuva(
+		"Channelate", 
+		"channelate",
+		
+		"http://www.channelate.com/", 
+		"http://www.channelate.com/2008/02/13/wear-a-clean-shirt/",
+		test="http://www.channelate.com/2016/05/13/something-you-need-to-tell-me/",
+		tags="#comic>img",
+		next="a.navi-next",
+	),
+
+	Sarjakuva(
+		"Amazing Super Powers", 
+		"amazingsuperpowers", 
+		
+		"http://www.amazingsuperpowers.com/", 
+		"http://www.amazingsuperpowers.com/2007/09/heredity/",
+		test="http://www.amazingsuperpowers.com/2015/06/young-at-heart/",
+		tags="#comic>img",
+		next="a.navi-next",
+	),
+
+	Sarjakuva( 
+		"Zen Pencils", 
+		"zenpencils",
+					
+		"http://zenpencils.com/", 
+		"http://zenpencils.com/comic/1-ralph-waldo-emerson-make-them-cry/",
+		test="http://zenpencils.com/comic/rilke/",
+		tags="#comic>img",
+		next="a.navi-next",
+	),
+
+	Sarjakuva(
+		"The Noob", 
+		"noob",
+					
+		"http://thenoobcomic.com/", 
+		"http://thenoobcomic.com/comic/1/",
+		test="http://thenoobcomic.com/comic/450/",
+		tags="#comic>img",
+		next="a.navi-next",
+	),
+
+	Sarjakuva( 
+		"Safely Endangered", 
+		"safelyendangered",
+					
+		"http://www.safelyendangered.com/", 
+		"http://www.safelyendangered.com/comic/ignored/",
+		test="http://www.safelyendangered.com/comic/stupid/",
+		tags="#comic>img",
+		next="a.navi-next",
+	),
+	Sarjakuva(
+		"Exploding Dinosaur", 
+		"explodingdinosaur",
+					
+		"http://explodingdinosaur.com/", 
+		"http://explodingdinosaur.com/comic/seriously-stop-it/",
+		test="",
+		tags="#comic>img",
+		next="a.navi-next",
+	),
+	Sarjakuva(
+		"Veritable Hokum", 
+		"veritablehokum",
+		
+		"http://www.veritablehokum.com/", 
+		"http://www.veritablehokum.com/comic/headless-folks-of-the-french-revolution/",
+		test="http://www.veritablehokum.com/comic/presidents-washington-buchanan/",
+		tags="#comic>img",
+		next="a.navi-next",
+	),
+
+	Sarjakuva(
+		"Hijinks Ensue", 
+		"hijinksensue",
+		
+		"http://hijinksensue.com/", 
+		"http://hijinksensue.com/comic/who-is-your-daddy-and-what-does-he-do/",
+		test="http://hijinksensue.com/comic/roll-right-roll-call/",
+		tags="#comic>img",
+		next="a.navi-next-in",
+	
+	),
+
+
+	Sarjakuva(
+		"Sharksplode", 
+		"sharksplode",
+		
+		"http://sharksplode.com/", 
+		"http://sharksplode.com/comic/is-it-the-word-is-it-really/",
+		test="http://sharksplode.com/comic/back-in-the-saddle/",
+		tags="#comic>img",
+		next="a.navi-next",
+	
+	),
+
+	Sarjakuva(
+		"Legacy Control", 
+		"legacy-control",
+		
+		"http://legacy-control.com/", 
+		"http://legacy-control.com/comic/advent-boner-3/",
+		test="http://legacy-control.com/comic/beardable/",
+		tags="#comic>img",
+		next="a.navi-next",
+		
+	),
+	Sarjakuva(
+		"The Adventures of Businesscat", 
+		"businesscat",
+		"http://www.businesscat.happyjar.com/", 
+		"http://www.businesscat.happyjar.com/comic/coffee/",
+		
+		test="http://www.businesscat.happyjar.com/comic/butterfly/",
+		tags="#comic>img",
+		next="a.navi-next-in",
+	),
+
+	Sarjakuva(
+		"Hejibits", 
+		"hejibits",
+		
+		"http://www.hejibits.com/", 
+		"http://www.hejibits.com/comics/roommate-comics-1/",
+		test="http://www.hejibits.com/comics/going-up/",
+		tags="#comic>img",
+		next="a.navi-next",
+	),
+
+	Sarjakuva(
+		"The Awkward Yeti", 
+		"awkwardyeti",
+		
+		"http://theawkwardyeti.com/", 
+		"http://theawkwardyeti.com/comic/0912-reading/",
+		test="http://theawkwardyeti.com/comic/big-confusion/",
+		tags="#comic>img",
+		next="a.navi-next",
+		
+	),
+
+	Sarjakuva(
+		"Big Foot Justice", 
+		"bigfootjustice",
+		
+		"http://bigfootjustice.com/", 
+		"http://bigfootjustice.com/comic/iscale-2/",
+		test="http://bigfootjustice.com/comic/new-suit/",
+		tags="#comic>img",
+		next="a.navi-next",
+		
+	),
+	# END OF HAPPLETEA
+
+	Sarjakuva(
+		"VGCats", 
+		"vgcats",
+
+		"http://www.vgcats.com/comics/", 
+		"http://www.vgcats.com/comics/?strip_id=1",
+		test="http://www.vgcats.com/comics/?strip_id=373",
+
+		tags="img|!src:in:.jpg",
+		next="a|img|!src:in:next.gif",
+	),
+	Sarjakuva(
+		"Nerf Now", 
+		"nerfnow",
+
+		"http://www.nerfnow.com/", 
+		"http://www.nerfnow.com/comic/4",
+		test="http://www.nerfnow.com/comic/1813",
+
+		tags="#comic>img",
+		next="#nav_next>a",
+	),
+
+	Sarjakuva(
+		"Sinfest", 
+		"sinfest",
+
+		"http://www.sinfest.net/", 
+		"http://www.sinfest.net/view.php?date=2000-01-17",
+		test="http://sinfest.net/view.php?date=2016-05-16",
+
+		tags="img|!src:in:btphp/comics/",
+		next="a|img|!src:in:images/next",
+	),
+
+	Sarjakuva(
+		"Camp", 
+		"camp",
+
+		"http://campcomic.com/", 
+		"http://campcomic.com/comic/dear-mom",
+		test="http://campcomic.com/comic/316",
+
+		tags="#comic>img",
+		next="a.btnNext",
+			
+	),
+
+	Sarjakuva(
+		"Penny Arcade", 
+		"pennyarcade",
+
+		"http://www.penny-arcade.com", 
+		"http://www.penny-arcade.com/comic/1998/11/18",
+		test="https://www.penny-arcade.com/comic/2016/05/13/schismatic",
+
+		tags="#comicFrame>img",
+		next="a.btnNext|!href:in:comic",
+		#download=False,
+	),
+
+	Sarjakuva(
+		"The Trenches", 
+		"trenches",
+
+		"http://trenchescomic.com/", 
+		"http://trenchescomic.com/comic/post/9811",
+		test="http://trenchescomic.com/comic/post/ghost-in-the-machine",
+
+		tags="div.comic>img",
+		next="a.btnNext",
+		#download=False,
+	),
+
+	Sarjakuva(
+		"Fredo & Pidjin", 
+		"pidjin",
+
+		"http://www.pidjin.net/", 
+		"http://www.pidjin.net/2005/05/30/tricks-to-getting-delayed/",
+		test="http://www.pidjin.net/2016/03/03/syrian-steve-jobs/",
+		tags="div.episode>img",
+		next="a|!rel:in:next",
+	),
+
+
+
+
+	Sarjakuva(
+		"Least I could do", 
+		"leasticoulddo",
+
+		"http://www.leasticoulddo.com/comic/", 
+		"http://www.leasticoulddo.com/comic/20030210/",
+		test="http://www.leasticoulddo.com/comic/20160516/",
+		tags="#comic>img",
+		next="#nav-large-next",
+			
+	),
+
+	Sarjakuva(
+		"Questionable Content", 
+		"questionablecontent",
+
+		"http://questionablecontent.net/", 
+		"http://questionablecontent.net/view.php?comic=1",
+		test="http://www.questionablecontent.net/view.php?comic=3221",
+		tags="#strip",
+		next="#comicnav>a|!text:in:next",
+	),
+
+	Sarjakuva(
+		"Wulffmorgenthaler", 
+		"wumo",
+
+		"http://wumo.com/", 
+		"http://wumo.com/wumo/2015/09/08",
+		test="http://wumo.com/wumo/2016/05/16",
+
+		tags="article.strip>div.box-content>img",
+		next="a.next",
+		
+	),
+
+
+
 ]
 count = db.session.query(Sarjakuva).count()
 for i in content:

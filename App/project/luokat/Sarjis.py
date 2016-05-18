@@ -227,6 +227,8 @@ class Sarjis(object):
 						del ksplit[indx-1]
 				kuva["src"] = "/".join(ksplit)
 
+				kuva["src"] = kuva["src"].replace("/./", "/")
+
 				kuva["nimi"] = "{}".format(image["src"].split("?")[0].split("/")[-1]) # kuvan nimi = tiedoston nimi
 				
 				if "." in kuva["nimi"]:

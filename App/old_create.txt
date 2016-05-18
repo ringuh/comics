@@ -2,17 +2,17 @@
 
 
 	
-# 	# end of tumblr
+ end of tumblr
 
 
 
 	
 
-	# toonhole
+toonhole
 	
 
 	
-# 	# PAINTRAIN
+ PAINTRAIN
 	
 
 	
@@ -31,1916 +31,1595 @@
 
 
 
-# 	# END OF PAINTRAIN
+ END OF PAINTRAIN
 
-# 	Sarjakuva(
-# 		"Gunshow", 
-# 		"gunshow",
-# 		"gunshow",
 
-# 		"http://www.gunshowcomic.com/",
-# 		"http://www.gunshowcomic.com/1",
 
-# 		"KC Green", 		
-# 	),
 
-# 	Sarjakuva(
-# 		"HappleTea", #nimi
-# 		"happletea", # lyhenne
-# 		"happletea", # parseri
+	
+
+
+end happletea
+
+
+
+
+
+GO COMICS
+
+
+
+
+
+END OF GO COMICS
+
+ HIWEWORKS
+Sarjakuva(
+	"Johnny Wander Fiction", 
+	"johnnywander",
+	"hiveworks",
+
+	"http://www.johnnywander.com/fiction", 
+	"http://www.johnnywander.com/fiction/girl-with-the-skeleton-hand-1",
+	None,
+	0		
+),
+
+Sarjakuva(
+	"Lucky Penny", 
+	"luckypenny",
+	"hiveworks",
+
+	"http://www.johnnywander.com/luckypenny", 
+	"http://www.johnnywander.com/luckypenny/lucky-penny-001", 
+	None,
+	0
 		
-# 		"http://www.happletea.com",  # baseurl
-# 		"http://www.happletea.com/comic/fallacies/",
+),
+Sarjakuva( 
+	"Autobio", 
+	"autobio",
+	"hiveworks",
 
-# 		"Scott Maynard", # author
-# 		12, # vähintään interval verran väliä per haku
-# 		None, # haetaan korkeintaan näinä viikonpäivinä
-# 		False, # more
-# 	),
-	
-# 	Sarjakuva(
-# 		"Skadi", 
-# 		"skadi",
-# 		"happletea",
-
-# 		"http://skadicomic.com", 
-# 		"http://skadicomic.com/2008/05/07/ballad-of-skadi-pt-1-2/",
-
-# 		"Katie Rice, Luke Cormican", 
-# 	),
-
-# 	# Sarjakuva(
-# 	# 	"Tales of Valoran", 
-# 	# 	"valoran",
-# 	# 	"happletea",
-
-# 	# 	"http://www.talesofvaloran.com/", 
-# 	# 	"http://www.talesofvaloran.com/?p=21",
-
-# 	# 	"lendokhar", 
-# 	# ),
-
-# 	Sarjakuva(
-# 		"C-Section", 
-# 		"csection",
-# 		"happletea",
-
-# 		"http://www.csectioncomics.com/", 
-# 		"http://www.csectioncomics.com/comics/one-day-in-country",
-
-# 		"Idan Schneider", 		
-# 	),
-
-# # happletea
-# 	Sarjakuva(
-# 		"Berkeley Mews", 
-# 		"berkeleymews",
-# 		"happletea",
-
-# 		"http://www.berkeleymews.com/", 
-# 		"http://www.berkeleymews.com/?p=19",
-
-# 		"benzaehringer at gmail.com", 		
-# 	),
-
-# 	Sarjakuva(
-# 		"Completely Serious Comics", 
-# 		"completelyseriouscomics",
-# 		"happletea",
-
-# 		"http://completelyseriouscomics.com/", 
-# 		"http://completelyseriouscomics.com/?p=6",
-
-# 		"completelyseriouscomics", 		
-# 	),
-
-# 	Sarjakuva(
-# 		"Pictures in Boxes", 
-# 		"picturesinboxes",
-# 		"happletea",
-
-# 		"http://www.picturesinboxes.com/", 
-# 		"http://www.picturesinboxes.com/2013/10/26/tetris/",
-
-# 		"picturesinboxes", 		
-# 	),
-
-# 	Sarjakuva(
-# 		"Channelate", 
-# 		"channelate",
-# 		"happletea",
-
-# 		"http://www.channelate.com/", 
-# 		"http://www.channelate.com/2008/02/13/wear-a-clean-shirt/",
-
-# 		"Ryan Hudson", 
-# 	),
-
-# 	Sarjakuva(
-# 			"Amazing Super Powers", 
-# 			"amazingsuperpowers", 
-# 			"happletea",
-
-# 			"http://www.amazingsuperpowers.com/", 
-# 			"http://www.amazingsuperpowers.com/2007/09/heredity/",
-
-# 			"Wes & Tony", 
-# 		),
-
-# 	Sarjakuva( 
-# 			"Zen Pencils", 
-# 			"zenpencils",
-# 			"happletea",
-			
-# 			"http://zenpencils.com/", 
-# 			"http://zenpencils.com/comic/1-ralph-waldo-emerson-make-them-cry/",
-# 		),
-
-# 	Sarjakuva(
-# 			"The Noob", 
-# 			"noob",
-# 			"happletea",
-			
-# 			"http://thenoobcomic.com/", 
-# 			"http://thenoobcomic.com/comic/1/",
-
-# 			"Gianna", 
-# 		),
-
-# 	Sarjakuva( 
-# 			"Safely Endangered", 
-# 			"safelyendangered",
-# 			"happletea",
-			
-# 			"http://www.safelyendangered.com/", 
-# 			"http://www.safelyendangered.com/comic/ignored/",
-
-# 			"Chris", 
-# 		),
-# 	Sarjakuva(
-# 			"Exploding Dinosaur", 
-# 			"explodingdinosaur",
-# 			"happletea",
-			
-# 			"http://explodingdinosaur.com/", 
-# 			"http://explodingdinosaur.com/comic/seriously-stop-it/",
-
-# 			"Josh Walthall", 
-# 		),
-# 	Sarjakuva(
-# 		"Veritable Hokum", 
-# 		"veritablehokum",
-# 		"happletea",
-
-# 		"http://www.veritablehokum.com/", 
-# 		"http://www.veritablehokum.com/comic/headless-folks-of-the-french-revolution/",
-
-# 		"Korwin Briggs", 
-# 	),
-
-# 	Sarjakuva(
-# 		"Hijinks Ensue", 
-# 		"hijinksensue",
-# 		"happletea",
-
-# 		"http://hijinksensue.com/", 
-# 		"http://hijinksensue.com/comic/who-is-your-daddy-and-what-does-he-do/",
-	
-# 	),
-
-
-# 	Sarjakuva(
-# 		"Sharksplode", 
-# 		"sharksplode",
-# 		"happletea",
-
-# 		"http://sharksplode.com/", 
-# 		"http://sharksplode.com/comic/is-it-the-word-is-it-really/",
-	
-# 	),
-
-# 	Sarjakuva(
-# 		"Legacy Control", 
-# 		"legacy-control",
-# 		"happletea",
-
-# 		"http://legacy-control.com/", 
-# 		"http://legacy-control.com/comic/advent-boner-3/",
+	"http://www.johnnywander.com/comic", 
+	"http://www.johnnywander.com/comic/i",
+	None,
+	0
 		
-# 	),
-# 	Sarjakuva(
-# 		"The Adventures of Businesscat", 
-# 		"businesscat",
-# 		"happletea",
+),
 
-# 		"http://www.businesscat.happyjar.com/", 
-# 		"http://www.businesscat.happyjar.com/comic/coffee/",
+Sarjakuva(
+	"Lets Speak English", 
+	"letsspeakenglish", 
+	"hiveworks",
 		
-# 	),
-
-# 	Sarjakuva(
-# 		"Hejibits", 
-# 		"hejibits",
-# 		"happletea",
-
-# 		"http://www.hejibits.com/", 
-# 		"http://www.hejibits.com/comics/roommate-comics-1/",
-# 	),
-
-# 	Sarjakuva(
-# 		"The Awkward Yeti", 
-# 		"awkwardyeti",
-# 		"happletea",
-
-# 		"http://theawkwardyeti.com/", 
-# 		"http://theawkwardyeti.com/comic/0912-reading/",
-
-# 		"Nick Seluk", 
+	"http://www.marycagle.com", 
+	"http://www.marycagle.com/letsspeakenglish/1-shingeki-no-kodomo",
+	"Mary Cagle", 
+),
+Sarjakuva( 
+	"The Rock Cocks", 
+	"rockcocks", 
+	"hiveworks",
 		
-# 	),
-
-# 	Sarjakuva(
-# 		"Big Foot Justice", 
-# 		"bigfootjustice",
-# 		"happletea",
-
-# 		"http://bigfootjustice.com/", 
-# 		"http://bigfootjustice.com/comic/iscale-2/",
-
-# 		"Mike Salcedo", 
-		
-# 	),
-
-# # end happletea
-# 	Sarjakuva(
-# 		"VGCats", 
-# 		"vgcats",
-# 		"vgcats",
-
-# 		"http://www.vgcats.com/comics/", 
-# 		"http://www.vgcats.com/comics/?strip_id=1",
-# 		"Scott Ramsoomair", 
-# 	),
-
-# 	Sarjakuva(
-# 		"Nerf Now", 
-# 		"nerfnow",
-# 		"nerfnow",
-
-# 		"http://www.nerfnow.com/", 
-# 		"http://www.nerfnow.com/comic/4",
-# 		"Josué Pereira", 		
-# 	),
-# 	Sarjakuva(
-# 		"Sinfest", 
-# 		"sinfest",
-# 		"sinfest",
-
-# 		"http://www.sinfest.net/", 
-# 		"http://www.sinfest.net/view.php?date=2000-01-17",
-
-# 		"Tatsuya Ishida",
-# 	),
-
-# 	Sarjakuva(
-# 		"Camp", 
-# 		"camp",
-# 		"camp",
-
-# 		"http://campcomic.com/", 
-# 		"http://campcomic.com/comic/dear-mom",
-		
-# 	),
-
-# 	Sarjakuva(
-# 		"Penny Arcade", 
-# 		"pennyarcade",
-# 		"pennyarcade",
-
-# 		"http://www.penny-arcade.com", 
-# 		"http://www.penny-arcade.com/comic/1998/11/18",
-# 		"Mike Krahulik & Jerry Holkins", 
-# 		None,
-# 		None,
-# 		None,
-# 		False # ei tallenneta
-# 	),
-
-# 	Sarjakuva(
-# 		"Fredo & Pidjin", 
-# 		"pidjin",
-# 		"pidjin",
-
-# 		"http://www.pidjin.net/", 
-# 		"http://www.pidjin.net/2005/05/30/tricks-to-getting-delayed/",		
-# 	),
-
-
-
-
-# 	Sarjakuva(
-# 		"Least I could do", 
-# 		"leasticoulddo",
-# 		"leasticoulddo",
-
-# 		"http://www.leasticoulddo.com/comic/", 
-# 		"http://www.leasticoulddo.com/comic/20030210/",
-		
-# 	),
-
-# 	Sarjakuva(
-# 		"Questionable Content", 
-# 		"questionablecontent",
-# 		"questionablecontent",
-
-# 		"http://questionablecontent.net", 
-# 		"http://questionablecontent.net/view.php?comic=1",
-# 	),
-
-# 	Sarjakuva(
-# 		"Wulffmorgenthaler", 
-# 		"wumo",
-# 		"wumo",
-
-# 		"http://wumo.com", 
-# 		"http://wumo.com/wumo/2015/09/08",
-# 		"Wumo", 		
-# 	),
-# 	#GO COMICS
-
-
-
-
-
-# 	#END OF GO COMICS
-# 	#
-# 	# HIWEWORKS
-# 	Sarjakuva(
-# 		"Johnny Wander Fiction", 
-# 		"johnnywander",
-# 		"hiveworks",
-
-# 		"http://www.johnnywander.com/fiction", 
-# 		"http://www.johnnywander.com/fiction/girl-with-the-skeleton-hand-1",
-# 		None,
-# 		0		
-# 	),
-
-# 	Sarjakuva(
-# 		"Lucky Penny", 
-# 		"luckypenny",
-# 		"hiveworks",
-
-# 		"http://www.johnnywander.com/luckypenny", 
-# 		"http://www.johnnywander.com/luckypenny/lucky-penny-001", 
-# 		None,
-# 		0
-		
-# 	),
-# 	Sarjakuva( 
-# 		"Autobio", 
-# 		"autobio",
-# 		"hiveworks",
-
-# 		"http://www.johnnywander.com/comic", 
-# 		"http://www.johnnywander.com/comic/i",
-# 		None,
-# 		0
-		
-# 	),
-
-# 	Sarjakuva(
-# 		"Lets Speak English", 
-# 		"letsspeakenglish", 
-# 		"hiveworks",
-		
-# 		"http://www.marycagle.com", 
-# 		"http://www.marycagle.com/letsspeakenglish/1-shingeki-no-kodomo",
-# 		"Mary Cagle", 
-# 	),
-# 	Sarjakuva( 
-# 		"The Rock Cocks", 
-# 		"rockcocks", 
-# 		"hiveworks",
-		
-# 		"http://www.therockcocks.com", 
-# 		"http://www.therockcocks.com/comic/page-1-nsfw-track-1-start",
-# 	),
-
-# 	Sarjakuva(
-# 		"Whomp", 
-# 		"whomp",
-# 		"hiveworks",
-
-# 		"http://www.whompcomic.com/", 
-# 		"http://www.whompcomic.com/comic/06152010",
-# 	),
-
-# 	# hive patch 2
-# 	Sarjakuva(
-# 		"6 Gun Mage", 
-# 		"6gunmage",
-# 		"hiveworks",
-
-# 		"http://www.6gunmage.com", 
-# 		"http://www.6gunmage.com/comic/6-gun-mage-kickoff",
-# 		None,
-# 		24,
-# 		None,
-# 		None,
-# 		False
-# 	),
-
-# 	Sarjakuva(
-# 		"A Ghost Story", 
-# 		"ghoststory",
-# 		"hiveworks",
-
-# 		"http://www.aghoststorycomic.com", 
-# 		"http://www.aghoststorycomic.com/comic/in-the-black-1",
-# 		None,
-# 		24,
-# 		"3,4,5,6",
-# 		None,
-# 		False
-# 	),
-
-# 	Sarjakuva(
-# 		"Agents of the Realm", 
-# 		"agentsoftherealm",
-# 		"hiveworks",
-
-# 		"http://www.agentsoftherealm.com", 
-# 		"http://www.agentsoftherealm.com/aotr/-volume-1-",
-# 		None,
-# 		24,
-# 		"1,2,3,4",
-# 		None,
-# 		False
-# 	),
-
-# 	Sarjakuva(
-# 		"Alice and the Nightmare", 
-# 		"aliceandthenightmare",
-# 		"hiveworks",
-
-# 		"http://www.aliceandthenightmare.com", 
-# 		"http://www.aliceandthenightmare.com/comic/chapter-one-cover",
-# 		None,
-# 		24,
-# 		"1,2,4,5",
-# 		None,
-# 		False
-# 	),
-
-# 	Sarjakuva(
-# 		"Aquapunk", 
-# 		"aquapunk",
-# 		"hiveworks",
-
-# 		"http://www.aquapunk.co", 
-# 		"http://www.aquapunk.co/comic/book1",
-# 		None,
-# 		24,
-# 		"1,2,4,5",
-# 		None,
-# 		False
-# 	),
-
-# 	Sarjakuva(
-# 		"Astral Aves", 
-# 		"astralaves",
-# 		"hiveworks",
-
-# 		"http://www.astralaves.com", 
-# 		"http://www.astralaves.com/comic/a-cacophony-of-stars",
-# 		None,
-# 		24,
-# 		"1,2,4,5",
-# 		None,
-# 		False
-# 	),
-
-# 	Sarjakuva(
-# 		"Atomic-robo", 
-# 		"atomicrobo",
-# 		"hiveworks",
-
-# 		"http://www.atomic-robo.com/", 
-# 		"http://www.atomic-robo.com/atomicrobo/v1ch1-cover",
-# 		None,
-# 		24,
-# 		"1,2,4,5",
-# 		None,
-# 		False
-# 	),
-
-# 	Sarjakuva(
-# 		"Awaken", 
-# 		"awaken",
-# 		"hiveworks",
-
-# 		"http://www.awakencomic.com", 
-# 		"http://www.awakencomic.com/comic/comic-cover",
-# 		None,
-# 		24,
-# 		"0,1,2,4,5",
-# 		None,
-# 		False
-# 	),
-
-# 	Sarjakuva(
-# 		"Balderdash", 
-# 		"balderdash",
-# 		"hiveworks",
-
-# 		"http://www.balderdashcomic.com", 
-# 		"http://www.balderdashcomic.com/comic/i01",
-# 		None,
-# 		24,
-# 		"5,6",
-# 		None,
-# 		False
-# 	),
-
-# 	Sarjakuva(
-# 		"Basinvale", 
-# 		"basinvale",
-# 		"hiveworks",
-
-# 		"http://www.basinvale.com", 
-# 		"http://www.basinvale.com/index.php?id=1",
-# 		None,
-# 		24,
-# 		"6",
-# 		None,
-# 		False
-# 	),
-
-# 	Sarjakuva(
-# 		"Beeserker", 
-# 		"beeserker",
-# 		"hiveworks",
-
-# 		"http://www.beeserker.com", 
-# 		"http://www.beeserker.com/comics/the-scienceman/",
-# 		None,
-# 		24,
-# 		"1,2,4,5",
-# 		None,
-# 		False
-# 	),
-
-
-# 	Sarjakuva(
-# 		"Black Grass", 
-# 		"blackgrass",
-# 		"hiveworks",
-
-# 		"http://blackgrasscomic.com", 
-# 		"http://www.blackgrasscomic.com/comic/page-1",
-# 		None,
-# 		24,
-# 		"1,2,4,5",
-# 		None,
-# 		False
-# 	),
-
-# 	Sarjakuva(
-# 		"Blaster Nation", 
-# 		"blasternation",
-# 		"hiveworks",
-
-# 		"http://www.blasternation.com", 
-# 		"http://www.blasternation.com/comic/1-one-day-in-the-life-of-matthew-palmer",
-# 		None,
-# 		24,
-# 		"1,2,4,5",
-# 		None,
-# 		False
-# 	),
-
-# 	Sarjakuva(
-# 		"Blindsprings", 
-# 		"blindsprings",
-# 		"hiveworks",
-
-# 		"http://www.blindsprings.com/", 
-# 		"http://www.blindsprings.com/comic/blindsprings-cover-book-one",
-# 		None,
-# 		24,
-# 		"1,2,4,5,6",
-# 		None,
-# 		False
-# 	),
-
-# 	Sarjakuva(
-# 		"Broodhollow", 
-# 		"broodhollow",
-# 		"hiveworks",
-
-# 		"http://broodhollow.chainsawsuit.com", 
-# 		"http://broodhollow.chainsawsuit.com/page/2012/10/06/book-1-curious-little-thing/",
-# 		None,
-# 		24,
-# 		"1,2,4,5",
-# 		None,
-# 		False
-# 	),
-
-
-# 	Sarjakuva(
-# 		"Cassiopeia Quinn", 
-# 		"cassiopeiaquinn",
-# 		"hiveworks",
-
-# 		"http://www.cassiopeiaquinn.com/", 
-# 		"http://www.cassiopeiaquinn.com/comic/the-prize-cover",
-# 		None,
-# 		24,
-# 		"1,2,4,5",
-# 		None,
-# 		False
-# 	),
-
-# 	Sarjakuva(
-# 		"Clique Refresh", 
-# 		"cliquerefresh",
-# 		"hiveworks",
-
-# 		"http://cliquerefresh.com", 
-# 		"http://cliquerefresh.com/comic/start-it-up/",
-# 		None,
-# 		24,
-# 		"1,2,4,5",
-# 		None,
-# 		False
-# 	),
-
-# 	Sarjakuva(
-# 		"Crazy Sunshine", 
-# 		"crazysunshine",
-# 		"hiveworks",
-
-# 		"http://www.crazysunshine.com/", 
-# 		"http://www.crazysunshine.com/",
-# 		None,
-# 		24,
-# 		"1,2,4,5",
-# 		None,
-# 		False
-# 	),
-
-# 	Sarjakuva(
-# 		"Cut Time", 
-# 		"cuttime",
-# 		"hiveworks",
-
-# 		"http://www.cuttimecomic.com", 
-# 		"http://www.cuttimecomic.com/comic/volume-01-first-impressions",
-# 		None,
-# 		24,
-# 		"1,2,4,5",
-# 		None,
-# 		False
-# 	),
-
-# 	Sarjakuva( 
-# 		"Daughter of the Lilies", 
-# 		"daughterofthelilies", 
-# 		"hiveworks", 
-
-# 		"http://www.daughterofthelilies.com/", 
-# 		"http://www.daughterofthelilies.com/dotl/part-1-a-girl-with-no-face", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-
-# 	# Sarjakuva( #angularjs ongelma
-# 	# 	"Deathbulge", 
-# 	# 	"deathbulge", 
-# 	# 	"deathbulge", 
-
-# 	# 	"http://www.deathbulge.com", 
-# 	# 	"http://www.deathbulge.com/comics/1", 
-# 	# 	None, 
-# 	# 	24, 
-# 	# 	"1,2,4,5", 
-# 	# 	None, 
-# 	# 	False, 
-# 	# ),
-
-
-# 	Sarjakuva( 
-# 		"Demon Street", 
-# 		"demonstreet", 
-# 		"hiveworks", 
-
-# 		"http://www.demonstreet.co/", 
-# 		"http://www.demonstreet.co/comic/1", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-
-# 	Sarjakuva( 
-# 		"Devil's Candy", 
-# 		"devilscandy", 
-# 		"hiveworks", 
-
-# 		"http://www.devilscandycomic.com/", 
-# 		"http://www.devilscandycomic.com/?comic=prologue-01-2", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-
-# 	Sarjakuva( 
-# 		"Dumbing of Age", 
-# 		"dumbingofage", 
-# 		"hiveworks", 
-
-# 		"http://www.dumbingofage.com/", 
-# 		"http://www.dumbingofage.com/2010/comic/book-1/01-move-in-day/home/", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-
-# 	Sarjakuva( 
-# 		"El Goonish Shive", 
-# 		"elgoonishshive", 
-# 		"hiveworks", 
-
-# 		"http://www.egscomics.com/", 
-# 		"http://www.egscomics.com/index.php?id=1", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-
-# 	Sarjakuva( 
-# 		"Empowered", 
-# 		"empowered", 
-# 		"hiveworks", 
-
-# 		"http://www.empoweredcomic.com", 
-# 		"http://www.empoweredcomic.com/comic/volume-1-page-1", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-# 	Sarjakuva( 
-# 		"Flight of the Binturong", 
-# 		"flightofthebinturong", 
-# 		"hiveworks", 
-
-# 		"http://www.flightofthebinturong.com/", 
-# 		"http://flightofthebinturong.com/comic/cover/", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-
-# 	Sarjakuva( 
-# 		"Floraverse", 
-# 		"floraverse", 
-# 		"hiveworks", 
-
-# 		"http://www.floraverse.com/", 
-# 		"http://floraverse.com/comic/seeds-a-mini-story/prologue/1-cover/", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-
-# 	Sarjakuva( 
-# 		"Girl Genius", 
-# 		"girlgenius", 
-# 		"hiveworks", 
-
-# 		"http://www.girlgeniusonline.com/", 
-# 		"http://www.girlgeniusonline.com/comic.php?date=20021104#.Vs9W61uLTRY", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-
-# 	Sarjakuva( 
-# 		"Girlbot", 
-# 		"girlbot", 
-# 		"hiveworks", 
-
-# 		"http://www.intrepidgirlbot.com/", 
-# 		"http://www.intrepidgirlbot.com/2009/03/06/pretty-people-processor/", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-
-# 	Sarjakuva( 
-# 		"Go Get a Roomie", 
-# 		"gogetaroomie", 
-# 		"hiveworks", 
-
-# 		"http://www.gogetaroomie.com/", 
-# 		"http://www.gogetaroomie.com/comic/and-so-it-begins", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-
-# 	Sarjakuva( 
-# 		"Godslave", 
-# 		"godslave", 
-# 		"hiveworks", 
-
-# 		"http://www.godslavecomic.com/", 
-# 		"http://www.godslavecomic.com/comic/page-1", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-
-# 	Sarjakuva( 
-# 		"Guilded Age", 
-# 		"guildedage", 
-# 		"hiveworks", 
-
-# 		"http://www.guildedage.net", 
-# 		"http://guildedage.net/comic/chapter-1-cover/", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-
-# 	Sarjakuva( 
-# 		"Harpy Gee", 
-# 		"harpygee", 
-# 		"hiveworks", 
-
-# 		"http://www.harpygee.com/", 
-# 		"http://www.harpygee.com/comic/cover", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-
-# 	Sarjakuva( 
-# 		"Headless Bliss", 
-# 		"headlessbliss", 
-# 		"hiveworks", 
-
-# 		"http://www.headlessbliss.com/", 
-# 		"http://www.headlessbliss.com/comic/page-1", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-
-# 	Sarjakuva( 
-# 		"Heart-Shaped Skull", 
-# 		"heartshapedskull", 
-# 		"hiveworks", 
-
-# 		"http://www.heartshapedskull.com/", 
-# 		"http://www.headlessbliss.com/comic/page-1", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-
-# 	Sarjakuva( 
-# 		"Helvetica", 
-# 		"helvetica", 
-# 		"hiveworks", 
-
-# 		"http://helvetica.jnwiedle.com/", 
-# 		"http://helvetica.jnwiedle.com/2011/06/24/and-so-it-begins/", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-
-# 	Sarjakuva( 
-# 		"I Am Arg!", 
-# 		"iamarg", 
-# 		"hiveworks", 
-
-# 		"http://www.iamarg.com/", 
-# 		"http://iamarg.com/2011/05/08/05082011/", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-
-# 	Sarjakuva( 
-# 		"Jailbird", 
-# 		"jailbird", 
-# 		"hiveworks", 
-
-# 		"http://an.oddlookingbird.com/", 
-# 		"http://an.oddlookingbird.com/comic/page-1", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-# 	Sarjakuva( 
-# 		"Kiwi Blitz", 
-# 		"kiwiblitz", 
-# 		"hiveworks", 
-
-# 		"http://www.kiwiblitz.com/", 
-# 		"http://www.kiwiblitz.com/comic/welcome-to-kb", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-# 	Sarjakuva( 
-# 		"Knights Errant", 
-# 		"knightserrant", 
-# 		"hiveworks", 
-
-# 		"http://sparklermonthly.com/series/knights-errant/", 
-# 		"http://sparklermonthly.com/ke/knights-errant-chapter-01-page-001/", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-# 	Sarjakuva( 
-# 		"Lost Nightmare", 
-# 		"lostnightmare", 
-# 		"hiveworks", 
-
-# 		"http://www.lostnightmare.com/", 
-# 		"http://www.lostnightmare.com/comic/01-01", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-# 	Sarjakuva( 
-# 		"Love Not Found", 
-# 		"lovenotfound", 
-# 		"hiveworks", 
-
-# 		"http://www.lovenotfound.com/", 
-# 		"http://www.lovenotfound.com/comic/chapter-1-cover", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-# 	Sarjakuva( 
-# 		"Magical How?", 
-# 		"magicalhow", 
-# 		"hiveworks", 
-
-# 		"http://sparklermonthly.com/series/magical-how/", 
-# 		"http://sparklermonthly.com/mh/magical-how-chapter-01-page-001/", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-# 	Sarjakuva( 
-# 		"Mare Internum", 
-# 		"mareinternum", 
-# 		"hiveworks", 
-
-# 		"http://www.marecomic.com/", 
-# 		"http://www.marecomic.com/comic/intro-page-1/", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-# 	Sarjakuva( 
-# 		"Meaty Yogurt", 
-# 		"meatyyogurt", 
-# 		"hiveworks", 
-
-# 		"http://www.meatyyogurt.com/", 
-# 		"http://rosalarian.com/meatyyogurt/2010/10/01/starting-things-off-with-a-bang-4/", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-# 	Sarjakuva( 
-# 		"Metacarpolis", 
-# 		"metacarpolis", 
-# 		"hiveworks", 
-
-# 		"http://www.metacarpolis.com/", 
-# 		"http://www.metacarpolis.com/metacarpolis/chapter-1-page-1", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-# 	Sarjakuva( 
-# 		"Misfile", 
-# 		"misfile", 
-# 		"hiveworks", 
-
-# 		"http://www.misfile.com/", 
-# 		"http://www.misfile.com/?date=2004-02-22", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-# 	Sarjakuva( 
-# 		"Monster Pulse", 
-# 		"monserpulse", 
-# 		"hiveworks", 
-
-# 		"http://www.monster-pulse.com/", 
-# 		"http://www.monster-pulse.com/comic/monster-pulse", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-# 	Sarjakuva( 
-# 		"Monsterkind", 
-# 		"monsterkind", 
-# 		"hiveworks", 
-
-# 		"http://monsterkind.enenkay.com/", 
-# 		"http://monsterkind.enenkay.com/comic/first", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-# 	Sarjakuva( 
-# 		"Namesake", 
-# 		"namesake", 
-# 		"hiveworks", 
-
-# 		"http://www.namesakecomic.com/", 
-# 		"http://namesakecomic.com/comic/the-journey-begins", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-# 	Sarjakuva( 
-# 		"Never Satisfied", 
-# 		"neversatisfied", 
-# 		"hiveworks", 
-
-# 		"http://www.neversatisfiedcomic.com/", 
-# 		"http://www.neversatisfiedcomic.com/comic/chapter-1-chirp-chirp-chirp", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-# 	Sarjakuva( 
-# 		"Not Drunk Enough", 
-# 		"notdrunkenough", 
-# 		"hiveworks", 
-
-# 		"http://www.ndecomic.com/", 
-# 		"http://www.ndecomic.com/comic/page-1", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-# 	Sarjakuva( 
-# 		"Oh Joy Sex Toy!", 
-# 		"ohjoysextoy", 
-# 		"hiveworks", 
-
-# 		"http://www.ohjoysextoy.com/", 
-# 		"http://www.ohjoysextoy.com/introduction/", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-# 	Sarjakuva( 
-# 		"Parallax", 
-# 		"parallax", 
-# 		"hiveworks", 
-
-# 		"http://www.parallaxcomic.com/", 
-# 		"http://www.parallaxcomic.com/comic/page-01", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-# 	Sarjakuva( 
-# 		"Paranatural", 
-# 		"paranatural", 
-# 		"hiveworks", 
-
-# 		"http://www.paranatural.net/", 
-# 		"http://www.paranatural.net/comic/chapter-1", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-# 	Sarjakuva( 
-# 		"Peritale", 
-# 		"peritale", 
-# 		"hiveworks", 
-
-# 		"http://www.peritale.com/", 
-# 		"http://www.peritale.com/comic/promo", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-# 	Sarjakuva( 
-# 		"Platinum Black", 
-# 		"platinumblack", 
-# 		"paintrain", 
-
-# 		"http://www.platinumblackcomic.com", 
-# 		"http://platinumblackcomic.com/?comic=chapter-1-cover", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-# 	Sarjakuva( 
-# 		"Prague Race", 
-# 		"praguerace", 
-# 		"hiveworks", 
-
-# 		"http://www.praguerace.com/", 
-# 		"http://www.praguerace.com/comic/start", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-# 	Sarjakuva( 
-# 		"Real Science Adventures", 
-# 		"realscienceadventures", 
-# 		"hiveworks", 
-
-# 		"http://www.realscienceadventures.com", 
-# 		"http://www.realscienceadventures.com/comic/v01ch1-page-cover", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-# 	Sarjakuva( 
-# 		"Saint for Rent", 
-# 		"saintforrent", 
-# 		"hiveworks", 
-
-# 		"http://www.saintforrent.com/", 
-# 		"http://www.saintforrent.com/comic/the-cloverhouse-inn", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-# 	Sarjakuva( 
-# 		"SAKANA", 
-# 		"sakana", 
-# 		"hiveworks", 
-
-# 		"http://www.sakana-comic.com/", 
-# 		"http://www.sakana-comic.com/comic/title-page-vol-1", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-# 	Sarjakuva( 
-# 		"Sam and Fuzzy", 
-# 		"samandfuzzy", 
-# 		"hiveworks", 
-
-# 		"http://www.samandfuzzy.com", 
-# 		"http://www.samandfuzzy.com/", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-# 	Sarjakuva( 
-# 		"Scenes From a Multiverse", 
-# 		"multiverse", 
-# 		"hiveworks", 
-
-# 		"http://www.amultiverse.com/", 
-# 		"http://amultiverse.com/comic/2010/06/14/parenthood/", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-# 	Sarjakuva( 
-# 		"Sfeer Theory", 
-# 		"sfeertheory", 
-# 		"hiveworks", 
-
-# 		"http://www.sfeertheory.com/", 
-# 		"http://www.sfeertheory.com/", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-# 	Sarjakuva( 
-# 		"Shortpacked!", 
-# 		"shortpacked", 
-# 		"hiveworks", 
-
-# 		"http://www.shortpacked.com/", 
-# 		"http://www.shortpacked.com/index.php?id=1", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-# 	Sarjakuva( 
-# 		"Sister Claire", 
-# 		"sisterclaire", 
-# 		"hiveworks", 
-
-# 		"http://www.sisterclaire.com/", 
-# 		"http://www.sisterclaire.com/comic/book-one", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-# 	Sarjakuva( 
-# 		"Skullkickers", 
-# 		"skullkickers", 
-# 		"hiveworks", 
-
-# 		"http://comic.skullkickers.com/", 
-# 		"http://comic.skullkickers.com/comic/2012-01-06#.Vs97qFuLTRY", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-# 	Sarjakuva( 
-# 		"Sleepless Domain", 
-# 		"sleeplessdomain", 
-# 		"hiveworks", 
-
-# 		"http://www.sleeplessdomain.com/", 
-# 		"http://www.sleeplessdomain.com/comic/chapter-1-cover", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-# 	Sarjakuva( 
-# 		"SnarlBear", 
-# 		"snarlbear", 
-# 		"hiveworks", 
-
-# 		"http://www.snarlbear.com/", 
-# 		"http://www.snarlbear.com/index.php?id=1", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-# 	Sarjakuva( 
-# 		"Solstoria", 
-# 		"solstoria", 
-# 		"hiveworks", 
-
-# 		"http://www.solstoria.net/", 
-# 		"http://solstoria.net/comic/54/", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-# 	Sarjakuva( 
-# 		"Spinnerette", 
-# 		"spinnerette", 
-# 		"hiveworks", 
-
-# 		"http://www.spinnyverse.com/", 
-# 		"http://www.spinnyverse.com/comic/02-09-2010", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-# 	Sarjakuva( 
-# 		"StarHammer", 
-# 		"starhammer", 
-# 		"hiveworks", 
-
-# 		"http://www.starhammercomic.com/", 
-# 		"http://www.starhammercomic.com/comic/chapter-1-the-shakedown-pg-1-leading-the-charges", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-# 	Sarjakuva( 
-# 		"Street Fighter Comics", 
-# 		"streetfighter", 
-# 		"hiveworks", 
-
-# 		"http://www.streetfightercomics.com/", 
-# 		"http://www.streetfightercomics.com/comic/stage-0-page-1", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-# 	Sarjakuva( 
-# 		"Sufficiently Remarkable", 
-# 		"sufficientlyremarkable", 
-# 		"paintrain", 
-
-# 		"http://www.sufficientlyremarkable.com/", 
-# 		"http://sufficientlyremarkable.com/comic/the-beach", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-# 	Sarjakuva( 
-# 		"Supernormal Step", 
-# 		"supernormalstep", 
-# 		"hiveworks", 
-
-# 		"http://www.supernormalstep.com/", 
-# 		"http://www.supernormalstep.com/archives/8", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-# 	Sarjakuva( 
-# 		"The Black Brick Road of OZ", 
-# 		"theblackbrickroadofoz", 
-# 		"hiveworks", 
-
-# 		"http://www.blackbrickroadofoz.com", 
-# 		"http://www.blackbrickroadofoz.com/comic/cover", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-# 	Sarjakuva( 
-# 		"The Boy Who Fell", 
-# 		"theboywhofell", 
-# 		"hiveworks", 
-
-# 		"http://www.boywhofell.com/", 
-# 		"http://www.boywhofell.com/comic/ch00p01", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-# 	Sarjakuva( 
-# 		"The End", 
-# 		"end", 
-# 		"hiveworks", 
-
-# 		"http://www.endcomic.com/", 
-# 		"http://www.endcomic.com/comic/book-one-cover/", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-# 	Sarjakuva( 
-# 		"The Glass Scientists", 
-# 		"glassscientists", 
-# 		"hiveworks", 
-
-# 		"http://www.theglassscientists.com/", 
-# 		"http://www.theglassscientists.com/?comic=chapter-i", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-# 	Sarjakuva( 
-# 		"The Last Diplomat", 
-# 		"lastdiplomat", 
-# 		"hiveworks", 
-
-# 		"http://www.thelastdiplomat.com/", 
-# 		"http://www.thelastdiplomat.com/comic/page-001", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-# 	Sarjakuva( 
-# 		"The Lonely Vincent Bellingham", 
-# 		"lonelyvincent", 
-# 		"hiveworks", 
-
-# 		"http://www.lonelyvincent.com/", 
-# 		"http://www.lonelyvincent.com/lonelyvincent/0", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-# 	Sarjakuva( 
-# 		"The Mash", 
-# 		"mash", 
-# 		"hiveworks", 
-
-# 		"http://www.mashcomic.com/", 
-# 		"http://www.mashcomic.com/comic/prologue-01-and-02", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-# 	Sarjakuva( 
-# 		"The Meek", 
-# 		"meek", 
-# 		"hiveworks", 
-
-# 		"http://www.meekcomic.com/", 
-# 		"http://www.meekcomic.com/comic/chapter-1-cover/", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-# 	Sarjakuva( 
-# 		"This Is Not Fiction", 
-# 		"thisisnotfiction", 
-# 		"hiveworks", 
-
-# 		"http://www.thisisnotfiction.com/", 
-# 		"http://www.thisisnotfiction.com/comic/ch-01-sydney-morgan", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-# 	Sarjakuva( 
-# 		"Todd Allison and the Petunia Violet", 
-# 		"petuniaviolet", 
-# 		"hiveworks", 
-
-# 		"http://petuniaviolet.com", 
-# 		"http://petuniaviolet.com/index.php?id=1", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-# 	Sarjakuva( 
-# 		"Tove", 
-# 		"tove", 
-# 		"hiveworks", 
-
-# 		"http://www.tovecomic.com/", 
-# 		"http://www.tovecomic.com/comic/chapter-1-page-1", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-# 	Sarjakuva( 
-# 		"Trying Human", 
-# 		"tryinghuman", 
-# 		"hiveworks", 
-
-# 		"http://www.tryinghuman.com/", 
-# 		"http://www.tryinghuman.com/comic/prologue--01", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-# 	Sarjakuva( 
-# 		"Vibe", 
-# 		"vibecomic", 
-# 		"hiveworks", 
-
-# 		"http://www.vibecomic.com/", 
-# 		"http://www.vibecomic.com/vibe/cover-2", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-# 	# Sarjakuva( # vaatii oman luokan?
-# 	# 	"Weregeek", 
-# 	# 	"weregeek", 
-# 	# 	"hiveworks", 
-
-# 	# 	"http://www.weregeek.com/", 
-# 	# 	"http://www.weregeek.com/2006/11/27/", 
-# 	# 	None, 
-# 	# 	24, 
-# 	# 	"1,2,4,5", 
-# 	# 	None, 
-# 	# 	False, 
-# 	# ),
-
-# 	Sarjakuva( 
-# 		"Wilde Life", 
-# 		"wildelife", 
-# 		"hiveworks", 
-
-# 		"http://www.wildelifecomic.com/", 
-# 		"http://www.wildelifecomic.com/comic/1", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-# 	Sarjakuva( 
-# 		"Wonderlust", 
-# 		"wonderlust", 
-# 		"hiveworks", 
-
-# 		"http://www.wonderlustcomic.com", 
-# 		"http://www.wonderlustcomic.com/comic/pg-1-2-vamoose", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-# 	# Sarjakuva(  # vaatii oman luokan
-# 	# 	"You Suck", 
-# 	# 	"yousuck", 
-# 	# 	"hiveworks", 
-
-# 	# 	"http://www.yousuckthecomic.com/", 
-# 	# 	"http://yousuckthecomic.com/tagged/webcomics/chrono", 
-# 	# 	None, 
-# 	# 	24, 
-# 	# 	"1,2,4,5", 
-# 	# 	None, 
-# 	# 	False, 
-# 	# ),
-
-# 	Sarjakuva( 
-# 		"Zombie Roomie", 
-# 		"zombieroomie", 
-# 		"happletea", 
-
-# 		"http://www.zombieroomie.com/", 
-# 		"http://www.zombieroomie.com/2009/10/26/issues/", 
-# 		None, 
-# 		24, 
-# 		"1,2,4,5", 
-# 		None, 
-# 		False, 
-# 	),
-
-
-
-
-# 		# Sarjakuva(
-# 		# 	"name", 
-# 		# 	"alias",
-# 		# 	"hiveworks",
-
-# 		# 	"url", 
-# 		# 	"url2",
-# 		# 	None,
-# 		# 	24,
-# 		# 	"1,2,4,5",
-# 		# 	None,
-# 		# 	False
-# 		# ),
+	"http://www.therockcocks.com", 
+	"http://www.therockcocks.com/comic/page-1-nsfw-track-1-start",
+),
+
+Sarjakuva(
+	"Whomp", 
+	"whomp",
+	"hiveworks",
+
+	"http://www.whompcomic.com/", 
+	"http://www.whompcomic.com/comic/06152010",
+),
+
+ hive patch 2
+Sarjakuva(
+	"6 Gun Mage", 
+	"6gunmage",
+	"hiveworks",
+
+	"http://www.6gunmage.com", 
+	"http://www.6gunmage.com/comic/6-gun-mage-kickoff",
+	None,
+	24,
+	None,
+	None,
+	False
+),
+
+Sarjakuva(
+	"A Ghost Story", 
+	"ghoststory",
+	"hiveworks",
+
+	"http://www.aghoststorycomic.com", 
+	"http://www.aghoststorycomic.com/comic/in-the-black-1",
+	None,
+	24,
+	"3,4,5,6",
+	None,
+	False
+),
+
+Sarjakuva(
+	"Agents of the Realm", 
+	"agentsoftherealm",
+	"hiveworks",
+
+	"http://www.agentsoftherealm.com", 
+	"http://www.agentsoftherealm.com/aotr/-volume-1-",
+	None,
+	24,
+	"1,2,3,4",
+	None,
+	False
+),
+
+Sarjakuva(
+	"Alice and the Nightmare", 
+	"aliceandthenightmare",
+	"hiveworks",
+
+	"http://www.aliceandthenightmare.com", 
+	"http://www.aliceandthenightmare.com/comic/chapter-one-cover",
+	None,
+	24,
+	"1,2,4,5",
+	None,
+	False
+),
+
+Sarjakuva(
+	"Aquapunk", 
+	"aquapunk",
+	"hiveworks",
+
+	"http://www.aquapunk.co", 
+	"http://www.aquapunk.co/comic/book1",
+	None,
+	24,
+	"1,2,4,5",
+	None,
+	False
+),
+
+Sarjakuva(
+	"Astral Aves", 
+	"astralaves",
+	"hiveworks",
+
+	"http://www.astralaves.com", 
+	"http://www.astralaves.com/comic/a-cacophony-of-stars",
+	None,
+	24,
+	"1,2,4,5",
+	None,
+	False
+),
+
+Sarjakuva(
+	"Atomic-robo", 
+	"atomicrobo",
+	"hiveworks",
+
+	"http://www.atomic-robo.com/", 
+	"http://www.atomic-robo.com/atomicrobo/v1ch1-cover",
+	None,
+	24,
+	"1,2,4,5",
+	None,
+	False
+),
+
+Sarjakuva(
+	"Awaken", 
+	"awaken",
+	"hiveworks",
+
+	"http://www.awakencomic.com", 
+	"http://www.awakencomic.com/comic/comic-cover",
+	None,
+	24,
+	"0,1,2,4,5",
+	None,
+	False
+),
+
+Sarjakuva(
+	"Balderdash", 
+	"balderdash",
+	"hiveworks",
+
+	"http://www.balderdashcomic.com", 
+	"http://www.balderdashcomic.com/comic/i01",
+	None,
+	24,
+	"5,6",
+	None,
+	False
+),
+
+Sarjakuva(
+	"Basinvale", 
+	"basinvale",
+	"hiveworks",
+
+	"http://www.basinvale.com", 
+	"http://www.basinvale.com/index.php?id=1",
+	None,
+	24,
+	"6",
+	None,
+	False
+),
+
+Sarjakuva(
+	"Beeserker", 
+	"beeserker",
+	"hiveworks",
+
+	"http://www.beeserker.com", 
+	"http://www.beeserker.com/comics/the-scienceman/",
+	None,
+	24,
+	"1,2,4,5",
+	None,
+	False
+),
+
+
+Sarjakuva(
+	"Black Grass", 
+	"blackgrass",
+	"hiveworks",
+
+	"http://blackgrasscomic.com", 
+	"http://www.blackgrasscomic.com/comic/page-1",
+	None,
+	24,
+	"1,2,4,5",
+	None,
+	False
+),
+
+Sarjakuva(
+	"Blaster Nation", 
+	"blasternation",
+	"hiveworks",
+
+	"http://www.blasternation.com", 
+	"http://www.blasternation.com/comic/1-one-day-in-the-life-of-matthew-palmer",
+	None,
+	24,
+	"1,2,4,5",
+	None,
+	False
+),
+
+Sarjakuva(
+	"Blindsprings", 
+	"blindsprings",
+	"hiveworks",
+
+	"http://www.blindsprings.com/", 
+	"http://www.blindsprings.com/comic/blindsprings-cover-book-one",
+	None,
+	24,
+	"1,2,4,5,6",
+	None,
+	False
+),
+
+Sarjakuva(
+	"Broodhollow", 
+	"broodhollow",
+	"hiveworks",
+
+	"http://broodhollow.chainsawsuit.com", 
+	"http://broodhollow.chainsawsuit.com/page/2012/10/06/book-1-curious-little-thing/",
+	None,
+	24,
+	"1,2,4,5",
+	None,
+	False
+),
+
+
+Sarjakuva(
+	"Cassiopeia Quinn", 
+	"cassiopeiaquinn",
+	"hiveworks",
+
+	"http://www.cassiopeiaquinn.com/", 
+	"http://www.cassiopeiaquinn.com/comic/the-prize-cover",
+	None,
+	24,
+	"1,2,4,5",
+	None,
+	False
+),
+
+Sarjakuva(
+	"Clique Refresh", 
+	"cliquerefresh",
+	"hiveworks",
+
+	"http://cliquerefresh.com", 
+	"http://cliquerefresh.com/comic/start-it-up/",
+	None,
+	24,
+	"1,2,4,5",
+	None,
+	False
+),
+
+Sarjakuva(
+	"Crazy Sunshine", 
+	"crazysunshine",
+	"hiveworks",
+
+	"http://www.crazysunshine.com/", 
+	"http://www.crazysunshine.com/",
+	None,
+	24,
+	"1,2,4,5",
+	None,
+	False
+),
+
+Sarjakuva(
+	"Cut Time", 
+	"cuttime",
+	"hiveworks",
+
+	"http://www.cuttimecomic.com", 
+	"http://www.cuttimecomic.com/comic/volume-01-first-impressions",
+	None,
+	24,
+	"1,2,4,5",
+	None,
+	False
+),
+
+Sarjakuva( 
+	"Daughter of the Lilies", 
+	"daughterofthelilies", 
+	"hiveworks", 
+
+	"http://www.daughterofthelilies.com/", 
+	"http://www.daughterofthelilies.com/dotl/part-1-a-girl-with-no-face", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+
+ Sarjakuva( angularjs ongelma
+ 	"Deathbulge", 
+ 	"deathbulge", 
+ 	"deathbulge", 
+
+ 	"http://www.deathbulge.com", 
+ 	"http://www.deathbulge.com/comics/1", 
+ 	None, 
+ 	24, 
+ 	"1,2,4,5", 
+ 	None, 
+ 	False, 
+ ),
+
+
+Sarjakuva( 
+	"Demon Street", 
+	"demonstreet", 
+	"hiveworks", 
+
+	"http://www.demonstreet.co/", 
+	"http://www.demonstreet.co/comic/1", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+
+Sarjakuva( 
+	"Devil's Candy", 
+	"devilscandy", 
+	"hiveworks", 
+
+	"http://www.devilscandycomic.com/", 
+	"http://www.devilscandycomic.com/?comic=prologue-01-2", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+
+Sarjakuva( 
+	"Dumbing of Age", 
+	"dumbingofage", 
+	"hiveworks", 
+
+	"http://www.dumbingofage.com/", 
+	"http://www.dumbingofage.com/2010/comic/book-1/01-move-in-day/home/", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+
+Sarjakuva( 
+	"El Goonish Shive", 
+	"elgoonishshive", 
+	"hiveworks", 
+
+	"http://www.egscomics.com/", 
+	"http://www.egscomics.com/index.php?id=1", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+
+Sarjakuva( 
+	"Empowered", 
+	"empowered", 
+	"hiveworks", 
+
+	"http://www.empoweredcomic.com", 
+	"http://www.empoweredcomic.com/comic/volume-1-page-1", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+Sarjakuva( 
+	"Flight of the Binturong", 
+	"flightofthebinturong", 
+	"hiveworks", 
+
+	"http://www.flightofthebinturong.com/", 
+	"http://flightofthebinturong.com/comic/cover/", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+
+Sarjakuva( 
+	"Floraverse", 
+	"floraverse", 
+	"hiveworks", 
+
+	"http://www.floraverse.com/", 
+	"http://floraverse.com/comic/seeds-a-mini-story/prologue/1-cover/", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+
+Sarjakuva( 
+	"Girl Genius", 
+	"girlgenius", 
+	"hiveworks", 
+
+	"http://www.girlgeniusonline.com/", 
+	"http://www.girlgeniusonline.com/comic.php?date=20021104.Vs9W61uLTRY", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+
+Sarjakuva( 
+	"Girlbot", 
+	"girlbot", 
+	"hiveworks", 
+
+	"http://www.intrepidgirlbot.com/", 
+	"http://www.intrepidgirlbot.com/2009/03/06/pretty-people-processor/", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+
+Sarjakuva( 
+	"Go Get a Roomie", 
+	"gogetaroomie", 
+	"hiveworks", 
+
+	"http://www.gogetaroomie.com/", 
+	"http://www.gogetaroomie.com/comic/and-so-it-begins", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+
+Sarjakuva( 
+	"Godslave", 
+	"godslave", 
+	"hiveworks", 
+
+	"http://www.godslavecomic.com/", 
+	"http://www.godslavecomic.com/comic/page-1", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+
+Sarjakuva( 
+	"Guilded Age", 
+	"guildedage", 
+	"hiveworks", 
+
+	"http://www.guildedage.net", 
+	"http://guildedage.net/comic/chapter-1-cover/", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+
+Sarjakuva( 
+	"Harpy Gee", 
+	"harpygee", 
+	"hiveworks", 
+
+	"http://www.harpygee.com/", 
+	"http://www.harpygee.com/comic/cover", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+
+Sarjakuva( 
+	"Headless Bliss", 
+	"headlessbliss", 
+	"hiveworks", 
+
+	"http://www.headlessbliss.com/", 
+	"http://www.headlessbliss.com/comic/page-1", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+
+Sarjakuva( 
+	"Heart-Shaped Skull", 
+	"heartshapedskull", 
+	"hiveworks", 
+
+	"http://www.heartshapedskull.com/", 
+	"http://www.headlessbliss.com/comic/page-1", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+
+Sarjakuva( 
+	"Helvetica", 
+	"helvetica", 
+	"hiveworks", 
+
+	"http://helvetica.jnwiedle.com/", 
+	"http://helvetica.jnwiedle.com/2011/06/24/and-so-it-begins/", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+
+Sarjakuva( 
+	"I Am Arg!", 
+	"iamarg", 
+	"hiveworks", 
+
+	"http://www.iamarg.com/", 
+	"http://iamarg.com/2011/05/08/05082011/", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+
+Sarjakuva( 
+	"Jailbird", 
+	"jailbird", 
+	"hiveworks", 
+
+	"http://an.oddlookingbird.com/", 
+	"http://an.oddlookingbird.com/comic/page-1", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+Sarjakuva( 
+	"Kiwi Blitz", 
+	"kiwiblitz", 
+	"hiveworks", 
+
+	"http://www.kiwiblitz.com/", 
+	"http://www.kiwiblitz.com/comic/welcome-to-kb", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+Sarjakuva( 
+	"Knights Errant", 
+	"knightserrant", 
+	"hiveworks", 
+
+	"http://sparklermonthly.com/series/knights-errant/", 
+	"http://sparklermonthly.com/ke/knights-errant-chapter-01-page-001/", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+Sarjakuva( 
+	"Lost Nightmare", 
+	"lostnightmare", 
+	"hiveworks", 
+
+	"http://www.lostnightmare.com/", 
+	"http://www.lostnightmare.com/comic/01-01", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+Sarjakuva( 
+	"Love Not Found", 
+	"lovenotfound", 
+	"hiveworks", 
+
+	"http://www.lovenotfound.com/", 
+	"http://www.lovenotfound.com/comic/chapter-1-cover", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+Sarjakuva( 
+	"Magical How?", 
+	"magicalhow", 
+	"hiveworks", 
+
+	"http://sparklermonthly.com/series/magical-how/", 
+	"http://sparklermonthly.com/mh/magical-how-chapter-01-page-001/", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+Sarjakuva( 
+	"Mare Internum", 
+	"mareinternum", 
+	"hiveworks", 
+
+	"http://www.marecomic.com/", 
+	"http://www.marecomic.com/comic/intro-page-1/", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+Sarjakuva( 
+	"Meaty Yogurt", 
+	"meatyyogurt", 
+	"hiveworks", 
+
+	"http://www.meatyyogurt.com/", 
+	"http://rosalarian.com/meatyyogurt/2010/10/01/starting-things-off-with-a-bang-4/", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+Sarjakuva( 
+	"Metacarpolis", 
+	"metacarpolis", 
+	"hiveworks", 
+
+	"http://www.metacarpolis.com/", 
+	"http://www.metacarpolis.com/metacarpolis/chapter-1-page-1", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+Sarjakuva( 
+	"Misfile", 
+	"misfile", 
+	"hiveworks", 
+
+	"http://www.misfile.com/", 
+	"http://www.misfile.com/?date=2004-02-22", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+Sarjakuva( 
+	"Monster Pulse", 
+	"monserpulse", 
+	"hiveworks", 
+
+	"http://www.monster-pulse.com/", 
+	"http://www.monster-pulse.com/comic/monster-pulse", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+Sarjakuva( 
+	"Monsterkind", 
+	"monsterkind", 
+	"hiveworks", 
+
+	"http://monsterkind.enenkay.com/", 
+	"http://monsterkind.enenkay.com/comic/first", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+Sarjakuva( 
+	"Namesake", 
+	"namesake", 
+	"hiveworks", 
+
+	"http://www.namesakecomic.com/", 
+	"http://namesakecomic.com/comic/the-journey-begins", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+Sarjakuva( 
+	"Never Satisfied", 
+	"neversatisfied", 
+	"hiveworks", 
+
+	"http://www.neversatisfiedcomic.com/", 
+	"http://www.neversatisfiedcomic.com/comic/chapter-1-chirp-chirp-chirp", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+Sarjakuva( 
+	"Not Drunk Enough", 
+	"notdrunkenough", 
+	"hiveworks", 
+
+	"http://www.ndecomic.com/", 
+	"http://www.ndecomic.com/comic/page-1", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+Sarjakuva( 
+	"Oh Joy Sex Toy!", 
+	"ohjoysextoy", 
+	"hiveworks", 
+
+	"http://www.ohjoysextoy.com/", 
+	"http://www.ohjoysextoy.com/introduction/", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+Sarjakuva( 
+	"Parallax", 
+	"parallax", 
+	"hiveworks", 
+
+	"http://www.parallaxcomic.com/", 
+	"http://www.parallaxcomic.com/comic/page-01", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+Sarjakuva( 
+	"Paranatural", 
+	"paranatural", 
+	"hiveworks", 
+
+	"http://www.paranatural.net/", 
+	"http://www.paranatural.net/comic/chapter-1", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+Sarjakuva( 
+	"Peritale", 
+	"peritale", 
+	"hiveworks", 
+
+	"http://www.peritale.com/", 
+	"http://www.peritale.com/comic/promo", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+Sarjakuva( 
+	"Platinum Black", 
+	"platinumblack", 
+	"paintrain", 
+
+	"http://www.platinumblackcomic.com", 
+	"http://platinumblackcomic.com/?comic=chapter-1-cover", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+Sarjakuva( 
+	"Prague Race", 
+	"praguerace", 
+	"hiveworks", 
+
+	"http://www.praguerace.com/", 
+	"http://www.praguerace.com/comic/start", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+Sarjakuva( 
+	"Real Science Adventures", 
+	"realscienceadventures", 
+	"hiveworks", 
+
+	"http://www.realscienceadventures.com", 
+	"http://www.realscienceadventures.com/comic/v01ch1-page-cover", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+Sarjakuva( 
+	"Saint for Rent", 
+	"saintforrent", 
+	"hiveworks", 
+
+	"http://www.saintforrent.com/", 
+	"http://www.saintforrent.com/comic/the-cloverhouse-inn", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+Sarjakuva( 
+	"SAKANA", 
+	"sakana", 
+	"hiveworks", 
+
+	"http://www.sakana-comic.com/", 
+	"http://www.sakana-comic.com/comic/title-page-vol-1", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+Sarjakuva( 
+	"Sam and Fuzzy", 
+	"samandfuzzy", 
+	"hiveworks", 
+
+	"http://www.samandfuzzy.com", 
+	"http://www.samandfuzzy.com/", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+Sarjakuva( 
+	"Scenes From a Multiverse", 
+	"multiverse", 
+	"hiveworks", 
+
+	"http://www.amultiverse.com/", 
+	"http://amultiverse.com/comic/2010/06/14/parenthood/", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+Sarjakuva( 
+	"Sfeer Theory", 
+	"sfeertheory", 
+	"hiveworks", 
+
+	"http://www.sfeertheory.com/", 
+	"http://www.sfeertheory.com/", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+Sarjakuva( 
+	"Shortpacked!", 
+	"shortpacked", 
+	"hiveworks", 
+
+	"http://www.shortpacked.com/", 
+	"http://www.shortpacked.com/index.php?id=1", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+Sarjakuva( 
+	"Sister Claire", 
+	"sisterclaire", 
+	"hiveworks", 
+
+	"http://www.sisterclaire.com/", 
+	"http://www.sisterclaire.com/comic/book-one", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+Sarjakuva( 
+	"Skullkickers", 
+	"skullkickers", 
+	"hiveworks", 
+
+	"http://comic.skullkickers.com/", 
+	"http://comic.skullkickers.com/comic/2012-01-06.Vs97qFuLTRY", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+Sarjakuva( 
+	"Sleepless Domain", 
+	"sleeplessdomain", 
+	"hiveworks", 
+
+	"http://www.sleeplessdomain.com/", 
+	"http://www.sleeplessdomain.com/comic/chapter-1-cover", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+Sarjakuva( 
+	"SnarlBear", 
+	"snarlbear", 
+	"hiveworks", 
+
+	"http://www.snarlbear.com/", 
+	"http://www.snarlbear.com/index.php?id=1", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+Sarjakuva( 
+	"Solstoria", 
+	"solstoria", 
+	"hiveworks", 
+
+	"http://www.solstoria.net/", 
+	"http://solstoria.net/comic/54/", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+Sarjakuva( 
+	"Spinnerette", 
+	"spinnerette", 
+	"hiveworks", 
+
+	"http://www.spinnyverse.com/", 
+	"http://www.spinnyverse.com/comic/02-09-2010", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+Sarjakuva( 
+	"StarHammer", 
+	"starhammer", 
+	"hiveworks", 
+
+	"http://www.starhammercomic.com/", 
+	"http://www.starhammercomic.com/comic/chapter-1-the-shakedown-pg-1-leading-the-charges", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+Sarjakuva( 
+	"Street Fighter Comics", 
+	"streetfighter", 
+	"hiveworks", 
+
+	"http://www.streetfightercomics.com/", 
+	"http://www.streetfightercomics.com/comic/stage-0-page-1", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+Sarjakuva( 
+	"Sufficiently Remarkable", 
+	"sufficientlyremarkable", 
+	"paintrain", 
+
+	"http://www.sufficientlyremarkable.com/", 
+	"http://sufficientlyremarkable.com/comic/the-beach", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+Sarjakuva( 
+	"Supernormal Step", 
+	"supernormalstep", 
+	"hiveworks", 
+
+	"http://www.supernormalstep.com/", 
+	"http://www.supernormalstep.com/archives/8", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+Sarjakuva( 
+	"The Black Brick Road of OZ", 
+	"theblackbrickroadofoz", 
+	"hiveworks", 
+
+	"http://www.blackbrickroadofoz.com", 
+	"http://www.blackbrickroadofoz.com/comic/cover", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+Sarjakuva( 
+	"The Boy Who Fell", 
+	"theboywhofell", 
+	"hiveworks", 
+
+	"http://www.boywhofell.com/", 
+	"http://www.boywhofell.com/comic/ch00p01", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+Sarjakuva( 
+	"The End", 
+	"end", 
+	"hiveworks", 
+
+	"http://www.endcomic.com/", 
+	"http://www.endcomic.com/comic/book-one-cover/", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+Sarjakuva( 
+	"The Glass Scientists", 
+	"glassscientists", 
+	"hiveworks", 
+
+	"http://www.theglassscientists.com/", 
+	"http://www.theglassscientists.com/?comic=chapter-i", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+Sarjakuva( 
+	"The Last Diplomat", 
+	"lastdiplomat", 
+	"hiveworks", 
+
+	"http://www.thelastdiplomat.com/", 
+	"http://www.thelastdiplomat.com/comic/page-001", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+Sarjakuva( 
+	"The Lonely Vincent Bellingham", 
+	"lonelyvincent", 
+	"hiveworks", 
+
+	"http://www.lonelyvincent.com/", 
+	"http://www.lonelyvincent.com/lonelyvincent/0", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+Sarjakuva( 
+	"The Mash", 
+	"mash", 
+	"hiveworks", 
+
+	"http://www.mashcomic.com/", 
+	"http://www.mashcomic.com/comic/prologue-01-and-02", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+Sarjakuva( 
+	"The Meek", 
+	"meek", 
+	"hiveworks", 
+
+	"http://www.meekcomic.com/", 
+	"http://www.meekcomic.com/comic/chapter-1-cover/", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+Sarjakuva( 
+	"This Is Not Fiction", 
+	"thisisnotfiction", 
+	"hiveworks", 
+
+	"http://www.thisisnotfiction.com/", 
+	"http://www.thisisnotfiction.com/comic/ch-01-sydney-morgan", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+Sarjakuva( 
+	"Todd Allison and the Petunia Violet", 
+	"petuniaviolet", 
+	"hiveworks", 
+
+	"http://petuniaviolet.com", 
+	"http://petuniaviolet.com/index.php?id=1", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+Sarjakuva( 
+	"Tove", 
+	"tove", 
+	"hiveworks", 
+
+	"http://www.tovecomic.com/", 
+	"http://www.tovecomic.com/comic/chapter-1-page-1", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+Sarjakuva( 
+	"Trying Human", 
+	"tryinghuman", 
+	"hiveworks", 
+
+	"http://www.tryinghuman.com/", 
+	"http://www.tryinghuman.com/comic/prologue--01", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+Sarjakuva( 
+	"Vibe", 
+	"vibecomic", 
+	"hiveworks", 
+
+	"http://www.vibecomic.com/", 
+	"http://www.vibecomic.com/vibe/cover-2", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+ Sarjakuva(  vaatii oman luokan?
+ 	"Weregeek", 
+ 	"weregeek", 
+ 	"hiveworks", 
+
+ 	"http://www.weregeek.com/", 
+ 	"http://www.weregeek.com/2006/11/27/", 
+ 	None, 
+ 	24, 
+ 	"1,2,4,5", 
+ 	None, 
+ 	False, 
+ ),
+
+Sarjakuva( 
+	"Wilde Life", 
+	"wildelife", 
+	"hiveworks", 
+
+	"http://www.wildelifecomic.com/", 
+	"http://www.wildelifecomic.com/comic/1", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+Sarjakuva( 
+	"Wonderlust", 
+	"wonderlust", 
+	"hiveworks", 
+
+	"http://www.wonderlustcomic.com", 
+	"http://www.wonderlustcomic.com/comic/pg-1-2-vamoose", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+ Sarjakuva(   vaatii oman luokan
+ 	"You Suck", 
+ 	"yousuck", 
+ 	"hiveworks", 
+
+ 	"http://www.yousuckthecomic.com/", 
+ 	"http://yousuckthecomic.com/tagged/webcomics/chrono", 
+ 	None, 
+ 	24, 
+ 	"1,2,4,5", 
+ 	None, 
+ 	False, 
+ ),
+
+Sarjakuva( 
+	"Zombie Roomie", 
+	"zombieroomie", 
+	"happletea", 
+
+	"http://www.zombieroomie.com/", 
+	"http://www.zombieroomie.com/2009/10/26/issues/", 
+	None, 
+	24, 
+	"1,2,4,5", 
+	None, 
+	False, 
+),
+
+
+
+
+	 Sarjakuva(
+	 	"name", 
+	 	"alias",
+	 	"hiveworks",
+
+	 	"url", 
+	 	"url2",
+	 	None,
+	 	24,
+	 	"1,2,4,5",
+	 	None,
+	 	False
+	 ),
 	
 
-# 	# END OF HIWEWORKS
-# 	# 
+ END OF HIWEWORKS
+ 
 	
-# 	Sarjakuva( 
-# 		"For lack of a better comic", 
-# 		"floabc",
-# 		"floabc",
+Sarjakuva( 
+	"For lack of a better comic", 
+	"floabc",
+	"floabc",
 
-# 		"http://www.forlackofabettercomic.com", 
-# 		"http://forlackofabettercomic.com/?id=1",		
-# 	),
+	"http://www.forlackofabettercomic.com", 
+	"http://forlackofabettercomic.com/?id=1",		
+),
 
-# 	Sarjakuva(
-# 		"Love Me Nice", 
-# 		"lovemenice",
-# 		"floabc",
+Sarjakuva(
+	"Love Me Nice", 
+	"lovemenice",
+	"floabc",
 
-# 		"http://lovemenicecomic.com/comic", 
-# 		"http://lovemenicecomic.com/comic/001.php",
-# 		"Amanda Lafrenais", 		
-# 	),
+	"http://lovemenicecomic.com/comic", 
+	"http://lovemenicecomic.com/comic/001.php",
+	"Amanda Lafrenais", 		
+),
 
 
 	
 
-# 	# INTERROBANG
-# 	Sarjakuva( #29,
-# 		"Im my own Mascot", 
-# 		"imomascot",
-# 		"interrobang",
+ INTERROBANG
+Sarjakuva( 29,
+	"Im my own Mascot", 
+	"imomascot",
+	"interrobang",
 
-# 		"http://www.interrobangstudios.com/comics-display.php?comic_id=9", 
-# 		"http://interrobangstudios.com/comics-display.php?strip_id=141",		
-# 	),
-# 	Sarjakuva( #29,
-# 		"Wookie-ookies", 
-# 		"wookie",
-# 		"interrobang",
+	"http://www.interrobangstudios.com/comics-display.php?comic_id=9", 
+	"http://interrobangstudios.com/comics-display.php?strip_id=141",		
+),
+Sarjakuva( 29,
+	"Wookie-ookies", 
+	"wookie",
+	"interrobang",
 
-# 		"http://www.interrobangstudios.com/comics-display.php?comic_id=18", 
-# 		"http://interrobangstudios.com/comics-display.php?strip_id=929",
-# 	),
-# 	Sarjakuva( #29,
-# 		"Things Which Defy Categorization", 
-# 		"twdc",
-# 		"interrobang",
+	"http://www.interrobangstudios.com/comics-display.php?comic_id=18", 
+	"http://interrobangstudios.com/comics-display.php?strip_id=929",
+),
+Sarjakuva( 29,
+	"Things Which Defy Categorization", 
+	"twdc",
+	"interrobang",
 
-# 		"http://www.interrobangstudios.com/comics-display.php?comic_id=17", 
-# 		"http://interrobangstudios.com/comics-display.php?strip_id=49",
-# 	),
-# 	Sarjakuva( #29,
-# 		"Fair-Haired Adventure Seekers", 
-# 		"adventureseekers",
-# 		"interrobang",
+	"http://www.interrobangstudios.com/comics-display.php?comic_id=17", 
+	"http://interrobangstudios.com/comics-display.php?strip_id=49",
+),
+Sarjakuva( 29,
+	"Fair-Haired Adventure Seekers", 
+	"adventureseekers",
+	"interrobang",
 
-# 		"http://www.interrobangstudios.com/comics-display.php?comic_id=6", 
-# 		"http://interrobangstudios.com/comics-display.php?strip_id=930",
-# 	),
-# 	Sarjakuva( #29,
-# 		"It sucks to be Weegie", 
-# 		"weegie",
-# 		"interrobang",
+	"http://www.interrobangstudios.com/comics-display.php?comic_id=6", 
+	"http://interrobangstudios.com/comics-display.php?strip_id=930",
+),
+Sarjakuva( 29,
+	"It sucks to be Weegie", 
+	"weegie",
+	"interrobang",
 
-# 		"http://www.interrobangstudios.com/comics-display.php?comic_id=11", 
-# 		"http://interrobangstudios.com/comics-display.php?strip_id=941",
-# 	),
-# 	Sarjakuva( #29,
-# 		"WatchBabies", 
-# 		"watchbabies",
-# 		"interrobang",
+	"http://www.interrobangstudios.com/comics-display.php?comic_id=11", 
+	"http://interrobangstudios.com/comics-display.php?strip_id=941",
+),
+Sarjakuva( 29,
+	"WatchBabies", 
+	"watchbabies",
+	"interrobang",
 
-# 		"http://www.interrobangstudios.com/comics-display.php?comic_id=7", 
-# 		"http://interrobangstudios.com/comics-display.php?strip_id=959",
-# 	),
-# 	Sarjakuva( #29,
-# 		"Ensign3 Crisis of Infinite Sues", 
-# 		"ensign3",
-# 		"interrobang",
+	"http://www.interrobangstudios.com/comics-display.php?comic_id=7", 
+	"http://interrobangstudios.com/comics-display.php?strip_id=959",
+),
+Sarjakuva( 29,
+	"Ensign3 Crisis of Infinite Sues", 
+	"ensign3",
+	"interrobang",
 
-# 		"http://www.interrobangstudios.com/comics-display.php?comic_id=10", 
-# 		"http://interrobangstudios.com/comics-display.php?strip_id=989",
-# 	),
-# 	Sarjakuva( #29,
-# 		"Spinks", 
-# 		"spinks",
-# 		"interrobang",
+	"http://www.interrobangstudios.com/comics-display.php?comic_id=10", 
+	"http://interrobangstudios.com/comics-display.php?strip_id=989",
+),
+Sarjakuva( 29,
+	"Spinks", 
+	"spinks",
+	"interrobang",
 
-# 		"http://www.spinkspink.com/", 
-# 		"http://www.spinkspink.com/index.php?strip_id=78",
-# 	),
-# 	Sarjakuva( #29,
-# 		"Trigger Star", 
-# 		"triggerstar",
-# 		"interrobang",
+	"http://www.spinkspink.com/", 
+	"http://www.spinkspink.com/index.php?strip_id=78",
+),
+Sarjakuva( 29,
+	"Trigger Star", 
+	"triggerstar",
+	"interrobang",
 
-# 		"http://www.triggerstar.com/", 
-# 		"http://www.triggerstar.com/index.php?strip_id=60",
-# 	),
-# 	Sarjakuva( #29,
-# 		"The Dark Intruder", 
-# 		"darkintruder",
-# 		"interrobang",
+	"http://www.triggerstar.com/", 
+	"http://www.triggerstar.com/index.php?strip_id=60",
+),
+Sarjakuva( 29,
+	"The Dark Intruder", 
+	"darkintruder",
+	"interrobang",
 
-# 		"http://www.interrobangstudios.com/comics-display.php?comic_id=1", 
-# 		"http://interrobangstudios.com/comics-display.php?strip_id=1",
-# 	),
-# 	Sarjakuva( #29,
-# 		"A Girl Named Bob", 
-# 		"girlbob",
-# 		"interrobang",
+	"http://www.interrobangstudios.com/comics-display.php?comic_id=1", 
+	"http://interrobangstudios.com/comics-display.php?strip_id=1",
+),
+Sarjakuva( 29,
+	"A Girl Named Bob", 
+	"girlbob",
+	"interrobang",
 
-# 		"http://www.interrobangstudios.com/comics-display.php?comic_id=3", 
-# 		"http://interrobangstudios.com/comics-display.php?strip_id=31",
-# 	),
-# 	Sarjakuva( #29,
-# 		"This is Visas", 
-# 		"visas",
-# 		"interrobang",
+	"http://www.interrobangstudios.com/comics-display.php?comic_id=3", 
+	"http://interrobangstudios.com/comics-display.php?strip_id=31",
+),
+Sarjakuva( 29,
+	"This is Visas", 
+	"visas",
+	"interrobang",
 
-# 		"http://www.interrobangstudios.com/comics-display.php?comic_id=13", 
-# 		"http://interrobangstudios.com/comics-display.php?strip_id=357",
-# 	),
-# 	Sarjakuva( #29,
-# 		"Heeere's Satan", 
-# 		"heresatan",
-# 		"interrobang",
+	"http://www.interrobangstudios.com/comics-display.php?comic_id=13", 
+	"http://interrobangstudios.com/comics-display.php?strip_id=357",
+),
+Sarjakuva( 29,
+	"Heeere's Satan", 
+	"heresatan",
+	"interrobang",
 
-# 		"http://www.interrobangstudios.com/comics-display.php?comic_id=15", 
-# 		"http://interrobangstudios.com/comics-display.php?strip_id=146",
-# 	),
-# 	Sarjakuva( #29,
-# 		"Punker Darren", 
-# 		"punkerdarren",
-# 		"interrobang",
+	"http://www.interrobangstudios.com/comics-display.php?comic_id=15", 
+	"http://interrobangstudios.com/comics-display.php?strip_id=146",
+),
+Sarjakuva( 29,
+	"Punker Darren", 
+	"punkerdarren",
+	"interrobang",
 
-# 		"http://www.interrobangstudios.com/comics-display.php?comic_id=2", 
-# 		"http://interrobangstudios.com/comics-display.php?strip_id=16",
-# 	),
-# 	Sarjakuva( #29,
-# 		"Space is really big!", 
-# 		"bigspace",
-# 		"interrobang",
+	"http://www.interrobangstudios.com/comics-display.php?comic_id=2", 
+	"http://interrobangstudios.com/comics-display.php?strip_id=16",
+),
+Sarjakuva( 29,
+	"Space is really big!", 
+	"bigspace",
+	"interrobang",
 
-# 		"http://www.interrobangstudios.com/comics-display.php?comic_id=12", 
-# 		"http://interrobangstudios.com/comics-display.php?strip_id=55",
-# 	),
+	"http://www.interrobangstudios.com/comics-display.php?comic_id=12", 
+	"http://interrobangstudios.com/comics-display.php?strip_id=55",
+),
 	
 
-# 	# END OF INTERROBANG
-# 	# 
+ END OF INTERROBANG
+ 
 	
 
 
@@ -1957,31 +1636,31 @@
 
 
 
-# 	Sarjakuva(
-# 		"Pepper and Carrot", 
-# 		"pepperandcarrot",
-# 		"pepperandcarrot",
+Sarjakuva(
+	"Pepper and Carrot", 
+	"pepperandcarrot",
+	"pepperandcarrot",
 
-# 		"http://www.peppercarrot.com", 
-# 		"http://www.peppercarrot.com/en/static6/sources",
-# 	),
+	"http://www.peppercarrot.com", 
+	"http://www.peppercarrot.com/en/static6/sources",
+),
 
-# 	Sarjakuva( 
-# 		"Catsu The Cat", 
-# 		"cats",
-# 		"cats",
+Sarjakuva( 
+	"Catsu The Cat", 
+	"cats",
+	"cats",
 
-# 		"http://www.catsuthecat.com/blogs/comics/", 
-# 		"http://www.catsuthecat.com/blogs/comics/",
-# 	),
+	"http://www.catsuthecat.com/blogs/comics/", 
+	"http://www.catsuthecat.com/blogs/comics/",
+),
 
-# 	Sarjakuva( 
-# 		"Unsounded", 
-# 		"unsounded",
-# 		"unsounded",
+Sarjakuva( 
+	"Unsounded", 
+	"unsounded",
+	"unsounded",
 
-# 		"http://www.casualvillain.com/Unsounded/comic+index", 
-# 		"http://www.casualvillain.com/Unsounded/comic/ch01/ch01_01.html",
-# 		#"http://www.casualvillain.com/Unsounded/comic/ch05/ch05_16.html",
-# 		#"http://www.casualvillain.com/Unsounded/comic/ch10/ch10_162.html"
-# 	),
+	"http://www.casualvillain.com/Unsounded/comic+index", 
+	"http://www.casualvillain.com/Unsounded/comic/ch01/ch01_01.html",
+	"http://www.casualvillain.com/Unsounded/comic/ch05/ch05_16.html",
+	"http://www.casualvillain.com/Unsounded/comic/ch10/ch10_162.html"
+),
