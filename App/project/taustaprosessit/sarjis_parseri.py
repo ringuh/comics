@@ -92,7 +92,6 @@ def Looper(id):
 		elif comic.parseri == "unsounded":
 			olio = Unsounded(comic)
 		else:
-			print("ELSE")
 			olio = Sarjis(comic)
 
 		last_url = comic.last_url
@@ -106,7 +105,7 @@ def Looper(id):
 				Log(comic.id, None, "Haku päättyi", count)
 				break
 			
-			if("short" in sys.argv and count > 2) or count > 5: # ei ikilooppeja
+			if("short" in sys.argv and count > 2) or count > app.config["MAX_QUERY"]: # ei ikilooppeja
 				return False
 		
 		sessio.close()
