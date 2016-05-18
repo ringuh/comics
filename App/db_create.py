@@ -1270,6 +1270,66 @@ content = [
 		
 	),
 
+	Sarjakuva(
+		"Pepper and Carrot", 
+		"pepperandcarrot",
+		
+		"http://www.peppercarrot.com", 
+		"http://peppercarrot.com/en/article234/potion-of-flight",
+		test="http://peppercarrot.com/en/article350/episode-14-the-dragon-s-tooth",
+
+		tags="img.comicpage",
+		next="a|i.fa-chevron-right",
+	),
+
+	Sarjakuva( 
+		"Catsu The Cat", 
+		"catsu",
+
+		"http://www.catsuthecat.com/blogs/comics/", 
+		"http://www.catsuthecat.com/blogs/comics/",
+		parseri="catsu",
+		test="pienirinkula.com"
+	),
+
+	Sarjakuva( 
+		"Unsounded", 
+		"unsounded",
+
+		"http://www.casualvillain.com/Unsounded/comic+index", 
+		"http://www.casualvillain.com/Unsounded/comic/ch01/ch01_01.html",
+		#"http://www.casualvillain.com/Unsounded/comic/ch05/ch05_16.html",
+		#"http://www.casualvillain.com/Unsounded/comic/ch10/ch10_162.html"
+		test="pienirinkula.com",
+		parseri="unsounded",
+
+	),
+
+	Sarjakuva( 
+		"For lack of a better comic", 
+		"floabc",
+
+		"http://www.forlackofabettercomic.com", 
+		"http://forlackofabettercomic.com/?id=1",
+		test="http://forlackofabettercomic.com/?id=277",
+
+		tags="#comicimg",
+		next="a|#comicimg",	
+	),
+
+	Sarjakuva(
+		"Love Me Nice", 
+		"lovemenice",
+
+		"http://lovemenicecomic.com/comic/", 
+		"http://lovemenicecomic.com/comic/001.php",
+		test="http://lovemenicecomic.com/comic/215.php",
+
+		tags="#comicimg",
+		next="a|#comicimg",
+	),
+
+
 
 
 ]

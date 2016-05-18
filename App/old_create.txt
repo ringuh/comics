@@ -97,14 +97,6 @@ Sarjakuva(
 	"http://www.marycagle.com/letsspeakenglish/1-shingeki-no-kodomo",
 	"Mary Cagle", 
 ),
-Sarjakuva( 
-	"The Rock Cocks", 
-	"rockcocks", 
-	"hiveworks",
-		
-	"http://www.therockcocks.com", 
-	"http://www.therockcocks.com/comic/page-1-nsfw-track-1-start",
-),
 
 Sarjakuva(
 	"Whomp", 
@@ -1473,24 +1465,6 @@ Sarjakuva(
  END OF HIWEWORKS
  
 	
-Sarjakuva( 
-	"For lack of a better comic", 
-	"floabc",
-	"floabc",
-
-	"http://www.forlackofabettercomic.com", 
-	"http://forlackofabettercomic.com/?id=1",		
-),
-
-Sarjakuva(
-	"Love Me Nice", 
-	"lovemenice",
-	"floabc",
-
-	"http://lovemenicecomic.com/comic", 
-	"http://lovemenicecomic.com/comic/001.php",
-	"Amanda Lafrenais", 		
-),
 
 
 	
@@ -1636,31 +1610,3 @@ Sarjakuva( 29,
 
 
 
-Sarjakuva(
-	"Pepper and Carrot", 
-	"pepperandcarrot",
-	"pepperandcarrot",
-
-	"http://www.peppercarrot.com", 
-	"http://www.peppercarrot.com/en/static6/sources",
-),
-
-Sarjakuva( 
-	"Catsu The Cat", 
-	"cats",
-	"cats",
-
-	"http://www.catsuthecat.com/blogs/comics/", 
-	"http://www.catsuthecat.com/blogs/comics/",
-),
-
-Sarjakuva( 
-	"Unsounded", 
-	"unsounded",
-	"unsounded",
-
-	"http://www.casualvillain.com/Unsounded/comic+index", 
-	"http://www.casualvillain.com/Unsounded/comic/ch01/ch01_01.html",
-	"http://www.casualvillain.com/Unsounded/comic/ch05/ch05_16.html",
-	"http://www.casualvillain.com/Unsounded/comic/ch10/ch10_162.html"
-),
