@@ -8,7 +8,7 @@
 	{% set st = c.Last() %}
 	{% if st != None %}
 	<h3 ng-init="strippi={{ st.id }};Thumbs();"> 
-		{{ st.sarjakuva.nimi }} {{ st.Pvm() }}
+		{{ st.sarjakuva.id }} {{ st.sarjakuva.nimi }} {{ st.Pvm() }} 
 		<span ng-class="{ 'good': vote===true }"
 			ng-click="Thumbs(true)"
 			class="pointer glyphicons glyphicons-thumbs-up"></span>

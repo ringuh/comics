@@ -41,7 +41,8 @@ class Sarjis(object):
 		r = requests.get(self.urli, headers=app.config["REQUEST_HEADER"] )
 		
 		self.soup = BeautifulSoup(r.text, 'html.parser')
-
+		self.Print(self.soup)
+		self.Print("\n\n")
 		#fo.write(str(self.soup));
 		#fo.close()
 
@@ -195,8 +196,10 @@ class Sarjis(object):
 			kuva = dict(nimi=None, src=None, filetype=self.sarjakuva.filetype)
 			try:
 				try:
+					image["src"] = image["src"].strip()
 					image["src"] = "{}".format(image["src"].replace("_250.", "_1280."))
 					image["src"] = "{}".format(image["src"].replace("_500.", "_1280."))
+					image["src"] = image["src"].replace(" ", "%20")
 					image["src"] = image["src"].replace("\n", "")
 					#image["src"] = image["src"].split("?")[0]
 					if image["src"].index("//") == 0:
@@ -220,7 +223,7 @@ class Sarjis(object):
 				# poistetaan "/comics/../comics/"
 				ksplit = kuva["src"].split("/")
 				if ".." in ksplit:
-					print( kuva["src"],ksplit)
+					#print( kuva["src"],ksplit)
 					indx = ksplit.index("..")
 					if indx > 0:
 						del ksplit[indx-1]

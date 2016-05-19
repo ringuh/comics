@@ -493,7 +493,6 @@ content = [
 
 		tags="#comic>img",
 		next="a.comic-nav-next",
-		interval=0,
 	),
 
 	Sarjakuva(
@@ -787,17 +786,7 @@ content = [
 		tags="div.photo>img",
 		next="span.next_post>a",
 	),
-	Sarjakuva(
-		"Menage a 3", 
-		"ma3", 
-
-		"http://www.ma3comic.com/", 
-		"http://www.ma3comic.com/strips-ma3/for_new_readers",
-		test="http://www.ma3comic.com/strips-ma3/synchronized_swimmers",
-
-		tags="#cc>img",
-		next="#cndnext",
-	),
+	
 
 	Sarjakuva(
 		"Gone With the Blastwave",  
@@ -972,9 +961,10 @@ content = [
 		
 		"http://completelyseriouscomics.com/", 
 		"http://completelyseriouscomics.com/?p=6",
-		test="",
+		test="pienirinkula.com",
 		tags="#comic>img",
 		next="a.navi-next",
+		interval=0, # lopetettu
 	),
 
 	Sarjakuva(
@@ -1048,7 +1038,7 @@ content = [
 					
 		"http://explodingdinosaur.com/", 
 		"http://explodingdinosaur.com/comic/seriously-stop-it/",
-		test="",
+		test="http://explodingdinosaur.com/comic/hipster-kitchen/",
 		tags="#comic>img",
 		next="a.navi-next",
 	),
@@ -1328,8 +1318,1409 @@ content = [
 		tags="#comicimg",
 		next="a|#comicimg",
 	),
+# Sarjakuva(
+# 	"Johnny Wander Fiction", 
+# 	"johnnywander",
 
 
+# 	"http://www.johnnywander.com/fiction", 
+# 	"http://www.johnnywander.com/fiction/girl-with-the-skeleton-hand-1",
+# 	test=None,
+
+# 	tags="",
+# 	next=""
+
+# 	interval=0, # PÄÄTTYNYT
+	
+# ),
+
+# Sarjakuva(
+# 	"Lucky Penny", 
+# 	"luckypenny",
+
+# 	"http://www.johnnywander.com/luckypenny", 
+# 	"http://www.johnnywander.com/luckypenny/lucky-penny-001", 
+# 	test=None,
+
+# 	tags="",
+# 	next=""
+
+# 	interval=0, # PÄÄTTYNYT ?
+# ),
+# Sarjakuva( 
+# 	"Autobio", 
+# 	"autobio",
+
+# 	"http://www.johnnywander.com/comic", 
+# 	"http://www.johnnywander.com/comic/i",	
+# 	test=None,
+
+# 	tags="",
+# 	next=""	
+
+# 	interval=0, # PÄÄTTYNYT ?
+# ),
+
+Sarjakuva( 
+	"Is This What You Wanted", 
+	"itwyw",
+
+	"http://www.johnnywander.com/itwyw/", 
+	"http://www.johnnywander.com/itwyw/is-this-what-you-wanted",	
+	test="http://www.johnnywander.com/comic/is-this-what-you-wanted-25",
+
+	tags="#cc-comic",
+	next="#cc-comicbody>a"	
+
+),
+
+Sarjakuva(
+	"Lets Speak English", 
+	"letsspeakenglish", 
+
+	"http://www.marycagle.com", 
+	"http://www.marycagle.com/letsspeakenglish/1-shingeki-no-kodomo",
+	test="http://www.marycagle.com/letsspeakenglish/121-on-the-catwalk",
+	
+	tags="#cc-comic",
+	next="#cc-comicbody>a"	
+),
+
+Sarjakuva(
+	"Whomp", 
+	"whomp",
+
+	"http://www.whompcomic.com/", 
+	"http://www.whompcomic.com/comic/06152010",
+	test="http://www.whompcomic.com/comic/mirror-mismatch",
+	tags="#cc-comic",
+	next="#cc-comicbody>a"	
+),
+
+Sarjakuva(
+	"6 Gun Mage", 
+	"6gunmage",
+
+	"http://www.6gunmage.com", 
+	"http://www.6gunmage.com/comic/6-gun-mage-kickoff",
+	test="http://www.6gunmage.com/comic/page-29-12",
+	tags="#cc-comic",
+	next="#cc-comicbody>a"	
+),
+
+Sarjakuva(
+	"A Ghost Story", 
+	"ghoststory",
+
+	"http://www.aghoststorycomic.com", 
+	"http://www.aghoststorycomic.com/comic/in-the-black-1",
+	test="http://www.aghoststorycomic.com/comic/break-comic-1",
+
+	tags="#cc-comic",
+	next="#cc-comicbody>a"	
+),
+
+Sarjakuva(
+	"Agents of the Realm", 
+	"agentsoftherealm",
+
+	"http://www.agentsoftherealm.com/", 
+	"http://www.agentsoftherealm.com/aotr/-volume-1-",
+	test="http://www.agentsoftherealm.com/aotr/-intermission-iii-3-by-eve-g",
+
+	tags="#cc-comic",
+	next="#cc-comicbody>a"	
+),
+
+Sarjakuva(
+	"Alice and the Nightmare", 
+	"aliceandthenightmare",
+
+	"http://www.aliceandthenightmare.com/", 
+	"http://www.aliceandthenightmare.com/comic/chapter-one-cover",
+	test="http://www.aliceandthenightmare.com/comic/chapter-3-page-21",
+
+	tags="#cc-comic",
+	next="#cc-comicbody>a"	
+),
+
+Sarjakuva(
+	"Aquapunk", 
+	"aquapunk",
+
+	"http://www.aquapunk.co/", 
+	"http://www.aquapunk.co/comic/book1",
+	test="http://www.aquapunk.co/comic/4035",
+
+	tags="#cc-comic",
+	next="#cc-comicbody>a"	
+),
+
+Sarjakuva(
+	"Astral Aves", 
+	"astralaves",
+
+	"http://www.astralaves.com/", 
+	"http://www.astralaves.com/comic/a-cacophony-of-stars",
+	test="http://www.astralaves.com/comic/09-033",
+
+	tags="#cc-comic",
+	next="#cc-comicbody>a"	
+),
+
+Sarjakuva(
+	"Atomic-robo", 
+	"atomicrobo",
+
+	"http://www.atomic-robo.com/", 
+	"http://www.atomic-robo.com/atomicrobo/v1ch1-cover",
+	test="http://www.atomic-robo.com/atomicrobo/v11ch1-page-21",
+
+	tags="#cc-comic",
+	next="#cc-comicbody>a"	
+),
+
+Sarjakuva(
+	"Awaken", 
+	"awaken",
+
+	"http://www.awakencomic.com/", 
+	"http://www.awakencomic.com/comic/comic-cover",
+	test="http://www.awakencomic.com/comic/ch4-page-28",
+
+	tags="#cc-comic",
+	next="#cc-comicbody>a"	
+),
+
+Sarjakuva(
+	"Balderdash", 
+	"balderdash",
+
+	"http://www.balderdashcomic.com/", 
+	"http://www.balderdashcomic.com/comic/i01",
+	test="http://www.balderdashcomic.com/comic/chapter-vi-page-149",
+
+	tags="#cc-comic",
+	next="#cc-comicbody>a"	
+),
+
+Sarjakuva(
+	"Basinvale", 
+	"basinvale",
+
+	"http://www.basinvale.com/", 
+	"http://www.basinvale.com/index.php?id=1",
+	test="http://www.basinvale.com/index.php?id=129",
+
+	tags="#comic",
+	next="a.next"	
+),
+
+Sarjakuva(
+	"Beeserker", 
+	"beeserker",
+
+	"http://www.beeserker.com/", 
+	"http://www.beeserker.com/comics/the-scienceman/",
+	test="http://www.beeserker.com/comics/wallpapers/",
+
+	tags="#comic>img",
+	next="a.navi-next"	
+),
+
+
+Sarjakuva(
+	"Black Grass", 
+	"blackgrass",
+
+	"http://blackgrasscomic.com/", 
+	"http://www.blackgrasscomic.com/comic/page-1",
+	test="http://www.blackgrasscomic.com/comic/page-68",
+
+	tags="#cc-comic",
+	next="#cc-comicbody>a"	
+),
+
+Sarjakuva(
+	"Blaster Nation", 
+	"blasternation",
+
+	"http://www.blasternation.com/", 
+	"http://www.blasternation.com/comic/1-one-day-in-the-life-of-matthew-palmer",
+	test="http://www.blasternation.com/comic/497-poor-hammy",
+
+	tags="#cc-comic",
+	next="#cc-comicbody>a"	
+),
+
+Sarjakuva(
+	"Blindsprings", 
+	"blindsprings",
+
+	"http://www.blindsprings.com/", 
+	"http://www.blindsprings.com/comic/blindsprings-cover-book-one",
+	test="http://www.blindsprings.com/comic/whomp-whomp",
+
+	tags="#cc-comic",
+	next="#cc-comicbody>a"	
+),
+
+Sarjakuva(
+	"Broodhollow", 
+	"broodhollow",
+
+	"http://broodhollow.chainsawsuit.com/", 
+	"http://broodhollow.chainsawsuit.com/page/2012/10/06/book-1-curious-little-thing/",
+	test="http://broodhollow.chainsawsuit.com/page/2016/05/09/among-the-bowers-page-3/",
+
+	tags="#comic>img",
+	next="a.navi-next"	
+),
+
+
+Sarjakuva(
+	"Cassiopeia Quinn", 
+	"cassiopeiaquinn",
+
+	"http://www.cassiopeiaquinn.com/", 
+	"http://www.cassiopeiaquinn.com/comic/the-prize-cover",
+	test="http://www.cassiopeiaquinn.com/comic/the-big-race-page-32",
+
+	tags="#cc-comic",
+	next="#cc-comicbody>a"	
+),
+
+Sarjakuva(
+	"Clique Refresh", 
+	"cliquerefresh",
+
+	"http://cliquerefresh.com/", 
+	"http://cliquerefresh.com/comic/start-it-up/",
+	test="http://cliquerefresh.com/comic/111-the-struggle/",
+
+	tags="div.comicImg>img",
+	next="#nextcomic"	
+),
+
+Sarjakuva(
+	"Crazy Sunshine", 
+	"crazysunshine",
+
+	"http://www.crazysunshine.com/", 
+	"http://www.crazysunshine.com/",
+	test=None,
+
+	tags="#cc-comic",
+	next="#cc-comicbody>a"	
+),
+
+Sarjakuva(
+	"Cut Time", 
+	"cuttime",
+
+	"http://www.cuttimecomic.com/", 
+	"http://www.cuttimecomic.com/comic/volume-01-first-impressions",
+	test="http://www.cuttimecomic.com/comic/chapter-2-page-6",
+
+	tags="#cc-comic",
+	next="#cc-comicbody>a"	
+),
+
+Sarjakuva( 
+	"Daughter of the Lilies", 
+	"daughterofthelilies",  
+
+	"http://www.daughterofthelilies.com/", 
+	"http://www.daughterofthelilies.com/dotl/part-1-a-girl-with-no-face", 
+	test="http://www.daughterofthelilies.com/dotl/503",
+
+	tags="#cc-comic",
+	next="#cc-comicbody>a"	
+),
+
+
+ Sarjakuva( # ANGULARJS tee custom class. META TAGISTA url
+ 	"Deathbulge", 
+ 	"deathbulge", 
+
+ 	"http://www.deathbulge.com/", 
+ 	"http://www.deathbulge.com/comics/1", 
+ 	test="http://www.deathbulge.com/comics/341",
+
+	#tags="#comic>img",
+	tags="meta|!content:in:images/comics/",
+	next="#next-button"	
+ ),
+
+
+Sarjakuva( 
+	"Demon Street", 
+	"demonstreet",  
+
+	"http://www.demonstreet.co/", 
+	"http://www.demonstreet.co/comic/1", 
+	test="http://www.demonstreet.co/comic/276",
+
+	tags="#cc-comic",
+	next="#cc-comicbody>a"	
+),
+
+
+Sarjakuva( 
+	"Devil's Candy", 
+	"devilscandy",  
+
+	"http://www.devilscandycomic.com/", 
+	"http://www.devilscandycomic.com/?comic=prologue-01-2", 
+	test="http://www.devilscandycomic.com/?comic=ch04p04",
+
+	tags="#comic>img",
+	next="a.comic-nav-next"	
+),
+
+
+Sarjakuva( 
+	"Dumbing of Age", 
+	"dumbingofage",  
+
+	"http://www.dumbingofage.com/", 
+	"http://www.dumbingofage.com/2010/comic/book-1/01-move-in-day/home/", 
+	test="http://www.dumbingofage.com/2016/comic/book-6/03-when-god-closes-the-door/traumatizing/",
+
+	tags="#comic>img",
+	next="a.navi-next"	
+),
+
+
+Sarjakuva( 
+	"El Goonish Shive", 
+	"elgoonishshive",  
+
+	"http://www.egscomics.com/", 
+	"http://www.egscomics.com/index.php?id=1", 
+	test="http://www.egscomics.com/index.php?id=2188",
+
+	tags="#comic",
+	next="a.next"	
+),
+
+
+Sarjakuva( 
+	"Empowered", 
+	"empowered",  
+
+	"http://www.empoweredcomic.com", 
+	"http://www.empoweredcomic.com/comic/volume-1-page-1", 
+	test="http://www.empoweredcomic.com/comic/volume-1-page-225",
+
+	tags="#cc-comic",
+	next="#cc-comicbody>a"	
+),
+
+Sarjakuva( 
+	"Flight of the Binturong", 
+	"flightofthebinturong",  
+
+	"http://www.flightofthebinturong.com/", 
+	"http://flightofthebinturong.com/comic/cover/", 
+	test="http://flightofthebinturong.com/comic/update-87-awakenings/",
+
+	tags="#comic>img",
+	next="a.navi-next"	
+),
+
+
+Sarjakuva( 
+	"Floraverse", 
+	"floraverse",  
+
+	"http://www.floraverse.com/", 
+	"http://floraverse.com/comic/seeds-a-mini-story/prologue/1-cover/", 
+	test="http://floraverse.com/comic/oneshots/459-canada-incoming/",
+
+	tags="img.comic-page-image",
+	next="div.-next>a"	
+),
+
+
+Sarjakuva( 
+	"Girl Genius", 
+	"girlgenius",  
+
+	"http://www.girlgeniusonline.com/", 
+	"http://www.girlgeniusonline.com/comic.php?date=20021104", 
+	test="http://www.girlgeniusonline.com/comic.php?date=20160513",
+
+	tags="img|!alt:in:comic",
+	next="#topnext"	
+),
+
+
+Sarjakuva( 
+	"Girlbot", 
+	"girlbot",  
+
+	"http://www.intrepidgirlbot.com/", 
+	"http://www.intrepidgirlbot.com/2009/03/06/pretty-people-processor/", 
+	test="http://www.intrepidgirlbot.com/2015/09/25/dumb-girlbot-comics-stripes/",
+
+	tags="img.comic-item",
+	next="a.next-comic-link"	
+),
+
+
+Sarjakuva( 
+	"Go Get a Roomie", 
+	"gogetaroomie",  
+
+	"http://www.gogetaroomie.com/", 
+	"http://www.gogetaroomie.com/comic/and-so-it-begins", 
+	test="http://www.gogetaroomie.com/comic/happy-family-shopping-yay",
+
+	tags="#cc-comic",
+	next="#cc-comicbody>a"	
+),
+
+
+Sarjakuva( 
+	"Godslave", 
+	"godslave",  
+
+	"http://www.godslavecomic.com/", 
+	"http://www.godslavecomic.com/comic/page-1", 
+	test="http://www.godslavecomic.com/comic/challenging",
+
+	tags="#cc-comic",
+	next="#cc-comicbody>a"	
+),
+
+
+Sarjakuva( 
+	"Guilded Age", 
+	"guildedage",  
+
+	"http://www.guildedage.net", 
+	"http://guildedage.net/comic/chapter-1-cover/", 
+	test="http://guildedage.net/comic/chapter-42-page-8/",
+
+	tags="#comic>img",
+	next="a.navi-next"	
+),
+
+
+Sarjakuva( 
+	"Harpy Gee", 
+	"harpygee",  
+
+	"http://www.harpygee.com/", 
+	"http://www.harpygee.com/comic/cover", 
+	test="http://www.harpygee.com/comic/ch3hivepg090",
+
+	tags="#cc-comic",
+	next="#cc-comicbody>a"	
+),
+
+
+Sarjakuva( 
+	"Headless Bliss", 
+	"headlessbliss",  
+
+	"http://www.headlessbliss.com/", 
+	"http://www.headlessbliss.com/comic/page-1", 
+	test="http://www.headlessbliss.com/comic/page-138",
+
+	tags="#cc-comic",
+	next="#cc-comicbody>a"	
+),
+
+
+Sarjakuva( 
+	"Heart-Shaped Skull", 
+	"heartshapedskull",  
+
+	"http://www.heartshapedskull.com/", 
+	"http://www.heartshapedskull.com/2002/10/31/working-through-the-negativity-cover/", 
+	test="http://www.heartshapedskull.com/2013/11/28/break-your-stupid-heart-page-120/",
+
+	tags="#comic>img",
+	next="a.navi-next",
+	interval=0 # lopetettu
+),
+
+
+Sarjakuva( 
+	"Helvetica", 
+	"helvetica",  
+
+	"http://helvetica.jnwiedle.com/", 
+	"http://helvetica.jnwiedle.com/2011/06/24/and-so-it-begins/", 
+	test="http://helvetica.jnwiedle.com/2015/11/29/very-romantic/",
+
+	tags="#comic>img",
+	next="div.nav-next>a",
+),
+
+
+Sarjakuva( 
+	"I Am Arg!", 
+	"iamarg",  
+
+	"http://www.iamarg.com/", 
+	"http://iamarg.com/2011/05/08/05082011/", 
+	test="http://iamarg.com/2016/03/14/03142016/",
+
+	tags="#comic>img",
+	next="a.navi-next",
+),
+
+
+Sarjakuva( 
+	"Jailbird", 
+	"jailbird",  
+
+	"http://an.oddlookingbird.com/", 
+	"http://an.oddlookingbird.com/comic/page-1", 
+	test="http://an.oddlookingbird.com/comic/page-127",
+
+	tags="#cc-comic",
+	next="#cc-comicbody>a"	
+),
+
+Sarjakuva( 
+	"Kiwi Blitz", 
+	"kiwiblitz",  
+
+	"http://www.kiwiblitz.com/", 
+	"http://www.kiwiblitz.com/comic/welcome-to-kb", 
+	test="http://www.kiwiblitz.com/comic/page-463",
+
+	tags="#cc-comic",
+	next="#cc-comicbody>a"	
+),
+
+Sarjakuva( 
+	"Knights Errant", 
+	"knightserrant",  
+
+	"http://sparklermonthly.com/series/knights-errant/", 
+	"http://sparklermonthly.com/ke/knights-errant-chapter-01-page-001/", 
+	test="http://sparklermonthly.com/ke/knights-errant-chapter-04-page-121/",
+
+	tags="div.webcomic-image>img",
+	next="a.next-webcomic-link"	
+),
+
+Sarjakuva( 
+	"Lost Nightmare", 
+	"lostnightmare",  
+
+	"http://www.lostnightmare.com/", 
+	"http://www.lostnightmare.com/comic/01-01", 
+	test="http://www.lostnightmare.com/comic/06-20",
+
+	tags="#cc-comic",
+	next="#cc-comicbody>a"	
+),
+
+Sarjakuva( 
+	"Love Not Found", 
+	"lovenotfound",  
+
+	"http://www.lovenotfound.com/", 
+	"http://www.lovenotfound.com/comic/chapter-1-cover", 
+	test="http://www.lovenotfound.com/comic/chapter-10-page-07",
+
+	tags="#cc-comic",
+	next="#cc-comicbody>a"	
+),
+
+Sarjakuva( 
+	"Magical How?", 
+	"magicalhow",  
+
+	"http://sparklermonthly.com/series/magical-how/", 
+	"http://sparklermonthly.com/mh/magical-how-chapter-01-page-001/", 
+	test="http://sparklermonthly.com/mh/magical-how-chapter-03-page-051/",
+
+	tags="div.webcomic-image>img",
+	next="a.next-webcomic-link"	
+),
+
+Sarjakuva( 
+	"Mare Internum", 
+	"mareinternum",  
+
+	"http://www.marecomic.com/", 
+	"http://www.marecomic.com/comic/intro-page-1/", 
+	test="http://www.marecomic.com/comic/ch3-page-24/",
+
+	tags="#comic>img",
+	next="a.comic-nav-next",	
+),
+
+Sarjakuva( 
+	"Meaty Yogurt", 
+	"meatyyogurt",  
+
+	"http://www.meatyyogurt.com/", 
+	"http://rosalarian.com/meatyyogurt/2010/10/01/starting-things-off-with-a-bang-4/", 
+	test="http://rosalarian.com/meatyyogurt/2016/04/11/just-love/",
+
+	tags="#comic>img",
+	next="div.nav-next>a",
+),
+
+Sarjakuva( 
+	"Metacarpolis", 
+	"metacarpolis",  
+
+	"http://www.metacarpolis.com/", 
+	"http://www.metacarpolis.com/metacarpolis/chapter-1-page-1", 
+	test="http://www.metacarpolis.com/metacarpolis/a-guide-to-the-digits-of-metacarpolis-part-1",
+
+	tags="#cc-comic",
+	next="#cc-comicbody>a"	
+),
+
+Sarjakuva( 
+	"Misfile", 
+	"misfile",  
+
+	"http://www.misfile.com/", 
+	"http://www.misfile.com/?date=2004-02-22", 
+	test="http://www.misfile.com/?date=2016-05-17",
+
+	tags="#comic>img",
+	next="#comic>a",
+),
+
+Sarjakuva( 
+	"Monster Pulse", 
+	"monserpulse",  
+
+	"http://www.monster-pulse.com/", 
+	"http://www.monster-pulse.com/comic/monster-pulse", 
+	test="http://www.monster-pulse.com/comic/page-9-chapter-23",
+
+	tags="#cc-comic",
+	next="#cc-comicbody>a"	
+),
+
+Sarjakuva( 
+	"Monsterkind", 
+	"monsterkind",  
+
+	"http://monsterkind.enenkay.com/", 
+	"http://monsterkind.enenkay.com/comic/first", 
+	test="http://monsterkind.enenkay.com/comic/313",
+
+	tags="#comic>img",
+	next="#comic>a",
+),
+
+Sarjakuva( 
+	"Namesake", 
+	"namesake",  
+
+	"http://www.namesakecomic.com/", 
+	"http://namesakecomic.com/comic/the-journey-begins", 
+	test="http://namesakecomic.com/comic/warrick-selva-and-fred-cool-things-about-earth",
+
+	tags="#cc-comic",
+	next="#cc-comicbody>a"	
+),
+
+Sarjakuva( 
+	"Never Satisfied", 
+	"neversatisfied",  
+
+	"http://www.neversatisfiedcomic.com/", 
+	"http://www.neversatisfiedcomic.com/comic/chapter-1-chirp-chirp-chirp", 
+	test="http://www.neversatisfiedcomic.com/comic/chapter-3-page-33",
+
+	tags="#cc-comic",
+	next="#cc-comicbody>a"	
+),
+
+Sarjakuva( 
+	"Not Drunk Enough", 
+	"notdrunkenough",  
+
+	"http://www.ndecomic.com/", 
+	"http://www.ndecomic.com/comic/page-1", 
+	test="http://www.ndecomic.com/comic/page-130",
+
+	tags="#cc-comic",
+	next="#cc-comicbody>a"	
+),
+
+Sarjakuva( 
+	"Oh Joy Sex Toy!", 
+	"ohjoysextoy",  
+
+	"http://www.ohjoysextoy.com/", 
+	"http://www.ohjoysextoy.com/introduction/", 
+	test="http://www.ohjoysextoy.com/period-sex/",
+
+	tags="#comic>img",
+	next="a.navi-next",
+),
+
+Sarjakuva( 
+	"Parallax", 
+	"parallax",  
+
+	"http://www.parallaxcomic.com/", 
+	"http://www.parallaxcomic.com/comic/page-01", 
+	test="http://www.parallaxcomic.com/comic/page-106",
+
+	tags="#cc-comic",
+	next="#cc-comicbody>a"	
+),
+
+Sarjakuva( 
+	"Paranatural", 
+	"paranatural",  
+
+	"http://www.paranatural.net/", 
+	"http://www.paranatural.net/comic/chapter-1", 
+	test="http://www.paranatural.net/comic/chapter-5-page-117",
+
+	tags="#cc-comic",
+	next="#cc-comicbody>a"	
+),
+
+Sarjakuva( 
+	"Peritale", 
+	"peritale",  
+
+	"http://www.peritale.com/", 
+	"http://www.peritale.com/comic/promo", 
+	test="http://www.peritale.com/comic/p93",
+
+	tags="#cc-comic",
+	next="#cc-comicbody>a"	
+),
+
+# Sarjakuva( # ei toimi, lopetettu
+# 	"Platinum Black", 
+# 	"platinumblack", 
+# 	"paintrain", 
+
+# 	"http://www.platinumblackcomic.com", 
+# 	"http://platinumblackcomic.com/?comic=chapter-1-cover", 
+# 	test=None,
+
+# 	tags="#cc-comic",
+# 	next="#cc-comicbody>a"	
+# ),
+
+Sarjakuva( 
+	"Prague Race", 
+	"praguerace",  
+
+	"http://www.praguerace.com/", 
+	"http://www.praguerace.com/comic/start", 
+	test="http://www.praguerace.com/comic/long-into-the-night",
+
+	tags="#cc-comic",
+	next="#cc-comicbody>a"	
+),
+
+Sarjakuva( 
+	"Real Science Adventures", 
+	"realscienceadventures",  
+
+	"http://www.realscienceadventures.com", 
+	"http://www.realscienceadventures.com/comic/v01ch1-page-cover", 
+	test="http://www.realscienceadventures.com/comic/v02ch2-page-2",
+
+	tags="#cc-comic",
+	next="#cc-comicbody>a"	
+),
+
+Sarjakuva( 
+	"Roji", 
+	"roji",  
+
+	"http://www.rojicomic.com/", 
+	"http://www.rojicomic.com/comic/promo", 
+	test="http://www.rojicomic.com/comic/the-hero",
+
+	tags="#cc-comic",
+	next="#cc-comicbody>a"	
+),
+
+Sarjakuva( 
+	"Saint for Rent", 
+	"saintforrent",  
+
+	"http://www.saintforrent.com/", 
+	"http://www.saintforrent.com/comic/the-cloverhouse-inn", 
+	test="http://www.saintforrent.com/comic/7-004",
+
+	tags="#cc-comic",
+	next="#cc-comicbody>a"	
+),
+
+Sarjakuva( 
+	"SAKANA", 
+	"sakana",  
+
+	"http://www.sakana-comic.com/", 
+	"http://www.sakana-comic.com/comic/title-page-vol-1", 
+	test="http://www.sakana-comic.com/comic/354",
+
+	tags="#cc-comic",
+	next="#cc-comicbody>a"	
+),
+
+Sarjakuva( 
+	"Sam and Fuzzy", 
+	"samandfuzzy",  
+
+	"http://www.samandfuzzy.com/", 
+	"http://www.samandfuzzy.com/1", 
+	test="http://www.samandfuzzy.com/2203",
+
+	tags="img.comic-image",
+	next="li.next-page>a"	
+),
+
+Sarjakuva( 
+	"Scenes From a Multiverse", 
+	"multiverse",  
+
+	"http://www.amultiverse.com/", 
+	"http://amultiverse.com/comic/2010/06/14/parenthood/", 
+	test="http://amultiverse.com/comic/2016/05/12/president-plus/",
+
+	tags="#comic>img",
+	next="a.navi-next",
+),
+
+Sarjakuva( 
+	"Sfeer Theory", 
+	"sfeertheory",  
+
+	"http://www.sfeertheory.com/", 
+	"http://www.sfeertheory.com/comic/01-01", 
+	test="http://www.sfeertheory.com/comic/03-49",
+
+	tags="#cc-comic",
+	next="#cc-comicbody>a"	
+),
+
+Sarjakuva( 
+	"Shortpacked!", 
+	"shortpacked",  
+
+	"http://www.shortpacked.com/", 
+	"http://www.shortpacked.com/index.php?id=1", 
+	test="http://www.shortpacked.com/index.php?id=2192",
+
+	tags="#comic",
+	next="#comicbody>a"	
+),
+
+Sarjakuva( 
+	"Sister Claire", 
+	"sisterclaire",  
+
+	"http://www.sisterclaire.com/", 
+	"http://www.sisterclaire.com/comic/book-one", 
+	test="http://www.sisterclaire.com/comic/book-2-chapter-8-pg-211",
+
+	tags="#cc-comic",
+	next="#cc-comicbody>a"	
+),
+
+Sarjakuva( 
+	"Sister Claire Missing", 
+	"sisterclairemissing",  
+
+	"http://www.sisterclaire.com/", 
+	"http://www.sisterclaire.com/missing-moments/missing-moment-la-scoperta", 
+	test="http://www.sisterclaire.com/missing-moments/missing-moment-acqua-in-aumento-7",
+
+	tags="#cc-comic",
+	next="#cc-comicbody>a"	
+),
+
+Sarjakuva( 
+	"Skullkickers", 
+	"skullkickers",  
+
+	"http://comic.skullkickers.com/", 
+	"http://comic.skullkickers.com/comic/2012-01-06", 
+	test="http://comic.skullkickers.com/comic/march-16-2016",
+
+	tags="#cc-comic",
+	next="a.next"	
+),
+
+Sarjakuva( 
+	"Sleepless Domain", 
+	"sleeplessdomain",  
+
+	"http://www.sleeplessdomain.com/", 
+	"http://www.sleeplessdomain.com/comic/chapter-1-cover", 
+	test="http://www.sleeplessdomain.com/comic/chapter-4-page-13",
+
+	tags="#cc-comic",
+	next="#cc-comicbody>a"	
+),
+
+Sarjakuva( 
+	"Slightly Damned", 
+	"slightlydamned",  
+
+	"http://www.sdamned.com/", 
+	"http://www.sdamned.com/comic/part-one-to-hell-and-back", 
+	test="http://www.sdamned.com/comic/747",
+
+	tags="#cc-comic",
+	next="#cc-comicbody>a"	
+),
+
+Sarjakuva( 
+	"SnarlBear", 
+	"snarlbear",  
+
+	"http://www.snarlbear.com/", 
+	"http://www.snarlbear.com/index.php?id=1", 
+	test="http://www.snarlbear.com/comic/9-6",
+
+	tags="#cc-comic",
+	next="#cc-comicbody>a"	
+),
+
+Sarjakuva( 
+	"Solstoria", 
+	"solstoria",  
+
+	"http://www.solstoria.net/", 
+	"http://solstoria.net/comic/54/", 
+	test="http://solstoria.net/comic/page-181/",
+
+	tags="div.webcomic-image>img",
+	next="a.next-webcomic-link",
+),
+
+Sarjakuva( 
+	"Spinnerette", 
+	"spinnerette",  
+
+	"http://www.spinnyverse.com/", 
+	"http://www.spinnyverse.com/comic/02-09-2010", 
+	test="http://www.spinnyverse.com/comic/white-heron-preview-2",
+
+	tags="#cc-comic",
+	next="#cc-comicbody>a"	
+),
+
+Sarjakuva( 
+	"StarHammer", 
+	"starhammer",  
+
+	"http://www.starhammercomic.com/", 
+	"http://www.starhammercomic.com/comic/chapter-1-the-shakedown-pg-1-leading-the-charges", 
+	test="http://www.starhammercomic.com/comic/chapter-2-two-for-one-page-25-mergers-acquisitions-",
+
+	tags="#cc-comic",
+	next="#cc-comicbody>a"	
+),
+
+Sarjakuva( 
+	"Street Fighter Comics", 
+	"streetfighter",  
+
+	"http://www.streetfightercomics.com/", 
+	"http://www.streetfightercomics.com/comic/stage-0-page-1", 
+	test="http://www.streetfightercomics.com/comic/stage-12-page-21",
+
+	tags="#cc-comic",
+	next="#cc-comicbody>a",
+	interval="0"	
+),
+
+Sarjakuva( 
+	"Sufficiently Remarkable", 
+	"sufficientlyremarkable", 
+
+	"http://www.sufficientlyremarkable.com/", 
+	"http://sufficientlyremarkable.com/comic/the-beach", 
+	test="http://sufficientlyremarkable.com/comic/dark",
+
+	tags="img.comic",
+	next="a.nav-next"	
+),
+
+Sarjakuva( 
+	"Supernormal Step", 
+	"supernormalstep",  
+
+	"http://www.supernormalstep.com/", 
+	"http://www.supernormalstep.com/archives/8", 
+	test="http://www.supernormalstep.com/archives/perspective",
+
+	tags="#cc-comic",
+	next="#cc-comicbody>a"	
+),
+
+Sarjakuva( 
+	"The Black Brick Road of OZ", 
+	"theblackbrickroadofoz",  
+
+	"http://www.blackbrickroadofoz.com", 
+	"http://www.blackbrickroadofoz.com/comic/cover", 
+	test="http://www.blackbrickroadofoz.com/comic/inefficient-storytelling",
+
+	tags="#cc-comic",
+	next="#cc-comicbody>a"	
+),
+
+Sarjakuva( 
+	"The Boy Who Fell", 
+	"theboywhofell",  
+
+	"http://www.boywhofell.com/", 
+	"http://www.boywhofell.com/comic/ch00p01", 
+	test="http://www.boywhofell.com/comic/ch3522",
+
+	tags="#cc-comic",
+	next="#cc-comicbody>a"	
+),
+
+Sarjakuva( 
+	"The End", 
+	"end",  
+
+	"http://www.endcomic.com/", 
+	"http://www.endcomic.com/comic/book-one-cover/", 
+	test="http://www.endcomic.com/comic/ch18-35/",
+
+	tags="#comic>img",
+	next="a.comic-nav-next",
+),
+
+Sarjakuva( 
+	"The Glass Scientists", 
+	"glassscientists",  
+
+	"http://www.theglassscientists.com/", 
+	"http://www.theglassscientists.com/?comic=chapter-i", 
+	test="http://www.theglassscientists.com/?comic=page-03-3",
+
+	tags="#comic>img",
+	next="a.navi-next",	
+),
+
+Sarjakuva( 
+	"The Last Diplomat", 
+	"lastdiplomat",  
+
+	"http://www.thelastdiplomat.com/", 
+	"http://www.thelastdiplomat.com/comic/page-001", 
+	test="http://www.thelastdiplomat.com/comic/page-102",
+
+	tags="#cc-comic",
+	next="#cc-comicbody>a"	
+),
+
+Sarjakuva( 
+	"The Lonely Vincent Bellingham", 
+	"lonelyvincent",  
+
+	"http://www.lonelyvincent.com/", 
+	"http://www.lonelyvincent.com/lonelyvincent/0", 
+	test="http://www.lonelyvincent.com/lonelyvincent/82",
+
+	tags="#cc-comic",
+	next="#cc-comicbody>a"	
+),
+
+Sarjakuva( 
+	"The Mash", 
+	"mash",  
+
+	"http://www.mashcomic.com/", 
+	"http://www.mashcomic.com/comic/prologue-01-and-02", 
+	test="http://www.mashcomic.com/comic/intermission-page-1",
+
+	tags="#cc-comic",
+	next="#cc-comicbody>a"	
+),
+
+Sarjakuva( 
+	"The Meek", 
+	"meek",  
+
+	"http://www.meekcomic.com/", 
+	"http://www.meekcomic.com/comic/chapter-1-cover/", 
+	test="http://www.meekcomic.com/comic/5-04/",
+
+	tags="#comic>img",
+	next="a.comic-nav-next",
+),
+
+Sarjakuva( 
+	"This Is Not Fiction", 
+	"thisisnotfiction",  
+
+	"http://www.thisisnotfiction.com/", 
+	"http://www.thisisnotfiction.com/comic/ch-01-sydney-morgan", 
+	test="http://www.thisisnotfiction.com/comic/ch-23-pg-05",
+
+	tags="#cc-comic",
+	next="#cc-comicbody>a"	
+),
+
+Sarjakuva( 
+	"Todd Allison and the Petunia Violet", 
+	"petuniaviolet",  
+
+	"http://petuniaviolet.com", 
+	"http://petuniaviolet.com/index.php?id=1", 
+	test="http://petuniaviolet.com/index.php?id=604",
+
+	tags="#comic",
+	next="a.next"	
+),
+
+Sarjakuva( 
+	"Tove", 
+	"tove",  
+
+	"http://www.tovecomic.com/", 
+	"http://www.tovecomic.com/comic/chapter-1-page-1", 
+	test="http://www.tovecomic.com/comic/chapter-2-page-49",
+
+	tags="#cc-comic",
+	next="#cc-comicbody>a"	
+),
+
+Sarjakuva( 
+	"Trying Human", 
+	"tryinghuman",  
+
+	"http://www.tryinghuman.com/", 
+	"http://www.tryinghuman.com/comic/prologue--01", 
+	test="http://www.tryinghuman.com/comic/chapter-19-738",
+
+	tags="#cc-comic",
+	next="#cc-comicbody>a"	
+),
+
+Sarjakuva( 
+	"Vibe", 
+	"vibecomic",  
+
+	"http://www.vibecomic.com/", 
+	"http://www.vibecomic.com/vibe/cover-2", 
+	test="http://www.vibecomic.com/vibe/226",
+
+	tags="#cc-comic",
+	next="#cc-comicbody>a"	
+),
+
+ Sarjakuva( 
+ 	"Weregeek", 
+ 	"weregeek",  
+
+ 	"http://www.weregeek.com/", 
+ 	"http://www.weregeek.com/2006/11/27/", 
+ 	test="http://www.weregeek.com/2016/05/17/",
+
+	tags="#comic>img",
+	next="a|img|!alt:in:next"	
+ ),
+
+Sarjakuva( 
+	"Wilde Life", 
+	"wildelife",  
+
+	"http://www.wildelifecomic.com/", 
+	"http://www.wildelifecomic.com/comic/1", 
+	test="http://www.wildelifecomic.com/comic/215",
+
+	tags="#cc-comic",
+	next="#cc-comicbody>a"	
+),
+
+Sarjakuva( 
+	"Wonderlust", 
+	"wonderlust",  
+
+	"http://www.wonderlustcomic.com", 
+	"http://www.wonderlustcomic.com/comic/pg-1-2-vamoose", 
+	test="http://www.wonderlustcomic.com/comic/pg-20-go",
+
+	tags="#cc-comic",
+	next="#cc-comicbody>a"	
+),
+
+ Sarjakuva(  
+ 	"You Suck", 
+ 	"yousuck",  
+
+ 	"http://yousuck.slipshine.net/", 
+ 	"http://yousuck.slipshine.net/go/1-legolas", 
+ 	test="http://yousuck.slipshine.net/go/249-giving-it-a-shot",
+
+	tags="#cc-comic",
+	next="#cc-comicbody>a"	
+ ),
+
+Sarjakuva( 
+	"Zombie Roomie", 
+	"zombieroomie", , 
+
+	"http://www.zombieroomie.com/", 
+	"http://www.zombieroomie.com/2009/10/26/issues/", 
+	test="http://www.zombieroomie.com/2016/05/16/the-pack-part-6/",
+
+	tags="#comic>img",
+	next="a.navi-next",	
+),
+
+
+Sarjakuva( 
+	"Eerie Cuties", 
+	"eeriecuties",  
+
+	"http://www.eeriecuties.com/articles/strips-ec/%28chapter_1%29_it_is_gonna_eat_me%21", 
+	"http://www.eeriecuties.com/strips-ec/%28chapter_1%29_it_is_gonna_eat_me%21", 
+	test="http://www.eeriecuties.com/strips-ec/siren_brawl_-_pg_10_of_12",
+
+	tags="#comic>img",
+	next="#cndnextt"	
+),
+
+Sarjakuva(
+	"Menage a 3", 
+	"ma3", 
+
+	"http://www.ma3comic.com/", 
+	"http://www.ma3comic.com/strips-ma3/for_new_readers",
+	test="http://www.ma3comic.com/strips-ma3/synchronized_swimmers",
+
+	tags="#cc>img",
+	next="#cndnext",
+),
+
+Sarjakuva( 
+	"Magick Chicks", 
+	"magickchicks",  
+
+	"http://www.magickchicks.com/", 
+	"http://www.magickchicks.com/strips-mc/tis_but_a_trifle", 
+	test="http://www.magickchicks.com/strips-mc/epilogue",
+
+	tags="#comic>img",
+	next="#cndnextt",
+),
+
+Sarjakuva( 
+	"Sandra on the Rocks", 
+	"sandraontherocks",  
+
+	"http://www.sandraontherocks.com/", 
+	"http://www.sandraontherocks.com/strips-sotr/start_by_running", 
+	test="http://www.sandraontherocks.com/strips-sotr/higher_education_will_do_wonders",
+
+	tags="#comic>img",
+	next="#cndnext",
+),
+
+Sarjakuva( 
+	"Sticky Dilly Buns", 
+	"stickydillybuns",  
+
+	"http://www.stickydillybuns.com/", 
+	"http://www.stickydillybuns.com/strips-sdb/awesome_leading_man", 
+	test="http://www.stickydillybuns.com/strips-sdb/easter_2016",
+
+	tags="#comic>img",
+	next="#cndnext",
+),
+
+Sarjakuva( 
+	"Dangerously Chloe",  
+	"dangerouslychloe",
+
+	"http://www.dangerouslychloe.com/", 
+	"http://www.dangerouslychloe.com/strips-dc/tighter_fit_than_i_thought", 
+	test="http://www.dangerouslychloe.com/articles/strips-dc/chapter_1_-_that_damned_girl",
+
+	tags="#comic>img",
+	next="#cndnextt",
+),
+
+Sarjakuva( 
+	"Demon Aid",  
+	"demonaid",
+
+	"http://demonaidcomic.com/", 
+	"http://demonaidcomic.com/index.php?id=14", 
+	test="http://demonaidcomic.com/index.php?id=70",
+
+	tags="#comic",
+	next="a.next",
+	interval=0,
+),
+
+Sarjakuva( 
+	"Erstwhile",  
+	"erstwhile",
+
+	"http://www.erstwhiletales.com/", 
+	"http://www.erstwhiletales.com/fcd-00/", 
+	test="http://www.erstwhiletales.com/happily-ever-after-09/",
+
+	tags="#comic>img",
+	next="a.navi-next",
+	interval=0,
+),
+
+Sarjakuva( 
+	"Love is in the Blood",  
+	"loveisintheblood",
+
+	"http://www.loveisintheblood.com/", 
+	"http://www.loveisintheblood.com/comic/welcome-to-love-is-in-the-blood/", 
+	test="http://www.loveisintheblood.com/comic/changes-chapter-06-page-23-0425/",
+
+	tags="#comic>img",
+	next="a.comic-nav-next",
+	interval=0,
+),
+
+Sarjakuva( 
+	"Love Not Found",  
+	"lovenotfound",
+
+	"http://lovenotfound.com/", 
+	"http://www.lovenotfound.com/comic/chapter-1-cover", 
+	test="http://www.lovenotfound.com/comic/chapter-10-page-07",
+
+	tags="#cc-comic",
+	next="#cc-comicbody>a",
+
+),
+
+Sarjakuva( 
+	"Red String",  
+	"redstring",
+
+	"http://redstringcomic.com/", 
+	"http://redstringcomic.com/index.php?id=1629", 
+	test="http://redstringcomic.com/index.php?id=434",
+
+	tags="#comic",
+	next="a.next",
+	interval=0,
+),
 
 
 ]
