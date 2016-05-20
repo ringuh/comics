@@ -80,7 +80,7 @@ def index(pvm=None):
 				Strippi.date_created < tomorrow,
 				~Strippi.sarjakuva_id.in_(karsitut) 
 			).order_by(
-				Strippi.sarjakuva_id,
+				#Strippi.sarjakuva_id,
 				Strippi.date_created
 			).limit(300).all()
 
