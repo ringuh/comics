@@ -84,3 +84,20 @@ class User(db.Model):
 			karsitut = [-1]
 
 		return karsitut
+
+
+
+	def Progress(self, sarjakuva_id, strip_id=None):
+		from project.models import User_progress as UP
+
+		n = db.session.query(UP).filter(UP.sarjakuva_id == sarjakuva_id, UP.user_id == self.id).first()
+		if n is None:
+			n = UP(sarjakuva_id, current_user.id, strip_id)
+			db.session.add(n)
+			db.session.commit()
+
+		if strip_id:
+			n.strippi_id = strip_id
+			db.session.commit()
+		
+		return n.strippi.Order()

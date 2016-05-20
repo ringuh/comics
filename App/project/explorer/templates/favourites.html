@@ -1,0 +1,59 @@
+{% extends "pohja.html" %}
+
+{% block body %}
+
+<div class="dropdown">
+  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+  	{% if target %} {{ target.account }} {% else %} Kaikki {% endif %}
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu">
+    <li><a href="/favourites/">Kaikki</a></li>
+	{% for i in targets %}
+	 <li><a href="/favourites/{{ i.id }}/">{{ i.account }}</a></li>
+	{% endfor %}
+   
+  </ul>
+</div>
+
+
+{% for st in stripit %}
+<div class="sarjakuva" ng-controller="StripCtrl">
+	<h3 ng-init="strippi={{ st.id }};Thumbs();"> 
+		{{ st.sarjakuva.nimi }} {{ st.Pvm() }} 
+		<span ng-class="{ 'good': vote===true }"
+			ng-click="Thumbs(true)"
+			class="pointer glyphicons glyphicons-thumbs-up"></span>
+		<span ng-class="{ 'bad': vote===false }"
+			ng-click="Thumbs(false)"
+			class="pointer glyphicons glyphicons-thumbs-down"></span>
+
+		({{ st.Grade() }})
+	</h3>
+	
+	<a {% if current_user.get_id() %} 
+		href="/{{ st.sarjakuva.lyhenne }}/{{ st.Order() }}/"
+		{% endif %}
+		>
+	
+	{% if st.sarjakuva.download %}
+	<img src="{{ url_for('static', 
+			filename='sarjakuvat/'+st.sarjakuva.lyhenne+'/'+st.filename )}}" />
+	
+	{% else %}
+	<img src="{{ st.url }}" />
+	{% endif %}
+	</a><br/>
+</div>
+{% endfor %}
+
+{% if stripit|length == 0%}
+<div class="sarjakuva">
+	<h3> Ei suosikkeja</h3>
+</div>
+{% endif %}
+
+<script>
+	document.title = "Suosikit {{ target.account }}"
+	
+</script>
+{% endblock %}

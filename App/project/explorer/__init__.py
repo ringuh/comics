@@ -2,7 +2,7 @@
 from flask import flash, redirect, render_template, request, url_for, Blueprint, jsonify
 from project import db
 from flask.ext.login import current_user, login_required, login_user, logout_user
-from sqlalchemy import desc, func, and_, or_
+from sqlalchemy import desc, func, and_, or_, case
 from project.models import Sarjakuva as SK, Strippi, Likes, Loki, User, Brute_force,\
 Sarjakuva_user as SKU
 import datetime
@@ -31,14 +31,15 @@ def Strip(f):
 	def decorated_function(*args, **kwargs):
 		n = None
 		if kwargs["strip"] > 0:
+			print("HEI IM HERE")
 			n = db.session.query(Strippi).filter(
-					Strippi.sarjakuva_id == kwargs["comic"].id,
-					Strippi.order == kwargs["strip"]
-				).first()
+					Strippi.sarjakuva_id == kwargs["comic"].id
+				).order_by(Strippi.id).offset(kwargs["strip"]-1).first()
 			if n is None:
+				print("IS NONE")
 				n = db.session.query(Strippi).filter(
 					Strippi.sarjakuva_id == kwargs["comic"].id
-				).first()
+				).order_by(Strippi.id).first()
 		if n is None:
 			flash("Strippi puuttuu")
 			return redirect(url_for("explorer.comic", comic=kwargs["comic"].nimi))
@@ -104,6 +105,10 @@ def comic(comic):
 @Comic
 @Strip
 def comic_strip(comic, strip):
+	print(current_user.Progress(comic.id), strip.Order())
+	if current_user.Progress(comic.id)+1 == strip.Order():
+		current_user.Progress(comic.id, strip.id)
+
 	return render_template("strip.html", comic=comic, strip=strip, user=current_user)
 
 @explorer_blueprint.route('/log/')
@@ -124,6 +129,42 @@ def options():
 		users = db.session.query(User).all()
 
 	return render_template("options.html", comics=comics, users=users, user=current_user)
+
+@explorer_blueprint.route('/favourites/')
+@explorer_blueprint.route('/favourites/<int:user_id>/')
+def favourites(user_id=None):
+	from project.models import User as U, Likes as L, Strippi as ST
+	from sqlalchemy import case
+	
+	target = None
+	if user_id: target = db.session.query(U).get(user_id)
+	targets = db.session.query(U).order_by("id").all()
+
+	if user_id:
+		n = db.session.query(L).filter(L.user_id == user_id).order_by(L.strippi_id.desc()).all()
+		stripit = [i.strippi for i in n]
+	else:
+		n = db.session.query(
+				L.strippi_id.label("id"),
+				func.sum(
+					case([(L.vote == True, 1), (L.vote == False, -1)], else_=0)
+				).label("count")
+			).group_by(L.strippi_id).order_by("count").all()
+		print(n)
+		st_ids = [i.id for i in n if i.count != 0]
+		m = db.session.query(ST).filter(ST.id.in_(st_ids)).all()
+
+		stripit = []
+		for i in n:
+			for j in m:
+				if i.id == j.id:
+					stripit.insert(0, j)
+					break
+
+
+	
+	
+	return render_template("favourites.html", stripit=stripit, user=current_user, target=target, targets=targets)
 
 @explorer_blueprint.route('/options/change_pass/', methods=["POST"])
 @login_required
@@ -377,3 +418,16 @@ def loki_filter():
 
 
 	return jsonify(loki=loki)
+
+@explorer_blueprint.route('/<comic>/<int:strip>/save_progress/', methods=["POST"])
+@Comic
+@Strip
+@login_required
+def save_progress(comic, strip):
+	from project.models import User_progress as UP
+	msg = None
+	json = request.get_json(True)
+
+	current_user.Progress(comic.id, strip.id)
+
+	return jsonify(msg="Tallennettiin progressiksi strippi nro {}".format(strip.Order()))

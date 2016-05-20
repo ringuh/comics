@@ -1,5 +1,6 @@
 *.log
 *.pyc
+*.log
 Thumbs.db
 migrations/
 config.py

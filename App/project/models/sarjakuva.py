@@ -15,14 +15,16 @@ class Sarjakuva(db.Model):
 	url = db.Column(db.UnicodeText)
 	last_url = db.Column(db.UnicodeText)
 	
-	tags = db.Column(db.UnicodeText)
-	next_tags = db.Column(db.UnicodeText)
+	image = db.Column(db.UnicodeText)
+	next = db.Column(db.UnicodeText)
 
 	interval = db.Column(db.Integer, default=12) # tunteja
+	minimum_interval = db.Column(db.Integer, default=0) # minimiväli EDELLISESTÄ YRITYKSESTÄ
 	weekday = db.Column(db.UnicodeText, default="0,1,2,3,4,5,6")
-	next_parse = db.Column(db.DateTime, default=datetime.datetime.now)
 	last_parse = db.Column(db.DateTime, default=None)
+	last_attempt = db.Column(db.DateTime, default=None)
 	download = db.Column(db.Boolean, default=True)
+	download = db.Column(db.Boolean, default=False)
 	filetype = db.Column(db.UnicodeText)
 	ending = db.Column(db.UnicodeText)
 	date_created = db.Column(db.DateTime, default=datetime.datetime.now)
@@ -37,7 +39,7 @@ class Sarjakuva(db.Model):
 
 
 	def __init__(self, nimi, lyhenne, url, last_url, parseri=None,
-					tags=None, next=None, ext=None, weekday=None, 
+					image=None, next=None, ext=None, weekday=None, 
 					interval=12, 
 					download=True,
 					test=None,
@@ -47,8 +49,8 @@ class Sarjakuva(db.Model):
 		self.parseri = parseri
 		self.url = url
 		self.last_url = last_url
-		self.tags = tags
-		self.next_tags = next
+		self.image = image
+		self.next = next
 		self.filetype = ext
 		#self.more = more
 		self.interval = interval

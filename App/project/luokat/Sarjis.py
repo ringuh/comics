@@ -184,13 +184,13 @@ class Sarjis(object):
 		self.Print("KUVAT")
 		kuvat = []
 		#return kuvat
-		if self.sarjakuva.tags is None:
+		if self.sarjakuva.image is None:
 			return []
 
 		#filters = self.sarjakuva.tags.split(",")
 
 		#for filt in filters:
-		soup = self.ELEMENT(self.soup, self.sarjakuva.tags)
+		soup = self.ELEMENT(self.soup, self.sarjakuva.image)
 		for image in soup:
 			self.Print("IMAGE", image)
 			kuva = dict(nimi=None, src=None, filetype=self.sarjakuva.filetype)
@@ -252,11 +252,11 @@ class Sarjis(object):
 
 	def Next(self):
 		ret = self.urli
-		if self.sarjakuva.next_tags is None:
+		if self.sarjakuva.next is None:
 			return None
 		try:
 			self.Print("NEXT")
-			soup = self.ELEMENT(self.soup, self.sarjakuva.next_tags)
+			soup = self.ELEMENT(self.soup, self.sarjakuva.next)
 			self.Print("next", soup)
 			for link in soup:
 				self.Print(link)
@@ -374,7 +374,7 @@ class Sarjis(object):
 		if found:
 			tmp = found
 		else:
-			tmp = Strippi(self.sarjakuva.id, urli, md5_name, nimi, url, dhash, order)
+			tmp = Strippi(self.sarjakuva.id, urli, md5_name, nimi, url, dhash)
 			self.sessio.add(tmp)
 
 		tmp.width = width

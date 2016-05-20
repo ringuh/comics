@@ -48,6 +48,8 @@
 		        	<a href="/"><span class="glyphicons glyphicons-turtle"></span> Tänään </a></li>
 		        <li class="{% if request.url_rule.endpoint == 'explorer.list' %}active{% endif %}">
 		        	<a href="/list/"><span class="glyphicons glyphicons-list"></span> Lista</a></li>
+		         <li class="{% if request.url_rule.endpoint == 'explorer.favourites' %}active{% endif %}">
+		        	<a href="/favourites/{{ user.id }}/"><span class="glyphicons glyphicons-thumbs-up"></span> Suosikit</a></li>
 		        <li class="{% if request.url_rule.endpoint == 'explorer.comic_log' %}active{% endif %}">
 		        	<a href="/log/"><span class="glyphicons glyphicons-log-book"></span> Loki</a></li>
 		        {% if user.admin %}
@@ -79,7 +81,7 @@
 	{% for message in get_flashed_messages() %}
 		<span style="padding-left:20px">{{ message }}</span><br/>
 	{% endfor %}
-	{% if user.get_id() %}
+	{% if user.get_id() or request.endpoint == "explorer.favourites" %}
 	{% block body %}
 	{% endblock %}
 
@@ -165,6 +167,18 @@ app.controller('StripCtrl', function($scope, $http, $sce) {
 			console.log(err)
 		});
 	}
+
+
+	$scope.SaveProgress = function(sarjakuva, strip){
+		var json = {}
+		$http.post("/"+sarjakuva+"/"+strip+"/save_progress/", JSON.stringify(json) )
+		.success(function(data){
+			console.log(data)
+			noty({text:data.msg, type:"success", timeout:3000});
+		}).error(function(err){
+			console.log(err)
+		});
+	};
 });
 {% endif %}
 </script>

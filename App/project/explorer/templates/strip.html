@@ -11,11 +11,18 @@
 		<span ng-class="{ 'bad': vote===false }"
 			ng-click="Thumbs(false)"
 			class="pointer glyphicons glyphicons-thumbs-down"></span>
+		{% set progress = user.Progress(comic.id) %}
+		<span ng-click="SaveProgress('{{ comic.lyhenne }}', {{ strip.id }}) "
+			style="margin-left:20px;"
+			ng-class="{ 'good': {{ strip.id }} == {{ progress }} }"
+			class="pointer glyphicons glyphicons-floppy-disk"></span>
+
+		<a style="margin-left:20px" href="/{{ comic.lyhenne }}/{{ progress }}/">Jatka ({{ progress }})</a>
 	</h3>
 	
 	<div class="navi">
-	{% set prev = strip.order-1 %}
-	{% set next = strip.order+1 %}
+	{% set prev = strip.Order()-1 %}
+	{% set next = strip.Order()+1 %}
 	{% set max = comic.Max() %}
 	{% if prev > 0 %}
 	<a href="/{{ comic.lyhenne }}/1/">
@@ -37,15 +44,17 @@
 	{% endif %}
 
 	</div>
-	<a id="strippi" href="{{ strip.page_url }}">
-	{% if comic.download %}
-	<img src="{{ url_for('static', 
-			filename='sarjakuvat/'+comic.lyhenne+'/'+strip.filename )}}" />
-	{% else %}
-	<img src="{{ strip.url }}" />
-	{% endif %}
-	
-	</a>
+	<div style="clear:both;">
+		<a id="strippi" href="{{ strip.page_url }}">
+		{% if comic.download %}
+		<img src="{{ url_for('static', 
+				filename='sarjakuvat/'+comic.lyhenne+'/'+strip.filename )}}" />
+		{% else %}
+		<img src="{{ strip.url }}" />
+		{% endif %}
+		
+		</a>
+	</div>
 </div>
 
 <script>
@@ -69,6 +78,7 @@
         default: return; // exit this handler for other keys
     };
     
+
 
     
     

@@ -30,7 +30,7 @@ content = [
 		"http://oglaf.com/cumsprite/",
 		test="http://oglaf.com/twostars/",
 
-		tags="#strip", # tags
+		image="#strip", # tags
 		next="#nav>a|#nx",
 		weekday="6,0", # haetaan korkeintaan näinä viikonpäivinä
 		
@@ -43,7 +43,7 @@ content = [
 		"http://www.hs.fi/fingerpori/s1349775187323",
 		test="http://www.hs.fi/fingerpori/s1306040940065",
 
-		tags="#full-comic>img",
+		image="#full-comic>img",
 		next="a.next-cm",
 		ext="jpg",
 	),
@@ -54,7 +54,7 @@ content = [
 		"http://www.hs.fi/viivijawagner/s1349773144978",
 		test="http://www.hs.fi/viivijawagner/s1306041112180",
 
-		tags="#full-comic>img",
+		image="#full-comic>img",
 		next="a.next-cm",
 		ext="jpg",
 	),
@@ -64,7 +64,7 @@ content = [
 		"karlsson",
 		"http://www.hs.fi", 
 		"http://www.hs.fi/karlsson/s1305951536460",
-		tags="#full-comic>img",
+		image="#full-comic>img",
 		next="a.next-cm",
 		ext="jpg",
 	),
@@ -76,7 +76,7 @@ content = [
 		"http://www.hs.fi/jaatavaspede/s1305997430512",
 		test="http://www.hs.fi/jaatavaspede/s1306037906288",
 		
-		tags="#full-comic>img",
+		image="#full-comic>img",
 		next="a.next-cm",
 		ext="jpg",
 		weekday="0,6",
@@ -90,7 +90,7 @@ content = [
 		"http://rosiannarabbit.com/post/131180644576",
 		test="http://rosiannarabbit.com/post/143122075580/",
 
-		tags="article>figure>img",
+		image="article>figure>img",
 		next="nav.comic-pagination>a.next-button",
 	),
 
@@ -101,7 +101,7 @@ content = [
 		"http://jl8comic.tumblr.com/post/13372482444/jl8-1-by-yale-stewart-based-on-characters-in-dc",
 		test="http://jl8comic.tumblr.com/post/142267512776/",
 
-		tags="article>figure>img",
+		image="article>figure>img",
 		next="nav.comic-pagination>a.next-button",
 	),
 
@@ -112,7 +112,7 @@ content = [
 		"http://fruitscs.tumblr.com/post/117225884584",
 		test="http://fruitscs.tumblr.com/post/143199707004",
 
-		tags="article>figure>img",
+		image="article>figure>img",
 		next="nav.comic-pagination>a.next-button",
 	),
 
@@ -124,7 +124,7 @@ content = [
 		"http://nellucnhoj.com/post/72259187580/back-in-2010-i-decided-to-punish-myself-by-doing",
 		test="http://nellucnhoj.com/post/144203005681/",
 
-		tags="article>figure>img",
+		image="article>figure>img",
 		next="nav.comic-pagination>a.next-button",
 	),
 
@@ -136,7 +136,7 @@ content = [
 		"http://www.giantitp.com/comics/oots0001.html", # 96
 		test="http://www.giantitp.com/comics/oots1034.html",
 
-		tags="img|!src:in:/comics/images/",
+		image="img|!src:in:/comics/images/",
 		next="a|img|!title:=:next comic",
 	),
 
@@ -148,7 +148,7 @@ content = [
 		"http://toonhole.com/2010/01/smart-questions-get-smart-answers/", # 96
 		test="http://toonhole.com/2016/05/dallas-t-washington-pages-8-9/",
 		
-		tags="#comic>img",
+		image="#comic>img",
 		next="a|!rel:in:next",
 		weekday="0,2,4", # haetaan korkeintaan näinä viikonpäivinä
 	),
@@ -160,7 +160,7 @@ content = [
 		"http://xkcd.com", 
 		"http://xkcd.com/1670/",
 
-		tags="#comic>img",
+		image="#comic>img",
 		next="a|!rel:in:next",
 	),
 
@@ -171,7 +171,7 @@ content = [
 		"http://nedroid.com", 
 		"http://nedroid.com/2016/02/birthdayto/",
 
-		tags="#comic>img",
+		image="#comic>img",
 		next="a|!rel:in:next",
 
 	),
@@ -184,7 +184,7 @@ content = [
 		"http://satwcomic.com/sweden-denmark-and-norway", # 96
 		test="http://satwcomic.com/hatee-hatee-hatee-ho",
 
-		tags="center>img|!src:in:/art/",
+		image="center>img|!src:in:/art/",
 		next="a|!accesskey:in:n",
 	),
 
@@ -196,7 +196,7 @@ content = [
 		"http://explosm.net/comics/15", # 
 		test="http://explosm.net/comics/4299/",
 
-		tags="#main-comic",
+		image="#main-comic",
 		next="a.next-comic",
 	),
 
@@ -208,7 +208,7 @@ content = [
 		"http://paintraincomic.com/comic/romance/",
 		test="http://paintraincomic.com/comic/sign-language/",
 
-		tags="#comic>img",
+		image="#comic>img",
 		next="a.comic-nav-next",
 	),
 
@@ -220,7 +220,7 @@ content = [
 		u"http://garfield.com/comic/2016-02-01",
 		test="https://garfield.com/comic/2016/05/14",
 
-		tags=".comic>img",
+		image=".comic>img",
 		next="a.comic-arrow-right",
 	),
 
@@ -232,7 +232,7 @@ content = [
 		u"http://www.gocomics.com/calvinandhobbes/2014/06/13",
 		test="http://www.gocomics.com/calvinandhobbes/2016/05/14",
 
-		tags="img.strip",
+		image="img.strip",
 		next="ul.feature-nav>a.next",
 	),
 
@@ -243,7 +243,7 @@ content = [
 		"http://www.gocomics.com/", 
 		"http://www.gocomics.com/theflyingmccoys/2016/05/14",
 		test="http://www.gocomics.com/theflyingmccoys/2016/05/14",
-		tags="img.strip",
+		image="img.strip",
 		next="ul.feature-nav>a.next",
 	),
 	Sarjakuva(
@@ -253,7 +253,7 @@ content = [
 		"http://www.gocomics.com/", 
 		"http://www.gocomics.com/pearlsbeforeswine/2016/05/14",
 		test="http://www.gocomics.com/pearlsbeforeswine/2016/05/14",
-		tags="img.strip",
+		image="img.strip",
 		next="ul.feature-nav>a.next",
 	),
 	Sarjakuva(
@@ -263,7 +263,7 @@ content = [
 		u"http://www.gocomics.com/", 
 		u"http://www.gocomics.com/9chickweedlane/2016/05/14",
 		test="http://www.gocomics.com/9chickweedlane/2016/05/14",
-		tags="img.strip",
+		image="img.strip",
 		next="ul.feature-nav>a.next",
 	),
 
@@ -274,7 +274,7 @@ content = [
 		"http://www.gocomics.com/", 
 		"http://www.gocomics.com/jim-benton-cartoons/2014/10/27",
 		test="http://www.gocomics.com/jim-benton-cartoons/2016/05/11",
-		tags="img.strip",
+		image="img.strip",
 		next="ul.feature-nav>a.next",
 	),
 	Sarjakuva(
@@ -284,7 +284,7 @@ content = [
 		"http://www.gocomics.com/", 
 		"http://www.gocomics.com/overthehedge/2016/05/14",
 		test="http://www.gocomics.com/overthehedge/2016/05/14",
-		tags="img.strip",
+		image="img.strip",
 		next="ul.feature-nav>a.next",
 	),
 	Sarjakuva(
@@ -294,7 +294,7 @@ content = [
 		"http://www.gocomics.com/", 
 		"http://www.gocomics.com/sunny-street/2016/02/18",
 		test="http://www.gocomics.com/sunny-street/2016/05/02",
-		tags="img.strip",
+		image="img.strip",
 		next="ul.feature-nav>a.next",
 	),
 
@@ -306,7 +306,7 @@ content = [
 		"http://www.cad-comic.com/cad/20021023", # 
 		test="http://www.cad-comic.com/cad/20160511",
 
-		tags="#content>img|!src:in:comics",
+		image="#content>img|!src:in:comics",
 		next="a.nav-next",
 		ending="cad",
 	),
@@ -362,7 +362,7 @@ content = [
 		u"http://www.therockcocks.com/comic/page-1-nsfw-track-1-start",
 		test="http://www.therockcocks.com/comic/page-176",
 
-		tags="#cc-comicbody>img",
+		image="#cc-comicbody>img",
 		next="div.nav>a.next",
 	),
 
@@ -377,7 +377,7 @@ content = [
 		"http://clayyount.com/hamlets-danish-comic/2014/4/7/one-question",
 		test="http://clayyount.com/hamlets-danish-comic/2015/9/14/lies-damn-lies-and-statistics",
 
-		tags="div.intrinsic>img",
+		image="div.intrinsic>img",
 		next="a.next-btn",
 	),
 
@@ -388,7 +388,7 @@ content = [
 		"http://dilbert.com", 
 		"http://dilbert.com/strip/2015-01-11",
 		test="http://dilbert.com/strip/2016-05-13",
-		tags="img.img-comic",
+		image="img.img-comic",
 		next="div.nav-right>a|!title:in:next",
 	),
 
@@ -400,7 +400,7 @@ content = [
 		"http://pbfcomics.com", 
 		"http://pbfcomics.com/1/",
 		test="http://pbfcomics.com/273",
-		tags="#topimg",
+		image="#topimg",
 		next="a|img|!src:in:newer",
 		
 	),
@@ -411,7 +411,7 @@ content = [
 		"http://www.rationalcomics.com", 
 		"http://www.rationalcomics.com/001-mountain-moving-man/",
 		test="http://www.rationalcomics.com/058-the-customer-is-the-most-important-visitor/",
-		tags="figure.post-image>img",
+		image="figure.post-image>img",
 		next="a|!rel:in:next",		
 	),
 	Sarjakuva( 
@@ -421,7 +421,7 @@ content = [
 		"http://www.loadingartist.com", 
 		"http://www.loadingartist.com/comic/born/",
 		test="http://www.loadingartist.com/comic/punstoppable-punishment/",
-		tags="div.comic>div.comic>img",
+		image="div.comic>div.comic>img",
 		next="a.next",
 				
 	),
@@ -433,7 +433,7 @@ content = [
 		"http://www.smbc-comics.com", 
 		"http://www.smbc-comics.com/index.php?id=4100",
 		test="http://www.smbc-comics.com/index.php?id=4109",
-		tags="#comic",
+		image="#comic",
 		next="a.next",
 		download=True,		
 	),
@@ -445,7 +445,7 @@ content = [
 		"http://itsthetie.com/", 
 		"http://itsthetie.com/?comic=no-world-for-a-squirrel-4",
 		test="http://itsthetie.com/comic/global-warming/",
-		tags="div.comic-content>img.size-full",
+		image="div.comic-content>img.size-full",
 		next="a|!rel:in:next",	
 	),
 
@@ -465,7 +465,7 @@ content = [
 	# 	"http://www.webtoons.com/en/comedy/mercworks/list?title_no=426",
 	# 	"http://www.webtoons.com/en/comedy/mercworks/ep-42-the-passion-of-the-koopa/viewer?title_no=426&episode_no=42",
 	# 	test="http://mercworks.net/comicland/sensible-minicomics-i/",
-	# 	tags="#comic>img",
+	# 	image="#comic>img",
 	# 	next="a.comic-nav-next",
 	# 	weekday="0",
 	# ),
@@ -479,7 +479,7 @@ content = [
 		"http://evil-inc.com/comic/santa-villain-poem-1/",
 		test="http://evil-inc.com/comic/goo-monster/",
 
-		tags="#comic>img",
+		image="#comic>img",
 		next="a.comic-nav-next",
 	),
 
@@ -491,7 +491,7 @@ content = [
 		"http://lastplacecomics.com/comic/wide-range-of-super-powers/",
 		test="http://lastplacecomics.com/comic/final-fantasy-high-school/",
 
-		tags="#comic>img",
+		image="#comic>img",
 		next="a.comic-nav-next",
 	),
 
@@ -504,7 +504,7 @@ content = [
 		"http://www.fowllanguagecomics.com/comic/part-of-the-process/",
 		test="http://www.fowllanguagecomics.com/comic/bread-crust/",
 
-		tags="#comic>img",
+		image="#comic>img",
 		next="a.comic-nav-next",
 
 	),
@@ -517,7 +517,7 @@ content = [
 		"http://www.lfg.co/page/1/",
 		test="http://www.lfg.co/page/981/",
 
-		tags="#comic>img",
+		image="#comic>img",
 		next="a.comic-nav-next",
 	),
 
@@ -529,7 +529,7 @@ content = [
 		"http://www.lfg.co/npc/tale/1-1/",
 		test="http://www.lfg.co/npc/tale/21-9/",
 
-		tags="#comic>img",
+		image="#comic>img",
 		next="a.comic-nav-next",
 	),
 
@@ -541,7 +541,7 @@ content = [
 		"http://www.lfg.co/tda/strip/1/",
 		test="http://www.lfg.co/tda/strip/114/",
 
-		tags="#comic>img",
+		image="#comic>img",
 		next="a.comic-nav-next",
 	),
 
@@ -553,7 +553,7 @@ content = [
 		"http://www.thefoxsister.com/index.php?id=1",
 		test="http://thefoxsister.com/index.php?id=126",
 
-		tags="#comicimg",
+		image="#comicimg",
 		next="a.comic-nav-next",
 	),
 
@@ -565,7 +565,7 @@ content = [
 		"http://theodd1sout.com/comic/god-its-awful/",
 		test="http://theodd1sout.com/comic/my-child/",
 
-		tags="#comic>img",
+		image="#comic>img",
 		next="a.comic-nav-next",
 	),
 
@@ -577,7 +577,7 @@ content = [
 		"http://www.cheerupemokid.com/comic/truth",
 		test="http://www.cheerupemokid.com/comic/permit",
 
-		tags="#comic>img",
+		image="#comic>img",
 		next="a.next",
 		#"http://www.cheerupemokid.com/comic/frank",	
 	),
@@ -590,7 +590,7 @@ content = [
 		"http://thepunchlineismachismo.com/", 
 		"http://thepunchlineismachismo.com/archives/comic/02222010",
 		test="http://thepunchlineismachismo.com/archives/comic/2755",
-		tags="#comic>img",
+		image="#comic>img",
 		next="a.comic-nav-next"
 	),
 
@@ -602,7 +602,7 @@ content = [
 		"http://www.commitstrip.com/en/2012/02/22/interview/",
 		test="http://www.commitstrip.com/en/2016/05/12/coder-superpower/",
 
-		tags="div.entry-content>img.size-full",
+		image="div.entry-content>img.size-full",
 		next="a|!rel:in:next",	
 	),
 
@@ -614,7 +614,7 @@ content = [
 		"http://www.girlswithslingshots.com/comic/gws-chaser-1",
 		test="http://www.girlswithslingshots.com/comic/gws-chaser-307",
 
-		tags="#cc-comic",
+		image="#cc-comic",
 		next="a.next",
 	),
 
@@ -625,7 +625,7 @@ content = [
 		"http://strongfemaleprotagonist.com/", 
 		"http://strongfemaleprotagonist.com/issue-1/page-0/",
 		test="http://strongfemaleprotagonist.com/issue-6/page-44-5/",
-		tags="article.post>img.size-full",
+		image="article.post>img.size-full",
 		next="a|!rel:in:next",
 	),
 	Sarjakuva( 
@@ -636,7 +636,7 @@ content = [
 		"http://nerdragecomic.com/index.php?date=2010-09-28",
 		test="http://nerdragecomic.com/index.php?date=2016-04-22",
 
-		tags="img|!src:in:strips",
+		image="img|!src:in:strips",
 		next="a|img|!alt:in:next comic",
 	),
 
@@ -659,7 +659,7 @@ content = [
 		"http://www.darklegacycomics.com/1",
 		test="http://www.darklegacycomics.com/535",
 
-		tags="img.comic-image",
+		image="img.comic-image",
 		next="a.nextLink",
 		
 	),
@@ -671,7 +671,7 @@ content = [
 		"http://www.awkwardzombie.com/index.php?page=0&comic=092006",
 		test="http://www.awkwardzombie.com/index.php?page=0&comic=041816",
 
-		tags="#comic>img",
+		image="#comic>img",
 		next="a|img|!alt:in:next comic",
 	),
 
@@ -683,7 +683,7 @@ content = [
 		"http://www.pvponline.com/comic/2015/06/01/birds-of-a-feather1",
 		test="http://pvponline.com/comic/2016/05/12/the-one-time",
 
-		tags="section.comic-art>img",
+		image="section.comic-art>img",
 		next="div.comic-nav>a.left|!text:in:next",
 	),
 	Sarjakuva( 
@@ -694,7 +694,7 @@ content = [
 		"http://tabletitans.com/comic/mines-of-madness-page-1",
 		test="http://tabletitans.com/comic/whispers-of-dragons-page-142",
 
-		tags="section.comic>img",
+		image="section.comic>img",
 		next="a|!text:in:next",
 	),
 	Sarjakuva( 
@@ -705,7 +705,7 @@ content = [
 		"http://ars.userfriendly.org/cartoons/?id=20160515",
 		test="http://ars.userfriendly.org/cartoons/?id=20160515",
 
-		tags="img|!alt:in:strip",
+		image="img|!alt:in:strip",
 		next="area|!alt:in:next",
 	),
 	Sarjakuva(
@@ -716,7 +716,7 @@ content = [
 		"http://www.grogcomics.com/they-breed-like/",
 		test="http://grogcomics.com/did-you-jump/",
 
-		tags="div.content>div.entry>img",
+		image="div.content>div.entry>img",
 		next="span.next>a|!rel:in:next",
 	),
 	Sarjakuva(
@@ -727,7 +727,7 @@ content = [
 		"http://www.rice-boy.com/vattu/index.php?c=001",
 		test="http://www.rice-boy.com/vattu/index.php?c=742",
 
-		tags="#page>img",
+		image="#page>img",
 		next="a|!text:in:forward|!href:in:c=",
 		ending="index.php"
 	),
@@ -739,7 +739,7 @@ content = [
 		"http://www.powernapcomic.com/d/20110617.html",
 		test="http://www.powernapcomic.com/d/20160502.html",
 
-		tags="center>img|!src:in:/pnap",
+		image="center>img|!src:in:/pnap",
 		next="a|img|!alt:in:next",	
 	),
 	Sarjakuva(
@@ -750,7 +750,7 @@ content = [
 		"http://www.myextralife.com/comic/06172001/",
 		test="http://www.myextralife.com/comic/whoville/",
 
-		tags="img.comic",
+		image="img.comic",
 		next="a.next_comic_link",
 	),
 	Sarjakuva( 
@@ -761,7 +761,7 @@ content = [
 		"http://poorlydrawnlines.com/comic/campus-characters/",
 		test="http://poorlydrawnlines.com/comic/kevins-ideas/",
 
-		tags="div.comic>img.size-full",
+		image="div.comic>img.size-full",
 		next="a|!rel:in:next",
 	),
 	Sarjakuva(
@@ -772,7 +772,7 @@ content = [
 		"http://existentialcomics.com/comic/1",
 		test="http://existentialcomics.com/comic/131",
 
-		tags="img.comicImg",
+		image="img.comicImg",
 		next="a|img|!src:in:nav_next",
 	),
 	Sarjakuva(
@@ -783,7 +783,7 @@ content = [
 		"http://abominable.cc/post/44164796353/episode-one",
 		test="http://abominable.cc/post/104845340635/guest-strip-magnus-jonason",
 
-		tags="div.photo>img",
+		image="div.photo>img",
 		next="span.next_post>a",
 	),
 	
@@ -796,7 +796,7 @@ content = [
 		"http://www.blastwave-comic.com/index.php?p=comic&nro=1",
 		test="http://www.blastwave-comic.com/index.php?p=comic&nro=72",
 
-		tags="#comic_ruutu>img|!src:in:/comics/",
+		image="#comic_ruutu>img|!src:in:/comics/",
 		next="a|img|!src:in:next",
 	),
 	Sarjakuva(
@@ -818,7 +818,7 @@ content = [
 		"http://romanticallyapocalyptic.com/0",
 		test="http://romanticallyapocalyptic.com/238",
 
-		tags="div.comicpanel>center>img",
+		image="div.comicpanel>center>img",
 		next="a|!accesskey:in:n",
 	),
 	Sarjakuva(
@@ -828,7 +828,7 @@ content = [
 		"http://www.thingsinsquares.com", 
 		"http://www.thingsinsquares.com/comics/lame-joke/",
 		test="http://www.thingsinsquares.com/comics/san-pedro-cactus/",
-		tags="div.entry-content>img.size-full",
+		image="div.entry-content>img.size-full",
 		next="a|!rel:in:next",
 	),
 	Sarjakuva( 
@@ -839,7 +839,7 @@ content = [
 		"http://www.foxtrot.com/2015/08/16/no-worries/",
 		test="http://www.foxtrot.com/2016/05/01/show-off-and-tell/",
 
-		tags="div.entry-content>img.size-full",
+		image="div.entry-content>img.size-full",
 		next="a|!rel:in:next",
 	),
 	
@@ -853,7 +853,7 @@ content = [
 		"http://berdsandnerds.com/thearchive/",
 		test="http://berdsandnerds.com/comic/2016/5/9/theothermother",
 
-		tags="div.sqs-block-content>noscript>img",
+		image="div.sqs-block-content>noscript>img",
 		next="div.intrinsic>a|!href:in:/comic/",
 	),
 
@@ -866,7 +866,7 @@ content = [
 		test="http://gunshowcomic.com/897",
 
 		interval=0,
-		tags="#comic>img.strip",
+		image="#comic>img.strip",
 		next="a|img|!src:in:next.gif",
 	),
 
@@ -878,7 +878,7 @@ content = [
 		"http://backcomic.com/1",
 		test="http://backcomic.com/93",
 
-		tags="#comic>img.comic-page",
+		image="#comic>img.comic-page",
 		next="#next_comic",
 	),
 
@@ -890,7 +890,7 @@ content = [
 		"http://backcomic.com/1",
 		test="http://backcomic.com/93",
 
-		tags="#comic>img.comic-page",
+		image="#comic>img.comic-page",
 		next="#next_comic",
 	),
 
@@ -903,7 +903,7 @@ content = [
 		"http://hiagb.com/1",
 		test="http://hiagb.com/122",
 
-		tags="#comicImages>img.comic-page",
+		image="#comicImages>img.comic-page",
 		next="#next_comic",
 	),
 
@@ -914,7 +914,7 @@ content = [
 		"http://www.happletea.com",  # baseurl
 		"http://www.happletea.com/comic/fallacies/",
 		test="http://www.happletea.com/comic/asking-the-big-questions/",
-		tags="#comic>img",
+		image="#comic>img",
 		next="a.navi-next",
 	),
 
@@ -925,7 +925,7 @@ content = [
 		"http://skadicomic.com", 
 		"http://skadicomic.com/2008/05/07/ballad-of-skadi-pt-1-2/",
 		test="http://skadicomic.com/comic/delay-or-the-end-is-near/",
-		tags="#comic>img",
+		image="#comic>img",
 		next="a.comic-nav-next",
 		interval=0,
 		
@@ -939,7 +939,7 @@ content = [
 		"http://www.csectioncomics.com/", 
 		"http://www.csectioncomics.com/comics/one-day-in-country",
 		test="http://www.csectioncomics.com/comics/back-in-my-day-dad-online-porn",
-		tags="#comic>img",
+		image="#comic>img",
 		next="a.comic-nav-next",	
 	),
 
@@ -951,7 +951,7 @@ content = [
 		"http://www.berkeleymews.com/", 
 		"http://www.berkeleymews.com/?p=19",
 		test="http://www.berkeleymews.com/?p=970",
-		tags="#comic>img",
+		image="#comic>img",
 		next="a.navi-next",	
 	),
 
@@ -962,7 +962,7 @@ content = [
 		"http://completelyseriouscomics.com/", 
 		"http://completelyseriouscomics.com/?p=6",
 		test="pienirinkula.com",
-		tags="#comic>img",
+		image="#comic>img",
 		next="a.navi-next",
 		interval=0, # lopetettu
 	),
@@ -974,7 +974,7 @@ content = [
 		"http://www.picturesinboxes.com/", 
 		"http://www.picturesinboxes.com/2013/10/26/tetris/",
 		test="http://www.picturesinboxes.com/2015/09/16/transformers/",
-		tags="#comic>img",
+		image="#comic>img",
 		next="a.navi-next",
 	),
 
@@ -985,7 +985,7 @@ content = [
 		"http://www.channelate.com/", 
 		"http://www.channelate.com/2008/02/13/wear-a-clean-shirt/",
 		test="http://www.channelate.com/2016/05/13/something-you-need-to-tell-me/",
-		tags="#comic>img",
+		image="#comic>img",
 		next="a.navi-next",
 	),
 
@@ -996,7 +996,7 @@ content = [
 		"http://www.amazingsuperpowers.com/", 
 		"http://www.amazingsuperpowers.com/2007/09/heredity/",
 		test="http://www.amazingsuperpowers.com/2015/06/young-at-heart/",
-		tags="#comic>img",
+		image="#comic>img",
 		next="a.navi-next",
 	),
 
@@ -1007,7 +1007,7 @@ content = [
 		"http://zenpencils.com/", 
 		"http://zenpencils.com/comic/1-ralph-waldo-emerson-make-them-cry/",
 		test="http://zenpencils.com/comic/rilke/",
-		tags="#comic>img",
+		image="#comic>img",
 		next="a.navi-next",
 	),
 
@@ -1018,7 +1018,7 @@ content = [
 		"http://thenoobcomic.com/", 
 		"http://thenoobcomic.com/comic/1/",
 		test="http://thenoobcomic.com/comic/450/",
-		tags="#comic>img",
+		image="#comic>img",
 		next="a.navi-next",
 	),
 
@@ -1029,7 +1029,7 @@ content = [
 		"http://www.safelyendangered.com/", 
 		"http://www.safelyendangered.com/comic/ignored/",
 		test="http://www.safelyendangered.com/comic/stupid/",
-		tags="#comic>img",
+		image="#comic>img",
 		next="a.navi-next",
 	),
 	Sarjakuva(
@@ -1039,7 +1039,7 @@ content = [
 		"http://explodingdinosaur.com/", 
 		"http://explodingdinosaur.com/comic/seriously-stop-it/",
 		test="http://explodingdinosaur.com/comic/hipster-kitchen/",
-		tags="#comic>img",
+		image="#comic>img",
 		next="a.navi-next",
 	),
 	Sarjakuva(
@@ -1049,7 +1049,7 @@ content = [
 		"http://www.veritablehokum.com/", 
 		"http://www.veritablehokum.com/comic/headless-folks-of-the-french-revolution/",
 		test="http://www.veritablehokum.com/comic/presidents-washington-buchanan/",
-		tags="#comic>img",
+		image="#comic>img",
 		next="a.navi-next",
 	),
 
@@ -1060,7 +1060,7 @@ content = [
 		"http://hijinksensue.com/", 
 		"http://hijinksensue.com/comic/who-is-your-daddy-and-what-does-he-do/",
 		test="http://hijinksensue.com/comic/roll-right-roll-call/",
-		tags="#comic>img",
+		image="#comic>img",
 		next="a.navi-next-in",
 	
 	),
@@ -1073,7 +1073,7 @@ content = [
 		"http://sharksplode.com/", 
 		"http://sharksplode.com/comic/is-it-the-word-is-it-really/",
 		test="http://sharksplode.com/comic/back-in-the-saddle/",
-		tags="#comic>img",
+		image="#comic>img",
 		next="a.navi-next",
 	
 	),
@@ -1085,7 +1085,7 @@ content = [
 		"http://legacy-control.com/", 
 		"http://legacy-control.com/comic/advent-boner-3/",
 		test="http://legacy-control.com/comic/beardable/",
-		tags="#comic>img",
+		image="#comic>img",
 		next="a.navi-next",
 		
 	),
@@ -1096,7 +1096,7 @@ content = [
 		"http://www.businesscat.happyjar.com/comic/coffee/",
 		
 		test="http://www.businesscat.happyjar.com/comic/butterfly/",
-		tags="#comic>img",
+		image="#comic>img",
 		next="a.navi-next-in",
 	),
 
@@ -1107,7 +1107,7 @@ content = [
 		"http://www.hejibits.com/", 
 		"http://www.hejibits.com/comics/roommate-comics-1/",
 		test="http://www.hejibits.com/comics/going-up/",
-		tags="#comic>img",
+		image="#comic>img",
 		next="a.navi-next",
 	),
 
@@ -1118,7 +1118,7 @@ content = [
 		"http://theawkwardyeti.com/", 
 		"http://theawkwardyeti.com/comic/0912-reading/",
 		test="http://theawkwardyeti.com/comic/big-confusion/",
-		tags="#comic>img",
+		image="#comic>img",
 		next="a.navi-next",
 		
 	),
@@ -1130,7 +1130,7 @@ content = [
 		"http://bigfootjustice.com/", 
 		"http://bigfootjustice.com/comic/iscale-2/",
 		test="http://bigfootjustice.com/comic/new-suit/",
-		tags="#comic>img",
+		image="#comic>img",
 		next="a.navi-next",
 		
 	),
@@ -1144,7 +1144,7 @@ content = [
 		"http://www.vgcats.com/comics/?strip_id=1",
 		test="http://www.vgcats.com/comics/?strip_id=373",
 
-		tags="img|!src:in:.jpg",
+		image="img|!src:in:.jpg",
 		next="a|img|!src:in:next.gif",
 	),
 	Sarjakuva(
@@ -1155,7 +1155,7 @@ content = [
 		"http://www.nerfnow.com/comic/4",
 		test="http://www.nerfnow.com/comic/1813",
 
-		tags="#comic>img",
+		image="#comic>img",
 		next="#nav_next>a",
 	),
 
@@ -1167,7 +1167,7 @@ content = [
 		"http://www.sinfest.net/view.php?date=2000-01-17",
 		test="http://sinfest.net/view.php?date=2016-05-16",
 
-		tags="img|!src:in:btphp/comics/",
+		image="img|!src:in:btphp/comics/",
 		next="a|img|!src:in:images/next",
 	),
 
@@ -1179,7 +1179,7 @@ content = [
 		"http://campcomic.com/comic/dear-mom",
 		test="http://campcomic.com/comic/316",
 
-		tags="#comic>img",
+		image="#comic>img",
 		next="a.btnNext",
 			
 	),
@@ -1192,7 +1192,7 @@ content = [
 		"http://www.penny-arcade.com/comic/1998/11/18",
 		test="https://www.penny-arcade.com/comic/2016/05/13/schismatic",
 
-		tags="#comicFrame>img",
+		image="#comicFrame>img",
 		next="a.btnNext|!href:in:comic",
 		#download=False,
 	),
@@ -1205,7 +1205,7 @@ content = [
 		"http://trenchescomic.com/comic/post/9811",
 		test="http://trenchescomic.com/comic/post/ghost-in-the-machine",
 
-		tags="div.comic>img",
+		image="div.comic>img",
 		next="a.btnNext",
 		#download=False,
 	),
@@ -1217,7 +1217,7 @@ content = [
 		"http://www.pidjin.net/", 
 		"http://www.pidjin.net/2005/05/30/tricks-to-getting-delayed/",
 		test="http://www.pidjin.net/2016/03/03/syrian-steve-jobs/",
-		tags="div.episode>img",
+		image="div.episode>img",
 		next="a|!rel:in:next",
 	),
 
@@ -1231,7 +1231,7 @@ content = [
 		"http://www.leasticoulddo.com/comic/", 
 		"http://www.leasticoulddo.com/comic/20030210/",
 		test="http://www.leasticoulddo.com/comic/20160516/",
-		tags="#comic>img",
+		image="#comic>img",
 		next="#nav-large-next",
 			
 	),
@@ -1243,7 +1243,7 @@ content = [
 		"http://questionablecontent.net/", 
 		"http://questionablecontent.net/view.php?comic=1",
 		test="http://www.questionablecontent.net/view.php?comic=3221",
-		tags="#strip",
+		image="#strip",
 		next="#comicnav>a|!text:in:next",
 	),
 
@@ -1255,7 +1255,7 @@ content = [
 		"http://wumo.com/wumo/2015/09/08",
 		test="http://wumo.com/wumo/2016/05/16",
 
-		tags="article.strip>div.box-content>img",
+		image="article.strip>div.box-content>img",
 		next="a.next",
 		
 	),
@@ -1268,7 +1268,7 @@ content = [
 		"http://peppercarrot.com/en/article234/potion-of-flight",
 		test="http://peppercarrot.com/en/article350/episode-14-the-dragon-s-tooth",
 
-		tags="img.comicpage",
+		image="img.comicpage",
 		next="a|i.fa-chevron-right",
 	),
 
@@ -1303,7 +1303,7 @@ content = [
 		"http://forlackofabettercomic.com/?id=1",
 		test="http://forlackofabettercomic.com/?id=277",
 
-		tags="#comicimg",
+		image="#comicimg",
 		next="a|#comicimg",	
 	),
 
@@ -1315,7 +1315,7 @@ content = [
 		"http://lovemenicecomic.com/comic/001.php",
 		test="http://lovemenicecomic.com/comic/215.php",
 
-		tags="#comicimg",
+		image="#comicimg",
 		next="a|#comicimg",
 	),
 # Sarjakuva(
@@ -1327,7 +1327,7 @@ content = [
 # 	"http://www.johnnywander.com/fiction/girl-with-the-skeleton-hand-1",
 # 	test=None,
 
-# 	tags="",
+# 	image="",
 # 	next=""
 
 # 	interval=0, # PÄÄTTYNYT
@@ -1342,7 +1342,7 @@ content = [
 # 	"http://www.johnnywander.com/luckypenny/lucky-penny-001", 
 # 	test=None,
 
-# 	tags="",
+# 	image="",
 # 	next=""
 
 # 	interval=0, # PÄÄTTYNYT ?
@@ -1355,7 +1355,7 @@ content = [
 # 	"http://www.johnnywander.com/comic/i",	
 # 	test=None,
 
-# 	tags="",
+# 	image="",
 # 	next=""	
 
 # 	interval=0, # PÄÄTTYNYT ?
@@ -1369,7 +1369,7 @@ Sarjakuva(
 	"http://www.johnnywander.com/itwyw/is-this-what-you-wanted",	
 	test="http://www.johnnywander.com/comic/is-this-what-you-wanted-25",
 
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a"	
 
 ),
@@ -1382,7 +1382,7 @@ Sarjakuva(
 	"http://www.marycagle.com/letsspeakenglish/1-shingeki-no-kodomo",
 	test="http://www.marycagle.com/letsspeakenglish/121-on-the-catwalk",
 	
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a"	
 ),
 
@@ -1393,7 +1393,7 @@ Sarjakuva(
 	"http://www.whompcomic.com/", 
 	"http://www.whompcomic.com/comic/06152010",
 	test="http://www.whompcomic.com/comic/mirror-mismatch",
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a"	
 ),
 
@@ -1404,7 +1404,7 @@ Sarjakuva(
 	"http://www.6gunmage.com", 
 	"http://www.6gunmage.com/comic/6-gun-mage-kickoff",
 	test="http://www.6gunmage.com/comic/page-29-12",
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a"	
 ),
 
@@ -1416,7 +1416,7 @@ Sarjakuva(
 	"http://www.aghoststorycomic.com/comic/in-the-black-1",
 	test="http://www.aghoststorycomic.com/comic/break-comic-1",
 
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a"	
 ),
 
@@ -1428,7 +1428,7 @@ Sarjakuva(
 	"http://www.agentsoftherealm.com/aotr/-volume-1-",
 	test="http://www.agentsoftherealm.com/aotr/-intermission-iii-3-by-eve-g",
 
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a"	
 ),
 
@@ -1440,7 +1440,7 @@ Sarjakuva(
 	"http://www.aliceandthenightmare.com/comic/chapter-one-cover",
 	test="http://www.aliceandthenightmare.com/comic/chapter-3-page-21",
 
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a"	
 ),
 
@@ -1452,7 +1452,7 @@ Sarjakuva(
 	"http://www.aquapunk.co/comic/book1",
 	test="http://www.aquapunk.co/comic/4035",
 
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a"	
 ),
 
@@ -1464,7 +1464,7 @@ Sarjakuva(
 	"http://www.astralaves.com/comic/a-cacophony-of-stars",
 	test="http://www.astralaves.com/comic/09-033",
 
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a"	
 ),
 
@@ -1476,7 +1476,7 @@ Sarjakuva(
 	"http://www.atomic-robo.com/atomicrobo/v1ch1-cover",
 	test="http://www.atomic-robo.com/atomicrobo/v11ch1-page-21",
 
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a"	
 ),
 
@@ -1488,7 +1488,7 @@ Sarjakuva(
 	"http://www.awakencomic.com/comic/comic-cover",
 	test="http://www.awakencomic.com/comic/ch4-page-28",
 
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a"	
 ),
 
@@ -1500,7 +1500,7 @@ Sarjakuva(
 	"http://www.balderdashcomic.com/comic/i01",
 	test="http://www.balderdashcomic.com/comic/chapter-vi-page-149",
 
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a"	
 ),
 
@@ -1512,7 +1512,7 @@ Sarjakuva(
 	"http://www.basinvale.com/index.php?id=1",
 	test="http://www.basinvale.com/index.php?id=129",
 
-	tags="#comic",
+	image="#comic",
 	next="a.next"	
 ),
 
@@ -1524,7 +1524,7 @@ Sarjakuva(
 	"http://www.beeserker.com/comics/the-scienceman/",
 	test="http://www.beeserker.com/comics/wallpapers/",
 
-	tags="#comic>img",
+	image="#comic>img",
 	next="a.navi-next"	
 ),
 
@@ -1537,7 +1537,7 @@ Sarjakuva(
 	"http://www.blackgrasscomic.com/comic/page-1",
 	test="http://www.blackgrasscomic.com/comic/page-68",
 
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a"	
 ),
 
@@ -1549,7 +1549,7 @@ Sarjakuva(
 	"http://www.blasternation.com/comic/1-one-day-in-the-life-of-matthew-palmer",
 	test="http://www.blasternation.com/comic/497-poor-hammy",
 
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a"	
 ),
 
@@ -1561,7 +1561,7 @@ Sarjakuva(
 	"http://www.blindsprings.com/comic/blindsprings-cover-book-one",
 	test="http://www.blindsprings.com/comic/whomp-whomp",
 
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a"	
 ),
 
@@ -1573,7 +1573,7 @@ Sarjakuva(
 	"http://broodhollow.chainsawsuit.com/page/2012/10/06/book-1-curious-little-thing/",
 	test="http://broodhollow.chainsawsuit.com/page/2016/05/09/among-the-bowers-page-3/",
 
-	tags="#comic>img",
+	image="#comic>img",
 	next="a.navi-next"	
 ),
 
@@ -1586,7 +1586,7 @@ Sarjakuva(
 	"http://www.cassiopeiaquinn.com/comic/the-prize-cover",
 	test="http://www.cassiopeiaquinn.com/comic/the-big-race-page-32",
 
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a"	
 ),
 
@@ -1598,7 +1598,7 @@ Sarjakuva(
 	"http://cliquerefresh.com/comic/start-it-up/",
 	test="http://cliquerefresh.com/comic/111-the-struggle/",
 
-	tags="div.comicImg>img",
+	image="div.comicImg>img",
 	next="#nextcomic"	
 ),
 
@@ -1610,8 +1610,9 @@ Sarjakuva(
 	"http://www.crazysunshine.com/",
 	test=None,
 
-	tags="#cc-comic",
-	next="#cc-comicbody>a"	
+	image="#cc-comic",
+	next="#cc-comicbody>a",
+	interval=0
 ),
 
 Sarjakuva(
@@ -1622,7 +1623,7 @@ Sarjakuva(
 	"http://www.cuttimecomic.com/comic/volume-01-first-impressions",
 	test="http://www.cuttimecomic.com/comic/chapter-2-page-6",
 
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a"	
 ),
 
@@ -1634,7 +1635,7 @@ Sarjakuva(
 	"http://www.daughterofthelilies.com/dotl/part-1-a-girl-with-no-face", 
 	test="http://www.daughterofthelilies.com/dotl/503",
 
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a"	
 ),
 
@@ -1647,8 +1648,8 @@ Sarjakuva(
  	"http://www.deathbulge.com/comics/1", 
  	test="http://www.deathbulge.com/comics/341",
 
-	#tags="#comic>img",
-	tags="meta|!content:in:images/comics/",
+	#image="#comic>img",
+	image="meta|!content:in:images/comics/",
 	next="#next-button"	
  ),
 
@@ -1661,7 +1662,7 @@ Sarjakuva(
 	"http://www.demonstreet.co/comic/1", 
 	test="http://www.demonstreet.co/comic/276",
 
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a"	
 ),
 
@@ -1674,7 +1675,7 @@ Sarjakuva(
 	"http://www.devilscandycomic.com/?comic=prologue-01-2", 
 	test="http://www.devilscandycomic.com/?comic=ch04p04",
 
-	tags="#comic>img",
+	image="#comic>img",
 	next="a.comic-nav-next"	
 ),
 
@@ -1687,7 +1688,7 @@ Sarjakuva(
 	"http://www.dumbingofage.com/2010/comic/book-1/01-move-in-day/home/", 
 	test="http://www.dumbingofage.com/2016/comic/book-6/03-when-god-closes-the-door/traumatizing/",
 
-	tags="#comic>img",
+	image="#comic>img",
 	next="a.navi-next"	
 ),
 
@@ -1700,7 +1701,7 @@ Sarjakuva(
 	"http://www.egscomics.com/index.php?id=1", 
 	test="http://www.egscomics.com/index.php?id=2188",
 
-	tags="#comic",
+	image="#comic",
 	next="a.next"	
 ),
 
@@ -1713,7 +1714,7 @@ Sarjakuva(
 	"http://www.empoweredcomic.com/comic/volume-1-page-1", 
 	test="http://www.empoweredcomic.com/comic/volume-1-page-225",
 
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a"	
 ),
 
@@ -1725,7 +1726,7 @@ Sarjakuva(
 	"http://flightofthebinturong.com/comic/cover/", 
 	test="http://flightofthebinturong.com/comic/update-87-awakenings/",
 
-	tags="#comic>img",
+	image="#comic>img",
 	next="a.navi-next"	
 ),
 
@@ -1738,7 +1739,7 @@ Sarjakuva(
 	"http://floraverse.com/comic/seeds-a-mini-story/prologue/1-cover/", 
 	test="http://floraverse.com/comic/oneshots/459-canada-incoming/",
 
-	tags="img.comic-page-image",
+	image="img.comic-page-image",
 	next="div.-next>a"	
 ),
 
@@ -1751,7 +1752,7 @@ Sarjakuva(
 	"http://www.girlgeniusonline.com/comic.php?date=20021104", 
 	test="http://www.girlgeniusonline.com/comic.php?date=20160513",
 
-	tags="img|!alt:in:comic",
+	image="img|!alt:in:comic",
 	next="#topnext"	
 ),
 
@@ -1764,7 +1765,7 @@ Sarjakuva(
 	"http://www.intrepidgirlbot.com/2009/03/06/pretty-people-processor/", 
 	test="http://www.intrepidgirlbot.com/2015/09/25/dumb-girlbot-comics-stripes/",
 
-	tags="img.comic-item",
+	image="img.comic-item",
 	next="a.next-comic-link"	
 ),
 
@@ -1777,7 +1778,7 @@ Sarjakuva(
 	"http://www.gogetaroomie.com/comic/and-so-it-begins", 
 	test="http://www.gogetaroomie.com/comic/happy-family-shopping-yay",
 
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a"	
 ),
 
@@ -1790,7 +1791,7 @@ Sarjakuva(
 	"http://www.godslavecomic.com/comic/page-1", 
 	test="http://www.godslavecomic.com/comic/challenging",
 
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a"	
 ),
 
@@ -1803,7 +1804,7 @@ Sarjakuva(
 	"http://guildedage.net/comic/chapter-1-cover/", 
 	test="http://guildedage.net/comic/chapter-42-page-8/",
 
-	tags="#comic>img",
+	image="#comic>img",
 	next="a.navi-next"	
 ),
 
@@ -1816,7 +1817,7 @@ Sarjakuva(
 	"http://www.harpygee.com/comic/cover", 
 	test="http://www.harpygee.com/comic/ch3hivepg090",
 
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a"	
 ),
 
@@ -1829,7 +1830,7 @@ Sarjakuva(
 	"http://www.headlessbliss.com/comic/page-1", 
 	test="http://www.headlessbliss.com/comic/page-138",
 
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a"	
 ),
 
@@ -1842,7 +1843,7 @@ Sarjakuva(
 	"http://www.heartshapedskull.com/2002/10/31/working-through-the-negativity-cover/", 
 	test="http://www.heartshapedskull.com/2013/11/28/break-your-stupid-heart-page-120/",
 
-	tags="#comic>img",
+	image="#comic>img",
 	next="a.navi-next",
 	interval=0 # lopetettu
 ),
@@ -1856,7 +1857,7 @@ Sarjakuva(
 	"http://helvetica.jnwiedle.com/2011/06/24/and-so-it-begins/", 
 	test="http://helvetica.jnwiedle.com/2015/11/29/very-romantic/",
 
-	tags="#comic>img",
+	image="#comic>img",
 	next="div.nav-next>a",
 ),
 
@@ -1869,7 +1870,7 @@ Sarjakuva(
 	"http://iamarg.com/2011/05/08/05082011/", 
 	test="http://iamarg.com/2016/03/14/03142016/",
 
-	tags="#comic>img",
+	image="#comic>img",
 	next="a.navi-next",
 ),
 
@@ -1882,7 +1883,7 @@ Sarjakuva(
 	"http://an.oddlookingbird.com/comic/page-1", 
 	test="http://an.oddlookingbird.com/comic/page-127",
 
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a"	
 ),
 
@@ -1894,7 +1895,7 @@ Sarjakuva(
 	"http://www.kiwiblitz.com/comic/welcome-to-kb", 
 	test="http://www.kiwiblitz.com/comic/page-463",
 
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a"	
 ),
 
@@ -1906,7 +1907,7 @@ Sarjakuva(
 	"http://sparklermonthly.com/ke/knights-errant-chapter-01-page-001/", 
 	test="http://sparklermonthly.com/ke/knights-errant-chapter-04-page-121/",
 
-	tags="div.webcomic-image>img",
+	image="div.webcomic-image>img",
 	next="a.next-webcomic-link"	
 ),
 
@@ -1918,7 +1919,7 @@ Sarjakuva(
 	"http://www.lostnightmare.com/comic/01-01", 
 	test="http://www.lostnightmare.com/comic/06-20",
 
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a"	
 ),
 
@@ -1930,7 +1931,7 @@ Sarjakuva(
 	"http://www.lovenotfound.com/comic/chapter-1-cover", 
 	test="http://www.lovenotfound.com/comic/chapter-10-page-07",
 
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a"	
 ),
 
@@ -1942,7 +1943,7 @@ Sarjakuva(
 	"http://sparklermonthly.com/mh/magical-how-chapter-01-page-001/", 
 	test="http://sparklermonthly.com/mh/magical-how-chapter-03-page-051/",
 
-	tags="div.webcomic-image>img",
+	image="div.webcomic-image>img",
 	next="a.next-webcomic-link"	
 ),
 
@@ -1954,7 +1955,7 @@ Sarjakuva(
 	"http://www.marecomic.com/comic/intro-page-1/", 
 	test="http://www.marecomic.com/comic/ch3-page-24/",
 
-	tags="#comic>img",
+	image="#comic>img",
 	next="a.comic-nav-next",	
 ),
 
@@ -1966,7 +1967,7 @@ Sarjakuva(
 	"http://rosalarian.com/meatyyogurt/2010/10/01/starting-things-off-with-a-bang-4/", 
 	test="http://rosalarian.com/meatyyogurt/2016/04/11/just-love/",
 
-	tags="#comic>img",
+	image="#comic>img",
 	next="div.nav-next>a",
 ),
 
@@ -1978,7 +1979,7 @@ Sarjakuva(
 	"http://www.metacarpolis.com/metacarpolis/chapter-1-page-1", 
 	test="http://www.metacarpolis.com/metacarpolis/a-guide-to-the-digits-of-metacarpolis-part-1",
 
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a"	
 ),
 
@@ -1990,7 +1991,7 @@ Sarjakuva(
 	"http://www.misfile.com/?date=2004-02-22", 
 	test="http://www.misfile.com/?date=2016-05-17",
 
-	tags="#comic>img",
+	image="#comic>img",
 	next="#comic>a",
 ),
 
@@ -2002,7 +2003,7 @@ Sarjakuva(
 	"http://www.monster-pulse.com/comic/monster-pulse", 
 	test="http://www.monster-pulse.com/comic/page-9-chapter-23",
 
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a"	
 ),
 
@@ -2014,7 +2015,7 @@ Sarjakuva(
 	"http://monsterkind.enenkay.com/comic/first", 
 	test="http://monsterkind.enenkay.com/comic/313",
 
-	tags="#comic>img",
+	image="#comic>img",
 	next="#comic>a",
 ),
 
@@ -2026,7 +2027,7 @@ Sarjakuva(
 	"http://namesakecomic.com/comic/the-journey-begins", 
 	test="http://namesakecomic.com/comic/warrick-selva-and-fred-cool-things-about-earth",
 
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a"	
 ),
 
@@ -2038,7 +2039,7 @@ Sarjakuva(
 	"http://www.neversatisfiedcomic.com/comic/chapter-1-chirp-chirp-chirp", 
 	test="http://www.neversatisfiedcomic.com/comic/chapter-3-page-33",
 
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a"	
 ),
 
@@ -2050,7 +2051,7 @@ Sarjakuva(
 	"http://www.ndecomic.com/comic/page-1", 
 	test="http://www.ndecomic.com/comic/page-130",
 
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a"	
 ),
 
@@ -2062,7 +2063,7 @@ Sarjakuva(
 	"http://www.ohjoysextoy.com/introduction/", 
 	test="http://www.ohjoysextoy.com/period-sex/",
 
-	tags="#comic>img",
+	image="#comic>img",
 	next="a.navi-next",
 ),
 
@@ -2074,7 +2075,7 @@ Sarjakuva(
 	"http://www.parallaxcomic.com/comic/page-01", 
 	test="http://www.parallaxcomic.com/comic/page-106",
 
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a"	
 ),
 
@@ -2086,7 +2087,7 @@ Sarjakuva(
 	"http://www.paranatural.net/comic/chapter-1", 
 	test="http://www.paranatural.net/comic/chapter-5-page-117",
 
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a"	
 ),
 
@@ -2098,7 +2099,7 @@ Sarjakuva(
 	"http://www.peritale.com/comic/promo", 
 	test="http://www.peritale.com/comic/p93",
 
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a"	
 ),
 
@@ -2111,7 +2112,7 @@ Sarjakuva(
 # 	"http://platinumblackcomic.com/?comic=chapter-1-cover", 
 # 	test=None,
 
-# 	tags="#cc-comic",
+# 	image="#cc-comic",
 # 	next="#cc-comicbody>a"	
 # ),
 
@@ -2123,7 +2124,7 @@ Sarjakuva(
 	"http://www.praguerace.com/comic/start", 
 	test="http://www.praguerace.com/comic/long-into-the-night",
 
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a"	
 ),
 
@@ -2135,7 +2136,7 @@ Sarjakuva(
 	"http://www.realscienceadventures.com/comic/v01ch1-page-cover", 
 	test="http://www.realscienceadventures.com/comic/v02ch2-page-2",
 
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a"	
 ),
 
@@ -2147,7 +2148,7 @@ Sarjakuva(
 	"http://www.rojicomic.com/comic/promo", 
 	test="http://www.rojicomic.com/comic/the-hero",
 
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a"	
 ),
 
@@ -2159,7 +2160,7 @@ Sarjakuva(
 	"http://www.saintforrent.com/comic/the-cloverhouse-inn", 
 	test="http://www.saintforrent.com/comic/7-004",
 
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a"	
 ),
 
@@ -2171,7 +2172,7 @@ Sarjakuva(
 	"http://www.sakana-comic.com/comic/title-page-vol-1", 
 	test="http://www.sakana-comic.com/comic/354",
 
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a"	
 ),
 
@@ -2183,7 +2184,7 @@ Sarjakuva(
 	"http://www.samandfuzzy.com/1", 
 	test="http://www.samandfuzzy.com/2203",
 
-	tags="img.comic-image",
+	image="img.comic-image",
 	next="li.next-page>a"	
 ),
 
@@ -2195,7 +2196,7 @@ Sarjakuva(
 	"http://amultiverse.com/comic/2010/06/14/parenthood/", 
 	test="http://amultiverse.com/comic/2016/05/12/president-plus/",
 
-	tags="#comic>img",
+	image="#comic>img",
 	next="a.navi-next",
 ),
 
@@ -2207,7 +2208,7 @@ Sarjakuva(
 	"http://www.sfeertheory.com/comic/01-01", 
 	test="http://www.sfeertheory.com/comic/03-49",
 
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a"	
 ),
 
@@ -2219,7 +2220,7 @@ Sarjakuva(
 	"http://www.shortpacked.com/index.php?id=1", 
 	test="http://www.shortpacked.com/index.php?id=2192",
 
-	tags="#comic",
+	image="#comic",
 	next="#comicbody>a"	
 ),
 
@@ -2231,7 +2232,7 @@ Sarjakuva(
 	"http://www.sisterclaire.com/comic/book-one", 
 	test="http://www.sisterclaire.com/comic/book-2-chapter-8-pg-211",
 
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a"	
 ),
 
@@ -2243,7 +2244,7 @@ Sarjakuva(
 	"http://www.sisterclaire.com/missing-moments/missing-moment-la-scoperta", 
 	test="http://www.sisterclaire.com/missing-moments/missing-moment-acqua-in-aumento-7",
 
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a"	
 ),
 
@@ -2255,7 +2256,7 @@ Sarjakuva(
 	"http://comic.skullkickers.com/comic/2012-01-06", 
 	test="http://comic.skullkickers.com/comic/march-16-2016",
 
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="a.next"	
 ),
 
@@ -2267,7 +2268,7 @@ Sarjakuva(
 	"http://www.sleeplessdomain.com/comic/chapter-1-cover", 
 	test="http://www.sleeplessdomain.com/comic/chapter-4-page-13",
 
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a"	
 ),
 
@@ -2279,7 +2280,7 @@ Sarjakuva(
 	"http://www.sdamned.com/comic/part-one-to-hell-and-back", 
 	test="http://www.sdamned.com/comic/747",
 
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a"	
 ),
 
@@ -2291,7 +2292,7 @@ Sarjakuva(
 	"http://www.snarlbear.com/index.php?id=1", 
 	test="http://www.snarlbear.com/comic/9-6",
 
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a"	
 ),
 
@@ -2303,7 +2304,7 @@ Sarjakuva(
 	"http://solstoria.net/comic/54/", 
 	test="http://solstoria.net/comic/page-181/",
 
-	tags="div.webcomic-image>img",
+	image="div.webcomic-image>img",
 	next="a.next-webcomic-link",
 ),
 
@@ -2315,7 +2316,7 @@ Sarjakuva(
 	"http://www.spinnyverse.com/comic/02-09-2010", 
 	test="http://www.spinnyverse.com/comic/white-heron-preview-2",
 
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a"	
 ),
 
@@ -2327,7 +2328,7 @@ Sarjakuva(
 	"http://www.starhammercomic.com/comic/chapter-1-the-shakedown-pg-1-leading-the-charges", 
 	test="http://www.starhammercomic.com/comic/chapter-2-two-for-one-page-25-mergers-acquisitions-",
 
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a"	
 ),
 
@@ -2339,7 +2340,7 @@ Sarjakuva(
 	"http://www.streetfightercomics.com/comic/stage-0-page-1", 
 	test="http://www.streetfightercomics.com/comic/stage-12-page-21",
 
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a",
 	interval="0"	
 ),
@@ -2352,7 +2353,7 @@ Sarjakuva(
 	"http://sufficientlyremarkable.com/comic/the-beach", 
 	test="http://sufficientlyremarkable.com/comic/dark",
 
-	tags="img.comic",
+	image="img.comic",
 	next="a.nav-next"	
 ),
 
@@ -2364,7 +2365,7 @@ Sarjakuva(
 	"http://www.supernormalstep.com/archives/8", 
 	test="http://www.supernormalstep.com/archives/perspective",
 
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a"	
 ),
 
@@ -2376,7 +2377,7 @@ Sarjakuva(
 	"http://www.blackbrickroadofoz.com/comic/cover", 
 	test="http://www.blackbrickroadofoz.com/comic/inefficient-storytelling",
 
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a"	
 ),
 
@@ -2388,7 +2389,7 @@ Sarjakuva(
 	"http://www.boywhofell.com/comic/ch00p01", 
 	test="http://www.boywhofell.com/comic/ch3522",
 
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a"	
 ),
 
@@ -2400,7 +2401,7 @@ Sarjakuva(
 	"http://www.endcomic.com/comic/book-one-cover/", 
 	test="http://www.endcomic.com/comic/ch18-35/",
 
-	tags="#comic>img",
+	image="#comic>img",
 	next="a.comic-nav-next",
 ),
 
@@ -2412,7 +2413,7 @@ Sarjakuva(
 	"http://www.theglassscientists.com/?comic=chapter-i", 
 	test="http://www.theglassscientists.com/?comic=page-03-3",
 
-	tags="#comic>img",
+	image="#comic>img",
 	next="a.navi-next",	
 ),
 
@@ -2424,7 +2425,7 @@ Sarjakuva(
 	"http://www.thelastdiplomat.com/comic/page-001", 
 	test="http://www.thelastdiplomat.com/comic/page-102",
 
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a"	
 ),
 
@@ -2436,7 +2437,7 @@ Sarjakuva(
 	"http://www.lonelyvincent.com/lonelyvincent/0", 
 	test="http://www.lonelyvincent.com/lonelyvincent/82",
 
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a"	
 ),
 
@@ -2448,7 +2449,7 @@ Sarjakuva(
 	"http://www.mashcomic.com/comic/prologue-01-and-02", 
 	test="http://www.mashcomic.com/comic/intermission-page-1",
 
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a"	
 ),
 
@@ -2460,7 +2461,7 @@ Sarjakuva(
 	"http://www.meekcomic.com/comic/chapter-1-cover/", 
 	test="http://www.meekcomic.com/comic/5-04/",
 
-	tags="#comic>img",
+	image="#comic>img",
 	next="a.comic-nav-next",
 ),
 
@@ -2472,7 +2473,7 @@ Sarjakuva(
 	"http://www.thisisnotfiction.com/comic/ch-01-sydney-morgan", 
 	test="http://www.thisisnotfiction.com/comic/ch-23-pg-05",
 
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a"	
 ),
 
@@ -2484,7 +2485,7 @@ Sarjakuva(
 	"http://petuniaviolet.com/index.php?id=1", 
 	test="http://petuniaviolet.com/index.php?id=604",
 
-	tags="#comic",
+	image="#comic",
 	next="a.next"	
 ),
 
@@ -2496,7 +2497,7 @@ Sarjakuva(
 	"http://www.tovecomic.com/comic/chapter-1-page-1", 
 	test="http://www.tovecomic.com/comic/chapter-2-page-49",
 
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a"	
 ),
 
@@ -2508,7 +2509,7 @@ Sarjakuva(
 	"http://www.tryinghuman.com/comic/prologue--01", 
 	test="http://www.tryinghuman.com/comic/chapter-19-738",
 
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a"	
 ),
 
@@ -2520,7 +2521,7 @@ Sarjakuva(
 	"http://www.vibecomic.com/vibe/cover-2", 
 	test="http://www.vibecomic.com/vibe/226",
 
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a"	
 ),
 
@@ -2532,7 +2533,7 @@ Sarjakuva(
  	"http://www.weregeek.com/2006/11/27/", 
  	test="http://www.weregeek.com/2016/05/17/",
 
-	tags="#comic>img",
+	image="#comic>img",
 	next="a|img|!alt:in:next"	
  ),
 
@@ -2544,7 +2545,7 @@ Sarjakuva(
 	"http://www.wildelifecomic.com/comic/1", 
 	test="http://www.wildelifecomic.com/comic/215",
 
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a"	
 ),
 
@@ -2556,7 +2557,7 @@ Sarjakuva(
 	"http://www.wonderlustcomic.com/comic/pg-1-2-vamoose", 
 	test="http://www.wonderlustcomic.com/comic/pg-20-go",
 
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a"	
 ),
 
@@ -2568,19 +2569,19 @@ Sarjakuva(
  	"http://yousuck.slipshine.net/go/1-legolas", 
  	test="http://yousuck.slipshine.net/go/249-giving-it-a-shot",
 
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a"	
  ),
 
 Sarjakuva( 
 	"Zombie Roomie", 
-	"zombieroomie", , 
+	"zombieroomie",
 
 	"http://www.zombieroomie.com/", 
 	"http://www.zombieroomie.com/2009/10/26/issues/", 
 	test="http://www.zombieroomie.com/2016/05/16/the-pack-part-6/",
 
-	tags="#comic>img",
+	image="#comic>img",
 	next="a.navi-next",	
 ),
 
@@ -2593,7 +2594,7 @@ Sarjakuva(
 	"http://www.eeriecuties.com/strips-ec/%28chapter_1%29_it_is_gonna_eat_me%21", 
 	test="http://www.eeriecuties.com/strips-ec/siren_brawl_-_pg_10_of_12",
 
-	tags="#comic>img",
+	image="#comic>img",
 	next="#cndnextt"	
 ),
 
@@ -2605,7 +2606,7 @@ Sarjakuva(
 	"http://www.ma3comic.com/strips-ma3/for_new_readers",
 	test="http://www.ma3comic.com/strips-ma3/synchronized_swimmers",
 
-	tags="#cc>img",
+	image="#cc>img",
 	next="#cndnext",
 ),
 
@@ -2617,7 +2618,7 @@ Sarjakuva(
 	"http://www.magickchicks.com/strips-mc/tis_but_a_trifle", 
 	test="http://www.magickchicks.com/strips-mc/epilogue",
 
-	tags="#comic>img",
+	image="#comic>img",
 	next="#cndnextt",
 ),
 
@@ -2629,7 +2630,7 @@ Sarjakuva(
 	"http://www.sandraontherocks.com/strips-sotr/start_by_running", 
 	test="http://www.sandraontherocks.com/strips-sotr/higher_education_will_do_wonders",
 
-	tags="#comic>img",
+	image="#comic>img",
 	next="#cndnext",
 ),
 
@@ -2641,7 +2642,7 @@ Sarjakuva(
 	"http://www.stickydillybuns.com/strips-sdb/awesome_leading_man", 
 	test="http://www.stickydillybuns.com/strips-sdb/easter_2016",
 
-	tags="#comic>img",
+	image="#comic>img",
 	next="#cndnext",
 ),
 
@@ -2653,7 +2654,7 @@ Sarjakuva(
 	"http://www.dangerouslychloe.com/strips-dc/tighter_fit_than_i_thought", 
 	test="http://www.dangerouslychloe.com/articles/strips-dc/chapter_1_-_that_damned_girl",
 
-	tags="#comic>img",
+	image="#comic>img",
 	next="#cndnextt",
 ),
 
@@ -2665,7 +2666,7 @@ Sarjakuva(
 	"http://demonaidcomic.com/index.php?id=14", 
 	test="http://demonaidcomic.com/index.php?id=70",
 
-	tags="#comic",
+	image="#comic",
 	next="a.next",
 	interval=0,
 ),
@@ -2678,7 +2679,7 @@ Sarjakuva(
 	"http://www.erstwhiletales.com/fcd-00/", 
 	test="http://www.erstwhiletales.com/happily-ever-after-09/",
 
-	tags="#comic>img",
+	image="#comic>img",
 	next="a.navi-next",
 	interval=0,
 ),
@@ -2691,7 +2692,7 @@ Sarjakuva(
 	"http://www.loveisintheblood.com/comic/welcome-to-love-is-in-the-blood/", 
 	test="http://www.loveisintheblood.com/comic/changes-chapter-06-page-23-0425/",
 
-	tags="#comic>img",
+	image="#comic>img",
 	next="a.comic-nav-next",
 	interval=0,
 ),
@@ -2704,7 +2705,7 @@ Sarjakuva(
 	"http://www.lovenotfound.com/comic/chapter-1-cover", 
 	test="http://www.lovenotfound.com/comic/chapter-10-page-07",
 
-	tags="#cc-comic",
+	image="#cc-comic",
 	next="#cc-comicbody>a",
 
 ),
@@ -2717,11 +2718,214 @@ Sarjakuva(
 	"http://redstringcomic.com/index.php?id=1629", 
 	test="http://redstringcomic.com/index.php?id=434",
 
-	tags="#comic",
+	image="#comic",
 	next="a.next",
 	interval=0,
 ),
 
+Sarjakuva( 
+	"Luke McGarry",  
+	"lukemcgarry",
+
+	"http://lukemcgarry.com/", 
+	"http://lukemcgarry.com/2013/06/oc-weekly-cover-may-31-june-6/", 
+	test="http://lukemcgarry.com/2016/02/loptimum-billionaires/",
+
+	image="div.article>img",
+	next="a|!rel:in:next",
+),
+
+# INTERROBANG
+Sarjakuva(
+	"Im my own Mascot", 
+	"imomascot",
+
+	"http://www.interrobangstudios.com/", 
+	"http://interrobangstudios.com/comics-display.php?strip_id=141",
+	test="http://www.interrobangstudios.com/comics-display.php?strip_id=1708",
+
+	image="div.comic-content>img",
+	next="div.comic-content>a"
+),
+
+Sarjakuva(
+	"Wookie-ookies", 
+	"wookie",
+
+	"http://www.interrobangstudios.com/", 
+	"http://interrobangstudios.com/comics-display.php?strip_id=929",
+	test="http://www.interrobangstudios.com/comics-display.php?strip_id=987",
+
+	image="div.comic-content>img|!src:in:images/comics",
+	next="div.comic-content>a",
+	interval=0
+),
+Sarjakuva(
+	"Things Which Defy Categorization", 
+	"twdc",
+
+	"http://www.interrobangstudios.com/", 
+	"http://interrobangstudios.com/comics-display.php?strip_id=49",
+	test="http://www.interrobangstudios.com/comics-display.php?strip_id=1690",
+
+	image="div.comic-content>img|!src:in:images/comics",
+	next="div.comic-content>a",
+	interval=0
+),
+Sarjakuva( 
+	"Fair-Haired Adventure Seekers", 
+	"adventureseekers",
+
+	"http://www.interrobangstudios.com/", 
+	"http://interrobangstudios.com/comics-display.php?strip_id=930",
+	test="http://www.interrobangstudios.com/comics-display.php?strip_id=1679",
+
+	image="div.comic-content>img|!src:in:images/comics",
+	next="div.comic-content>a",
+	interval=0
+),
+Sarjakuva( 
+	"It sucks to be Weegie", 
+	"weegie",
+
+	"http://www.interrobangstudios.com/", 
+	"http://interrobangstudios.com/comics-display.php?strip_id=941",
+	test="http://www.interrobangstudios.com/comics-display.php?strip_id=1562",
+
+	image="div.comic-content>img|!src:in:images/comics",
+	next="div.comic-content>a",
+	interval=0
+),
+Sarjakuva( 
+	"WatchBabies", 
+	"watchbabies",
+
+	"http://www.interrobangstudios.com/", 
+	"http://interrobangstudios.com/comics-display.php?strip_id=959",
+	test="http://www.interrobangstudios.com/comics-display.php?strip_id=969",
+
+	image="div.comic-content>img|!src:in:images/comics",
+	next="div.comic-content>a",
+	interval=0
+),
+Sarjakuva( 
+	"Ensign3 Crisis of Infinite Sues", 
+	"ensign3",
+
+	"http://www.interrobangstudios.com/", 
+	"http://interrobangstudios.com/comics-display.php?strip_id=989",
+	test="http://www.interrobangstudios.com/comics-display.php?strip_id=1673",
+
+	image="div.comic-content>img|!src:in:images/comics",
+	next="div.comic-content>a",
+	interval=0
+),
+Sarjakuva( 
+	"Spinks", 
+	"spinks",
+
+	"http://www.interrobangstudios.com/", 
+	"http://www.interrobangstudios.com/comics-display.php?strip_id=78",
+	test="http://www.interrobangstudios.com/comics-display.php?strip_id=1502",
+
+	image="div.comic-content>img|!src:in:images/comics",
+	next="div.comic-content>a",
+	interval=0
+),
+Sarjakuva( 
+	"Trigger Star", 
+	"triggerstar",
+
+	"http://www.interrobangstudios.com/", 
+	"http://www.interrobangstudios.com/comics-display.php?strip_id=60",
+	test="http://www.interrobangstudios.com/comics-display.php?strip_id=1440",
+
+	image="div.comic-content>img|!src:in:images/comics",
+	next="div.comic-content>a",
+	interval=0
+),
+Sarjakuva(
+	"The Dark Intruder", 
+	"darkintruder",
+
+	"http://www.interrobangstudios.com/", 
+	"http://interrobangstudios.com/comics-display.php?strip_id=1",
+	test="http://www.interrobangstudios.com/comics-display.php?strip_id=505",
+
+	image="div.comic-content>img|!src:in:images/comics",
+	next="div.comic-content>a",
+	interval=0,
+),
+Sarjakuva(
+	"A Girl Named Bob", 
+	"girlbob",
+
+	"http://www.interrobangstudios.com/", 
+	"http://interrobangstudios.com/comics-display.php?strip_id=31",
+	test="",
+
+	image="div.comic-content>img",
+	next="div.comic-content>a"
+),
+Sarjakuva(
+	"This is Visas", 
+	"visas",
+
+	"http://www.interrobangstudios.com/", 
+	"http://interrobangstudios.com/comics-display.php?strip_id=357",
+	test="http://www.interrobangstudios.com/comics-display.php?strip_id=359",
+
+	image="div.comic-content>img|!src:in:images/comics",
+	next="div.comic-content>a",
+	interval=0,
+),
+Sarjakuva(
+	"Heeere's Satan", 
+	"heresatan",
+
+	"http://www.interrobangstudios.com/", 
+	"http://interrobangstudios.com/comics-display.php?strip_id=146",
+	test="http://www.interrobangstudios.com/comics-display.php?strip_id=396",
+
+	image="div.comic-content>img|!src:in:images/comics",
+	next="div.comic-content>a",
+	interval=0
+),
+Sarjakuva(
+	"Punker Darren", 
+	"punkerdarren",
+
+	"http://www.interrobangstudios.com/", 
+	"http://interrobangstudios.com/comics-display.php?strip_id=16",
+	test="http://www.interrobangstudios.com/comics-display.php?strip_id=347",
+
+	image="div.comic-content>img",
+	next="div.comic-content>a"
+),
+Sarjakuva(
+	"Space is really big!", 
+	"bigspace",
+
+	"http://www.interrobangstudios.com/", 
+	"http://interrobangstudios.com/comics-display.php?strip_id=55",
+	test="http://www.interrobangstudios.com/comics-display.php?strip_id=197",
+
+	image="div.comic-content>img|!src:in:images/comics",
+	next="div.comic-content>a",
+	interval=0,
+),
+Sarjakuva(
+	"He's Gonna Cut Ya", 
+	"gonnacutya",
+
+	"http://www.interrobangstudios.com/", 
+	"http://www.interrobangstudios.com/comics-display.php?strip_id=52",
+	test="http://www.interrobangstudios.com/comics-display.php?strip_id=118",
+
+	image="div.comic-content>img|!src:in:images/comics",
+	next="div.comic-content>a",
+	interval=0,
+),
 
 ]
 count = db.session.query(Sarjakuva).count()

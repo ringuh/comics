@@ -7,4 +7,4 @@ sub = db.session.query(distinct(ST.sarjakuva_id)).subquery()
 n = db.session.query(SK).filter(~SK.id.in_(sub)).all()
 
 for i in n:
-	print(i.id, i.nimi)
+	print(i.id, i.nimi, i.interval)

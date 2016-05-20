@@ -24,7 +24,8 @@ http://www.strawberrycomics.com/comics.html
 	
 
  END OF HIWEWORKS
- 
+ 	tags="#cc-comic",
+	next="#cc-comicbody>a"	
 	
 	tags="#comic>img",
 	next="a.navi-next",
@@ -36,126 +37,7 @@ http://www.strawberrycomics.com/comics.html
 	next="a.next-webcomic-link"	
 
  INTERROBANG
-Sarjakuva( 29,
-	"Im my own Mascot", 
-	"imomascot",
-	"interrobang",
 
-	"http://www.interrobangstudios.com/comics-display.php?comic_id=9", 
-	"http://interrobangstudios.com/comics-display.php?strip_id=141",		
-),
-Sarjakuva( 29,
-	"Wookie-ookies", 
-	"wookie",
-	"interrobang",
-
-	"http://www.interrobangstudios.com/comics-display.php?comic_id=18", 
-	"http://interrobangstudios.com/comics-display.php?strip_id=929",
-),
-Sarjakuva( 29,
-	"Things Which Defy Categorization", 
-	"twdc",
-	"interrobang",
-
-	"http://www.interrobangstudios.com/comics-display.php?comic_id=17", 
-	"http://interrobangstudios.com/comics-display.php?strip_id=49",
-),
-Sarjakuva( 29,
-	"Fair-Haired Adventure Seekers", 
-	"adventureseekers",
-	"interrobang",
-
-	"http://www.interrobangstudios.com/comics-display.php?comic_id=6", 
-	"http://interrobangstudios.com/comics-display.php?strip_id=930",
-),
-Sarjakuva( 29,
-	"It sucks to be Weegie", 
-	"weegie",
-	"interrobang",
-
-	"http://www.interrobangstudios.com/comics-display.php?comic_id=11", 
-	"http://interrobangstudios.com/comics-display.php?strip_id=941",
-),
-Sarjakuva( 29,
-	"WatchBabies", 
-	"watchbabies",
-	"interrobang",
-
-	"http://www.interrobangstudios.com/comics-display.php?comic_id=7", 
-	"http://interrobangstudios.com/comics-display.php?strip_id=959",
-),
-Sarjakuva( 29,
-	"Ensign3 Crisis of Infinite Sues", 
-	"ensign3",
-	"interrobang",
-
-	"http://www.interrobangstudios.com/comics-display.php?comic_id=10", 
-	"http://interrobangstudios.com/comics-display.php?strip_id=989",
-),
-Sarjakuva( 29,
-	"Spinks", 
-	"spinks",
-	"interrobang",
-
-	"http://www.spinkspink.com/", 
-	"http://www.spinkspink.com/index.php?strip_id=78",
-),
-Sarjakuva( 29,
-	"Trigger Star", 
-	"triggerstar",
-	"interrobang",
-
-	"http://www.triggerstar.com/", 
-	"http://www.triggerstar.com/index.php?strip_id=60",
-),
-Sarjakuva( 29,
-	"The Dark Intruder", 
-	"darkintruder",
-	"interrobang",
-
-	"http://www.interrobangstudios.com/comics-display.php?comic_id=1", 
-	"http://interrobangstudios.com/comics-display.php?strip_id=1",
-),
-Sarjakuva( 29,
-	"A Girl Named Bob", 
-	"girlbob",
-	"interrobang",
-
-	"http://www.interrobangstudios.com/comics-display.php?comic_id=3", 
-	"http://interrobangstudios.com/comics-display.php?strip_id=31",
-),
-Sarjakuva( 29,
-	"This is Visas", 
-	"visas",
-	"interrobang",
-
-	"http://www.interrobangstudios.com/comics-display.php?comic_id=13", 
-	"http://interrobangstudios.com/comics-display.php?strip_id=357",
-),
-Sarjakuva( 29,
-	"Heeere's Satan", 
-	"heresatan",
-	"interrobang",
-
-	"http://www.interrobangstudios.com/comics-display.php?comic_id=15", 
-	"http://interrobangstudios.com/comics-display.php?strip_id=146",
-),
-Sarjakuva( 29,
-	"Punker Darren", 
-	"punkerdarren",
-	"interrobang",
-
-	"http://www.interrobangstudios.com/comics-display.php?comic_id=2", 
-	"http://interrobangstudios.com/comics-display.php?strip_id=16",
-),
-Sarjakuva( 29,
-	"Space is really big!", 
-	"bigspace",
-	"interrobang",
-
-	"http://www.interrobangstudios.com/comics-display.php?comic_id=12", 
-	"http://interrobangstudios.com/comics-display.php?strip_id=55",
-),
 	
 
  END OF INTERROBANG
