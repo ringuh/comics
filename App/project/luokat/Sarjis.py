@@ -5,11 +5,13 @@ import datetime, urllib.request, urllib.error, urllib.parse, os, requests, hashl
 from project.models import Strippi
 from PIL import Image
 
+
 class Sarjis(object):
 	
 	def __init__(self, sarjakuva ):
 		self.sarjakuva = sarjakuva
 		self.sessio = db.session
+
 
 	def Print(self, *args):
 		import unicodedata
@@ -237,7 +239,8 @@ class Sarjis(object):
 				if "." in kuva["nimi"]:
 					kuva["filetype"] = "{}".format(image["src"].split("?")[0].split(".")[-1])
 				
-
+				kuva["src"] = urllib.parse.urlsplit(kuva["src"])
+				kuva["src"] = kuva["src"].geturl()
 				kuvat.append(kuva)
 			except Exception as e:
 				self.Print("KUVAT ERROR", e)
@@ -297,6 +300,8 @@ class Sarjis(object):
 
 	def Save(self, nimi, url, filetype, urli=None):
 		if urli is None: urli = self.urli
+		
+
 		self.Print("SAVE", nimi, url, filetype)
 
 		loaded = self.sessio.query(Strippi.url).filter(
@@ -304,18 +309,21 @@ class Sarjis(object):
 			).all()
 		loaded = [i.url for i in loaded]
 
-		if url in loaded:
-			return True
+		# if url in loaded:
+		# 	return True
 		
 		print("save", url)
 		# katsotaan oliko kyseisestä sarjasta jo kyseinen kuva
 		#url = url"
 		tmp_file = ""
+		img = None
 		if not "base64" in url:
 			headers = app.config["REQUEST_HEADER"]
-			req = urllib.request.Request(url, None, headers)
+			#req = urllib.request.Request(url, None, headers)
+			
 			try:
-				tmp_file = urllib.request.urlopen(req).read()
+				#tmp_file = urllib.request.urlopen(req).read()
+				tmp_file = requests.get(url, headers=headers).content
 				
 			except Exception as e:
 				try:
@@ -335,16 +343,26 @@ class Sarjis(object):
 			url = url.split(",", 2)[-1]
 			tmp_file = url.decode('base64')
 
+		polku = os.path.join(app.config["SARJAKUVA_FOLDER"], self.sarjakuva.lyhenne)
 
 		import io
 		img = Image.open(io.BytesIO(tmp_file))
 		width, height = img.size
-		dhash = str(imagehash.dhash(img))
+		dhash = imagehash.dhash(img)
 
 		found = self.sessio.query(Strippi).filter(
 				Strippi.sarjakuva_id == self.sarjakuva.id,
-				Strippi.dhash == dhash
+				Strippi.dhash == str(dhash)
 			).first()
+		
+		if found is None:
+			for i in self.sarjakuva.stripit:
+				polku_old = os.path.join(polku, i.filename)
+				old = Image.open(polku_old)
+				if (dhash - imagehash.dhash(old)) < 5:
+					found = i
+					break
+
 			
 		if found and found.width >= width:
 			self.Print("ALREADY HAD THIS PICTURE", dhash)
@@ -352,11 +370,11 @@ class Sarjis(object):
 		
 		order = self.sessio.query(Strippi).filter(Strippi.sarjakuva_id==self.sarjakuva.id).count()+1
 		if found: 
-			order = found.order
+			order = found.Order()
 			print("Suurempi resoluutio. Korvataan kuva", found.width, "vs", width)
 		md5_name = "{}_{}.{}".format(self.sarjakuva.lyhenne, order, filetype)
 
-		polku = os.path.join(app.config["SARJAKUVA_FOLDER"], self.sarjakuva.lyhenne)
+		
 		polku = os.path.join(polku, md5_name)
 
 		# luodaan kansio if needed
@@ -374,7 +392,7 @@ class Sarjis(object):
 		if found:
 			tmp = found
 		else:
-			tmp = Strippi(self.sarjakuva.id, urli, md5_name, nimi, url, dhash)
+			tmp = Strippi(self.sarjakuva.id, urli, md5_name, nimi, url, str(dhash))
 			self.sessio.add(tmp)
 
 		tmp.width = width

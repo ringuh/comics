@@ -1731,17 +1731,17 @@ Sarjakuva(
 ),
 
 
-Sarjakuva( 
-	"Floraverse", 
-	"floraverse",  
+# Sarjakuva( # ihan paska
+# 	"Floraverse", 
+# 	"floraverse",  
 
-	"http://www.floraverse.com/", 
-	"http://floraverse.com/comic/seeds-a-mini-story/prologue/1-cover/", 
-	test="http://floraverse.com/comic/oneshots/459-canada-incoming/",
+# 	"http://www.floraverse.com/", 
+# 	"http://floraverse.com/comic/seeds-a-mini-story/prologue/1-cover/", 
+# 	test="http://floraverse.com/comic/oneshots/459-canada-incoming/",
 
-	image="img.comic-page-image",
-	next="div.-next>a"	
-),
+# 	image="img.comic-page-image",
+# 	next="div.-next>a"	
+# ),
 
 
 Sarjakuva( 
@@ -2926,6 +2926,19 @@ Sarjakuva(
 	next="div.comic-content>a",
 	interval=0,
 ),
+
+Sarjakuva(
+	"Pickled Comics", 
+	"pickled",
+
+	"http://www.pickledcomics.com/", 
+	"http://pickledcomics.com/universal-perspective/",
+	test="http://pickledcomics.com/ol-jimmy-two-legs/",
+
+	image="div.the-content>img",
+	next="span.page-next>a",
+),
+
 
 ]
 count = db.session.query(Sarjakuva).count()

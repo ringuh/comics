@@ -92,12 +92,14 @@ class User(db.Model):
 
 		n = db.session.query(UP).filter(UP.sarjakuva_id == sarjakuva_id, UP.user_id == self.id).first()
 		if n is None:
-			n = UP(sarjakuva_id, current_user.id, strip_id)
+			n = UP(sarjakuva_id, self.id, strip_id)
 			db.session.add(n)
 			db.session.commit()
 
 		if strip_id:
 			n.strippi_id = strip_id
 			db.session.commit()
-		
-		return n.strippi.Order()
+		try:
+			return n.strippi.Order()
+		except:
+			return 1
