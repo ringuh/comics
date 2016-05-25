@@ -473,7 +473,6 @@ content = [
 	Sarjakuva(
 		"Evil Inc.", 
 		"evilinc",
-		"paintrain",
 
 		"http://evil-inc.com/", 
 		"http://evil-inc.com/comic/santa-villain-poem-1/",
@@ -498,7 +497,6 @@ content = [
 	Sarjakuva(
 		"Fowl Language", 
 		"fowllanguage",
-		"paintrain",
 		
 		"http://www.fowllanguagecomics.com/", 
 		"http://www.fowllanguagecomics.com/comic/part-of-the-process/",
@@ -813,7 +811,7 @@ content = [
 	Sarjakuva(
 		"Romantically Apocalyptic", 
 		"romanticallyapocalyptic",
-		"romanticallyapocalyptic",
+	
 		"http://romanticallyapocalyptic.com", 
 		"http://romanticallyapocalyptic.com/0",
 		test="http://romanticallyapocalyptic.com/238",

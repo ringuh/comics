@@ -346,7 +346,11 @@ class Sarjis(object):
 		polku = os.path.join(app.config["SARJAKUVA_FOLDER"], self.sarjakuva.lyhenne)
 
 		import io
-		img = Image.open(io.BytesIO(tmp_file))
+		try:
+			img = Image.open(io.BytesIO(tmp_file))
+		except: 
+			Log(self.sarjakuva.id, urli, "Virheellinen kuva", None, url)
+			
 		width, height = img.size
 		dhash = imagehash.dhash(img)
 
