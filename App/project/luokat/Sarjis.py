@@ -357,9 +357,9 @@ class Sarjis(object):
 		
 		if found is None:
 			for i in self.sarjakuva.stripit:
-				polku_old = os.path.join(polku, i.filename)
-				old = Image.open(polku_old)
-				if (dhash - imagehash.dhash(old)) < 5:
+				#polku_old = os.path.join(polku, i.filename)
+				#old = Image.open(polku_old)
+				if (dhash - imagehash.hex_to_hash(i.dhash)) < 5:
 					found = i
 					break
 
