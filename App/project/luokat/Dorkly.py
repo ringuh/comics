@@ -95,7 +95,7 @@ class Dorkly(Sarjis):
 					try:
 						self.Save(kuva["nimi"], kuva["src"], kuva["filetype"])
 					except Exception as e:
-						Log(self.sarjakuva.id, self.urli, "Kuvan tallennus epäonnistui", e.message)
+						Log(self.sarjakuva.id, self.urli, "Kuvan tallennus epäonnistui", e)
 		
 		return self.Next()
 		
