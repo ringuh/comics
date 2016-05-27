@@ -1137,13 +1137,16 @@ content = [
 	Sarjakuva(
 		"VGCats", 
 		"vgcats",
+		
 
 		"http://www.vgcats.com/comics/", 
-		"http://www.vgcats.com/comics/?strip_id=1",
-		test="http://www.vgcats.com/comics/?strip_id=373",
+		"http://www.vgcats.com/comics/images/",
+		#"http://www.vgcats.com/comics/?strip_id=1",
+		# test="http://www.vgcats.com/comics/?strip_id=373",
 
-		image="img|!src:in:.jpg",
-		next="a|img|!src:in:next.gif",
+		# image="td>div|!align:in:center>img|!src:in:images/",
+		# next="a|img|!src:in:next.gif",
+		parseri="dragonarte",
 	),
 	Sarjakuva(
 		"Nerf Now", 
@@ -1989,7 +1992,7 @@ Sarjakuva(
 	"http://www.misfile.com/?date=2004-02-22", 
 	test="http://www.misfile.com/?date=2016-05-17",
 
-	image="#comic>img",
+	image=".comic>img",
 	next="#comic>a",
 ),
 
@@ -2193,7 +2196,7 @@ Sarjakuva(
 	"http://www.amultiverse.com/", 
 	"http://amultiverse.com/comic/2010/06/14/parenthood/", 
 	test="http://amultiverse.com/comic/2016/05/12/president-plus/",
-
+	#test="http://amultiverse.com/comic/2010/06/17/ladies-choice/",
 	image="#comic>img",
 	next="a.navi-next",
 ),
@@ -2713,8 +2716,8 @@ Sarjakuva(
 	"redstring",
 
 	"http://redstringcomic.com/", 
-	"http://redstringcomic.com/index.php?id=1629", 
-	test="http://redstringcomic.com/index.php?id=434",
+	"http://redstringcomic.com/index.php?id=434", 
+	test="http://redstringcomic.com/index.php?id=1629",
 
 	image="#comic",
 	next="a.next",
@@ -2953,3 +2956,6 @@ db.session.commit()
 
 #http://www.pixietrixcomix.com/
 #http://www.strawberrycomics.com/
+
+#http://garfieldminusgarfield.net/post/26270938
+#http://www.marriedtothesea.com/index.php?date=021206

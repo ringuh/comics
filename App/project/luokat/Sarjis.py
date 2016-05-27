@@ -331,11 +331,11 @@ class Sarjis(object):
 					
 				except Exception as e:
 					Log(self.sarjakuva.id, urli, "Kuvan lataus epäonnistui", e, url)
-					return False
+					return True
 			
 			if len(tmp_file) < 10:
 				Log(self.sarjakuva.id, urli, "Liian pieni kuva", None, url)
-				return False
+				return True
 		else:
 			order = self.sessio.query(Strippi).filter(Strippi.sarjakuva_id==self.sarjakuva.id).count()+1
 			nimi = "{}_{}".format(self.sarjakuva.nimi, order)
@@ -350,9 +350,11 @@ class Sarjis(object):
 			img = Image.open(io.BytesIO(tmp_file))
 		except: 
 			Log(self.sarjakuva.id, urli, "Virheellinen kuva", None, url)
-			
-		width, height = img.size
-		dhash = imagehash.dhash(img)
+		try:
+			width, height = img.size
+			dhash = imagehash.dhash(img)
+		except:
+			return True
 
 		found = self.sessio.query(Strippi).filter(
 				Strippi.sarjakuva_id == self.sarjakuva.id,
