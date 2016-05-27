@@ -39,7 +39,8 @@ def Looper(id):
 				sessio.close()
 				return False
 		elif "id" in sys.argv:
-			if comic.id != int(sys.argv[3]):
+			tmp_id = sys.argv[3].split("-")
+			if comic.id < int(tmp_id[0]) or comic.id > int(tmp_id[-1]):
 				sessio.close()
 				return False
 			f = open("logit/loki{}.tmp".format(comic.id), "w+")
