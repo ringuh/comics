@@ -2940,6 +2940,57 @@ Sarjakuva(
 	next="span.page-next>a",
 ),
 
+# Sarjakuva( # failed. paha iframe setti
+# 	"Doodle for Food", 
+# 	"doodleforfood",
+
+# 	"http://doodleforfood.com/", 
+# 	"http://doodleforfood.com/post/42168228343/giraffries-remember-not-to-play-with-your-food",
+# 	test="http://doodleforfood.com/post/140977576838",
+# 	parseri="TumblrIframe",
+
+# 	image="div.photoset>img",
+# 	next="a|img|!src:in:tumblr_static_3mmk30mw8fsw0oggsk4ckg4wg.png",
+# ),
+
+Sarjakuva(
+	"Cup O'Love", 
+	"cupolove",
+
+	"http://dsan.orgymania.net/", 
+	"http://dsan.orgymania.net/comic/mya-janet-1",
+	test="http://dsan.orgymania.net/comic/dark-roast-pg-6",
+
+	image="#cc-comicbody>img",
+	next="a.next",
+),
+
+Sarjakuva(
+	"Rontti", 
+	"rontti",
+
+	"https://rontticomics.com/", 
+	"https://rontticomics.com/comic/vauvatreffit-2/",
+	test="https://rontticomics.com/comic/vessaetiketti/",
+
+	image="div.comic-content>img",
+	next="div.nav-next>a",
+),
+
+Sarjakuva(
+	"nimi", 
+	"alias",
+
+	"baseurl", 
+	"firsturl",
+	test="testurl",
+
+	image="imagetree",
+	next="nextlinktree",
+),
+
+
+
 
 ]
 count = db.session.query(Sarjakuva).count()
@@ -2959,3 +3010,20 @@ db.session.commit()
 
 #http://garfieldminusgarfield.net/post/26270938
 #http://www.marriedtothesea.com/index.php?date=021206
+
+
+
+#testaa redstring
+# strong female
+
+# Sarjakuva(
+# 	"nimi", 
+# 	"alias",
+
+# 	"baseurl", 
+# 	"firsturl",
+# 	test="testurl",
+
+# 	image="imagetree",
+# 	next="nextlinktree",
+# ),
