@@ -49,7 +49,7 @@ content = [
 	),
 	Sarjakuva(
 		"Wiivi ja Wagner", #nimi
-		"wiivijawagned", # lyhenne
+		"wiivijawagner", # lyhenne
 		"http://www.hs.fi", # baseurl
 		"http://www.hs.fi/viivijawagner/s1349773144978",
 		test="http://www.hs.fi/viivijawagner/s1306041112180",
@@ -2990,6 +2990,67 @@ Sarjakuva(
 	parseri="rssreader",
 ),
 
+Sarjakuva(
+	"Calm Blue Oceans", 
+	"calmblueoceans",
+
+	"http://calmblueoceans.com/", 
+	"http://calmblueoceans.com/1/",
+	test="http://calmblueoceans.com/91/",
+
+	image="#comic>img",
+	next="a.navi-next",
+),
+
+Sarjakuva(
+	"Girly", 
+	"girly",
+
+	"http://girlyyy.com/", 
+	"http://girlyyy.com/go/1",
+	test="http://girlyyy.com/go/762",
+
+	image="img|!src:in:comics/girly",
+	next="a|!text:in:next",
+	interval=0,
+),
+
+Sarjakuva(
+	"Boxer Hockey", 
+	"boxerhockey",
+
+	"http://boxerhockeycomic.tumblr.com/", 
+	"http://boxerhockeycomic.tumblr.com/post/97715070395/comprising-of-the-first-four-years-of-boxer",
+	test="http://boxerhockeycomic.tumblr.com/post/97994629605",
+
+	image="article.post>figure.photo-hires-item>img",
+	next="a|!text:in:next",
+),
+
+
+Sarjakuva(
+	"Buttersafe", 
+	"buttersafe",
+
+	"http://buttersafe.com/", 
+	"http://buttersafe.com/2007/04/03/breakfast-sad-turtle/",
+	test="http://buttersafe.com/2016/05/12/a-delivery-from-the-stork/",
+
+	image="#comic>img",
+	next="a|!rel:in:next",
+),
+
+# Sarjakuva(
+# 	"nimi", 
+# 	"alias",
+
+# 	"baseurl", 
+# 	"firsturl",
+# 	test="testurl",
+
+# 	image="imagetree",
+# 	next="nextlinktree",
+# ),
 
 
 
