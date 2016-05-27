@@ -2978,15 +2978,16 @@ Sarjakuva(
 ),
 
 Sarjakuva(
-	"nimi", 
-	"alias",
+	"They Can Talk", 
+	"theycantalk",
 
-	"baseurl", 
-	"firsturl",
-	test="testurl",
+	"http://theycantalk.com/", 
+	"http://theycantalk.com/rss",
+	test="http://theycantalk.com/rss",
 
-	image="imagetree",
-	next="nextlinktree",
+	image="item>description>img",
+	next="",
+	parseri="rssreader",
 ),
 
 

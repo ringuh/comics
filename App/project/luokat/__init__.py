@@ -2,7 +2,7 @@
 from .Sarjis import Sarjis
 from .TumblrIframe import TumblrIframe
 from .Dorkly import Dorkly
-
+from .RSSReader import RSSReader
 from .Dragonarte import Dragonarte
 
 from .AvasDemon import AvasDemon

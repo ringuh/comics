@@ -61,41 +61,6 @@ def Looper(id):
 		)
 
 		comic = sessio.query(SK).get(id)
-
-		# if "parseri" in sys.argv:
-			
-		# 	if comic.parseri != sys.argv[3]:
-		# 		sessio.close()
-		# 		return False
-		# elif "id" in sys.argv:
-		# 	tmp_id = sys.argv[3].split("-")
-		# 	if comic.id < int(tmp_id[0]) or comic.id > int(tmp_id[-1]):
-		# 		sessio.close()
-		# 		return False
-		# 	f = open("logit/loki{}.tmp".format(comic.id), "w+")
-		# 	f.write("")
-		# 	f.close()
-		# else:
-		# 	if not "force" in sys.argv:
-		# 		# interval 0 == loppunut
-		# 		if comic.interval == 0:
-		# 			sessio.close()
-		# 			return False
-
-		# 		if comic.weekday:
-		# 			try: 
-		# 				days = [int(i.strip()) for i in comic.weekday.split(",")]
-		# 				today = datetime.datetime.now()
-		# 				if not today.weekday() in days:
-		# 					sessio.close()
-		# 					return False
-
-		# 			except: pass
-
-		# 		if comic.last_parse is not None:
-		# 			if comic.last_parse + datetime.timedelta(hours=comic.interval) > datetime.datetime.now():
-		# 				sessio.close()
-		# 				return False
 				
 
 		Print("----\n")
@@ -122,6 +87,8 @@ def Looper(id):
 				olio = Unsounded(comic)
 			elif comic.parseri.lower() == "TumblrIframe".lower():
 				olio = TumblrIframe(comic)
+			elif comic.parseri.lower() == "RSSReader".lower():
+				olio = RSSReader(comic)
 
 
 		last_url = comic.last_url
