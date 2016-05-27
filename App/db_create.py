@@ -3040,6 +3040,95 @@ Sarjakuva(
 	next="a|!rel:in:next",
 ),
 
+Sarjakuva(
+	"The Cummoner", 
+	"cummoner",
+
+	"http://www.totempole666.com/", 
+	"http://www.totempole666.com/comic/first-time-for-everything-00-cover/",
+	test="http://www.totempole666.com/comic/swallowing-dark-14/",
+
+	image="#comic>img",
+	next="a.navi-next",
+),
+
+
+Sarjakuva(
+	"Two Kinds", 
+	"twokinds",
+
+	"http://twokinds.keenspot.com/", 
+	"http://twokinds.keenspot.com/archive.php?p=1",
+	test="http://twokinds.keenspot.com/archive.php?p=915",
+
+	image="div.comic>img",
+	next="#cg_next",
+),
+
+Sarjakuva(
+	"The Monster Under the Bed", 
+	"monsterunderthebed",
+
+	"http://themonsterunderthebed.net/", 
+	"http://themonsterunderthebed.net/?comic=test-post",
+	test="http://themonsterunderthebed.net/?comic=80-a-dark-mirror",
+
+	image="#comic>img",
+	next="a.comic-nav-next",
+),
+
+
+Sarjakuva(
+	"Delve", 
+	"delve",
+
+	"http://thisis.delvecomic.com/NewWP/", 
+	"http://thisis.delvecomic.com/NewWP/comic/in-too-deep/",
+	test="http://thisis.delvecomic.com/NewWP/comic/division-and-conquest/",
+
+	image="#comic>img",
+	next="a.comic-nav-next",
+),
+
+
+Sarjakuva(
+	"Not a Villain", 
+	"notavillain",
+
+	"http://navcomic.com/", 
+	"http://navcomic.com/not-a-villain/v1-001/",
+	test="http://navcomic.com/not-a-villain/page-488/",
+
+	image="div.webcomic-image>img",
+	next="a.next-webcomic-link",
+),
+
+
+Sarjakuva(
+	"Replay", 
+	"replay",
+
+	"http://replaycomic.com/", 
+	"http://replaycomic.com/comic/red-desert/",
+	test="http://replaycomic.com/comic/important-memory-4/",
+
+	image="#comic>img",
+	next="a.comic-nav-next",
+),
+
+Sarjakuva(
+	"Sandra and Woo", 
+	"sandraandwoo",
+
+	"http://www.sandraandwoo.com/", 
+	"http://www.sandraandwoo.com/2008/10/19/a-sly-raccoon/",
+	test="http://www.sandraandwoo.com/2016/05/09/0784-rude-awakening-page-1/",
+
+	image="#comic>img",
+	next="div.nav-next>a",
+),
+
+
 # Sarjakuva(
 # 	"nimi", 
 # 	"alias",
@@ -3052,6 +3141,31 @@ Sarjakuva(
 # 	next="nextlinktree",
 # ),
 
+
+# Sarjakuva(
+# 	"nimi", 
+# 	"alias",
+
+# 	"baseurl", 
+# 	"firsturl",
+# 	test="testurl",
+
+# 	image="imagetree",
+# 	next="nextlinktree",
+# ),
+
+
+# Sarjakuva(
+# 	"nimi", 
+# 	"alias",
+
+# 	"baseurl", 
+# 	"firsturl",
+# 	test="testurl",
+
+# 	image="imagetree",
+# 	next="nextlinktree",
+# ),
 
 
 ]

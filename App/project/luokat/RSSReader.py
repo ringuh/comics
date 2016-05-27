@@ -55,7 +55,7 @@ class RSSReader(Sarjis):
 		# 			{ "src": "http://66.media.tumblr.com/260a251c64d49cfd22ffa13582380052/tumblr_nuzu1lCrYS1uacv0ho1_1280.jpg" },
 		# 			{ "src": "http://66.media.tumblr.com/65f84ffd7f078bd0c71936c821073aba/tumblr_nvyp9gptW81uacv0ho1_1280.jpg" },]
 
-		images = quicklist + images
+		#images = quicklist + images
 		
 		
 		for image in images:
