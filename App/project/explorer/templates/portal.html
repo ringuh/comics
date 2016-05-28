@@ -29,7 +29,7 @@
 			ng-click="Thumbs(false)"
 			class="pointer glyphicons glyphicons-thumbs-down"></span>
 	</h3>
-	<a href="/{{ st.sarjakuva.lyhenne }}/{{ st.Order() }}/">
+	<a href="/{{ st.sarjakuva.lyhenne }}/id/{{ st.id }}/">
 	{% if st.sarjakuva.download %}
 	<img src="{{ url_for('static', 
 			filename='sarjakuvat/'+st.sarjakuva.lyhenne+'/'+st.filename )}}" />

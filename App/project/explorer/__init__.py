@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 from flask import flash, redirect, render_template, request, url_for, Blueprint, jsonify
-from project import db
+from project import db, app
 from flask.ext.login import current_user, login_required, login_user, logout_user
-from sqlalchemy import desc, func, and_, or_, case
+from sqlalchemy import desc, func, and_, or_, case, distinct
 from project.models import Sarjakuva as SK, Strippi, Likes, Loki, User, Brute_force,\
 Sarjakuva_user as SKU
-import datetime
+import datetime, math
 explorer_blueprint = Blueprint('explorer', __name__, 
 					template_folder='templates',
 					static_url_path='/explorer/static',
@@ -99,17 +99,25 @@ def list():
 @login_required
 @Comic
 def comic(comic):
-	return redirect(url_for("explorer.comic_strip", comic=comic.nimi, strip=1))
+	return redirect(url_for("explorer.comic_strip", comic=comic.lyhenne, strip=1))
 
 @explorer_blueprint.route('/<comic>/<int:strip>/')
 @Comic
 @Strip
 def comic_strip(comic, strip):
-	print(current_user.Progress(comic.id), strip.Order())
 	if current_user.Progress(comic.id)+1 == strip.Order():
 		current_user.Progress(comic.id, strip.id)
 
 	return render_template("strip.html", comic=comic, strip=strip, user=current_user)
+
+@explorer_blueprint.route('/<comic>/id/<id>/')
+@Comic
+def strip_by_id(comic, id):
+	n = db.session.query(Strippi).get(id)
+
+	if n:
+		return redirect(url_for("explorer.comic_strip", comic=n.sarjakuva.lyhenne, strip=n.Order()))
+	return redirect(url_for("explorer.comic_strip", comic=comic.lyhenne, strip=1))
 
 @explorer_blueprint.route('/log/')
 @login_required
@@ -139,18 +147,34 @@ def favourites(user_id=None):
 	target = None
 	if user_id: target = db.session.query(U).get(user_id)
 	targets = db.session.query(U).order_by("id").all()
+	
+	limit = app.config["PAGE_LIMIT"]
+	try: page = int(request.args["page"])-1
+	except: page = 0
+	
 
+	offset = page * limit
+
+	count = 0
+	
 	if user_id:
-		n = db.session.query(L).filter(L.user_id == user_id).order_by(L.strippi_id.desc()).all()
+		count = db.session.query(L).filter(L.user_id == user_id,# L.vote == True
+			).count()
+		n = db.session.query(L).filter(
+				L.user_id == user_id, #L.vote == True
+			).order_by(L.vote.desc(), L.strippi_id.desc()).offset(offset).limit(limit).all()
+		
 		stripit = [i.strippi for i in n]
 	else:
+		count = db.session.query(distinct(L.strippi_id)).count()
+		
 		n = db.session.query(
 				L.strippi_id.label("id"),
 				func.sum(
 					case([(L.vote == True, 1), (L.vote == False, -1)], else_=0)
 				).label("count")
-			).group_by(L.strippi_id).order_by("count").all()
-		print(n)
+			).group_by(L.strippi_id).order_by(desc("count"), L.strippi_id).offset(offset).limit(limit).all()
+		
 		st_ids = [i.id for i in n if i.count != 0]
 		m = db.session.query(ST).filter(ST.id.in_(st_ids)).all()
 
@@ -162,9 +186,15 @@ def favourites(user_id=None):
 					break
 
 
+
 	
-	
-	return render_template("favourites.html", stripit=stripit, user=current_user, target=target, targets=targets)
+	return render_template("favourites.html", 
+			stripit=stripit, 
+			user=current_user, 
+			target=target, 
+			page=page,
+			pages=math.ceil(count/limit),
+			targets=targets)
 
 @explorer_blueprint.route('/options/change_pass/', methods=["POST"])
 @login_required

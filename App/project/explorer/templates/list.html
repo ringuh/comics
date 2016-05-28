@@ -8,7 +8,7 @@
 	{% set st = c.Last() %}
 	{% if st != None %}
 	<h3 ng-init="strippi={{ st.id }};Thumbs();"> 
-		{{ st.sarjakuva.id }} {{ st.sarjakuva.nimi }} {{ st.Pvm() }} #{{ st.Order() }}
+		{{ st.sarjakuva.id }} {{ st.sarjakuva.nimi }} {{ st.Pvm() }}
 		<span ng-class="{ 'good': vote===true }"
 			ng-click="Thumbs(true)"
 			class="pointer glyphicons glyphicons-thumbs-up"></span>
@@ -16,7 +16,7 @@
 			ng-click="Thumbs(false)"
 			class="pointer glyphicons glyphicons-thumbs-down"></span>
 	</h3>
-	<a href="/{{ c.lyhenne }}/{{ st.Order() }}/">
+	<a href="/{{ c.lyhenne }}/id/{{ st.id }}/">
 	{% if st.sarjakuva.download %}
 	<img src="{{ url_for('static', 
 			filename='sarjakuvat/'+st.sarjakuva.lyhenne+'/'+st.filename )}}" />

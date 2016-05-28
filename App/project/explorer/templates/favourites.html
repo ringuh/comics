@@ -14,7 +14,18 @@
    
   </ul>
 </div>
-
+{{ count }}
+{% if pages > 1 or page > 0 %}
+<div class="tab-nav" style="margin:2rem 0;font-size:2rem">
+{% for i in range(pages) %}
+	{% if i == page %}
+	<strong>{{ i+1 }}</strong>
+	{% else %}
+	<a href="?page={{ i+1 }}">{{ i+1 }}</a>
+	{% endif %}
+{% endfor %}
+</div>
+{% endif %}
 
 {% for st in stripit %}
 <div class="sarjakuva" ng-controller="StripCtrl">
@@ -26,12 +37,13 @@
 		<span ng-class="{ 'bad': vote===false }"
 			ng-click="Thumbs(false)"
 			class="pointer glyphicons glyphicons-thumbs-down"></span>
-
 		({{ st.Grade() }})
 	</h3>
 	
 	<a {% if current_user.get_id() %} 
-		href="/{{ st.sarjakuva.lyhenne }}/{{ st.Order() }}/"
+		href="/{{ st.sarjakuva.lyhenne }}/id/{{ st.id }}/"
+		{% else %}
+		href="{{ st.page_url }}"
 		{% endif %}
 		>
 	
