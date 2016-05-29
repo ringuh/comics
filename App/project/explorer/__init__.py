@@ -112,7 +112,7 @@ def comic_strip(comic, strip):
 		prev = None
 
 	next = strip.Order()+1
-	if next >= comic.Max():
+	if next > comic.Max():
 		next = None
 	
 	return render_template("strip.html", 
@@ -141,7 +141,7 @@ def comic_strip_multiple(comic, strip, end):
 		prev = None
 
 	next = strips[-1].Order()+1
-	if next >= comic.Max():
+	if next > comic.Max():
 		next = None
 
 	if prev: 
@@ -209,7 +209,7 @@ def favourites(user_id=None):
 			).count()
 		n = db.session.query(L).filter(
 				L.user_id == user_id, #L.vote == True
-			).order_by(L.vote.desc(), L.strippi_id.desc()).offset(offset).limit(limit).all()
+			).order_by(L.vote.desc(), L.date_created.desc()).offset(offset).limit(limit).all()
 		
 		stripit = [i.strippi for i in n]
 	else:
@@ -392,7 +392,7 @@ def login():
 			db.session.commit()
 
 	except Exception as e:
-		flash("{}".format(e.message))
+		flash("{}".format(e))
 		return "0"
 	
 	return "1"
@@ -496,15 +496,14 @@ def loki_filter():
 
 	return jsonify(loki=loki)
 
-@explorer_blueprint.route('/<comic>/<int:strip>/save_progress/', methods=["POST"])
+@explorer_blueprint.route('/<comic>/save_progress/', methods=["POST"])
 @Comic
-@Strip
 @login_required
-def save_progress(comic, strip):
+def save_progress(comic):
 	from project.models import User_progress as UP
 	msg = None
 	json = request.get_json(True)
 
-	current_user.Progress(comic.id, strip.id)
+	current_user.Progress(comic.id, json["strip_id"])
 
-	return jsonify(msg="Tallennettiin progressiksi strippi nro {}".format(strip.Order()))
+	return jsonify(msg="Tallennettiin progressi")

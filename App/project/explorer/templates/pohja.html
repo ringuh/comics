@@ -170,8 +170,8 @@ app.controller('StripCtrl', function($scope, $http, $sce) {
 
 
 	$scope.SaveProgress = function(sarjakuva, strip){
-		var json = {}
-		$http.post("/"+sarjakuva+"/"+strip+"/save_progress/", JSON.stringify(json) )
+		var json = { strip_id: strip }
+		$http.post("/"+sarjakuva+"/save_progress/", JSON.stringify(json) )
 		.success(function(data){
 			console.log(data)
 			noty({text:data.msg, type:"success", timeout:3000});
