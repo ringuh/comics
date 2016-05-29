@@ -107,8 +107,55 @@ def comic(comic):
 def comic_strip(comic, strip):
 	if current_user.Progress(comic.id)+1 == strip.Order():
 		current_user.Progress(comic.id, strip.id)
+	prev = strip.Order()-1
+	if prev < 1:
+		prev = None
 
-	return render_template("strip.html", comic=comic, strip=strip, user=current_user)
+	next = strip.Order()+1
+	if next >= comic.Max():
+		next = None
+	
+	return render_template("strip.html", 
+			comic=comic, 
+			prev=prev,
+			next=next,
+			strips=[strip], 
+			user=current_user)
+
+@explorer_blueprint.route('/<comic>/<int:strip>-<int:end>/')
+@Comic
+@Strip
+def comic_strip_multiple(comic, strip, end):
+	order = strip.Order()
+	count = end - order+1
+	if current_user.Progress(comic.id)+count <= order:
+		current_user.Progress(comic.id, strip.id)
+	
+	strips = db.session.query(Strippi).filter(
+			Strippi.sarjakuva_id == comic.id,
+			Strippi.id >= strip.id
+		).order_by(Strippi.id).limit(count).all()
+
+	prev = strips[0].Order()-1
+	if prev < 1:
+		prev = None
+
+	next = strips[-1].Order()+1
+	if next >= comic.Max():
+		next = None
+
+	if prev: 
+		start = prev - (count-1)
+		if start < 1: start = 1
+		prev = "{}-{}".format(start, start+count-1)
+	if next: next = "{}-{}".format(next, next+count-1)
+
+	return render_template("strip.html", 
+			prev=prev,
+			next=next,
+			comic=comic, 
+			strips=strips, 
+			user=current_user)
 
 @explorer_blueprint.route('/<comic>/id/<id>/')
 @Comic

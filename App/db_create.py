@@ -5,7 +5,7 @@ import random, datetime, sys, os
 from project.models import *
 from project.luokat import *
 
-if "create" in sys.argv:
+if "create" in sys.argv and sys.platform == "win32":
 	db.drop_all()
 	db.create_all()
 	db.session.flush()

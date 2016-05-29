@@ -2,7 +2,38 @@
 
 {% block body %}
 
+<div class="apage">
+	{% set ord = strips[0].Order() %}
+	Strippejä kerralla: 
+	<a href="/{{ comic.lyhenne }}/{{ ord }}/"> 1 </a>
+	<a href="/{{ comic.lyhenne }}/{{ ord }}-{{ ord+19 }}/"> 20 </a>
+	<a href="/{{ comic.lyhenne }}/{{ ord }}-{{ ord+49 }}/"> 50 </a>
+</div>
 
+<div class="navi">
+	{% set max = comic.Max() %}
+	{% if prev %}
+	<a href="/{{ comic.lyhenne }}/1/">
+		<span class="glyphicons x2 left glyphicons-step-backward"></span>
+	</a>
+	<a href="/{{ comic.lyhenne }}/{{ prev }}/">
+		<span class="glyphicons x2  left glyphicons-rewind"></span>
+	</a>
+	{% endif %}
+
+	{% if next %}
+	<a href="/{{ comic.lyhenne }}/{{ max }}/">
+		<span class="glyphicons x2 right glyphicons-step-forward"></span>
+	</a>
+	<a href="/{{ comic.lyhenne }}/{{ next }}/">
+		<span class="glyphicons x2 right glyphicons-forward"></span>
+	</a>
+
+	{% endif %}
+
+	</div>
+
+{% for strip in strips %}
 <div class="sarjakuva left" ng-controller="StripCtrl">
 	<h3 ng-init="strippi={{ strip.id }};Thumbs();"> {{ comic.nimi }} #{{ strip.Order() }} 
 		<span ng-class="{ 'good': vote===true }"
@@ -20,30 +51,7 @@
 		<a style="margin-left:20px" href="/{{ comic.lyhenne }}/{{ progress }}/">Jatka ({{ progress }})</a>
 	</h3>
 	
-	<div class="navi">
-	{% set prev = strip.Order()-1 %}
-	{% set next = strip.Order()+1 %}
-	{% set max = comic.Max() %}
-	{% if prev > 0 %}
-	<a href="/{{ comic.lyhenne }}/1/">
-		<span class="glyphicons x2 left glyphicons-step-backward"></span>
-	</a>
-	<a href="/{{ comic.lyhenne }}/{{ prev }}/">
-		<span class="glyphicons x2  left glyphicons-rewind"></span>
-	</a>
-	{% endif %}
-
-	{% if next <= max %}
-	<a href="/{{ comic.lyhenne }}/{{ max }}/">
-		<span class="glyphicons x2 right glyphicons-step-forward"></span>
-	</a>
-	<a href="/{{ comic.lyhenne }}/{{ next }}/">
-		<span class="glyphicons x2 right glyphicons-forward"></span>
-	</a>
-
-	{% endif %}
-
-	</div>
+	
 	<div style="clear:both;">
 		<a id="strippi" href="{{ strip.page_url }}">
 		{% if comic.download %}
@@ -56,20 +64,21 @@
 		</a>
 	</div>
 </div>
+{% endfor %}
 
 <script>
-	document.title="{{ comic.nimi }} #{{strip.order}}"
+	document.title="{{ comic.nimi }} #{{strips[0].Order() }} - {{ strips[-1].Order() }}"  
 	
 	$(document).keydown(function(e) {
     switch(e.which) {
-    	{% if prev > 0 %}
+    	{% if prev %}
         case 37: // left
         e.preventDefault(); // prevent the default action (scroll / move caret)
         window.open("/{{ comic.lyhenne }}/{{ prev }}/", "_self")
         break;
         {% endif %}
 
-        {% if next <= max %}
+        {% if next %}
         case 39: // right
         e.preventDefault(); // prevent the default action (scroll / move caret)
  		window.open("/{{ comic.lyhenne }}/{{ next }}/", "_self")
@@ -79,9 +88,14 @@
     };
     
 
+   
 
-    
-    
+    });    
+$(document).ready(function(){
+	window.scrollBy(0, 200);
+	setTimeout(function(){
+		
+	}, 200)
     
 });
 </script>
