@@ -89,6 +89,8 @@ def Looper(id):
 				olio = TumblrIframe(comic)
 			elif comic.parseri.lower() == "RSSReader".lower():
 				olio = RSSReader(comic)
+			elif comic.parseri.lower() == "snowbynight".lower():
+				olio = SnowByNight(comic)
 
 
 		last_url = comic.last_url

@@ -3129,6 +3129,351 @@ Sarjakuva(
 ),
 
 
+Sarjakuva(
+	"Mr Lovenstein", 
+	"mrlovenstein",
+
+	"http://www.mrlovenstein.com/", 
+	"http://www.mrlovenstein.com/comic/1",
+	test="http://www.mrlovenstein.com/comic/775",
+
+	image="#comic_main_image",
+	next="a|img|!src:in:nav_right.png",
+),
+
+
+Sarjakuva(
+	"The Gentlemans Armchair", 
+	"thegentlemansarmchair",
+
+	"http://thegentlemansarmchair.com/", 
+	"http://thegentlemansarmchair.com/comic/dora-the-explorer/",
+	test="http://thegentlemansarmchair.com/comic/rocks/",
+
+	image="#comic>img",
+	next="a.comic-nav-next",
+),
+
+
+Sarjakuva(
+	"Grrl Power", 
+	"grrlpower",
+
+	"http://grrlpowercomic.com/", 
+	"http://grrlpowercomic.com/archives/48",
+	test="http://grrlpowercomic.com/archives/2110",
+
+	image="#comic>img",
+	next="a.navi-next",
+),
+
+Sarjakuva(
+	"Goblins", 
+	"goblins",
+
+	"http://www.goblinscomic.org/", 
+	"http://www.goblinscomic.org/06252005/",
+	test="http://www.goblinscomic.org/01062012/",
+
+	image="#comic>img",
+	next="div.nav-next>a",
+),
+
+
+Sarjakuva(
+	"The Great Isle of Prentil", 
+	"prentil",
+
+	"http://prentil.com/", 
+	"http://prentil.com/?comic=bk1-ch1-pg1",
+	test="http://prentil.com/?comic=bk1-ch4-pg19",
+
+	image="#comic>img",
+	next="a.comic-nav-next",
+),
+
+
+Sarjakuva(
+	"Off World: The Crease", 
+	"crease",
+
+	"http://thecrease.thecomicseries.com/", 
+	"http://thecrease.thecomicseries.com/comics/1",
+	test="http://thecrease.thecomicseries.com/comics/325",
+
+	image="#comic>img",
+	next="a|!rel:in:next",
+),
+
+
+Sarjakuva(
+	"Spying with Lana", 
+	"spyingwithlana",
+
+	"http://spyingwithlana.com/", 
+	"http://spyingwithlana.com/comic/mxcover/",
+	test="http://spyingwithlana.com/comic/ell17/",
+
+	image="#comic>img",
+	next="a.comic-nav-next",
+),
+
+
+Sarjakuva(
+	"Puck", 
+	"puck",
+
+	"baseurl", 
+	"http://www.puckcomics.com/?comic=puck-1",
+	test="http://www.puckcomics.com/?comic=puck-335",
+
+	image="#comic>img",
+	next="a.comic-nav-next",
+),
+
+Sarjakuva(
+	"Will Save World for Gold", 
+	"wswfg",
+
+	"http://willsaveworldforgold.com/", 
+	"http://willsaveworldforgold.com/?p=18",
+	test="http://willsaveworldforgold.com/?p=1952",
+
+	image="div.comicpane>img",
+	next="a.navi-next",
+),
+
+Sarjakuva(
+	"Vultures", 
+	"alias",
+
+	"http://vulturesblog.com/", 
+	"http://vulturesblog.com/comic/one/",
+	test="http://vulturesblog.com/comic/forty-four/",
+
+	image="#comic>img",
+	next="a.comic-nav-next",
+),
+
+Sarjakuva(
+	"nimi", 
+	"alias",
+
+	"baseurl", 
+	"firsturl",
+	test="testurl",
+
+	image="imagetree",
+	next="nextlinktree",
+),
+
+Sarjakuva(
+	"Gaia", 
+	"gaia",
+
+	"http://www.sandraandwoo.com/", 
+	"http://www.sandraandwoo.com/gaia/2011/11/01/cover/",
+	test="http://www.sandraandwoo.com/gaia/2016/05/16/monster-009/",
+
+	image="#comic>img",
+	next="div.nav-next>a",
+),
+
+Sarjakuva(
+	"Sins Fugue", 
+	"sinsfugue",
+
+	"http://sincomics.com/", 
+	"http://sincomics.com/index.php?1209",
+	test="http://sincomics.com/index.php?1703",
+
+	image="img|!src:in:comic/sins",
+	next="a|img|!src:in:foward.jpg",
+),
+
+Sarjakuva(
+	"Wapsi Square", 
+	"wapsisquare",
+
+	"http://wapsisquare.com/", 
+	"http://wapsisquare.com/comic/09092001/",
+	test="http://wapsisquare.com/comic/mama-bear/",
+
+	image="#comic>img",
+	next="a.comic-nav-next",
+),
+
+
+
+Sarjakuva(
+	"Stick in the Mud", 
+	"stickinthemud",
+
+	"http://www.konradokonski.com/SITM/", 
+	"http://www.konradokonski.com/SITM/comic/title-0001/",
+	test="http://www.konradokonski.com/SITM/comic/sitm-345/",
+
+	image="#comic>img",
+	next="a.comic-nav-next",
+),
+
+Sarjakuva(
+	"Bear Nuts", 
+	"bearnuts",
+
+	"http://www.bearnutscomic.com/", 
+	"http://www.bearnutscomic.com/2008/08/17/01-bear-nuts/",
+	test="http://www.bearnutscomic.com/2016/05/02/524-bear-nuts/",
+
+	image="#comic>img|!src:in:comic/",
+	next="a|!text:in:next",
+),
+
+Sarjakuva(
+	"Flipside", 
+	"flipside",
+
+	"http://flipside.keenspot.com/", 
+	"http://flipside.keenspot.com/comic.php?i=1",
+	test="http://flipside.keenspot.com/comic.php?i=2871",
+
+	image="#flip_comicpage>img.ksc",
+	next="a|!rel:in:next",
+),
+
+Sarjakuva(
+	"The Dreamland Chronicles", 
+	"thedreamlandchronicles",
+
+	"http://www.thedreamlandchronicles.com/", 
+	"http://www.thedreamlandchronicles.com/comic/welcome-to-the-dreamland-chronicles/",
+	test="http://www.thedreamlandchronicles.com/comic/page-1836/",
+
+	image="#comic>img",
+	next="a.comic-nav-next",
+),
+
+Sarjakuva(
+	"nimi", 
+	"alias",
+
+	"baseurl", 
+	"firsturl",
+	test="testurl",
+
+	image="imagetree",
+	next="nextlinktree",
+),
+
+Sarjakuva(
+	"Mecoforie Continent", 
+	"mecoforiecontinent",
+
+	"http://mecoforie.com/", 
+	"http://mecoforie.com/index.php?chapter=0&page=0",
+	test="http://mecoforie.com/index.php?chapter=3&page=43",
+
+	image="img.comicimg",
+	next="a|!title:in:next",
+),
+
+Sarjakuva(
+	"Demon of the Underground", 
+	"demonoftheunderground",
+
+	"http://www.bob-artist.com/demon/", 
+	"http://www.bob-artist.com/demon/?id=1",
+	test="http://www.bob-artist.com/demon/?id=195",
+
+	image="#comicimg",
+	next="a|!text:in:next",
+),
+
+Sarjakuva(
+	"Schlock Mercenary", 
+	"schlock mercenary",
+
+	"http://www.schlockmercenary.com/", 
+	"http://www.schlockmercenary.com/2000-06-12",
+	test="http://www.schlockmercenary.com/2016-05-26",
+
+	image="div.strip-images>img",
+	next="a.next-strip",
+),
+
+Sarjakuva(
+	"Gunnerkrigg Court", 
+	"gunnerkriggcourt",
+
+	"http://www.gunnerkrigg.com/", 
+	"http://www.gunnerkrigg.com/?p=1",
+	test="http://www.gunnerkrigg.com/?p=1672",
+
+	image="img.comic_image",
+	next="a|img|!src:in:next",
+),
+
+Sarjakuva(
+	"Snow by Night", 
+	"snowbynight",
+
+	"http://www.snowbynight.com/", 
+	"http://www.snowbynight.com/pages/ch1/pg1.php",
+	test="http://www.snowbynight.com/pages/ch12/v7.php",
+	parseri="snowbynight",
+
+	image="div.comic_group>img",
+	next="a.comic-nav_forward-page",
+),
+
+Sarjakuva(
+	"Shotgun Shuffle", 
+	"shotgunshuffle",
+
+	"http://shotgunshuffle.com/", 
+	"http://shotgunshuffle.com/comic/pilot/",
+	test="http://shotgunshuffle.com/comic/who-are-you/",
+
+	image="#comic>img",
+	next="a.comic-nav-next",
+),
+
+Sarjakuva(
+	"Housepets", 
+	"housepets",
+
+	"http://www.housepetscomic.com/", 
+	"http://www.housepetscomic.com/2008/06/02/when-boredom-strikes/",
+	test="http://www.housepetscomic.com/2016/05/20/seek-and-hide/",
+
+	image="#comic>img",
+	next="a.navi-next",
+),
+
+Sarjakuva(
+	"Savestate", 
+	"savestate",
+
+	"http://www.savestatecomic.com/", 
+	"http://www.savestatecomic.com/2014/02/pokemon-bank/",
+	test="http://www.savestatecomic.com/2016/05/beach-toys/",
+
+	image="div.comicpane>img",
+	next="a.navi-next",
+),
+
+Sarjakuva(
+	"Runewriters", 
+	"runewriters",
+
+	"http://runewriters.com/", 
+	"http://runewriters.com/index.php?c=7",
+	test="http://runewriters.com/index.php?c=176",
+
+	image="#comic>img",
+	next="a|!rel:in:next",
+),
+
 # Sarjakuva(
 # 	"nimi", 
 # 	"alias",
@@ -3141,7 +3486,6 @@ Sarjakuva(
 # 	next="nextlinktree",
 # ),
 
-
 # Sarjakuva(
 # 	"nimi", 
 # 	"alias",
@@ -3154,6 +3498,17 @@ Sarjakuva(
 # 	next="nextlinktree",
 # ),
 
+# Sarjakuva(
+# 	"nimi", 
+# 	"alias",
+
+# 	"baseurl", 
+# 	"firsturl",
+# 	test="testurl",
+
+# 	image="imagetree",
+# 	next="nextlinktree",
+# ),
 
 # Sarjakuva(
 # 	"nimi", 
@@ -3202,4 +3557,19 @@ db.session.commit()
 
 # 	image="imagetree",
 # 	next="nextlinktree",
+# ),
+
+
+
+
+# Sarjakuva( #testaa myöhemmin
+# 	"Erfworld", 
+# 	"erfworld",
+
+# 	"http://www.erfworld.com/", 
+# 	"http://archives.erfworld.com/Book 1/1",
+# 	test="http://archives.erfworld.com/Book+3/159",
+
+# 	image="div.comic_content>img",
+# 	next="a|i.fa-forward",
 # ),
