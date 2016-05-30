@@ -3391,7 +3391,7 @@ Sarjakuva(
 
 Sarjakuva(
 	"Schlock Mercenary", 
-	"schlock mercenary",
+	"schlockmercenary",
 
 	"http://www.schlockmercenary.com/", 
 	"http://www.schlockmercenary.com/2000-06-12",
@@ -3474,17 +3474,41 @@ Sarjakuva(
 	next="a|!rel:in:next",
 ),
 
-# Sarjakuva(
-# 	"nimi", 
-# 	"alias",
+Sarjakuva(
+	"JHall Pokemon", 
+	"jhallpokemon",
 
-# 	"baseurl", 
-# 	"firsturl",
-# 	test="testurl",
+	"http://jhallcomics.com/", 
+	"http://jhallcomics.com/Pokemon/7312",
+	test="http://jhallcomics.com/Pokemon/7935",
 
-# 	image="imagetree",
-# 	next="nextlinktree",
-# ),
+	image="#comic-container>img",
+	next="a|img|!alt:in:forward",
+),
+
+Sarjakuva(
+	"JHall Bloop", 
+	"jhallbloop",
+
+	"http://jhallcomics.com/", 
+	"http://jhallcomics.com/Bloop/7204",
+	test="http://jhallcomics.com/Bloop/7933",
+
+	image="#comic-container>img",
+	next="a|img|!alt:in:forward",
+),
+
+Sarjakuva(
+	"JHall Unsorted", 
+	"jhallunsorted",
+
+	"http://jhallcomics.com/", 
+	"http://jhallcomics.com/Unsorted/7216",
+	test="http://jhallcomics.com/Unsorted/7956",
+
+	image="#comic-container>img",
+	next="a|img|!alt:in:forward",
+),
 
 # Sarjakuva(
 # 	"nimi", 

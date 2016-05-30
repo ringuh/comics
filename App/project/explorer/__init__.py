@@ -220,7 +220,7 @@ def favourites(user_id=None):
 				func.sum(
 					case([(L.vote == True, 1), (L.vote == False, -1)], else_=0)
 				).label("count")
-			).group_by(L.strippi_id).order_by(desc("count"), L.strippi_id).offset(offset).limit(limit).all()
+			).group_by(L.strippi_id).order_by("count", L.strippi_id).offset(offset).limit(limit).all()
 		
 		st_ids = [i.id for i in n if i.count != 0]
 		m = db.session.query(ST).filter(ST.id.in_(st_ids)).all()
