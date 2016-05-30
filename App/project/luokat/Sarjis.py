@@ -15,17 +15,19 @@ class Sarjis(object):
 
 	def Print(self, *args):
 		import unicodedata
-		f = open("logit/loki{}.tmp".format(self.sarjakuva.id), "a")
-		text = None;
-		for i in args:
-			i = unicodedata.normalize('NFKD', str(i)).encode('ASCII', 'ignore').decode("ascii")
-			if text:
-				text = "{}, {}".format(text, i)
-			else:
-				text = i;
-		text = "{}\n".format(text)
-		f.write(text)
-		f.close()
+		try:
+			f = open("logit/loki{}.tmp".format(self.sarjakuva.id), "a")
+			text = None;
+			for i in args:
+				i = unicodedata.normalize('NFKD', str(i)).encode('ASCII', 'ignore').decode("ascii")
+				if text:
+					text = "{}, {}".format(text, i)
+				else:
+					text = i;
+			text = "{}\n".format(text)
+			f.write(text)
+			f.close()
+		except: pass
 
 	
 	def Init(self, url=None, ):

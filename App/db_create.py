@@ -3325,7 +3325,7 @@ Sarjakuva(
 	"http://www.bearnutscomic.com/2008/08/17/01-bear-nuts/",
 	test="http://www.bearnutscomic.com/2016/05/02/524-bear-nuts/",
 
-	image="#comic>img|!src:in:comic/",
+	image="#comic>img",
 	next="a|!text:in:next",
 ),
 
