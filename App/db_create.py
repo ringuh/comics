@@ -3256,18 +3256,6 @@ Sarjakuva(
 ),
 
 Sarjakuva(
-	"nimi", 
-	"alias",
-
-	"baseurl", 
-	"firsturl",
-	test="testurl",
-
-	image="imagetree",
-	next="nextlinktree",
-),
-
-Sarjakuva(
 	"Gaia", 
 	"gaia",
 
@@ -3351,18 +3339,6 @@ Sarjakuva(
 
 	image="#comic>img",
 	next="a.comic-nav-next",
-),
-
-Sarjakuva(
-	"nimi", 
-	"alias",
-
-	"baseurl", 
-	"firsturl",
-	test="testurl",
-
-	image="imagetree",
-	next="nextlinktree",
 ),
 
 Sarjakuva(
@@ -3702,6 +3678,252 @@ Sarjakuva(
 	next="a|div|img|!src:in:nextstrip",
 ),
 
+Sarjakuva(
+	"Amya", 
+	"amya",
+
+	"http://www.amyachronicles.com/", 
+	"http://www.amyachronicles.com/archives/comic/09292009",
+	test="http://www.amyachronicles.com/archives/comic/guest-art-by-autumn-dickens",
+
+	image="#comic>img",
+	next="a.comic-nav-next",
+),
+
+
+
+Sarjakuva(
+	"No Need for Bushido", 
+	"noneedforbushido",
+
+	"http://nn4b.com/", 
+	"http://nn4b.com/comic/1",
+	test="http://nn4b.com/comic/653",
+
+	image="#comic-image>img",
+	next="a.next-webcomic-link",
+),
+
+Sarjakuva(
+	"Earthsong", 
+	"earthsong",
+
+	"http://earthsongsaga.com/", 
+	"http://earthsongsaga.com/vol1/ch1cover.php",
+	test="http://earthsongsaga.com/vol5/104.php",
+
+	image="#comic>img",
+	next="#next>a",
+),
+
+Sarjakuva(
+	"Blade Under Mask", 
+	"bladeundermask",
+
+	"http://bladeundermask.com/", 
+	"http://bladeundermask.com/comic/en/",
+	test="http://bladeundermask.com/comic/en/",
+
+	image="img.img-responsive",
+	next="a|!text:in:>",
+
+	parseri="dragonarte",
+),
+
+Sarjakuva(
+	"Hero on Hero", 
+	"heroonhero",
+
+	"http://www.neorice.com/", 
+	"http://www.neorice.com/hoh_1",
+	test="http://www.neorice.com/hoh_625",
+
+	image="#comic>img",
+	next="a|img|!alt:in:next",
+),
+
+Sarjakuva(
+	"164 days", 
+	"164days",
+
+	"http://164days.co.uk/", 
+	"http://164days.co.uk/comic/prologue/08012011/",
+	test="http://164days.co.uk/comic/filler/thanks-for-reading/",
+
+	image="#comic>img",
+	next="a.comic-nav-next",
+),
+
+Sarjakuva(
+	"Supervillainous", 
+	"supervillainous",
+
+	"http://supervillainous.spiderforest.com/", 
+	"http://supervillainous.spiderforest.com/comic/comic-1-work-and-family/",
+	test="http://supervillainous.spiderforest.com/comic/ya-think-ya-know-a-guy/",
+
+	image="#comic>img",
+	next="a.comic-nav-next",
+),
+
+Sarjakuva(
+	"Reality Quest", 
+	"realityquest",
+
+	"http://rq.skyrocketcreation.com/", 
+	"http://rq.skyrocketcreation.com/comic/001-the-misadventures-begin/",
+	test="http://rq.skyrocketcreation.com/comic/114-children-part-15/",
+
+	image="#comic>img",
+	next="a.comic-nav-next",
+),
+
+Sarjakuva(
+	"Yesterday Bound", 
+	"yesterdaybound",
+
+	"http://yesterdaybound.webcomic.ws/", 
+	"http://yesterdaybound.webcomic.ws/comics/1",
+	test="http://yesterdaybound.webcomic.ws/comics/129",
+
+	image="#comicimage",
+	next="a|!rel:in:next",
+),
+
+Sarjakuva(
+	"A Redtails Dream", 
+	"redtailsdream",
+
+	"http://www.minnasundberg.fi/comic/", 
+	"http://www.minnasundberg.fi/comic/page00.php",
+	test="http://www.minnasundberg.fi/comic/page553.php",
+
+	image="#page>img",
+	next="a|img|!src:in:anext",
+	interval=0,
+),
+
+Sarjakuva(
+	"Ryugou", 
+	"ryugou",
+
+	"bahttp://ryugou.swashbuckledcomics.com/seurl", 
+	"http://ryugou.swashbuckledcomics.com/comic/ryugou-chapter-1-cover/",
+	test="http://ryugou.swashbuckledcomics.com/comic/7three/",
+
+	image="div.webcomic-image>img",
+	next="a.next-webcomic-link",
+),
+
+Sarjakuva(
+	"Widdershins", 
+	"widdershins",
+
+	"http://www.widdershinscomic.com/", 
+	"http://www.widdershinscomic.com/wdshn/sleight-of-hand-cover/",
+	test="http://www.widdershinscomic.com/wdshn/may-17th-2016/",
+
+	image="div.webcomic-image>img",
+	next="a.next-webcomic-link",
+),
+
+Sarjakuva(
+	"Salamanstra", 
+	"salamanstra",
+
+	"http://salamanstra.keenspot.com/", 
+	"http://salamanstra.keenspot.com/d/20140315.html",
+	test="http://salamanstra.keenspot.com/d/20160523.html",
+
+	image="img.ksc",
+	next="a|!rel:in:next",
+),
+
+
+
+Sarjakuva(
+	"Blonde Sunrise", 
+	"blondesunrise",
+
+	"http://www.blondesunrise.com/", 
+	"http://www.blondesunrise.com/comic.php?page=1",
+	test="http://www.blondesunrise.com/comic.php?page=406",
+
+	image="img|!src:in:comic_imgs",
+	next="a|img|!src:in:next",
+),
+
+Sarjakuva(
+	"The Book of Lies", 
+	"bookoflies",
+
+	"http://bookofliescomic.webcomic.ws/", 
+	"http://bookofliescomic.webcomic.ws/comics/1",
+	test="http://bookofliescomic.webcomic.ws/comics/248",
+
+	image="#comicimagewrap>img",
+	next="a|!rel:in:next",
+),
+
+Sarjakuva(
+	"Its New Day", 
+	"itsnewday",
+
+	"http://itsnewday.thecomicseries.com/", 
+	"http://itsnewday.thecomicseries.com/comics/1/",
+	test="http://itsnewday.thecomicseries.com/comics/89/",
+
+	image="#comicimagewrap>img",
+	next="a|!rel:in:next",
+),
+
+# Sarjakuva(
+# 	"nimi", 
+# 	"alias",
+
+# 	"baseurl", 
+# 	"firsturl",
+# 	test="testurl",
+
+# 	image="imagetree",
+# 	next="nextlinktree",
+# ),
+
+# Sarjakuva(
+# 	"nimi", 
+# 	"alias",
+
+# 	"baseurl", 
+# 	"firsturl",
+# 	test="testurl",
+
+# 	image="imagetree",
+# 	next="nextlinktree",
+# ),
+
+# Sarjakuva(
+# 	"nimi", 
+# 	"alias",
+
+# 	"baseurl", 
+# 	"firsturl",
+# 	test="testurl",
+
+# 	image="imagetree",
+# 	next="nextlinktree",
+# ),
+
+# Sarjakuva(
+# 	"nimi", 
+# 	"alias",
+
+# 	"baseurl", 
+# 	"firsturl",
+# 	test="testurl",
+
+# 	image="imagetree",
+# 	next="nextlinktree",
+# ),
 
 ]
 count = db.session.query(Sarjakuva).count()
@@ -3754,4 +3976,28 @@ db.session.commit()
 
 # 	image="div.comic_content>img",
 # 	next="a|i.fa-forward",
+# ),
+
+# Sarjakuva( # oma luokka
+# 	"Carciphona", 
+# 	"carciphona",
+
+# 	"http://carciphona.com/", 
+# 	"http://carciphona.com/view.php?page=cover&chapter=1",
+# 	test="http://carciphona.com/view.php?page=162&chapter=14",
+
+# 	image="imagetree",
+# 	next="#nextarea",
+# ),
+
+# Sarjakuva( next perseesta
+# 	"Dream Keepers", 
+# 	"dreamkeepers",
+
+# 	"http://www.dreamkeeperscomic.com/", 
+# 	"http://www.dreamkeeperscomic.com/GNSaga.php?pg=1",
+# 	test="http://www.dreamkeeperscomic.com/GNSaga.php?pg=316",
+
+# 	image="img|!src:in:agapages",
+# 	next="a|img|!src:in:arrowright",
 # ),
