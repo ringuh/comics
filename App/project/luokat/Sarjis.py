@@ -2,7 +2,7 @@
 from project import db, app, Print, Log
 from bs4 import BeautifulSoup
 import datetime, urllib.request, urllib.error, urllib.parse, os, requests, hashlib, imagehash
-from project.models import Strippi
+from project.models import Strippi, IgnoreUrl
 from PIL import Image
 
 
@@ -11,6 +11,8 @@ class Sarjis(object):
 	def __init__(self, sarjakuva ):
 		self.sarjakuva = sarjakuva
 		self.sessio = db.session
+
+		self.ignore = [i.url for i in db.session.query(IgnoreUrl.url).all()]
 
 
 	def Print(self, *args):
@@ -309,10 +311,10 @@ class Sarjis(object):
 		loaded = self.sessio.query(Strippi.url).filter(
 				Strippi.sarjakuva_id==self.sarjakuva.id
 			).all()
-		loaded = [i.url for i in loaded]
+		loaded = [i.url for i in loaded]+self.ignore
 
-		# if url in loaded:
-		# 	return True
+		if url in loaded:
+			return True
 		
 		print("save", url)
 		# katsotaan oliko kyseisestä sarjasta jo kyseinen kuva

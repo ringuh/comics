@@ -1,7 +1,7 @@
 {% extends "pohja.html" %}
 
 {% block body %}
-
+<title>Suosikit</title>
 <div class="dropdown">
   <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
   	{% if target %} {{ target.account }} {% else %} Kaikki {% endif %}
@@ -31,12 +31,14 @@
 <div class="sarjakuva" ng-controller="StripCtrl">
 	<h3 ng-init="strippi={{ st.id }};Thumbs();"> 
 		{{ st.sarjakuva.nimi }} {{ st.Pvm() }} 
+		{% if user.id != 2 %}
 		<span ng-class="{ 'good': vote===true }"
 			ng-click="Thumbs(true)"
 			class="pointer glyphicons glyphicons-thumbs-up"></span>
 		<span ng-class="{ 'bad': vote===false }"
 			ng-click="Thumbs(false)"
 			class="pointer glyphicons glyphicons-thumbs-down"></span>
+		{% endif %}
 		({{ st.Grade() }})
 	</h3>
 	

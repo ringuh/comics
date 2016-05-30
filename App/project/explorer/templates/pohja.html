@@ -179,6 +179,43 @@ app.controller('StripCtrl', function($scope, $http, $sce) {
 			console.log(err)
 		});
 	};
+
+	$scope.HideComic = function(id)
+	{
+		noty({
+			text: 'Piilotetaanko sarjis?',
+			type: "warning",
+			layout: "center",
+			buttons: [
+				{addClass: 'btn btn-primary', text: 'Kyllä', onClick: function($noty) {
+						// this = button element
+						//  =  element
+		
+						$noty.close();
+						var json = { id: id, visibility: false }
+		
+						$http.post("/options/my_comics/", JSON.stringify(json))
+						.success(function(data){
+							console.log(data)
+							if( data.msg != null )
+								noty({text:data.msg, type:"success", timeout:1500});
+							$scope.comics = data.comics
+						}).error(function(err){
+							console.log(err)
+						});
+						
+					}
+				},
+				{addClass: 'btn btn-danger', text: 'Ei', onClick: function($noty) {
+						$noty.close();
+						
+					}
+				}
+			]
+		});	
+		
+	}
+
 });
 {% endif %}
 </script>

@@ -7,3 +7,4 @@ from .sarjakuva_user import Sarjakuva_user
 from .likes import Likes
 from .loki import Loki
 from .user_progress import User_progress
+from .ignore_url import IgnoreUrl

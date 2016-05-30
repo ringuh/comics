@@ -18,15 +18,17 @@ class Sarjakuva(db.Model):
 	image = db.Column(db.UnicodeText)
 	next = db.Column(db.UnicodeText)
 
+	nsfw = db.Column(db.Boolean)
+	tags = db.Column(db.UnicodeText)
+
 	interval = db.Column(db.Integer, default=12) # tunteja
 	minimum_interval = db.Column(db.Integer, default=0) # minimiväli EDELLISESTÄ YRITYKSESTÄ
 	weekday = db.Column(db.UnicodeText, default="0,1,2,3,4,5,6")
-	last_parse = db.Column(db.DateTime, default=None)
-	last_attempt = db.Column(db.DateTime, default=None)
 	download = db.Column(db.Boolean, default=True)
-	download = db.Column(db.Boolean, default=False)
 	filetype = db.Column(db.UnicodeText)
 	ending = db.Column(db.UnicodeText)
+	last_parse = db.Column(db.DateTime, default=None)
+	last_attempt = db.Column(db.DateTime, default=None)
 	date_created = db.Column(db.DateTime, default=datetime.datetime.now)
 	#joukkue_id = db.Column(db.Integer, ForeignKey('joukkue.id'), nullable=True)
 	

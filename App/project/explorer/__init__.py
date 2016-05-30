@@ -291,13 +291,69 @@ def my_comics():
 		db.session.commit()
 		msg = "Tallennettiin"
 
-	tmp = db.session.query(SK).order_by(SK.nimi).all()
-	all_comics = [i.toJson() for i in tmp]
+	tmp = db.session.query(SK).order_by(SK.id).all()
+	
 	comics = []
 	for i in tmp:
 		comics.append(i.StatusJson(current_user.id))
 
-	return jsonify(comics=comics, msg=msg, all_comics=all_comics)
+	return jsonify(comics=comics, msg=msg)
+
+@explorer_blueprint.route('/options/comic/', methods=["POST"])
+def comic_Set():
+	json = request.get_json(True)
+	msg = None
+
+	if not current_user.admin:
+		return "No access"
+	comic = db.session.query(SK).get(json["id"])
+	print(comic.nimi)
+	try:
+		comic.parseri = json["parseri"]
+	except: pass
+	try:
+		comic.lyhenne = json["lyhenne"]
+	except: pass
+	try:
+		comic.url = json["url"]
+	except: pass
+	try:
+		comic.last_url = json["last_url"]
+	except: pass
+	try:
+		comic.image = json["image"]
+	except: pass
+	try:
+		comic.next = json["next"]
+	except: pass
+	try:
+		comic.nsfw = json["nsfw"]
+	except: pass
+	try:
+		comic.tags = json["tags"]
+	except: pass
+	try:
+		comic.interval = json["interval"]
+	except: pass
+	try:
+		comic.minimum_interval = json["minimum_interval"]
+	except: pass
+	try:
+		comic.weekday = json["weekday"]
+	except: pass
+	try:
+		comic.download = json["download"]
+	except: pass
+	try:
+		comic.filetype = json["filetype"]
+	except: pass
+	try:
+		comic.ending = json["ending"]
+	except: pass
+
+	db.session.commit()
+	
+	return "Success"
 
 @explorer_blueprint.route('/options/users/', methods=["POST"])
 @login_required

@@ -38,9 +38,11 @@ def run():
 
 					except: pass
 
-				if comic.last_parse is not None:
-					if comic.last_parse + datetime.timedelta(hours=comic.interval) > datetime.datetime.now():
-						continue
+				if comic.last_parse and comic.last_parse + datetime.timedelta(hours=comic.interval) > datetime.datetime.now():
+					continue
+
+				if comic.minimum_interval and comic.last_attempt + datetime.timedelta(hours=comic.minimum_interval) > datetime.datetime.now():
+					continue
 
 		Looper(comic.id)
 	return True

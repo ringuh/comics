@@ -36,6 +36,7 @@
 {% for strip in strips %}
 <div class="sarjakuva left" ng-controller="StripCtrl">
 	<h3 ng-init="strippi={{ strip.id }};Thumbs();"> {{ comic.nimi }} #{{ strip.Order() }} 
+		{% if user.id != 2 %}
 		<span ng-class="{ 'good': vote===true }"
 			ng-click="Thumbs(true)"
 			class="pointer glyphicons glyphicons-thumbs-up"></span>
@@ -49,6 +50,7 @@
 			class="pointer glyphicons glyphicons-floppy-disk"></span>
 
 		<a style="margin-left:20px" href="/{{ comic.lyhenne }}/{{ progress }}/">Jatka ({{ progress }})</a>
+		{% endif %}
 	</h3>
 	
 	

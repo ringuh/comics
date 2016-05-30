@@ -3510,41 +3510,197 @@ Sarjakuva(
 	next="a|img|!alt:in:forward",
 ),
 
-# Sarjakuva(
-# 	"nimi", 
-# 	"alias",
+Sarjakuva(
+	"Derelict", 
+	"derelict",
 
-# 	"baseurl", 
-# 	"firsturl",
-# 	test="testurl",
+	"http://derelictcomic.com/", 
+	"http://derelictcomic.com/?strip_id=0",
+	test="http://derelictcomic.com/?strip_id=251",
 
-# 	image="imagetree",
-# 	next="nextlinktree",
-# ),
+	image="span.rss-content>img",
+	next="a|img|!alt:in:next",
+),
 
-# Sarjakuva(
-# 	"nimi", 
-# 	"alias",
+Sarjakuva(
+	"Miss Melee", 
+	"missmelee",
 
-# 	"baseurl", 
-# 	"firsturl",
-# 	test="testurl",
+	"http://miss-melee.com/", 
+	"http://miss-melee.com/comic/1-0/",
+	test="http://miss-melee.com/comic/2-10/",
 
-# 	image="imagetree",
-# 	next="nextlinktree",
-# ),
+	image="#comic>img",
+	next="a.comic-nav-next",
+),
 
-# Sarjakuva(
-# 	"nimi", 
-# 	"alias",
+Sarjakuva(
+	"Fey Winds", 
+	"feywinds",
 
-# 	"baseurl", 
-# 	"firsturl",
-# 	test="testurl",
+	"http://www.feywinds.com/", 
+	"http://www.feywinds.com/feywinds/fw001/",
+	test="http://www.feywinds.com/feywinds/test-doodle/",
 
-# 	image="imagetree",
-# 	next="nextlinktree",
-# ),
+	image="div.webcomic-image>img",
+	next="a.next-webcomic-link",
+),
+
+Sarjakuva(
+	"Exiern", 
+	"exiern",
+
+	"http://www.exiern.com/", 
+	"http://www.exiern.com/2005/09/06/so-far/",
+	test="http://www.exiern.com/2016/05/10/cleaning-up/",
+
+	image="#comic>img",
+	next="a.navi-next",
+),
+
+Sarjakuva(
+	"Spindrift", 
+	"spindrift",
+
+	"http://www.spindrift-comic.com/", 
+	"http://www.spindrift-comic.com/comic/00/0",
+	test="http://www.spindrift-comic.com/comic/02/97",
+
+	image="#comic-image",
+	next="li.c-nav-6>a",
+),
+
+Sarjakuva(
+	"How to be a Werewolf", 
+	"howtobeawerewolf",
+
+	"http://www.howtobeawerewolf.com/", 
+	"http://www.howtobeawerewolf.com/comic/coming-february-3rd/",
+	test="http://www.howtobeawerewolf.com/comic/hands/",
+
+	image="#comic>img",
+	next="a.comic-nav-next",
+),
+
+Sarjakuva(
+	"3 Minute Max", 
+	"3minutemax",
+
+	"http://www.3mm-crisisstrike.com/", 
+	"http://www.3mm-crisisstrike.com/3mmcomic/activation/",
+	test="http://www.3mm-crisisstrike.com/3mmcomic/hard-target-page-four/",
+
+	image="#comic>img",
+	next="a.comic-nav-next",
+),
+
+Sarjakuva(
+	"Out of My Element", 
+	"outofmyelement",
+
+	"http://www.oomecomic.com/", 
+	"http://www.oomecomic.com/comic/ch1-cover/",
+	test="http://www.oomecomic.com/comic/ch8-14/",
+
+	image="#comic>img",
+	next="a.comic-nav-next",
+),
+
+Sarjakuva(
+	"Dream Scar", 
+	"dreamscar",
+
+	"http://www.dream-scar.net/", 
+	"http://www.dream-scar.net/?id=1",
+	test="http://www.dream-scar.net/?id=285",
+
+	image="#comic",
+	next="#page_nav_next",
+),
+
+Sarjakuva(
+	"Giant Girl Adventures", 
+	"giantgirl",
+
+	"http://www.giantgirladventures.com/", 
+	"http://www.giantgirladventures.com/comics/iss1-cover",
+	test="http://www.giantgirladventures.com/comics/iss15pg10",
+
+	image="#comic>img",
+	next="a.next",
+),
+
+Sarjakuva( #js helpottais
+	"Scurry", 
+	"scurry",
+
+	"http://www.scurrycomic.com/", 
+	"http://www.scurrycomic.com/scurry-comic/2016/1/17/comic-01-00",
+	test="http://www.scurrycomic.com/scurry-comic/2016/5/23/scurry-pg37",
+
+	image="noscript>img",
+	next="a.archive-item-link",
+),
+
+Sarjakuva(
+	"Shattered Starlight", 
+	"shatteredstarlight",
+
+	"http://www.shatteredstarlight.com/", 
+	"http://www.shatteredstarlight.com/shattered-starlight/coming-soon/",
+	test="http://www.shatteredstarlight.com/shattered-starlight/page-13/",
+
+	image="div.webcomic-image>img",
+	next="a.next-webcomic-link",
+),
+
+Sarjakuva(
+	"Precocious", 
+	"precocious",
+
+	"http://www.precociouscomic.com/", 
+	"http://www.precociouscomic.com/archive/comic/2009/03/09",
+	test="http://www.precociouscomic.com/archive/comic/2016/05/27",
+
+	image="div.comicContent>img|!src:in:comics/",
+	next="a|img|!src:in:next_arrow",
+),
+
+Sarjakuva(
+	"Freefall", 
+	"freefall",
+
+	"http://freefall.purrsia.com/", 
+	"http://freefall.purrsia.com/ff100/fv00001.htm",
+	test="http://freefall.purrsia.com/ff2900/fc02812.htm",
+
+	image="img",
+	next="a|!text:in:next",
+),
+
+Sarjakuva(
+	"Blade Bunny", 
+	"bladebunny",
+
+	"http://www.bladebunny.com/", 
+	"http://www.bladebunny.com/comic/bunny-blade-cover-final/",
+	test="http://www.bladebunny.com/comic/just-kiss-2/",
+
+	image="#comic>img",
+	next="a.comic-nav-next",
+),
+
+Sarjakuva(
+	"Quantum Vibe", 
+	"quantumvibe",
+
+	"http://www.quantumvibe.com/", 
+	"http://www.quantumvibe.com/strip?page=1",
+	test="http://www.quantumvibe.com/strip?page=1350",
+
+	image="img|!alt:in:strip",
+	next="a|div|img|!src:in:nextstrip",
+),
 
 
 ]
@@ -3553,8 +3709,10 @@ for i in content:
 	found = db.session.query(Sarjakuva).filter(Sarjakuva.lyhenne == i.lyhenne).first()
 	if not found:
 		count += 1
-		Print(count, i.nimi)
 		db.session.add(i)
+		db.session.flush()
+		Print(i.id, i.nimi)
+		
 		
 
 db.session.commit()
