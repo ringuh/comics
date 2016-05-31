@@ -3973,77 +3973,67 @@ Sarjakuva(
 	next="a.comic-nav-next",
 ),
 
-# Sarjakuva(
-# 	"nimi", 
-# 	"alias",
+Sarjakuva(
+	"Autumn Bay", 
+	"autumnbay",
 
-# 	"baseurl", 
-# 	"firsturl",
-# 	test="testurl",
+	"http://autumnbaycomics.com/", 
+	"http://autumnbaycomics.com/comics/1",
+	test="http://autumnbaycomics.com/comics/106/",
 
-# 	image="imagetree",
-# 	next="nextlinktree",
-# ),
+	image="#comicimage",
+	next="a|!rel:in:next",
+),
 
-# Sarjakuva(
-# 	"nimi", 
-# 	"alias",
+Sarjakuva(
+	"League of Super Redundant Heroes", 
+	"superredundant",
 
-# 	"baseurl", 
-# 	"firsturl",
-# 	test="testurl",
+	"http://superredundant.com/", 
+	"http://superredundant.com/?comic=meet-the-gang",
+	test="http://superredundant.com/?comic=549-judgement",
 
-# 	image="imagetree",
-# 	next="nextlinktree",
-# ),
+	image="#comic>img",
+	next="a.comic-nav-next",
+),
 
-# Sarjakuva(
-# 	"nimi", 
-# 	"alias",
+Sarjakuva(
+	"Doc Rat", 
+	"docrat",
 
-# 	"baseurl", 
-# 	"firsturl",
-# 	test="testurl",
+	"http://www.docrat.com.au/", 
+	"http://www.docrat.com.au/comic/begin-with-eye-contact/",
+	test="http://www.docrat.com.au/comic/eland-gag/",
 
-# 	image="imagetree",
-# 	next="nextlinktree",
-# ),
+	image="div.webcomic-image>img",
+	next="a.next-webcomic-link",
+),
 
-# Sarjakuva(
-# 	"nimi", 
-# 	"alias",
+Sarjakuva(
+	"Eternal Knights", 
+	"eternalknights",
 
-# 	"baseurl", 
-# 	"firsturl",
-# 	test="testurl",
+	"http://eternalknights.thecomicseries.com/", 
+	"http://eternalknights.thecomicseries.com/comics/1/",
+	test="http://eternalknights.thecomicseries.com/comics/128/",
 
-# 	image="imagetree",
-# 	next="nextlinktree",
-# ),
+	image="#authornotes>div.commentcontent>center>img",
+	next="a|!rel:in:next",
+),
 
-# Sarjakuva(
-# 	"nimi", 
-# 	"alias",
+Sarjakuva(
+	"Mega Tokyo", 
+	"megatokyo",
 
-# 	"baseurl", 
-# 	"firsturl",
-# 	test="testurl",
+	"http://megatokyo.com/", 
+	"http://megatokyo.com/strip/1",
+	test="http://megatokyo.com/strip/1445",
 
-# 	image="imagetree",
-# 	next="nextlinktree",
-# ),
+	image="#strip-bl>img",
+	next="li.next>a",
+),
 
-# Sarjakuva(
-# 	"nimi", 
-# 	"alias",
 
-# 	"baseurl", 
-# 	"firsturl",
-# 	test="testurl",
-
-# 	image="imagetree",
-# 	next="nextlinktree",
-# ),
 
 # Sarjakuva(
 # 	"nimi", 
@@ -4228,4 +4218,17 @@ db.session.commit()
 
 # 	image="img|!src:in:agapages",
 # 	next="a|img|!src:in:arrowright",
+# ),
+
+
+# Sarjakuva( #javascript
+# 	"Wargyrl", 
+# 	"wargyrl",
+
+# 	"http://wargyrl.webcomic.ws/comics/", 
+# 	"http://wargyrl.webcomic.ws/comics/1/",
+# 	test="http://wargyrl.webcomic.ws/comics/53/",
+
+# 	image="#comicimage",
+# 	next="a|!rel:in:next",
 # ),
