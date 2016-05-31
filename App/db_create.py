@@ -4034,6 +4034,538 @@ Sarjakuva(
 ),
 
 
+Sarjakuva(
+	"M.F.K", 
+	"mfk",
+
+	"http://www.mfkcomic.com/", 
+	"http://www.mfkcomic.com/comic/chapter-1-page-1-2/",
+	test="http://www.mfkcomic.com/comic/chapter-4-page-15/",
+
+	image="#comic>img",
+	next="a.comic-nav-next",
+),
+
+Sarjakuva(
+	"Planet Chaser", 
+	"planetchaser",
+
+	"http://planetchaser.thecomicseries.com/", 
+	"http://planetchaser.thecomicseries.com/comics/1",
+	test="http://planetchaser.thecomicseries.com/comics/312/",
+
+	image="#comicimage",
+	next="a|!rel:in:next",
+),
+
+Sarjakuva(
+	"Unknown Lands", 
+	"unknownlands",
+
+	"http://unknownlands.thecomicseries.com/", 
+	"http://unknownlands.thecomicseries.com/comics/1/",
+	test="http://unknownlands.thecomicseries.com/comics/94/",
+
+	image="#comicimage",
+	next="a|!rel:in:next",
+),
+
+Sarjakuva(
+	"The Underdogs", 
+	"underdogs",
+
+	"http://underdogscomic.com/", 
+	"http://underdogscomic.com/udcomic/issue-1/underdogs-issue-1-page-1/",
+	test="http://underdogscomic.com/udcomic/issue-3/underdogs-issue-3-page-10/",
+
+	image="#comic>img",
+	next="a.comic-nav-next",
+),
+
+Sarjakuva(
+	"Endtown", 
+	"endtown",
+
+	"http://www.gocomics.com/", 
+	"http://www.gocomics.com/endtown/2009/01/19",
+	test="http://www.gocomics.com/endtown/2016/05/20",
+
+	image="img.strip",
+	next="ul.feature-nav>a.next",
+),
+
+Sarjakuva(
+	"B.C", 
+	"bc",
+
+	"http://www.gocomics.com/", 
+	"http://www.gocomics.com/bc/2002/01/01",
+	test="http://www.gocomics.com/bc/2016/05/27",
+
+	image="img.strip",
+	next="ul.feature-nav>a.next",
+),
+
+
+
+Sarjakuva(
+	"Uber Quest", 
+	"uberquest",
+
+	"http://uberquest.katbox.net/", 
+	"http://uberquest.katbox.net/comic/an-uber-start/",
+	test="http://uberquest.katbox.net/comic/149-these-old-bones/",
+
+	image="div.webcomic-image>img",
+	next="a.next-webcomic-link",
+),
+
+Sarjakuva(
+	"White Noise", 
+	"whitenoise",
+
+	"http://whitenoisecomic.com/", 
+	"http://whitenoisecomic.com/comic/book-one/",
+	test="http://whitenoisecomic.com/comic/page-43-chapter-10/",
+
+	image="#comic>img",
+	next="a.next-webcomic-link",
+),
+
+Sarjakuva(
+	"Las Lindas", 
+	"laslindas",
+
+	"http://laslindas.katbox.net/", 
+	"http://laslindas.katbox.net/comic/day-one/",
+	test="http://laslindas.katbox.net/comic/homecoming-4/",
+
+	image="div.webcomic-image>img",
+	next="a.next-webcomic-link",
+),
+
+Sarjakuva(
+	"False Start", 
+	"falsestart",
+
+	"http://falsestart.katbox.net/", 
+	"http://falsestart.katbox.net/comic/issue-1-cover/",
+	test="http://falsestart.katbox.net/comic/issue-2-page-9/",
+
+	image="div.webcomic-image>img",
+	next="a.next-webcomic-link",
+),
+
+Sarjakuva(
+	"Desert Fox", 
+	"desertfox",
+
+	"http://desertfox.katbox.net/", 
+	"http://desertfox.katbox.net/comic/origins-1/",
+	test="http://desertfox.katbox.net/comic/page-2/",
+
+	image="div.webcomic-image>img",
+	next="a.next-webcomic-link",
+),
+
+Sarjakuva(
+	"Itsy Bitsy Adventures", 
+	"itsybitsyadventures",
+
+	"http://iba.katbox.net/", 
+	"http://iba.katbox.net/comic/fight-the-machine/",
+	test="http://iba.katbox.net/comic/page-52/",
+
+	image="div.webcomic-image>img",
+	next="a.next-webcomic-link",
+),
+
+Sarjakuva(
+	"Peter and Whitney", 
+	"peterandwhitney",
+
+	"http://peterandwhitney.katbox.net/", 
+	"http://peterandwhitney.katbox.net/comic/comic-1-graduation-day/",
+	test="http://peterandwhitney.katbox.net/comic/comic-1-graduation-day/",
+
+	image="div.webcomic-image>img",
+	next="a.next-webcomic-link",
+),
+
+Sarjakuva(
+	"Peter and Company", 
+	"peterandcompany",
+
+	"http://peterandcompany.katbox.net/", 
+	"http://peterandcompany.katbox.net/comic/strip-1/",
+	test="http://peterandcompany.katbox.net/comic/comic-246-jake-the-jerk/",
+
+	image="div.webcomic-image>img",
+	next="a.next-webcomic-link",
+),
+
+Sarjakuva(
+	"Addictive Science", 
+	"addictive science",
+
+	"http://addictivescience.katbox.net/", 
+	"http://addictivescience.katbox.net/comic/page-1/",
+	test="http://addictivescience.katbox.net/comic/the-concquerors-7/",
+
+	image="div.webcomic-image>img",
+	next="a.next-webcomic-link",
+),
+
+Sarjakuva(
+	"Our World", 
+	"ourworld",
+
+	"http://ourworld.katbox.net/", 
+	"http://ourworld.katbox.net/comic/title-page/",
+	test="http://ourworld.katbox.net/comic/night-watch/",
+
+	image="div.webcomic-image>img",
+	next="a.next-webcomic-link",
+),
+
+
+Sarjakuva(
+	"Mousechievous", 
+	"mousechievous",
+
+	"http://mousechievous.katbox.net/", 
+	"http://mousechievous.katbox.net/comic/01-vacation/",
+	test="http://mousechievous.katbox.net/comic/01-vacation/",
+
+	image="div.webcomic-image>img",
+	next="a.next-webcomic-link",
+),
+
+
+Sarjakuva(
+	"The Draconia Chronicles", 
+	"dragoniachronicles",
+
+	"http://draconia.katbox.net/", 
+	"http://draconia.katbox.net/comic/chapter-1-page-1/",
+	test="http://draconia.katbox.net/comic/page-387/",
+
+	image="div.webcomic-image>img",
+	next="a.next-webcomic-link",
+),
+
+
+Sarjakuva(
+	"Practise Makes Perfect", 
+	"practisemakesperfect",
+
+	"http://pmp.katbox.net/", 
+	"http://pmp.katbox.net/comic/001-procrastination/",
+	test="http://pmp.katbox.net/comic/001-procrastination/",
+
+	image="div.webcomic-image>img",
+	next="a.next-webcomic-link",
+),
+
+
+Sarjakuva(
+	"Paprika", 
+	"paprika",
+
+	"http://paprika.katbox.net/", 
+	"http://paprika.katbox.net/comic/001-revolution/",
+	test="http://paprika.katbox.net/comic/054-tina-online/",
+
+	image="div.webcomic-image>img",
+	next="a.next-webcomic-link",
+),
+
+
+Sarjakuva(
+	"Caribbean Blue", 
+	"caribbeanblue",
+
+	"http://cblue.katbox.net/", 
+	"http://cblue.katbox.net/comic/caribbean-blue/",
+	test="http://cblue.katbox.net/comic/002-steve-ii/",
+
+	image="div.webcomic-image>img",
+	next="a.next-webcomic-link",
+	interval=0,
+),
+
+
+Sarjakuva(
+	"iMew", 
+	"imew",
+
+	"http://imew.katbox.net/", 
+	"http://imew.katbox.net/comic/imew/",
+	test="http://imew.katbox.net/comic/46-cornered/",
+
+	image="div.webcomic-image>img",
+	next="a.next-webcomic-link",
+	interval=0,
+),
+
+
+Sarjakuva(
+	"Project Zero 6", 
+	"projectzero6",
+
+	"http://projectzero.katbox.net/", 
+	"http://projectzero.katbox.net/comic/project-zero-cover/",
+	test="http://projectzero.katbox.net/comic/i-want-out/",
+
+	image="div.webcomic-image>img",
+	next="a.next-webcomic-link",
+),
+
+Sarjakuva(
+	"Knuckle Up", 
+	"knuckleup",
+
+	"http://knuckleup.katbox.net/", 
+	"http://knuckleup.katbox.net/comic/knuckleup-prologue1/",
+	test="http://knuckleup.katbox.net/comic/happy-new-years-2016/",
+
+	image="div.webcomic-image>img",
+	next="a.next-webcomic-link",
+),
+
+Sarjakuva(
+	"Rascals", 
+	"rasals",
+
+	"http://rascals.katbox.net/", 
+	"http://rascals.katbox.net/comic/rascals-cover/",
+	test="http://rascals.katbox.net/comic/340-the-rebound/",
+
+	image="div.webcomic-image>img",
+	next="a.next-webcomic-link",
+),
+
+Sarjakuva(
+	"Artificial Incident", 
+	"artificialincident",
+
+	"http://ai.katbox.net/", 
+	"http://ai.katbox.net/comic/issue-one-life-changing/",
+	test="http://ai.katbox.net/comic/prologue-2/",
+
+	image="div.webcomic-image>img",
+	next="a.next-webcomic-link",
+),
+
+Sarjakuva(
+	"Yosh!", 
+	"yosh",
+
+	"http://yosh.katbox.net/", 
+	"http://yosh.katbox.net/comic/introduction/",
+	test="http://yosh.katbox.net/comic/plan-a-failed/",
+
+	image="div.webcomic-image>img",
+	next="a.next-webcomic-link",
+),
+
+Sarjakuva(
+	"DMFA", 
+	"dmfa",
+
+	"http://dmfa.katbox.net/", 
+	"http://dmfa.katbox.net/comic/1-the-story-begins/",
+	test="http://dmfa.katbox.net/comic/1663-dodged-a-blt-there/",
+
+	image="div.webcomic-image>img",
+	next="a.next-webcomic-link",
+),
+
+Sarjakuva(
+	"Anthronauts", 
+	"anthronauts",
+
+	"http://anthronauts.katbox.net/", 
+	"http://anthronauts.katbox.net/ar/comic/rational-thought/",
+	test="http://anthronauts.katbox.net/ar/comic/final-boss-soap/",
+
+	image="div.webcomic-image>img",
+	next="a.next-webcomic-link",
+	interval=0
+),
+
+Sarjakuva(
+	"Tine of the South", 
+	"tinaofthesouth",
+
+	"http://tinaofthesouth.katbox.net/", 
+	"http://tinaofthesouth.katbox.net/comic/wanted-alive-3-chins-joe-001/",
+	test="http://tinaofthesouth.katbox.net/comic/the-pride-of-the-huntress-11/",
+
+	image="div.webcomic-image>img",
+	next="a.next-webcomic-link",
+),
+
+Sarjakuva(
+	"The Eye", 
+	"eye",
+
+	"http://theeye.katbox.net/", 
+	"http://theeye.katbox.net/comic/boxes-and-memories/",
+	test="http://theeye.katbox.net/comic/ben-the-meatshield/",
+
+	image="div.webcomic-image>img",
+	next="a.next-webcomic-link",
+),
+
+
+
+
+
+
+# Sarjakuva(
+# 	"nimi", 
+# 	"alias",
+
+# 	"baseurl", 
+# 	"firsturl",
+# 	test="testurl",
+
+# 	image="imagetree",
+# 	next="nextlinktree",
+# ),
+
+# Sarjakuva(
+# 	"nimi", 
+# 	"alias",
+
+# 	"baseurl", 
+# 	"firsturl",
+# 	test="testurl",
+
+# 	image="imagetree",
+# 	next="nextlinktree",
+# ),
+
+# Sarjakuva(
+# 	"nimi", 
+# 	"alias",
+
+# 	"baseurl", 
+# 	"firsturl",
+# 	test="testurl",
+
+# 	image="imagetree",
+# 	next="nextlinktree",
+# ),
+
+# Sarjakuva(
+# 	"nimi", 
+# 	"alias",
+
+# 	"baseurl", 
+# 	"firsturl",
+# 	test="testurl",
+
+# 	image="imagetree",
+# 	next="nextlinktree",
+# ),
+
+# Sarjakuva(
+# 	"nimi", 
+# 	"alias",
+
+# 	"baseurl", 
+# 	"firsturl",
+# 	test="testurl",
+
+# 	image="imagetree",
+# 	next="nextlinktree",
+# ),
+
+# Sarjakuva(
+# 	"nimi", 
+# 	"alias",
+
+# 	"baseurl", 
+# 	"firsturl",
+# 	test="testurl",
+
+# 	image="imagetree",
+# 	next="nextlinktree",
+# ),
+
+# Sarjakuva(
+# 	"nimi", 
+# 	"alias",
+
+# 	"baseurl", 
+# 	"firsturl",
+# 	test="testurl",
+
+# 	image="imagetree",
+# 	next="nextlinktree",
+# ),
+
+# Sarjakuva(
+# 	"nimi", 
+# 	"alias",
+
+# 	"baseurl", 
+# 	"firsturl",
+# 	test="testurl",
+
+# 	image="imagetree",
+# 	next="nextlinktree",
+# ),
+
+# Sarjakuva(
+# 	"nimi", 
+# 	"alias",
+
+# 	"baseurl", 
+# 	"firsturl",
+# 	test="testurl",
+
+# 	image="imagetree",
+# 	next="nextlinktree",
+# ),
+
+# Sarjakuva(
+# 	"nimi", 
+# 	"alias",
+
+# 	"baseurl", 
+# 	"firsturl",
+# 	test="testurl",
+
+# 	image="imagetree",
+# 	next="nextlinktree",
+# ),
+
+# Sarjakuva(
+# 	"nimi", 
+# 	"alias",
+
+# 	"baseurl", 
+# 	"firsturl",
+# 	test="testurl",
+
+# 	image="imagetree",
+# 	next="nextlinktree",
+# ),
+
+# Sarjakuva(
+# 	"nimi", 
+# 	"alias",
+
+# 	"baseurl", 
+# 	"firsturl",
+# 	test="testurl",
+
+# 	image="imagetree",
+# 	next="nextlinktree",
+# ),
 
 # Sarjakuva(
 # 	"nimi", 

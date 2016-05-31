@@ -10,8 +10,20 @@ import sys
 
 def run():
 	sarjakuvat = db.session.query(SK).order_by(SK.id).all()
-	#pool = Pool(processes=2)
-	#pool.map(Looper, list([i.id for i in sarjakuvat]))
+	try:
+		if "id" in sys.argv:
+			import os, shutil
+			folder = 'logit'
+			for the_file in os.listdir(folder):
+				file_path = os.path.join(folder, the_file)
+				try:
+					if os.path.isfile(file_path):
+						os.unlink(file_path)
+			
+				except Exception as e:
+					print(e)
+	except: pass
+
 	for comic in sarjakuvat:
 		if "parseri" in sys.argv:
 			if comic.parseri != sys.argv[3]:
