@@ -212,7 +212,7 @@ class Sarjis(object):
 						image["src"] = "http:{}".format(image["src"])
 				except: pass
 				try:
-					if image["src"][0] in [".", "#"]:
+					if image["src"][0] in [".", "#"] and img["src"][:2] != "..":
 						image["src"] = image["src"][1:]
 				except: pass
 				

@@ -4586,6 +4586,210 @@ Sarjakuva(
 	next="a.comic-nav-next",
 ),
 
+Sarjakuva(
+	"Tistow", 
+	"tistow",
+
+	"http://tistow.uk/comic/", 
+	"http://tistow.uk/comic/page0.php",
+	test="http://tistow.uk/comic/page65.php",
+
+	image="#comicspread>img",
+	next="a.next",
+),
+
+Sarjakuva(
+	"G-Girl", 
+	"ggirl",
+
+	"http://www.heroicmultiverse.com/ggirl/webcomic/", 
+	"http://www.heroicmultiverse.com/ggirl/webcomic/index.php?pn=1",
+	test="http://www.heroicmultiverse.com/ggirl/webcomic/index.php?pn=170",
+
+	image="#centerfull>img|!src:in:img/",
+	next="a|img|!src:in:arrowright",
+),
+
+Sarjakuva(
+	"Wastelanders", 
+	"wastelanders",
+
+	"http://wastelanders.webcomic.ws/", 
+	"http://wastelanders.webcomic.ws/comics/first/",
+	test="http://wastelanders.webcomic.ws/comics/313/",
+
+	image="#comicimage",
+	next="a|!rel:in:next",
+),
+
+Sarjakuva(
+	"Waffles and Pancakes", 
+	"wafflesandpancakes",
+
+	"http://wandpcomic.com/", 
+	"http://wandpcomic.com/index.php/comic/1/",
+	test="http://wandpcomic.com/index.php/comic/30-if-i-were-a-god/",
+
+	image="#comic>img",
+	next="a.comic-nav-next",
+),
+
+Sarjakuva(
+	"PhD", 
+	"phd",
+
+	"http://phdcomics.com/comics/", 
+	"http://phdcomics.com/comics/archive.php?comicid=1",
+	test="http://phdcomics.com/comics/archive.php?comicid=1881",
+
+	image="#comic",
+	next="a|img|!src:in:next_button",
+),
+
+Sarjakuva(
+	"Nightlight", 
+	"nightlight",
+
+	"http://nightlight.thecomicseries.com/", 
+	"http://nightlight.thecomicseries.com/comics/1/",
+	test="http://nightlight.thecomicseries.com/comics/21/",
+
+	image="#comicimage",
+	next="a|!rel:in:next",
+),
+
+Sarjakuva(
+	"Normal", 
+	"normal",
+
+	"http://normalcomic.thecomicseries.com/", 
+	"http://normalcomic.thecomicseries.com/comics/1/",
+	test="http://normalcomic.thecomicseries.com/comics/43/",
+
+	image="#comicimage",
+	next="a|!rel:in:next",
+),
+
+Sarjakuva(
+	"Sombulus", 
+	"sombulus",
+
+	"http://www.sombulus.com/", 
+	"http://www.sombulus.com/comic/1",
+	test="http://www.sombulus.com/comic/617",
+
+	image="#page>img|!alt:in:comic",
+	next="a.next",
+),
+
+Sarjakuva(
+	"My Life With Fel", 
+	"mylifewithfel",
+
+	"http://www.mylifewithfel.com/", 
+	"http://www.mylifewithfel.com/comics/1047001/comic-cover/",
+	test="http://www.mylifewithfel.com/comics/2283444/301/",
+
+	image="#comic_image",
+	next="li.next>a",
+),
+
+Sarjakuva(
+	"Over Eyes", 
+	"overeyes",
+
+	"http://overeyes.rude-owl.pl/", 
+	"http://overeyes.rude-owl.pl/comic/waking-up/",
+	test="http://overeyes.rude-owl.pl/comic/two-madness/",
+
+	image="#comic>img",
+	next="a.comic-nav-next",
+),
+
+Sarjakuva(
+	"Dork Tower", 
+	"dorktower",
+
+	"http://www.dorktower.com/", 
+	"http://www.dorktower.com/1997/01/01/shadis-magazine-strip-1/",
+	test="http://www.dorktower.com/2016/05/12/life-changing-magic-dork-tower-12-05-16/",
+
+	image="#content>div.entry-content>img",
+	next="p.comic-nav>a|!text:in:next",
+),
+
+Sarjakuva(
+	"Savage Sword of Sharona", 
+	"savageswordofsharona",
+
+	"http://savageswordofsharona.com/", 
+	"http://savageswordofsharona.com/comic/qfdcover/",
+	test="http://savageswordofsharona.com/comic/tog14/",
+
+	image="#comic>img",
+	next="a.comic-nav-next",
+),
+
+Sarjakuva(
+	"Bruno Harm", 
+	"brunoharm",
+
+	"http://brunoharm.thecomicseries.com/", 
+	"http://brunoharm.thecomicseries.com/comics/1/",
+	test="http://brunoharm.thecomicseries.com/comics/55/",
+
+	image="#comicimage",
+	next="#next",
+),
+
+Sarjakuva(
+	"Terra", 
+	"terra",
+
+	"http://terra-comic.com/", 
+	"http://terra-comic.com/wordpress/archives/comic/prologue",
+	test="http://terra-comic.com/wordpress/archives/comic/page-340",
+
+	image="#comic>img",
+	next="a.comic-nav-next",
+),
+
+Sarjakuva(
+	"Shadowbinders", 
+	"shadowbinders",
+
+	"http://shadowbinders.com/", 
+	"http://shadowbinders.com/comic/shadowbinders-chapter-1/",
+	test="http://shadowbinders.com/comic/shadowbinders-419-chapter-12-page-10/",
+
+	image="#comic>img",
+	next="a.comic-nav-next",
+),
+
+Sarjakuva(
+	"Love Debut", 
+	"lovedebut",
+
+	"http://lovedebutcomic.com/", 
+	"http://lovedebutcomic.com/read/cover/",
+	test="http://lovedebutcomic.com/read/page-135/",
+
+	image="div.webcomic-image>img",
+	next="a.next-webcomic-link",
+),
+
+Sarjakuva(
+	"Two Guys and a Guy", 
+	"twogag",
+
+	"http://www.twogag.com/", 
+	"http://www.twogag.com/archives/4",
+	test="http://www.twogag.com/archives/3683",
+
+	image="#comic>img",
+	next="a.navi-next",
+),
+
 # Sarjakuva(
 # 	"nimi", 
 # 	"alias",
