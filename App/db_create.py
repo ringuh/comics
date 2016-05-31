@@ -3901,6 +3901,234 @@ Sarjakuva(
 	next="a|img|!alt:in:next",
 ),
 
+Sarjakuva(
+	"Modest Medusa", 
+	"modestmedusa",
+
+	"http://modestmedusa.com/", 
+	"http://modestmedusa.com/comic/christmas-eve-3/",
+	test="http://modestmedusa.com/comic/overwatch-medusa/",
+
+	image="#comic>img",
+	next="a.comic-nav-next",
+),
+
+Sarjakuva(
+	"Frivolesque", 
+	"frivolesque",
+
+	"http://frivolesque.com/", 
+	"http://frivolesque.com/archives/comic/frivolesque",
+	test="http://frivolesque.com/archives/comic/160-invitation",
+
+	image="#comic>img",
+	next="a.comic-nav-next",
+),
+
+Sarjakuva(
+	"General Protection Fault", 
+	"generalprotectionfault",
+
+	"http://www.gpf-comics.com/", 
+	"http://www.gpf-comics.com/archive/2016/05/23",
+	test="http://www.gpf-comics.com/archive/2016/05/23",
+
+	image="div.content>img|!src:in:/comics/",
+	next="span.nav_link_forward>a",
+),
+
+Sarjakuva(
+	"Ramen Empire", 
+	"ramenempire",
+
+	"http://ramen-empire.com/", 
+	"http://ramen-empire.com/strip/afterglow_cover/",
+	test="http://ramen-empire.com/strip/phoenix-down-1/",
+
+	image="div.webcomic-image>img",
+	next="a.next-webcomic-link",
+),
+
+Sarjakuva(
+	"Rune Hunters", 
+	"runehunters",
+
+	"http://www.runehunters.com/", 
+	"http://www.runehunters.com/2008/05/10/rune-hunters-ch-1-cover/",
+	test="http://www.runehunters.com/2016/05/08/rune-hunters-chapter-12-page-8/",
+
+	image="#comic>img",
+	next="a|!rel:in:next",
+),
+
+Sarjakuva(
+	"Middleways", 
+	"middleways",
+
+	"http://www.middleways.net/", 
+	"http://www.middleways.net/comic/page-1/",
+	test="http://www.middleways.net/comic/chapter-10/",
+
+	image="#comic>img",
+	next="a.comic-nav-next",
+),
+
+# Sarjakuva(
+# 	"nimi", 
+# 	"alias",
+
+# 	"baseurl", 
+# 	"firsturl",
+# 	test="testurl",
+
+# 	image="imagetree",
+# 	next="nextlinktree",
+# ),
+
+# Sarjakuva(
+# 	"nimi", 
+# 	"alias",
+
+# 	"baseurl", 
+# 	"firsturl",
+# 	test="testurl",
+
+# 	image="imagetree",
+# 	next="nextlinktree",
+# ),
+
+# Sarjakuva(
+# 	"nimi", 
+# 	"alias",
+
+# 	"baseurl", 
+# 	"firsturl",
+# 	test="testurl",
+
+# 	image="imagetree",
+# 	next="nextlinktree",
+# ),
+
+# Sarjakuva(
+# 	"nimi", 
+# 	"alias",
+
+# 	"baseurl", 
+# 	"firsturl",
+# 	test="testurl",
+
+# 	image="imagetree",
+# 	next="nextlinktree",
+# ),
+
+# Sarjakuva(
+# 	"nimi", 
+# 	"alias",
+
+# 	"baseurl", 
+# 	"firsturl",
+# 	test="testurl",
+
+# 	image="imagetree",
+# 	next="nextlinktree",
+# ),
+
+# Sarjakuva(
+# 	"nimi", 
+# 	"alias",
+
+# 	"baseurl", 
+# 	"firsturl",
+# 	test="testurl",
+
+# 	image="imagetree",
+# 	next="nextlinktree",
+# ),
+
+# Sarjakuva(
+# 	"nimi", 
+# 	"alias",
+
+# 	"baseurl", 
+# 	"firsturl",
+# 	test="testurl",
+
+# 	image="imagetree",
+# 	next="nextlinktree",
+# ),
+
+# Sarjakuva(
+# 	"nimi", 
+# 	"alias",
+
+# 	"baseurl", 
+# 	"firsturl",
+# 	test="testurl",
+
+# 	image="imagetree",
+# 	next="nextlinktree",
+# ),
+
+# Sarjakuva(
+# 	"nimi", 
+# 	"alias",
+
+# 	"baseurl", 
+# 	"firsturl",
+# 	test="testurl",
+
+# 	image="imagetree",
+# 	next="nextlinktree",
+# ),
+
+# Sarjakuva(
+# 	"nimi", 
+# 	"alias",
+
+# 	"baseurl", 
+# 	"firsturl",
+# 	test="testurl",
+
+# 	image="imagetree",
+# 	next="nextlinktree",
+# ),
+
+# Sarjakuva(
+# 	"nimi", 
+# 	"alias",
+
+# 	"baseurl", 
+# 	"firsturl",
+# 	test="testurl",
+
+# 	image="imagetree",
+# 	next="nextlinktree",
+# ),
+
+# Sarjakuva(
+# 	"nimi", 
+# 	"alias",
+
+# 	"baseurl", 
+# 	"firsturl",
+# 	test="testurl",
+
+# 	image="imagetree",
+# 	next="nextlinktree",
+# ),
+
+# Sarjakuva(
+# 	"nimi", 
+# 	"alias",
+
+# 	"baseurl", 
+# 	"firsturl",
+# 	test="testurl",
+
+# 	image="imagetree",
+# 	next="nextlinktree",
+# ),
+
 # Sarjakuva(
 # 	"nimi", 
 # 	"alias",
