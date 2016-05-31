@@ -4790,6 +4790,199 @@ Sarjakuva(
 	next="a.navi-next",
 ),
 
+Sarjakuva(
+	"The Black Enchantress", 
+	"blackenchantress",
+
+	"http://www.heroicmultiverse.com/blackenchantress/webcomic/", 
+	"http://www.heroicmultiverse.com/blackenchantress/webcomic/index.php?pn=1",
+	test="http://www.heroicmultiverse.com/blackenchantress/webcomic/index.php?pn=71",
+
+	image="#centerfull>img|!src:in:img/",
+	next="a|img|!src:in:arrowright",
+),
+
+Sarjakuva(
+	"Murcielaga She-Bat", 
+	"shebat",
+
+	"http://www.heroicmultiverse.com/shebat/webcomic/", 
+	"http://www.heroicmultiverse.com/shebat/webcomic/index.php?pn=1",
+	test="http://www.heroicmultiverse.com/shebat/webcomic/index.php?pn=260",
+
+	image="#centerfull>img|!src:in:img/",
+	next="a|img|!src:in:arrowright",
+),
+
+Sarjakuva(
+	"The League of Champions", 
+	"leagueofchampions",
+
+	"http://www.heroicmultiverse.com/league/webcomic/", 
+	"http://www.heroicmultiverse.com/league/webcomic/index.php?pn=1",
+	test="http://www.heroicmultiverse.com/league/webcomic/index.php?pn=160",
+
+	image="#centerfull>img|!src:in:img/",
+	next="a|img|!src:in:arrowright",
+),
+
+Sarjakuva(
+	"Flare", 
+	"flare",
+
+	"http://www.heroicmultiverse.com/flare/webcomic/", 
+	"http://www.heroicmultiverse.com/flare/webcomic/index.php?pn=1",
+	test="http://www.heroicmultiverse.com/flare/webcomic/index.php?pn=720",
+
+	image="#centerfull>img|!src:in:img/",
+	next="a|img|!src:in:arrowright",
+),
+
+Sarjakuva(
+	"Fine Sometimes Rain", 
+	"finesometimesrain",
+
+	"http://finesometimesrain.genkigirl.com/", 
+	"http://genkigirl.com/finesometimesrain/?comic=fine-sometimes-rain-chapter-01-cover",
+	test="http://genkigirl.com/finesometimesrain/?comic=fine-sometimes-rain-chapter-07-p15",
+
+	image="#comic>img",
+	next="a.comic-nav-next",
+),
+
+Sarjakuva(
+	"The Secrets of the Afterlife", 
+	"secretsoftheafterlife",
+
+	"http://thesecretsoftheafterlife.webcomic.ws/", 
+	"http://thesecretsoftheafterlife.webcomic.ws/comics/2",
+	test="http://thesecretsoftheafterlife.webcomic.ws/comics/55/",
+
+	image="#comicimage",
+	next="a|!rel:in:next",
+),
+
+Sarjakuva(
+	"Black and Blue", 
+	"blackandblue",
+
+	"http://www.blackandbluecomic.com/", 
+	"http://www.blackandbluecomic.com/comic/page-01/",
+	test="http://www.blackandbluecomic.com/comic/page-177/",
+
+	image="#content>article.comic>img",
+	next="a.comic-nav-next",
+),
+
+Sarjakuva(
+	"Charby the Vampirate", 
+	"charbythevampirate",
+
+	"http://www.charbythevampirate.com/", 
+	"http://www.charbythevampirate.com/comic/1",
+	test="http://www.charbythevampirate.com/comic/1070",
+
+	image="#content>article>div.content>img|!src:in:/comics/",
+	next="a.next",
+),
+
+Sarjakuva(
+	"Here There Be Monsters", 
+	"heretherebemonsters",
+
+	"http://www.heretherebemonsters.us/", 
+	"http://www.heretherebemonsters.us/comic/1",
+	test="http://www.heretherebemonsters.us/comic/28",
+
+	image="#content>article>div.content>img|!src:in:/comics/",
+	next="a.next",
+),
+
+
+Sarjakuva(
+	"Station V3", 
+	"stationv3",
+
+	"http://www.stationv3.com/", 
+	"http://www.stationv3.com/d2/20150628.html",
+	test="http://www.stationv3.com/d2/20160525.html",
+
+	image="#middle>img|!src:in:comics",
+	next="a|img|!src:in:next",
+),
+
+Sarjakuva(
+	"Armless Amy", 
+	"armlessamy",
+
+	"http://armlessamy.thecomicseries.com/", 
+	"http://armlessamy.thecomicseries.com/comics/first/",
+	test="http://armlessamy.thecomicseries.com/comics/325/",
+
+	image="#comicimage",
+	next="a|!rel:in:next",
+),
+
+Sarjakuva(
+	"Ashes", 
+	"ashes",
+
+	"http://ashescomic.webcomic.ws/", 
+	"http://ashescomic.webcomic.ws/comics/first/",
+	test="http://ashescomic.webcomic.ws/comics/229/",
+
+	image="#comicimage",
+	next="a|!rel:in:next",
+),
+
+Sarjakuva(
+	"Chirault", 
+	"chirault",
+
+	"http://chirault.sevensmith.net/", 
+	"http://chirault.sevensmith.net/?comic_id=0",
+	test="http://chirault.sevensmith.net/?comic_id=1080-13",
+
+	image="img|!src:in:comics",
+	next="a|img|!alt:in:next",
+),
+
+Sarjakuva(
+	"M9 Girls", 
+	"m9girls",
+
+	"http://m9girls.com/webcomic/en/", 
+	"http://m9girls.com/webcomic/en/2011/09/07/m9-girls-cover/",
+	test="http://m9girls.com/webcomic/en/2016/04/22/fall-into-darkness/",
+
+	image="#comic>img",
+	next="a.navi-next-in",
+),
+
+Sarjakuva(
+	"Monster Soup", 
+	"monstersoup",
+
+	"http://monstersoupcomic.com/", 
+	"http://monstersoupcomic.com/?comic=chapter-1-cover",
+	test="http://monstersoupcomic.com/?comic=page-32-the-visitors",
+
+	image="#comic>img",
+	next="a.comic-nav-next",
+),
+
+Sarjakuva(
+	"Twitlight Trust", 
+	"twilighttrust",
+
+	"http://twilighttrust.thecomicseries.com/", 
+	"http://twilighttrust.thecomicseries.com/comics/1",
+	test="http://twilighttrust.thecomicseries.com/comics/548/",
+
+	image="#comicimage",
+	next="a|!rel:in:next",
+),
+
 # Sarjakuva(
 # 	"nimi", 
 # 	"alias",
@@ -4861,6 +5054,115 @@ Sarjakuva(
 # 	image="imagetree",
 # 	next="nextlinktree",
 # ),
+
+# Sarjakuva(
+# 	"nimi", 
+# 	"alias",
+
+# 	"baseurl", 
+# 	"firsturl",
+# 	test="testurl",
+
+# 	image="imagetree",
+# 	next="nextlinktree",
+# ),
+
+# Sarjakuva(
+# 	"nimi", 
+# 	"alias",
+
+# 	"baseurl", 
+# 	"firsturl",
+# 	test="testurl",
+
+# 	image="imagetree",
+# 	next="nextlinktree",
+# ),
+
+# Sarjakuva(
+# 	"nimi", 
+# 	"alias",
+
+# 	"baseurl", 
+# 	"firsturl",
+# 	test="testurl",
+
+# 	image="imagetree",
+# 	next="nextlinktree",
+# ),
+
+# Sarjakuva(
+# 	"nimi", 
+# 	"alias",
+
+# 	"baseurl", 
+# 	"firsturl",
+# 	test="testurl",
+
+# 	image="imagetree",
+# 	next="nextlinktree",
+# ),
+
+# Sarjakuva(
+# 	"nimi", 
+# 	"alias",
+
+# 	"baseurl", 
+# 	"firsturl",
+# 	test="testurl",
+
+# 	image="imagetree",
+# 	next="nextlinktree",
+# ),
+
+# Sarjakuva(
+# 	"nimi", 
+# 	"alias",
+
+# 	"baseurl", 
+# 	"firsturl",
+# 	test="testurl",
+
+# 	image="imagetree",
+# 	next="nextlinktree",
+# ),
+
+# Sarjakuva(
+# 	"nimi", 
+# 	"alias",
+
+# 	"baseurl", 
+# 	"firsturl",
+# 	test="testurl",
+
+# 	image="imagetree",
+# 	next="nextlinktree",
+# ),
+
+# Sarjakuva(
+# 	"nimi", 
+# 	"alias",
+
+# 	"baseurl", 
+# 	"firsturl",
+# 	test="testurl",
+
+# 	image="imagetree",
+# 	next="nextlinktree",
+# ),
+
+# Sarjakuva(
+# 	"nimi", 
+# 	"alias",
+
+# 	"baseurl", 
+# 	"firsturl",
+# 	test="testurl",
+
+# 	image="imagetree",
+# 	next="nextlinktree",
+# ),
+
 
 # Sarjakuva(
 # 	"nimi", 
