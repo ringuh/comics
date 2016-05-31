@@ -18,6 +18,7 @@ def run():
 				continue
 		elif "id" in sys.argv:
 			tmp_id = sys.argv[3].split("-")
+			if tmp_id[0] == "last": tmp_id[0] = sarjakuvat[-1].id
 			if comic.id < int(tmp_id[0]) or comic.id > int(tmp_id[-1]):
 				continue
 			f = open("logit/loki{}.tmp".format(comic.id), "w+")

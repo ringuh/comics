@@ -3877,29 +3877,29 @@ Sarjakuva(
 	next="a|!rel:in:next",
 ),
 
-# Sarjakuva(
-# 	"nimi", 
-# 	"alias",
+Sarjakuva(
+	"The Beast Legion", 
+	"beastlegion",
 
-# 	"baseurl", 
-# 	"firsturl",
-# 	test="testurl",
+	"http://www.thebeastlegion.com/", 
+	"http://www.thebeastlegion.com/comic/chapter-1-darkness-rising/",
+	test="http://www.thebeastlegion.com/comic/issue-12-extra-page-3-the-shield/",
 
-# 	image="imagetree",
-# 	next="nextlinktree",
-# ),
+	image="#comic>img",
+	next="a.comic-nav-next",
+),
 
-# Sarjakuva(
-# 	"nimi", 
-# 	"alias",
+Sarjakuva(
+	"Suihira", 
+	"suihira",
 
-# 	"baseurl", 
-# 	"firsturl",
-# 	test="testurl",
+	"http://www.suihira.com/", 
+	"http://www.suihira.com/comics/2052554/1-acuere-page-1/",
+	test="http://www.suihira.com/comics/2286645/3-ferus-page-17/",
 
-# 	image="imagetree",
-# 	next="nextlinktree",
-# ),
+	image="#comic_image",
+	next="a|img|!alt:in:next",
+),
 
 # Sarjakuva(
 # 	"nimi", 

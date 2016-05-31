@@ -82,7 +82,7 @@ def index(pvm=None):
 			).order_by(
 				#Strippi.sarjakuva_id,
 				Strippi.date_created
-			).limit(300).all()
+			).limit(500).all()
 
 	return render_template("portal.html",
 		dates=dates, stripit=stripit, user=current_user)
