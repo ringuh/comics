@@ -4418,178 +4418,173 @@ Sarjakuva(
 	next="a.next-webcomic-link",
 ),
 
+Sarjakuva(
+	"Blue Milk Special", 
+	"bluemilkspecial",
 
+	"http://www.bluemilkspecial.com/", 
+	"http://www.bluemilkspecial.com/comic/in-the-beginning/",
+	test="http://www.bluemilkspecial.com/comic/furry-friends/",
 
+	image="#comic>img",
+	next="a.comic-nav-next",
+),
 
+Sarjakuva(
+	"Silver", 
+	"silver",
 
+	"http://sil-ver.thecomicseries.com/", 
+	"http://sil-ver.thecomicseries.com/comics/1",
+	test="http://sil-ver.thecomicseries.com/comics/194",
 
-# Sarjakuva(
-# 	"nimi", 
-# 	"alias",
+	image="#comicimage",
+	next="a|!rel:in:next",
+),
 
-# 	"baseurl", 
-# 	"firsturl",
-# 	test="testurl",
+Sarjakuva(
+	"Alvery Nerveaux's Secret Case Files", 
+	"alverynerveaux",
 
-# 	image="imagetree",
-# 	next="nextlinktree",
-# ),
+	"http://alverynerveaux.thecomicseries.com/", 
+	"http://alverynerveaux.thecomicseries.com/comics/1/",
+	test="http://alverynerveaux.thecomicseries.com/comics/19/",
 
-# Sarjakuva(
-# 	"nimi", 
-# 	"alias",
+	image="#comicimage",
+	next="a|!rel:in:next",
+),
 
-# 	"baseurl", 
-# 	"firsturl",
-# 	test="testurl",
+Sarjakuva(
+	"Mindless Designs", 
+	"mindlessdesigns",
 
-# 	image="imagetree",
-# 	next="nextlinktree",
-# ),
+	"http://mindlessdesigns.com/", 
+	"http://mindlessdesigns.com/comic/magnor/cover-1-3/",
+	test="http://mindlessdesigns.com/comic/magnor/magnor-page-23/",
 
-# Sarjakuva(
-# 	"nimi", 
-# 	"alias",
+	image="#comic>img",
+	next="a.navi-next-in",
+),
 
-# 	"baseurl", 
-# 	"firsturl",
-# 	test="testurl",
+Sarjakuva(
+	"The Devils Panties", 
+	"devilspanties",
 
-# 	image="imagetree",
-# 	next="nextlinktree",
-# ),
+	"http://thedevilspanties.com/", 
+	"http://thedevilspanties.com/archives/300",
+	test="http://thedevilspanties.com/archives/11332",
 
-# Sarjakuva(
-# 	"nimi", 
-# 	"alias",
+	image="#comic>img",
+	next="a.navi-next",
+),
 
-# 	"baseurl", 
-# 	"firsturl",
-# 	test="testurl",
+Sarjakuva(
+	"Bicycle Boy", 
+	"bicycleboy",
 
-# 	image="imagetree",
-# 	next="nextlinktree",
-# ),
+	"http://bicycleboy.thecomicseries.com/", 
+	"http://bicycleboy.thecomicseries.com/comics/first/",
+	test="http://bicycleboy.thecomicseries.com/comics/167/",
 
-# Sarjakuva(
-# 	"nimi", 
-# 	"alias",
+	image="#comicimage",
+	next="a|!rel:in:next",
+),
 
-# 	"baseurl", 
-# 	"firsturl",
-# 	test="testurl",
+Sarjakuva(
+	"Live Nude Ghouls", 
+	"livenudeghouls",
 
-# 	image="imagetree",
-# 	next="nextlinktree",
-# ),
+	"http://livenudeghouls.com/", 
+	"http://livenudeghouls.com/post/66544858920/welcome-to-the-premiere-of-live-nude-ghouls-it",
+	test="http://livenudeghouls.com/post/143842112134/live-nude-ghouls-54-if-you-are-a-new-viewer-and",
 
-# Sarjakuva(
-# 	"nimi", 
-# 	"alias",
+	image="article>figure.photo-item>img",
+	next="a|!text:in:next",
+),
 
-# 	"baseurl", 
-# 	"firsturl",
-# 	test="testurl",
+Sarjakuva(
+	"Everblue", 
+	"everblue",
 
-# 	image="imagetree",
-# 	next="nextlinktree",
-# ),
+	"http://www.everblue-comic.com/", 
+	"http://www.everblue-comic.com/comic?sort=1",
+	test="http://www.everblue-comic.com/comic?sort=248",
 
-# Sarjakuva(
-# 	"nimi", 
-# 	"alias",
+	image="img|!itemprop:in:image",
+	next="a|!rel:in:next",
+),
 
-# 	"baseurl", 
-# 	"firsturl",
-# 	test="testurl",
+Sarjakuva(
+	"Soul to Call", 
+	"soultocall",
 
-# 	image="imagetree",
-# 	next="nextlinktree",
-# ),
+	"http://soultocall.com/", 
+	"http://soultocall.com/?id=1",
+	test="http://soultocall.com/?id=270",
 
-# Sarjakuva(
-# 	"nimi", 
-# 	"alias",
+	image="#comicimg",
+	next="a|img|!src:in:nexta",
+),
 
-# 	"baseurl", 
-# 	"firsturl",
-# 	test="testurl",
+Sarjakuva(
+	"Accursed Dragon", 
+	"accurseddragon",
 
-# 	image="imagetree",
-# 	next="nextlinktree",
-# ),
+	"http://www.accurseddragon.com/", 
+	"http://www.accurseddragon.com/index.php?date=2008-10-06",
+	test="http://www.accurseddragon.com/index.php?date=2016-04-13",
 
-# Sarjakuva(
-# 	"nimi", 
-# 	"alias",
+	image="#comic-image>img",
+	next="li.nextlink>a",
+),
 
-# 	"baseurl", 
-# 	"firsturl",
-# 	test="testurl",
+Sarjakuva(
+	"Three Panel Soul", 
+	"threepanelsoul",
 
-# 	image="imagetree",
-# 	next="nextlinktree",
-# ),
+	"http://www.threepanelsoul.com/", 
+	"http://www.threepanelsoul.com/comic/a-test-comic",
+	test="http://www.threepanelsoul.com/comic/authenticity",
 
-# Sarjakuva(
-# 	"nimi", 
-# 	"alias",
+	image="#cc-comic",
+	next="a.next",
+),
 
-# 	"baseurl", 
-# 	"firsturl",
-# 	test="testurl",
+Sarjakuva(
+	"Between Failures", 
+	"betweenfailures",
 
-# 	image="imagetree",
-# 	next="nextlinktree",
-# ),
+	"http://betweenfailures.com/", 
+	"http://betweenfailures.com/comics1/every-story-has-to-start-somewhere",
+	test="http://betweenfailures.com/comics1/1539-special-infected",
 
-# Sarjakuva(
-# 	"nimi", 
-# 	"alias",
+	image="div.webcomic-image>img",
+	next="a.next-webcomic-link",
+),
 
-# 	"baseurl", 
-# 	"firsturl",
-# 	test="testurl",
+Sarjakuva(
+	"Iron Violet", 
+	"ironviolet",
 
-# 	image="imagetree",
-# 	next="nextlinktree",
-# ),
+	"http://ironvioletcomic.com/", 
+	"http://ironvioletcomic.com/?comic=iron-violet-issue-1-cover",
+	test="http://ironvioletcomic.com/?comic=issue-5-page-5",
 
-# Sarjakuva(
-# 	"nimi", 
-# 	"alias",
+	image="#comic>img",
+	next="a.comic-nav-next",
+),
 
-# 	"baseurl", 
-# 	"firsturl",
-# 	test="testurl",
+Sarjakuva(
+	"Evon", 
+	"evon",
 
-# 	image="imagetree",
-# 	next="nextlinktree",
-# ),
+	"http://evoncomics.com/", 
+	"http://evoncomics.com/?comic=chapter-1",
+	test="http://evoncomics.com/?comic=volume-four-chapter-18-page-694",
 
-# Sarjakuva(
-# 	"nimi", 
-# 	"alias",
-
-# 	"baseurl", 
-# 	"firsturl",
-# 	test="testurl",
-
-# 	image="imagetree",
-# 	next="nextlinktree",
-# ),
-
-# Sarjakuva(
-# 	"nimi", 
-# 	"alias",
-
-# 	"baseurl", 
-# 	"firsturl",
-# 	test="testurl",
-
-# 	image="imagetree",
-# 	next="nextlinktree",
-# ),
+	image="#comic>img",
+	next="a.comic-nav-next",
+),
 
 # Sarjakuva(
 # 	"nimi", 
