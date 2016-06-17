@@ -116,6 +116,7 @@ def Looper(id):
 			last_url = olio.Loop(last_url, sessio)
 			
 			if last_url is None:
+				comic.last_attempt = datetime.datetime.now()
 				Log(comic.id, None, "Haku päättyi", count)
 				break
 			

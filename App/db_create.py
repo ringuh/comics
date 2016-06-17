@@ -4983,17 +4983,17 @@ Sarjakuva(
 	next="a|!rel:in:next",
 ),
 
-# Sarjakuva(
-# 	"nimi", 
-# 	"alias",
+Sarjakuva(
+	"Electric Bunny", 
+	"electricbunny",
 
-# 	"baseurl", 
-# 	"firsturl",
-# 	test="testurl",
+	"http://electricbunnycomics.com/", 
+	"http://electricbunnycomics.com/View/Comic/1/My+first+day",
+	test="http://electricbunnycomics.com/View/Comic/161/Seduca+Medusa",
 
-# 	image="imagetree",
-# 	next="nextlinktree",
-# ),
+	image="div.comic_container>img",
+	next="div.comic_navbar>a|img|!alt:in:next",
+),
 
 # Sarjakuva(
 # 	"nimi", 
