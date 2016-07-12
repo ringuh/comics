@@ -105,7 +105,7 @@ def list():
 @explorer_blueprint.route('/progress/')
 @login_required
 def progress():
-	n = [i.strippi for i in current_user.progress]
+	n = [i.strippi for i in current_user.progress if i.strippi_id]
 
 	return render_template("progress.html", comics=n, user=current_user)
 
