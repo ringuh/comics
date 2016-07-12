@@ -78,14 +78,17 @@ def index(pvm=None):
 	shorts = db.session.query(SK.id)
 	if request.args.get("all") != "true":
 		shorts = shorts.filter(or_(SK.short == True, SK.short == None))
-
 	shorts = shorts.subquery()
 
+	progress = [i.strippi.sarjakuva_id for i in current_user.progress if i.strippi_id and i.strippi.Order() > 4]
+	if len(progress) == 0:
+		progress = [-1]
 	stripit = db.session.query(Strippi).filter(
 				Strippi.date_created >= today, 
 				Strippi.date_created < tomorrow,
 				~Strippi.sarjakuva_id.in_(karsitut),
-				Strippi.sarjakuva_id.in_(shorts)
+				or_(Strippi.sarjakuva_id.in_(shorts),
+					Strippi.sarjakuva_id.in_(progress))
 			).order_by(
 				#Strippi.sarjakuva_id,
 				Strippi.date_created
