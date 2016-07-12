@@ -20,6 +20,7 @@ class User(db.Model):
 
 	sarjakuvat = relationship("Sarjakuva_user", lazy="dynamic", cascade='all,delete-orphan', backref="user")
 	likes = relationship("Likes", lazy="dynamic", cascade='all,delete-orphan', backref="user")
+	progress = relationship("User_progress", lazy="dynamic", cascade='all,delete-orphan', backref="user")
 
 
 

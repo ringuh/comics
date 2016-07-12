@@ -14,11 +14,14 @@ class Sarjakuva(db.Model):
 	lyhenne = db.Column(db.UnicodeText, nullable=False)
 	url = db.Column(db.UnicodeText)
 	last_url = db.Column(db.UnicodeText)
+	count = db.Column(db.Integer, default=1)
 	
 	image = db.Column(db.UnicodeText)
 	next = db.Column(db.UnicodeText)
 
 	nsfw = db.Column(db.Boolean)
+	short = db.Column(db.Boolean)
+
 	tags = db.Column(db.UnicodeText)
 
 	interval = db.Column(db.Integer, default=12) # tunteja
@@ -30,6 +33,8 @@ class Sarjakuva(db.Model):
 	last_parse = db.Column(db.DateTime, default=None)
 	last_attempt = db.Column(db.DateTime, default=None)
 	date_created = db.Column(db.DateTime, default=datetime.datetime.now)
+
+
 	#joukkue_id = db.Column(db.Integer, ForeignKey('joukkue.id'), nullable=True)
 	
 	#parents = relationship("User_has_child", foreign_keys="User_has_child.child_id", lazy="dynamic", backref="child")

@@ -75,14 +75,22 @@ def index(pvm=None):
 				)
 	karsitut = current_user.getKarsitut()
 
+	shorts = db.session.query(SK.id)
+	if request.args.get("all") != "true":
+		shorts = shorts.filter(or_(SK.short == True, SK.short == None))
+
+	shorts = shorts.subquery()
+
 	stripit = db.session.query(Strippi).filter(
 				Strippi.date_created >= today, 
 				Strippi.date_created < tomorrow,
-				~Strippi.sarjakuva_id.in_(karsitut) 
+				~Strippi.sarjakuva_id.in_(karsitut),
+				Strippi.sarjakuva_id.in_(shorts)
 			).order_by(
 				#Strippi.sarjakuva_id,
 				Strippi.date_created
 			).limit(500).all()
+	
 
 	return render_template("portal.html",
 		dates=dates, stripit=stripit, user=current_user)
@@ -93,6 +101,13 @@ def list():
 	n = db.session.query(SK).filter(
 			~SK.id.in_(current_user.getKarsitut())).order_by(SK.id).all()
 	return render_template("list.html", comics=n, user=current_user)
+
+@explorer_blueprint.route('/progress/')
+@login_required
+def progress():
+	n = [i.strippi for i in current_user.progress]
+
+	return render_template("progress.html", comics=n, user=current_user)
 
 
 @explorer_blueprint.route('/<comic>/')
@@ -563,3 +578,25 @@ def save_progress(comic):
 	current_user.Progress(comic.id, json["strip_id"])
 
 	return jsonify(msg="Tallennettiin progressi")
+
+@explorer_blueprint.route('/options/edit_strip/', methods=["POST"])
+@login_required
+def edit_strip():
+	from project.models import User_progress as UP
+	msg = None
+	json = request.get_json(True)
+	print(json)
+	#current_user.Progress(comic.id, json["strip_id"])
+
+	strippi = db.session.query(Strippi).get(json["strippi"])
+
+	if "cmd" in json:
+		if json["cmd"] == "short":
+			strippi.sarjakuva.short = False if strippi.sarjakuva.short else True
+		elif json["cmd"] == "nsfw":
+			strippi.sarjakuva.nsfw = False if strippi.sarjakuva.nsfw else True
+		db.session.commit()
+		msg = "Tallennettiin"
+
+
+	return jsonify(msg=msg, nsfw=strippi.sarjakuva.nsfw, short=strippi.sarjakuva.short )

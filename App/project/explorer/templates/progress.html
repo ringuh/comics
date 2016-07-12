@@ -3,12 +3,12 @@
 {% block body %}
 
 
-{% for c in comics %}
+{% for st in comics %}
+{% set order = st.Order() %}
+{% if order > 4 %}
 <div class="sarjakuva" ng-controller="StripCtrl">
-	{% set st = c.Last() %}
-	{% if st != None %}
 	<h3 ng-init="strippi={{ st.id }};Thumbs();"> 
-		{{ st.sarjakuva.id }} {{ st.sarjakuva.nimi }} {{ st.Pvm() }}
+		{{ st.sarjakuva.nimi }} {{ st.Pvm() }} {{ order }}/{{ st.sarjakuva.Max() }}
 		{% if user.id != 2 %}
 		<span ng-class="{ 'good': vote===true }"
 			ng-click="Thumbs(true)"
@@ -17,36 +17,25 @@
 			ng-click="Thumbs(false)"
 			class="pointer glyphicons glyphicons-thumbs-down"></span>
 
-		<span class="glyphicons glyphicons-bin pointer bad" 
-			style="margin-left:2rem" 
+		<span class="glyphicons glyphicons-bin pointer bad" style="margin-left:2rem" 
 			ng-click="HideComic({{ st.sarjakuva_id }})"></span>
 		{% endif %}
-		{% if user.admin %}
-		<span class="glyphicons glyphicons-edit" style="margin-left:2rem" ng-click="EditStrip()"></span>
-		<div ng-show="expand">
-			<button class="btn btn-default" 
-				ng-class="{ 'active': strip_options.nsfw }"
-				ng-click="EditStrip('nsfw')">NSFW</button>
-			<button class="btn btn-default" 
-				ng-class="{ 'active': strip_options.short }"
-				ng-click="EditStrip('short')">Short</button>
-		</div>
-		{% endif %}
 	</h3>
-	<a href="/{{ c.lyhenne }}/id/{{ st.id }}/">
+	<a href="/{{ st.sarjakuva.lyhenne }}/id/{{ st.id }}/">
 	{% if st.sarjakuva.download %}
 	<img src="{{ url_for('static', 
 			filename='sarjakuvat/'+st.sarjakuva.lyhenne+'/'+st.filename )}}" />
+	
 	{% else %}
 	<img src="{{ st.url }}" />
 	{% endif %}
 	</a><br/>
-	{% endif %}
 </div>
+{% endif %}
 {% endfor %}
-
+<div class="sarjakuva">Sivulla näkyy sarjakuvat, joiden progressin olet tallentanut</div>
 <script>
-	document.title = "Sarjakuvalista"
+	document.title = "Progressi"
 </script>
 
 {% endblock %}

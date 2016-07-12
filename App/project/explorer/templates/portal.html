@@ -1,7 +1,9 @@
 {% extends "pohja.html" %}
 
 {% block body %}
+
 <div id="navigaattori" class="sarjakuva">
+	
 	<a class="prev btn btn-success" href="/d/{{dates['yesterday']}}">
 		<span class="glyphicons glyphicons-collapse r180"></span>
 		<span class="fivepx">{{dates.yesterday}}</span>
@@ -14,6 +16,18 @@
 	<a class="next btn btn-success" href="/d/{{dates['tomorrow']}}">
 		<span class="fivepx">{{ dates.tomorrow }}</span>
 		<span class="glyphicons glyphicons-collapse"></span>
+	</a>
+	{% endif %}
+	{% if request.args.get("all") == "true" %}
+	<a class="next btn btn-primary" href="?all=false">
+		<span class="fivepx">Karsitut</span>
+		<span class="glyphicons glyphicons-list"></span>
+	</a>
+	
+	{% else %}
+	<a class="next btn btn-primary" href="?all=true">
+		<span class="fivepx">Kaikki</span>
+		<span class="glyphicons glyphicons-list"></span>
 	</a>
 	{% endif %}
 </div>
@@ -31,6 +45,17 @@
 			class="pointer glyphicons glyphicons-thumbs-down"></span>
 
 		<span class="glyphicons glyphicons-bin pointer bad" style="margin-left:2rem" ng-click="HideComic({{ st.sarjakuva_id }})"></span>
+		{% endif %}
+		{% if user.admin %}
+		<span class="glyphicons glyphicons-edit" style="margin-left:2rem" ng-click="EditStrip()"></span>
+		<div ng-show="expand">
+			<button class="btn btn-default" 
+				ng-class="{ 'active': strip_options.nsfw }"
+				ng-click="EditStrip('nsfw')">NSFW {[{ strip_options.nsfw }]}</button>
+			<button class="btn btn-default" 
+				ng-class="{ 'active': strip_options.short }"
+				ng-click="EditStrip('short')">Short</button>
+		</div>
 		{% endif %}
 	</h3>
 	<a href="/{{ st.sarjakuva.lyhenne }}/id/{{ st.id }}/">

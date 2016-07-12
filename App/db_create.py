@@ -1141,6 +1141,7 @@ content = [
 
 		"http://www.vgcats.com/comics/", 
 		"http://www.vgcats.com/comics/images/",
+		test="null",
 		#"http://www.vgcats.com/comics/?strip_id=1",
 		# test="http://www.vgcats.com/comics/?strip_id=373",
 
@@ -4995,65 +4996,102 @@ Sarjakuva(
 	next="div.comic_navbar>a|img|!alt:in:next",
 ),
 
-# Sarjakuva(
-# 	"nimi", 
-# 	"alias",
+Sarjakuva(
+	"C-Cassandra", 
+	"c-cassandra",
 
-# 	"baseurl", 
-# 	"firsturl",
-# 	test="testurl",
+	"http://c-cassandra.tumblr.com/", 
+	"http://c-cassandra.tumblr.com/post/90510288035/exploring-different-cartoon-illustration-styles",
+	test="http://c-cassandra.tumblr.com/post/146923200625",
 
-# 	image="imagetree",
-# 	next="nextlinktree",
-# ),
+	image="#content>div.post>img",
+	next="div.new>a",
+),
 
-# Sarjakuva(
-# 	"nimi", 
-# 	"alias",
+Sarjakuva(
+	"Uber Steffen", 
+	"ubersteffen",
 
-# 	"baseurl", 
-# 	"firsturl",
-# 	test="testurl",
+	"http://www.ubersteffen.com/", 
+	"http://www.ubersteffen.com/comic/useng1/",
+	test="http://www.ubersteffen.com/comic/beautifools/",
 
-# 	image="imagetree",
-# 	next="nextlinktree",
-# ),
+	image="#comic>img",
+	next="a.comic-nav-next",
+),
 
-# Sarjakuva(
-# 	"nimi", 
-# 	"alias",
+Sarjakuva(
+	"Gone Into Rapture", 
+	"goneintorapture",
 
-# 	"baseurl", 
-# 	"firsturl",
-# 	test="testurl",
+	"http://goneintorapture.com/", 
+	"http://goneintorapture.com/post/77402242022",
+	test="http://goneintorapture.com/post/144750855591",
 
-# 	image="imagetree",
-# 	next="nextlinktree",
-# ),
+	image="article.post>figure.photo-hires-item>img",
+	next="a.next-button",
+),
 
-# Sarjakuva(
-# 	"nimi", 
-# 	"alias",
+Sarjakuva(
+	"Respawn", 
+	"respawn",
 
-# 	"baseurl", 
-# 	"firsturl",
-# 	test="testurl",
+	"http://respawncomic.com/", 
+	"http://respawncomic.com/comic/c0001/",
+	test="http://respawncomic.com/comic/c0072/",
 
-# 	image="imagetree",
-# 	next="nextlinktree",
-# ),
+	image="div.so-panel>div.so-widget-sow-image>img.so-widget-image|!alt:in:comic strip",
+	next="a.comic-nav-next",
+),
 
-# Sarjakuva(
-# 	"nimi", 
-# 	"alias",
+Sarjakuva(
+	"Soggy Cardboard", 
+	"soggycardboard",
 
-# 	"baseurl", 
-# 	"firsturl",
-# 	test="testurl",
+	"http://www.soggycardboard.com/", 
+	"http://www.soggycardboard.com/?comic=001-new-friends-1",
+	test="http://www.soggycardboard.com/?comic=084-fuck-you-mrs-lana",
 
-# 	image="imagetree",
-# 	next="nextlinktree",
-# ),
+	image="#comic>img",
+	next="a.comic-nav-next",
+),
+
+Sarjakuva(
+	u"Inspector Dangers Crime-Quiz", 
+	u"inspectordangers",
+
+	u"http://www.gocomics.com/", 
+	u"http://www.gocomics.com/inspector-dangers-crime-quiz/2011/08/01",
+	test="http://www.gocomics.com/inspector-dangers-crime-quiz/2016/06/27",
+
+	image="img.strip",
+	next="ul.feature-nav>a.next",
+),
+
+Sarjakuva(
+	"Sarahs Scribbles", 
+	"sarahsscribbles",
+
+	"http://www.gocomics.com/", 
+	"http://www.gocomics.com/sarahs-scribbles/2014/01/02",
+	test="http://www.gocomics.com/sarahs-scribbles/2016/07/03",
+
+	image="img.strip",
+	next="ul.feature-nav>a.next",
+),
+
+Sarjakuva(
+	"In the Bleachers", 
+	"inthebleachers",
+
+	"http://www.gocomics.com/", 
+	"http://www.gocomics.com/inthebleachers/2016/07/10",
+	test="http://www.gocomics.com/inthebleachers/2016/07/10",
+
+	image="img.strip",
+	next="ul.feature-nav>a.next",
+),
+
 
 # Sarjakuva(
 # 	"nimi", 
