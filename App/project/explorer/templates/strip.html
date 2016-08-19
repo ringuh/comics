@@ -31,7 +31,7 @@
 
 	{% endif %}
 
-	</div>
+</div>
 
 {% for strip in strips %}
 <div class="sarjakuva left" ng-controller="StripCtrl">
@@ -67,6 +67,29 @@
 	</div>
 </div>
 {% endfor %}
+
+
+<div class="navi">
+	{% if prev %}
+	<a href="/{{ comic.lyhenne }}/1/">
+		<span class="glyphicons x2 left glyphicons-step-backward"></span>
+	</a>
+	<a href="/{{ comic.lyhenne }}/{{ prev }}/">
+		<span class="glyphicons x2  left glyphicons-rewind"></span>
+	</a>
+	{% endif %}
+
+	{% if next %}
+	<a href="/{{ comic.lyhenne }}/{{ max }}/">
+		<span class="glyphicons x2 right glyphicons-step-forward"></span>
+	</a>
+	<a href="/{{ comic.lyhenne }}/{{ next }}/">
+		<span class="glyphicons x2 right glyphicons-forward"></span>
+	</a>
+
+	{% endif %}
+
+</div>
 
 <script>
 	document.title="{{ comic.nimi }} #{{strips[0].Order() }} - {{ strips[-1].Order() }}"  

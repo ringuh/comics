@@ -86,7 +86,7 @@ class RSSReader(Sarjis):
 			if not found:
 				kuvat.append(kuva)
 			
-		print(len(kuvat))
+		#print(len(kuvat))
 		return kuvat
 
 		

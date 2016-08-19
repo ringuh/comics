@@ -9,7 +9,12 @@ import sys
 #from sqlalchemy.pool import NullPool
 
 def run():
+	import os
 	sarjakuvat = db.session.query(SK).order_by(SK.id).all()
+	try:
+	    os.stat(os.path.join(app.config["APP_ROOT"], "logit"))
+	except:
+	    os.mkdir(os.path.join(app.config["APP_ROOT"], "logit"))
 	try:
 		if "id" in sys.argv:
 			import os, shutil

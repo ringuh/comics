@@ -502,8 +502,8 @@ content = [
 		"http://www.fowllanguagecomics.com/comic/part-of-the-process/",
 		test="http://www.fowllanguagecomics.com/comic/bread-crust/",
 
-		image="#comic>img",
-		next="a.comic-nav-next",
+		image="div.comic>img.main-img",
+		next="ul.com-btns>a|!text:in:next",
 
 	),
 
@@ -5093,65 +5093,66 @@ Sarjakuva(
 ),
 
 
-# Sarjakuva(
-# 	"nimi", 
-# 	"alias",
+Sarjakuva(
+	"Books of Adam", 
+	"booksofadam",
 
-# 	"baseurl", 
-# 	"firsturl",
-# 	test="testurl",
+	"http://booksofadam.tumblr.com/", 
+	"http://booksofadam.tumblr.com/rss",
+	#test="testurl",
 
-# 	image="imagetree",
-# 	next="nextlinktree",
-# ),
+	#image="imagetree",
+	#next="nextlinktree",
+	parseri="rssreader"
+),
 
-# Sarjakuva(
-# 	"nimi", 
-# 	"alias",
+Sarjakuva(
+	"clearlymissherd", 
+	"clearlymissherd",
 
-# 	"baseurl", 
-# 	"firsturl",
-# 	test="testurl",
+	"http://clearlymissherd.com/", 
+	"http://clearlymissherd.com/mother-knows-best/",
+	test="http://clearlymissherd.com/thatll-teach-you-human/",
 
-# 	image="imagetree",
-# 	next="nextlinktree",
-# ),
+	image="div.webcomic-img>img",
+	next="nav.webcomics>a|img|!alt:in:next",
+),
 
-# Sarjakuva(
-# 	"nimi", 
-# 	"alias",
+Sarjakuva(
+	"Our Super Adventure", 
+	"oursuperadventure",
 
-# 	"baseurl", 
-# 	"firsturl",
-# 	test="testurl",
+	"http://www.oursuperadventure.com/", 
+	"http://www.oursuperadventure.com/comic/2013-03-02/",
+	test="http://www.oursuperadventure.com/comic/20th-june-2016/",
 
-# 	image="imagetree",
-# 	next="nextlinktree",
-# ),
+	image="#comic>img",
+	next="a.comic-nav-next",
+),
 
-# Sarjakuva(
-# 	"nimi", 
-# 	"alias",
+Sarjakuva(
+	"Fanboys", 
+	"fanboys",
 
-# 	"baseurl", 
-# 	"firsturl",
-# 	test="testurl",
+	"http://fanboys-online.com/", 
+	"http://fanboys-online.com/index.php?id=483",
+	test="http://fanboys-online.com/index.php?id=547",
 
-# 	image="imagetree",
-# 	next="nextlinktree",
-# ),
+	image="#comicbody>img",
+	next="div.nav>a.next",
+),
 
-# Sarjakuva(
-# 	"nimi", 
-# 	"alias",
+Sarjakuva(
+	"Mary Death", 
+	"marydeath",
 
-# 	"baseurl", 
-# 	"firsturl",
-# 	test="testurl",
+	"http://www.marydeathcomics.com/", 
+	"http://www.marydeathcomics.com/archives/comic/01172013",
+	test="http://www.marydeathcomics.com/archives/comic/solitude",
 
-# 	image="imagetree",
-# 	next="nextlinktree",
-# ),
+	image="#comic>img",
+	next="a.navi-next",
+),
 
 # Sarjakuva(
 # 	"nimi", 
