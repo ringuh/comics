@@ -848,11 +848,11 @@ content = [
 		#"berdsandnerds",
 
 		"http://berdsandnerds.com", 
-		"http://berdsandnerds.com/thearchive/",
+		"http://berdsandnerds.com/comic/2013/4/1/comic-1",
 		test="http://berdsandnerds.com/comic/2016/5/9/theothermother",
 
 		image="div.sqs-block-content>noscript>img",
-		next="div.intrinsic>a|!href:in:/comic/",
+		next="nav.pagination>a|!text:in:newer",
 	),
 
 	Sarjakuva(
