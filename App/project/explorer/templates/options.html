@@ -38,6 +38,8 @@
 				
 				<span>{[{ i.nimi }]}</span> {% if user.admin %}<span class="glyphicons glyphicons-plus" ng-click="i.expand=!i.expand"></span>
 				<span>{[{ i.last_parse }]}</span>
+				<a href="{[{ i.last_url }]}">{[{ i.last_url }]}</a>
+
 				<form ng-show="i.expand" ng-submit="ComicSettings(i)">
 					
 					<div class="form-group">

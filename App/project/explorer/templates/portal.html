@@ -54,7 +54,7 @@
 				ng-click="EditStrip('nsfw')">NSFW {[{ strip_options.nsfw }]}</button>
 			<button class="btn btn-default" 
 				ng-class="{ 'active': strip_options.short }"
-				ng-click="EditStrip('short')">Short</button>
+				ng-click="EditStrip('short')">{[{ strip_options.short ? 'short': 'long' }]}</button>
 		</div>
 		{% endif %}
 	</h3>

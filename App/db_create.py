@@ -5040,7 +5040,7 @@ Sarjakuva(
 	"http://respawncomic.com/comic/c0001/",
 	test="http://respawncomic.com/comic/c0072/",
 
-	image="div.so-panel>div.so-widget-sow-image>img.so-widget-image|!alt:in:comic strip",
+	image="div.jetpack-image-container>img",
 	next="a.comic-nav-next",
 ),
 

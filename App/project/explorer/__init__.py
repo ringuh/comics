@@ -91,7 +91,7 @@ def index(pvm=None):
 					Strippi.sarjakuva_id.in_(progress))
 			).order_by(
 				#Strippi.sarjakuva_id,
-				Strippi.date_created
+				Strippi.id
 			).limit(500).all()
 	
 
