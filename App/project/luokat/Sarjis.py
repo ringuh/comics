@@ -286,6 +286,7 @@ class Sarjis(object):
 						ret = "{}/{}".format(self.sarjakuva.url[:-1], link["href"])
 					else:
 						ret = "{}{}".format(self.sarjakuva.url, link["href"])
+					ret = ret.replace("/archive/archive/", "/archive/")
 				break
 		except Exception as e: 
 			self.Print("NEXT ERROR", str(e))
