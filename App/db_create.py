@@ -5154,29 +5154,29 @@ Sarjakuva(
 	next="a.navi-next",
 ),
 
-# Sarjakuva(
-# 	"nimi", 
-# 	"alias",
+Sarjakuva(
+	"Bartenerds", 
+	"bartenerds",
 
-# 	"baseurl", 
-# 	"firsturl",
-# 	test="testurl",
+	"http://www.bartenerds.com/archive/", 
+	"http://www.bartenerds.com/archive/10-01-2012.html",
+	test="http://www.bartenerds.com/archive/07-29-2016.html",
 
-# 	image="imagetree",
-# 	next="nextlinktree",
-# ),
+	image="#comic>img",
+	next="#forw>a",
+),
 
-# Sarjakuva(
-# 	"nimi", 
-# 	"alias",
+Sarjakuva(
+	"Walking from Work", 
+	"walkingfromwork",
 
-# 	"baseurl", 
-# 	"firsturl",
-# 	test="testurl",
+	"http://walkingfromwork.com/", 
+	"http://walkingfromwork.com/archives/comic/champ-3",
+	test="http://walkingfromwork.com/archives/comic/shower",
 
-# 	image="imagetree",
-# 	next="nextlinktree",
-# ),
+	image="#comic>img",
+	next="a.comic-nav-next",
+),
 
 # Sarjakuva(
 # 	"nimi", 
