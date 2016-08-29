@@ -5178,17 +5178,17 @@ Sarjakuva(
 	next="a.comic-nav-next",
 ),
 
-# Sarjakuva(
-# 	"nimi", 
-# 	"alias",
+Sarjakuva(
+	"Tales of Absurdity", 
+	"talesofabsurdity",
 
-# 	"baseurl", 
-# 	"firsturl",
-# 	test="testurl",
+	"http://talesofabsurdity.com/", 
+	"http://talesofabsurdity.com/comic/the-magic-well/",
+	test="http://talesofabsurdity.com/comic/scarcity/",
 
-# 	image="imagetree",
-# 	next="nextlinktree",
-# ),
+	image="#comic>img",
+	next="a.comic-nav-next",
+),
 
 # Sarjakuva(
 # 	"nimi", 

@@ -35,7 +35,7 @@
 
 {% for strip in strips %}
 <div class="sarjakuva left" ng-controller="StripCtrl">
-	<h3 ng-init="strippi={{ strip.id }};Thumbs();"> {{ comic.nimi }} #{{ strip.Order() }} 
+	<h3 ng-init="strippi={{ strip.id }};Thumbs();"><a id="strippi" href="{{ strip.page_url }}">{{ comic.nimi }} #{{ strip.Order() }}</a>
 		{% if user.id != 2 %}
 		<span ng-class="{ 'good': vote===true }"
 			ng-click="Thumbs(true)"
@@ -55,7 +55,7 @@
 	
 	
 	<div style="clear:both;">
-		<a id="strippi" href="{{ strip.page_url }}">
+		
 		{% if comic.download %}
 		<img src="{{ url_for('static', 
 				filename='sarjakuvat/'+comic.lyhenne+'/'+strip.filename )}}" />
@@ -63,7 +63,7 @@
 		<img src="{{ strip.url }}" />
 		{% endif %}
 		
-		</a>
+		
 	</div>
 </div>
 {% endfor %}
