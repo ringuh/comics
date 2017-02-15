@@ -5202,6 +5202,19 @@ Sarjakuva(
 	next="a|button|i.fa-chevron-right",
 ),
 
+Sarjakuva(
+	"HJ Story", 
+	"hjstory",
+
+	"http://www.hj-story.com/", 
+	"http://www.hj-story.com/story-begins/",
+	test="http://www.hj-story.com/love-is-music-to-my-ears/",
+
+	image="div.blog-content>img.size-full",
+	next="h3.next-post-title>a",
+),
+
+
 # Sarjakuva(
 # 	"nimi", 
 # 	"alias",
