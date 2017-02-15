@@ -5190,6 +5190,18 @@ Sarjakuva(
 	next="a.comic-nav-next",
 ),
 
+Sarjakuva(
+	"XY Gaming", 
+	"xygaming",
+
+	"http://www.xygaming.com/", 
+	"http://www.xygaming.com/comic/1",
+	test="http://www.xygaming.com/comic/47",
+
+	image="div.container>div.p-0>img",
+	next="a|button|i.fa-chevron-right",
+),
+
 # Sarjakuva(
 # 	"nimi", 
 # 	"alias",
