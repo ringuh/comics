@@ -5214,6 +5214,43 @@ Sarjakuva(
 	next="h3.next-post-title>a",
 ),
 
+Sarjakuva(
+	"HJ Story", 
+	"hjstory",
+
+	"http://www.hj-story.com/", 
+	"http://www.hj-story.com/story-begins/",
+	test="http://www.hj-story.com/love-is-music-to-my-ears/",
+
+	image="div.blog-content>img.size-full",
+	next="h3.next-post-title>a",
+),
+
+
+Sarjakuva(
+	"Optipess", 
+	"optipess",
+
+	"http://www.optipess.com/2008/", 
+	"http://www.optipess.com/2008/12/01/jason-friend-of-the-butterflies/",
+	test="http://www.optipess.com/2017/02/14/crush-counter/",
+
+	image="#comic>img",
+	next="a.navi-next",
+),
+
+
+# Sarjakuva(
+# 	"Red panels", 
+# 	"redpanels",
+
+# 	"http://www.hj-story.com/", 
+# 	"http://redpanels.com/1/",
+# 	test="http://redpanels.com/360/",
+
+# 	image="#comicImg",
+# 	next="a.arrowLink|div|text:=:❯",
+# ),
 
 # Sarjakuva(
 # 	"nimi", 

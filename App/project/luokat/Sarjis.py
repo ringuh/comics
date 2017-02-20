@@ -109,7 +109,7 @@ class Sarjis(object):
 					ret = [soup]
 				elif type == "in" and value in soup.text.lower():
 					ret = [soup]
-			
+		
 		elif "." in lauseke:
 			a, b = lauseke.split(".")
 			ret =  soup.find_all(a, { "class": b })
@@ -129,6 +129,7 @@ class Sarjis(object):
 		
 		#ehto = ehdot[0]
 		#ehdot.pop(0)
+
 		arr = self.Ehdot(soup, lauseke)
 		
 		ret = []
@@ -136,7 +137,7 @@ class Sarjis(object):
 			ok = True
 			keitto = [i]
 			for ehto in ehdot:
-				
+				print("!!: ", ehto)
 				for j in keitto:
 					
 					keitto = self.Ehdot(j, ehto)
