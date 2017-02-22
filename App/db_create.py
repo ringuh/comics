@@ -5214,6 +5214,17 @@ Sarjakuva(
 	next="a.navi-next",
 ),
 
+Sarjakuva(
+	"How Baby", 
+	"howbaby",
+
+	"http://howbabycomic.com/", 
+	"http://howbabycomic.com/comic/how-baby-1-the-first-day/",
+	test="http://howbabycomic.com/comic/hb184/",
+
+	image="#comic>img",
+	next="a.navi-next",
+),
 
 # Sarjakuva(
 # 	"Red panels", 
