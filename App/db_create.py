@@ -5226,6 +5226,19 @@ Sarjakuva(
 	next="a.navi-next",
 ),
 
+Sarjakuva(
+	"Theism", 
+	"theism",
+
+	"http://www.theism-comics.com/", 
+	"http://www.theism-comics.com/main/different-economic-approaches-to-market-stagnation/",
+	test="http://www.theism-comics.com/main/the-spinning-news/",
+
+	image=".webcomic-image>img",
+	next="a.next-webcomic-link",
+),
+
+
 # Sarjakuva(
 # 	"Red panels", 
 # 	"redpanels",
