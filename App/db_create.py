@@ -5239,6 +5239,18 @@ Sarjakuva(
 ),
 
 
+Sarjakuva(
+	"Could be Worse", 
+	"couldbeworse",
+
+	"http://couldbeworse-comic.com/", 
+	"http://couldbeworse-comic.com/055.html",
+	test="http://couldbeworse-comic.com/425.html",
+
+	image="#mainComic>img",
+	next="a|img|!alt:in:next",
+),
+
 # Sarjakuva(
 # 	"Red panels", 
 # 	"redpanels",
