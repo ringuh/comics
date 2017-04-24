@@ -137,7 +137,7 @@ class Sarjis(object):
 			ok = True
 			keitto = [i]
 			for ehto in ehdot:
-				print("!!: ", ehto)
+				
 				for j in keitto:
 					
 					keitto = self.Ehdot(j, ehto)

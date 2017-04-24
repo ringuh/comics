@@ -5251,6 +5251,19 @@ Sarjakuva(
 	next="a|img|!alt:in:next",
 ),
 
+Sarjakuva(
+	"Stupid Fox", 
+	"stupidfox",
+
+	"http://stupidfox.net/", 
+	"http://stupidfox.net/hello",
+	test="http://stupidfox.net/168-home-sweet-home",
+
+	image="div.comicmid>img",
+	next="div.comicright>a|span.spriteNext",
+),
+
+
 # Sarjakuva(
 # 	"Red panels", 
 # 	"redpanels",
